@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultViewSkin" width="1136" height="640" currentState="fail" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="fail,win" >
+	<e:Image source="failbg_jpg" left="0" top="0" right="0" bottom="0" source.win="winbg_jpg"/>
+	<e:Group id="content" includeIn="win" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Rect width="645.67" height="449.67" includeIn="win" anchorOffsetX="0" anchorOffsetY="0" alpha="0.7" x="0" y="-52"/>
+		<e:Image source="wain_title_png" x="220" y="-41"/>
+		<e:Image source="role_0_png" includeIn="win" x="63" y="45"/>
+		<e:Image source="role_1_png" includeIn="win" x="271.49" y="45"/>
+		<e:Image source="role_2_png" includeIn="win" x="483" y="45"/>
+		<e:Image source="loading_btm_png" includeIn="win" x="84.49" y="199.16"/>
+		<e:Image source="loading_btm_png" includeIn="win" x="84.49" y="269"/>
+		<e:Label id="expLap" text="获得经验x111" includeIn="win" x="159" y="209.15" anchorOffsetX="0" width="363" textAlign="center" fontFamily="yt" size="25"/>
+		<e:Label id="goldLab" text="获得银子x111" includeIn="win" x="160.16" y="277.5" anchorOffsetX="0" width="363" textAlign="center" fontFamily="yt" size="25"/>
+		<e:Group id="exitBtn2" touchChildren="false" touchEnabled="true" touchThrough="false" includeIn="win" x="234" y="333">
+			<e:Image source="button_bg_png" x="0" y="0"/>
+			<e:Image source="exit_title_png" x="53" y="3.56"/>
+		</e:Group>
+		<e:Label id="level_1" text="Lv 1" x="63" y="132" size="16" fontFamily="yt" textColor="0xf28b15"/>
+		<e:Label id="level_0" text="Lv 1" x="272" y="132" size="16" fontFamily="yt" textColor="0xf28b15"/>
+		<e:Label id="level_2" text="Lv 1" x="483" y="132" size="16" fontFamily="yt" textColor="0xf28b15"/>
+	</e:Group>
+	<e:Group id="exitBtn" horizontalCenter="0" bottom="97" touchChildren="false" touchEnabled="true" touchThrough="false" horizontalCenter.win="12.5" bottom.win="141" includeIn="fail">
+		<e:Image source="button_bg_png" x="0" y="0"/>
+		<e:Image source="exit_title_png" x="53" y="3.56"/>
+	</e:Group>
+	<e:Image source="fail_title_png" includeIn="fail" horizontalCenter="0" top="146"/>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelSelectItemSkin" width="175" height="175" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon" left="0" right="0" top="0" bottom="0" source="lev_icon_1_png"/>
+	<e:Group id="lockGroup" left="0" top="0" bottom="0" right="0">
+		<e:Rect left="0" top="0" bottom="0" right="0" alpha="0.5" fillColor="0x000000"/>
+		<e:Image source="lev_lock_png" x="71.66" y="120.01"/>
+	</e:Group>
+</e:Skin>

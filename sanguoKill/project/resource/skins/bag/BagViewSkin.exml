@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="shop_bg_jpg" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0"/>
+	<e:Group horizontalCenter="0.5" top="22">
+		<e:Image source="shop_name_kuang_png" x="0" y="0"/>
+		<e:Image x="0" y="0" source="bag_text_png"/>
+	</e:Group>
+	<e:Label text="银两:" size="20" fontFamily="yt" horizontalCenter="-29" top="78" textColor="0xED821A"/>
+	<e:Label id="goldLab" text="000" size="20" fontFamily="yt" horizontalCenter="19" top="78" textColor="0xED821A"/>
+	<e:Group horizontalCenter="1.5" verticalCenter="26">
+		<e:Image source="shop_kuang_png" x="0" y="0" scale9Grid="75,48,453,291" anchorOffsetX="0" width="753" anchorOffsetY="0" height="447.61"/>
+		<e:Image source="bag_xian_png" x="146.19" y="79.25"/>
+		<e:Image source="bag_xian_png" x="144.67" y="348.34"/>
+		<e:Button id="up_bag" label="" x="316.67" y="34.13">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bag_up_0_png" source.down="bag_up_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller width="642.67" height="256" x="61.82" y="91.05" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="list">
+				<e:layout>
+					<e:TileLayout horizontalGap="10" verticalGap="10"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Button id="close_btn" label="" horizontalCenter="350.5" verticalCenter="-169">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="shop_close_0_png" source.down="shop_close_1_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

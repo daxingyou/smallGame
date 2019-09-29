@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EnemyHeroItemSkin" width="180" height="118" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="content" top="0" touchChildren="false" touchEnabled="false" touchThrough="false" right="0" anchorOffsetX="0" width="180">
+		<e:Image id="heroImg" source="role_0_png" width="103" height="103" x="69" y="10"/>
+		<e:Rect width="98.5" height="41.17" x="70" y="70.83" alpha="1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label text="生命值" x="75.33" y="75.98" size="14" fontFamily="yt"/>
+		<e:Label id="hpLab" text="100/120" x="75.49" y="94.34" size="14" fontFamily="yt"/>
+		<e:Image source="role_bg_png" x="58" y="0"/>
+		<e:Image id="atkMark" source="mark_r_atk_png" x="12" y="16"/>
+		<e:Image id="protectedMark" source="mark_r_pro_png" x="12" y="70.83"/>
+	</e:Group>
+</e:Skin>

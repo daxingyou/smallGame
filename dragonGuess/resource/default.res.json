@@ -1,0 +1,275 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,description_json,startGame_btn_png,exit_btn_png,common_bg_png,select_type_1_png,select_type_2_png,select_type_3_png,common_title_bg_png,lev_icon_1_png,lev_icon_5_png,lev_icon_4_png,lev_icon_2_png,lev_icon_7_png,lev_icon_6_png,lev_icon_3_png,lev_lock_png,reset_btn_png,tips_btn_png,go_btn_png,select_right_png,popup_bg_png,popup_return_png,popup_fail_title_png,popup_award_box_png,popup_reset_png,popup_win_title_png,common_help_bg_png,help_icon_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "res/common/button/startGame_btn.png",
+			"type": "image",
+			"name": "startGame_btn_png"
+		},
+		{
+			"url": "res/common/button/exit_btn.png",
+			"type": "image",
+			"name": "exit_btn_png"
+		},
+		{
+			"url": "res/common/panel/common_bg.png",
+			"type": "image",
+			"name": "common_bg_png"
+		},
+		{
+			"url": "res/view/mainscene/select_type_1.png",
+			"type": "image",
+			"name": "select_type_1_png"
+		},
+		{
+			"url": "res/view/mainscene/select_type_2.png",
+			"type": "image",
+			"name": "select_type_2_png"
+		},
+		{
+			"url": "res/view/mainscene/select_type_3.png",
+			"type": "image",
+			"name": "select_type_3_png"
+		},
+		{
+			"url": "res/common/panel/common_title_bg.png",
+			"type": "image",
+			"name": "common_title_bg_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_1.png",
+			"type": "image",
+			"name": "lev_icon_1_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_5.png",
+			"type": "image",
+			"name": "lev_icon_5_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_4.png",
+			"type": "image",
+			"name": "lev_icon_4_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_2.png",
+			"type": "image",
+			"name": "lev_icon_2_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_7.png",
+			"type": "image",
+			"name": "lev_icon_7_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_6.png",
+			"type": "image",
+			"name": "lev_icon_6_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_icon_3.png",
+			"type": "image",
+			"name": "lev_icon_3_png"
+		},
+		{
+			"url": "res/view/level_icon/lev_lock.png",
+			"type": "image",
+			"name": "lev_lock_png"
+		},
+		{
+			"url": "res/common/button/reset_btn.png",
+			"type": "image",
+			"name": "reset_btn_png"
+		},
+		{
+			"url": "res/common/button/tips_btn.png",
+			"type": "image",
+			"name": "tips_btn_png"
+		},
+		{
+			"url": "res/common/button/go_btn.png",
+			"type": "image",
+			"name": "go_btn_png"
+		},
+		{
+			"url": "res/common/panel/select_right.png",
+			"type": "image",
+			"name": "select_right_png"
+		},
+		{
+			"url": "res/view/result/popup_bg.png",
+			"type": "image",
+			"name": "popup_bg_png"
+		},
+		{
+			"url": "res/view/result/popup_return.png",
+			"type": "image",
+			"name": "popup_return_png"
+		},
+		{
+			"url": "res/view/result/popup_fail_title.png",
+			"type": "image",
+			"name": "popup_fail_title_png"
+		},
+		{
+			"url": "res/view/result/popup_award_box.png",
+			"type": "image",
+			"name": "popup_award_box_png"
+		},
+		{
+			"url": "res/view/result/popup_reset.png",
+			"type": "image",
+			"name": "popup_reset_png"
+		},
+		{
+			"url": "res/view/result/popup_win_title.png",
+			"type": "image",
+			"name": "popup_win_title_png"
+		},
+		{
+			"name": "common_help_bg_png",
+			"type": "image",
+			"url": "res/common/panel/common_help_bg.png"
+		},
+		{
+			"name": "help_icon_png",
+			"type": "image",
+			"url": "res/common/button/help_icon.png"
+		}
+	]
+}

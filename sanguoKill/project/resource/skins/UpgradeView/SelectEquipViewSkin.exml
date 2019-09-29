@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelectEquipViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect fillAlpha="0.7" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="content" width="850" height="421.21" anchorOffsetX="0" anchorOffsetY="0" x="143" y="109">
+		<e:Image source="select_bg_png" y="60.52" width="710.4" height="265.2" x="70"/>
+		<e:Image id="cancel" source="select_cancel_png" x="520.03" y="345.39"/>
+		<e:Image id="confirm" source="select_confirm_png" x="199.03" y="345.39"/>
+		<e:Label text="请选择一张卡片装备" x="96" y="8" anchorOffsetX="0" width="664.91" anchorOffsetY="0" height="45.15" textAlign="center" verticalAlign="middle" textColor="0xffb900" fontFamily="yt"/>
+		<e:Scroller id="scroller" width="665.15" height="230" x="92" y="77.42" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="list">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="shop_bg_jpg" left="0" top="0" bottom="0" right="0"/>
+	<e:Group horizontalCenter="0.5" top="22">
+		<e:Image source="shop_name_kuang_png" x="0" y="0"/>
+		<e:Image source="shop_text_png" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="content" x="188" y="93" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="shop_kuang_png" x="0" y="0" scale9Grid="75,48,453,291" anchorOffsetY="0" height="455" anchorOffsetX="0" width="764.34"/>
+		<e:Button id="weapon_btn" label="Button" x="45.5" y="21.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_btn_0_png" source.down="shop_btn_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image source="shop_weapon_png" x="34.66" y="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="protection_btn" label="Button" x="164.5" y="21.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_btn_0_png" source.down="shop_btn_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image x="34.66" y="0" source="shop_protection_png"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="prop_btn" label="Button" x="283.5" y="21.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_btn_0_png" source.down="shop_btn_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image x="34.66" y="0" source="shop_prop_png"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="item_group" width="553" height="379" x="103.17" y="53.5" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group x="5.33" y="2" visible="false">
+			<e:Group id="guideGroup" x="0.67" y="0">
+				<e:Image id="card_img0" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money0" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_2" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_0" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="112.17" y="1">
+				<e:Image id="card_img1" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money1" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_1" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_3" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="222.17" y="1">
+				<e:Image id="card_img2" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money2" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_4" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_5" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="334.67" y="1">
+				<e:Image id="card_img3" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money3" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_6" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_7" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="443.67" y="0">
+				<e:Image id="card_img4" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money4" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_8" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_9" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="0" y="185.32">
+				<e:Image id="card_img5" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money5" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_10" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_11" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="111.5" y="186.32">
+				<e:Image id="card_img6" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money6" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_12" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_13" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="221.5" y="186.32">
+				<e:Image id="card_img7" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money7" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_14" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_15" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="334" y="186.32">
+				<e:Image id="card_img8" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money8" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_16" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_17" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			<e:Group x="443" y="185.32">
+				<e:Image id="card_img9" source="10000_jpg" x="0" y="0"/>
+				<e:Label id="money9" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xF4AF09"/>
+				<e:Label id="property_18" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+				<e:Label id="property_19" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xEFEEED"/>
+			</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Button id="left_btn" label="" x="28.51" y="177.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="direction_jiantou_0_png" source.down="direction_jiantou_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="right_btn" label="" x="734.83" y="177.5" scaleX="-1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="direction_jiantou_0_png" source.down="direction_jiantou_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="close_btn" label="" horizontalCenter="357.5" verticalCenter="-204.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_close_0_png" source.down="shop_close_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Label text="银两:" size="20" fontFamily="yt" horizontalCenter="-29" top="70" textColor="0xed821a"/>
+	<e:Label id="goldLab" text="000" size="20" fontFamily="yt" horizontalCenter="19" top="70" textColor="0xED821A"/>
+</e:Skin>

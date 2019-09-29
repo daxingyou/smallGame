@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpViewSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="common_bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Image source="common_title_bg_png" horizontalCenter="0.5" top="41"/>
+	<e:Label text="돕다" anchorOffsetX="0" width="197.5" anchorOffsetY="0" height="57" textAlign="center" verticalAlign="middle" horizontalCenter="2.5" top="47" textColor="0xF79F0E"/>
+	<e:Image source="common_help_bg_png" y="115" horizontalCenter="0"/>
+	<e:Label text="\t\t\t\t옛 쌍용 제국은 한창인 사막에서 장면했지만, 그 보물에 대한 전설은 각자의 세력의 주목과 엿볼 수 있었다.\n\n\t\t\t\t중원에서 온 기사가 어느 날 왕에게 소환되며 도난 방지를 위해 사막에 쌍용보물을 찾아 왕국으로 데려갔다.\n\n시작합시다, 기사!당신의 지혜를 운용하여 보물을 가져옵니다." anchorOffsetX="0" width="464.67" anchorOffsetY="0" height="676" textAlign="left" horizontalCenter="0" top="227" textColor="0x474242"/>
+</e:Skin>

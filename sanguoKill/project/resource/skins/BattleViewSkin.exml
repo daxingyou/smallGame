@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="levelBg" source="scene_1_jpg" left="0" top="0" right="0" bottom="0"/>
+	<e:Image source="top_bg_png" scale9Grid="80,5,480,35" left="0" right="0" top="0" scaleY="-1" anchorOffsetY="0" height="50"/>
+	<e:Image source="top_bg_png" scale9Grid="80,5,480,35" left="0" right="0" scaleY="1" anchorOffsetY="0" bottom="0" height="50"/>
+	<e:Button id="menuBtn" label="Button" right="0" bottom="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="menuBtn_up_png" source.down="menuBtn_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:List id="ownList" width="260" height="427.27" anchorOffsetY="0" verticalCenter="0" left="-290" anchorOffsetX="0">
+		<e:layout>
+			<e:VerticalLayout verticalAlign="middle" gap="15"/>
+		</e:layout>
+	</e:List>
+	<e:List id="enemyList" width="180" height="427" anchorOffsetY="0" verticalCenter="0" right="-210">
+		<e:layout>
+			<e:VerticalLayout gap="15" verticalAlign="middle"/>
+		</e:layout>
+	</e:List>
+	<e:Rect id="rectTop" height="106" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" right="0" alpha="0.6"/>
+	<e:Rect id="rectMiddle" height="106" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" alpha="0.6" bottom="0"/>
+	<e:Rect id="rectBottom" anchorOffsetX="0" anchorOffsetY="0" left="0" alpha="0.6" top="105" bottom="105" right="217"/>
+</e:Skin>

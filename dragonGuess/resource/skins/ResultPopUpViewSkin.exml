@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultPopUpViewSkin" width="640" height="1136" currentState="win" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="win,fail" >
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Image source="popup_bg_png" y.win="366.5" anchorOffsetX="0" width="502.99" anchorOffsetY="0" height="300" width.win="576.76" height.win="344" width.fail="576" height.fail="344" horizontalCenter.win="9.5" top.win="367" horizontalCenter.fail="8" top.fail="366"/>
+	<e:Image source="popup_award_box_png" includeIn="win" anchorOffsetX="0" width="183" anchorOffsetY="0" height="185.6" horizontalCenter="-2.5" top="244"/>
+	<e:Image source="popup_win_title_png" includeIn="win" horizontalCenter="0" top="438"/>
+	<e:Image id="returnBtn" source="popup_return_png" x="75.5" y="694.5" horizontalCenter.win="-129" top.win="695" horizontalCenter.fail="-129" top.fail="695"/>
+	<e:Image id="sureBtn" source="popup_reset_png" x="347.5" y="695.64" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter.win="142.5" top.win="688" horizontalCenter.fail="142.5" top.fail="688" width="274.92" height="91"/>
+	<e:Label text="このステージを成功させておめでとうございます。宝物を手に入れる" x="156.65" y="530" textColor="0x603a21" anchorOffsetX="0" width="357" anchorOffsetY="0" height="120" text.fail="비록 실패하였지만 낙심하지 않으니 계속 노력하세요" horizontalCenter.win="15.5" top.win="530" horizontalCenter.fail="15.5" top.fail="530" text.win="승리를 거두신 것을 축하합니다. 그리고 보물상자를 얻으셨으니 계속 노력해 주시기 바랍니다."/>
+	<e:Image source="popup_fail_title_png" includeIn="fail" horizontalCenter="15" top="399"/>
+</e:Skin>

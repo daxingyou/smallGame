@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SettingPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="settingbg_jpg" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="0" scaleY="1">
+		<e:Image source="common_bg_png" x="0" y="0" anchorOffsetX="0" width="827.73" anchorOffsetY="0" height="309" scale9Grid="74,27,444,167"/>
+		<e:Group id="continueBtn" y="73.12" horizontalCenter="0.5" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="button_bg_png" x="0" y="0"/>
+			<e:Image source="continue_title_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="exitBtn" y="203.09" horizontalCenter="0.5" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="button_bg_png" x="0" y="0"/>
+			<e:Image source="exit_title_png" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelectEquipItemSkin" width="150" height="230" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="card" source="select_card_0_png" x="21.7" y="21" width="105.6" height="140.4"/>
+	<e:Image id="state_img" source="select_item_kuang_png" x="16.2" y="8.4" width="117.6" height="165.6"/>
+	<e:Label id="bonus_0" text="Label" y="170" anchorOffsetX="0" width="150" textAlign="center" verticalAlign="middle" size="20" height="20" x="0" fontFamily="yt"/>
+	<e:Label id="bonus_1" text="Label" y="197" anchorOffsetX="0" width="150" textAlign="center" verticalAlign="middle" size="20" height="20" x="0" fontFamily="yt"/>
+</e:Skin>

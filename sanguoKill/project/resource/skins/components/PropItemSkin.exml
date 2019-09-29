@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PropItemSkin" width="110" height="184.67" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="focusImg" source="propFocus_png" x="4" y="6" anchorOffsetX="0" width="101.2" anchorOffsetY="0" height="138"/>
+	<e:Image source="prop_bg_png" horizontalCenter="0" verticalCenter="-15.834999999999994"/>
+	<e:Image id="propImg" width="82.67" height="110.33" x="13.67" y="21" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Label id="descLab" text="回复一人100的生命值" x="4" y="147" size="14" fontFamily="yt" anchorOffsetX="0" width="104" anchorOffsetY="0" height="35" textAlign="center" verticalAlign="middle"/>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelViewSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rect" left="0" top="0" bottom="0" right="0" fillAlpha="0.4"/>
+	<e:Group id="selectGroup" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="level_kuang_png" scale9Grid="70,115,252,136" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+		<e:Button id="close_btn" label="关闭" x="576.21" y="1" anchorOffsetY="0" height="46" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png" source.disabled="button_up_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller id="scroller" width="603.82" height="190" x="73.3" y="85" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="list" y="4">
+				<e:layout>
+					<e:TileLayout requestedRowCount="1"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

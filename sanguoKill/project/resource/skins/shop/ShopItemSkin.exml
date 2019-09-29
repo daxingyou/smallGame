@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItemSkin" width="98" height="184" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="card_img" source="10000_jpg" x="0" y="0"/>
+	<e:Label id="money" text="售价200000" x="0" y="138.67" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="15" size="14" verticalAlign="middle" textAlign="center" bold="true" textColor="0xf4af09" fontFamily="yt"/>
+	<e:Label id="property_0" text="攻击" x="0" y="154.32" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="14" verticalAlign="middle" textAlign="center" textColor="0xefeeed" fontFamily="yt"/>
+	<e:Label id="property_1" text="防御" x="0" y="166.83" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="14" verticalAlign="middle" textAlign="center" textColor="0xEFEEED" fontFamily="yt"/>
+</e:Skin>

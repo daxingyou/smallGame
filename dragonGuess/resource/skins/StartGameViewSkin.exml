@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGameViewSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="bg_jpg" left="0" top="0" right="0" bottom="0"/>
+	<e:Image id="startBtn" source="startGame_btn_png" horizontalCenter="0.5" verticalCenter="181.5" anchorOffsetX="92.42" anchorOffsetY="53.03" touchEnabled="true"/>
+	<e:Image id="help" source="help_icon_png" right="28" top="35"/>
+
+</e:Skin>

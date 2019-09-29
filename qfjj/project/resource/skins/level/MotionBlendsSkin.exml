@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MotionBlendsSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect fillAlpha="0.5" left="0" top="0" bottom="0" right="0"/>
+	<e:Group id="group" touchChildren="false" touchEnabled="true" touchThrough="false" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="show_bg_png" x="0" y="0"/>
+		<e:Label id="tip_label" text="" x="244" y="126" anchorOffsetX="0" width="428" anchorOffsetY="0" height="194" verticalAlign="middle" textAlign="center" fontFamily="yt"/>
+	</e:Group>
+</e:Skin>

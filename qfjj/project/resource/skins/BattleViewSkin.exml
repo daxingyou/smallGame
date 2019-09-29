@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleViewSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="battleBg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Group horizontalCenter="2.5" verticalCenter="57.5" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.9" scaleY="0.9">
+		<e:Image source="battle_grid_btm_png" x="0" y="0" anchorOffsetY="0" height="782.09"/>
+		<e:Group id="gridGroup" width="498.48" height="675.76" anchorOffsetX="0" anchorOffsetY="0" touchChildren="true" touchEnabled="false" touchThrough="true" x="58" y="51.29"/>
+	</e:Group>
+	<e:Image source="infobg_png" horizontalCenter="0.5" top="153"/>
+	<e:Image id="returnBtn" source="exitBtn_png" left="87" bottom="32"/>
+	<e:Image id="resetBtn" source="resetBtn_png" right="87" bottom="32"/>
+	<e:Group horizontalCenter="0" top="0">
+		<e:Image source="battle_topbg_png" x="0" y="0"/>
+		<e:Label id="nameLab" text="诺曼工业区" fontFamily="yt" x="300" y="24" textColor="0xafce90"/>
+		<e:Label id="ownCountLab" text="4" x="44" y="99" size="30" fontFamily="yt"/>
+		<e:Label id="enemyCountLab" text="4" x="694" y="99" size="30" fontFamily="yt"/>
+		<e:Label id="timeLab" text="180" fontFamily="yt" textColor="0xafce90" horizontalCenter="0.5" top="89"/>
+	</e:Group>
+</e:Skin>

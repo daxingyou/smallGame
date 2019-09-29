@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopBuySkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0.6"/>
+	<e:Group id="content" anchorOffsetY="0" height="378" touchChildren="true" touchEnabled="false" touchThrough="true" x="444" y="87">
+		<e:Image source="shop_tip_bg_jpg" x="0" y="0" scale9Grid="31,46,186,280" anchorOffsetX="0" width="265.33"/>
+		<e:Label id="property_0" text="攻击" x="132.66" y="75.07" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="13" size="18" verticalAlign="middle" textAlign="left" bold="true" textColor="0xEFEEED" fontFamily="yt"/>
+		<e:Label id="property_1" text="防御" x="132.66" y="98.73" anchorOffsetX="0" width="97.5" anchorOffsetY="0" height="16.33" size="18" verticalAlign="middle" textAlign="left" bold="true" textColor="0xEFEEED" fontFamily="yt"/>
+		<e:Image id="card_img" source="10000_jpg" x="26" y="61"/>
+		<e:Label id="remain_bag" text="包裹剩余空间：7" x="15.49" y="7.67" size="18" fontFamily="yt"/>
+		<e:Label id="remain_money" text="剩余银两：7" x="16.36" y="30" size="18" fontFamily="yt"/>
+		<e:Label id="money" text="售价:600" x="130.35" y="142.24" size="18" bold="true" textColor="0xf4c146" fontFamily="yt"/>
+		<e:Label id="tip" text="回复一个人的生命值" x="14" y="207.91" anchorOffsetX="0" width="223.33" anchorOffsetY="0" height="28.67" size="18" bold="true" textAlign="left" verticalAlign="middle" alpha="0.5" fontFamily="yt"/>
+		<e:Group x="54.46" y="243.55" scaleX="0.8" scaleY="0.8" anchorOffsetX="0" width="194.5">
+			<e:Image source="shop_buy_num_bg_png" x="0" y="0" anchorOffsetY="0" height="76.34" scale9Grid="18,14,114,7" anchorOffsetX="0" width="194.5"/>
+			<e:Button id="down_btn" label="" x="140.11" y="36.93">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="add_jiantou_0_png" source.down="add_jiantou_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="up_btn" label="" x="140.11" y="39.43" scaleY="-1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="add_jiantou_0_png" source.down="add_jiantou_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="购买数量:" x="6.63" y="28.93" size="20" fontFamily="yt"/>
+			<e:Label id="buy_num" text="1" x="94.88" y="27.18" size="20" rotation="359.89" anchorOffsetX="0" width="40.86" anchorOffsetY="0" height="25.21" verticalAlign="middle" textAlign="center" fontFamily="yt"/>
+		</e:Group>
+		<e:Button id="close_btn" label="" horizontalCenter="104.5" verticalCenter="-158">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_close_0_png" source.down="shop_close_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="buy_btn" label="" x="80.26" y="315.08" anchorOffsetX="0" width="107" anchorOffsetY="0" height="35.67">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_buy_btn0_png" source.down="shop_buy_btn1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image source="shop_buy_text_png" x="26.79" y="8.01"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="tip_group" anchorOffsetY="0" height="376.67" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image source="shop_tip_bg_jpg" x="-0.66" y="2" scale9Grid="31,46,186,280" anchorOffsetX="0" width="265.33"/>
+		<e:Image source="shop_tip_bg_jpg" x="0" y="0" scale9Grid="31,46,186,280" anchorOffsetX="0" width="265.33"/>
+		<e:Label id="no_tip" text="对不起，你的银两不足" x="0" y="20" anchorOffsetX="0" width="263.33" anchorOffsetY="0" height="251.34" verticalAlign="middle" textAlign="center" bold="true" fontFamily="yt" size="22"/>
+		<e:Button id="confirm_btn" label="" x="58.35" y="260.15">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="queding_0_png" source.down="queding_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="close_btn0" label="" horizontalCenter="103.5" verticalCenter="-160.335">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shop_close_0_png" source.down="shop_close_1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

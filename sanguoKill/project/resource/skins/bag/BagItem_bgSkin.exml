@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagItem_bgSkin" width="117.33" height="159.33" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bag_item_bg_png" x="0" y="0" scale9Grid="11,14,66,89" anchorOffsetX="0" width="118" anchorOffsetY="0" height="160"/>
+	<e:Image id="card_img" source="10000_jpg" x="9.66" y="11"/>
+</e:Skin>

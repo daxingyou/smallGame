@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PropPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rect" left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true" anchorOffsetY="0" height="354">
+		<e:Image source="common_bg_png" x="0" y="0" anchorOffsetX="0" width="584.86" anchorOffsetY="0" height="273" scale9Grid="74,27,444,167"/>
+		
+		<e:Button id="sureBtn" label="Button" x="65.91" y="285.82">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="sureBtn_up_png" source.down="sureBtn_down_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="cancleBtn" label="Button" x="378.57" y="285.82">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="cancleBtn_up_png" source.down="cancleBtn_down_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller id="scroller" width="534.67" height="233.33" x="28" y="19.67" anchorOffsetY="0" anchorOffsetX="0">
+            <e:List id="list" width="533.33" height="164" x="28.59" y="24.5" anchorOffsetY="0" anchorOffsetX="0" useVirtualLayout="false">
+                <e:layout>
+                <e:HorizontalLayout horizontalAlign="contentJustify" verticalAlign="top"/>
+                </e:layout>
+            </e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

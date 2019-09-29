@@ -1,0 +1,604 @@
+{
+  "chapter": [
+    [
+      {
+        "icon": "level_1_0_jpg",
+        "level": "1",
+        "attr": {
+          "hp": 90,
+          "agile": 1,
+          "atk": 10,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_1_1_jpg",
+        "level": "1",
+        "attr": {
+          "hp": 105,
+          "agile": 1,
+          "atk": 15,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_1_2_jpg",
+        "level": "1",
+        "attr": {
+          "hp": 130,
+          "agile": 1,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_2_0_jpg",
+        "level": "2",
+        "attr": {
+          "hp": 100,
+          "agile": 3,
+          "atk": 25,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_2_1_jpg",
+        "level": "2",
+        "attr": {
+          "hp": 125,
+          "agile": 2,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_2_2_jpg",
+        "level": "2",
+        "attr": {
+          "hp": 150,
+          "agile": 4,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_3_0_jpg",
+        "level": "3",
+        "attr": {
+          "hp": 230,
+          "agile": 5,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 0
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_3_1_jpg",
+        "level": "3",
+        "attr": {
+          "hp": 250,
+          "agile": 5,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_3_2_jpg",
+        "level": "3",
+        "attr": {
+          "hp": 190,
+          "agile": 5,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_4_0_jpg",
+        "level": "4",
+        "attr": {
+          "hp": 450,
+          "agile": 6,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_4_1_jpg",
+        "level": "4",
+        "attr": {
+          "hp": 220,
+          "agile": 6,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_4_2_jpg",
+        "level": "4",
+        "attr": {
+          "hp": 350,
+          "agile": 6,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_5_0_jpg",
+        "level": "5",
+        "attr": {
+          "hp": 350,
+          "agile": 7,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_5_1_jpg",
+        "level": "5",
+        "attr": {
+          "hp": 500,
+          "agile": 7,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_5_2_jpg",
+        "level": "5",
+        "attr": {
+          "hp": 420,
+          "agile": 7,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_6_0_jpg",
+        "level": "6",
+        "attr": {
+          "hp": 500,
+          "agile": 8,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_6_1_jpg",
+        "level": "6",
+        "attr": {
+          "hp": 650,
+          "agile": 8,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_6_2_jpg",
+        "level": "6",
+        "attr": {
+          "hp": 520,
+          "agile": 8,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_7_0_jpg",
+        "level": "7",
+        "attr": {
+          "hp": 780,
+          "agile": 9,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_7_1_jpg",
+        "level": "7",
+        "attr": {
+          "hp": 880,
+          "agile": 9,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_7_2_jpg",
+        "level": "1",
+        "attr": {
+          "hp": 800,
+          "agile": 9,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_8_0_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 850,
+          "agile": 10,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_8_1_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 860,
+          "agile": 10,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_8_2_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 870,
+          "agile": 10,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_9_0_jpg",
+        "level": "9",
+        "attr": {
+          "hp": 880,
+          "agile": 11,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_9_1_jpg",
+        "level": "7",
+        "attr": {
+          "hp": 890,
+          "agile": 11,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_9_2_jpg",
+        "level": "1",
+        "attr": {
+          "hp": 900,
+          "agile": 11,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_10_0_jpg",
+        "level": "10",
+        "attr": {
+          "hp": 950,
+          "agile": 20,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_10_1_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 950,
+          "agile": 20,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_10_2_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 980,
+          "agile": 20,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_11_0_jpg",
+        "level": "11",
+        "attr": {
+          "hp": 1000,
+          "agile": 30,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_11_1_jpg",
+        "level": "7",
+        "attr": {
+          "hp": 1100,
+          "agile": 31,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_11_2_jpg",
+        "level": "1",
+        "attr": {
+          "hp": 1200,
+          "agile": 30,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ],
+    [
+      {
+        "icon": "level_12_0_jpg",
+        "level": "12",
+        "attr": {
+          "hp": 1500,
+          "agile": 40,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_12_1_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 1800,
+          "agile": 50,
+          "atk": 20,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      },
+      {
+        "icon": "level_12_2_jpg",
+        "level": "8",
+        "attr": {
+          "hp": 2000,
+          "agile": 50,
+          "atk": 30,
+          "hit": 10,
+          "protected": 20,
+          "crit": 50
+        },
+        "weaponId": 10000,
+        "protectedId": 10000,
+        "horseAtkId": 10000,
+        "horseProtId": 10000
+      }
+    ]
+  ]
+}

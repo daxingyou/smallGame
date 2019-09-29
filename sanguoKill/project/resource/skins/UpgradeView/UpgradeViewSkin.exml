@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UpgradeViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="menu_bg_jpg" width="1152" height="768" horizontalCenter="0" verticalCenter="0" scaleX="1" scaleY="1"/>
+	<e:Group id="top" height="70" top="0" left="0" right="0">
+		<e:Image source="upgrade_line_png" horizontalCenter="0" x="250" scaleX="1" scaleY="1" verticalCenter="0" width="553.1999999999999" height="16.8"/>
+		<e:Image id="title" source="menu_upgrade_btn_png" horizontalCenter="0" x="393" scaleX="1" scaleY="1" verticalCenter="0" width="210" height="51.6"/>
+	</e:Group>
+	<e:Group id="content" x="199" y="101" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Group id="role_0" width="738.67" height="142" y="0" anchorOffsetX="0" x="0" visible="false">
+			<e:Rect width="517.32" height="141.33" x="148" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="icon_0" source="upgrade_icon_0_png" x="14" scaleX="1" scaleY="1" verticalCenter="0" width="123.6" height="123.6"/>
+			<e:Image source="upgrade_icon_bg_png" x="2" scaleX="1" scaleY="1" verticalCenter="0" width="147.6" height="141.6"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="4.67" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="50" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="94.6" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="4.67" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="50" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="94.6" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_equip_bg_png" x="528" y="-2" scaleX="1" scaleY="1" width="136.79999999999998" height="136.79999999999998"/>
+			<e:Image id="mount_0" source="upgrade_mount_png" x="666.67" y="6" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_1" source="upgrade_mount_png" x="666.67" y="38" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_2" source="upgrade_mount_png" x="666.67" y="70" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_3" source="upgrade_mount_png" x="664.8" y="102.07" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Label id="hp" text="Label" x="167.68" y="11" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="agile" text="Label" x="352.02" y="11.66" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="atk" text="Label" x="167.69" y="55.66" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="hit" text="Label" x="352.02" y="55.67" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="protected" text="Label" x="167.68" y="101.26" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="crit" text="Label" x="352.02" y="101.26" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Image id="equip_weapon" width="117.6" height="24" x="536" y="12.66"/>
+			<e:Image id="equip_protected" width="117.6" height="24" x="536" y="44"/>
+			<e:Image id="horseAtk" width="117.6" height="24" x="536" y="76"/>
+			<e:Image id="horseProt" width="117.6" height="24" x="536" y="107.66"/>
+		</e:Group>
+		<e:Rect id="guideRect" width="100" height="40" right="0" top="0" touchChildren="false" touchEnabled="false" alpha="0"/>
+		<e:Group id="role_1" width="738.67" height="142" y="164" anchorOffsetX="0" x="0" visible="false">
+			<e:Rect width="517.32" height="141.33" x="148" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="icon_1" source="upgrade_icon_0_png" x="14" scaleX="1" scaleY="1" verticalCenter="0" width="123.6" height="123.6"/>
+			<e:Image source="upgrade_icon_bg_png" x="2" scaleX="1" scaleY="1" verticalCenter="0" width="147.6" height="141.6"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="4.67" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="50" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="94.6" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="4.67" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="50" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="94.6" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_equip_bg_png" x="528" y="-2" scaleX="1" scaleY="1" width="136.79999999999998" height="136.79999999999998"/>
+			<e:Image id="mount_4" source="upgrade_mount_png" x="666.67" y="6" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_5" source="upgrade_mount_png" x="666.67" y="38" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_6" source="upgrade_mount_png" x="666.67" y="70" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_7" source="upgrade_mount_png" x="664.8" y="102.07" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Label id="hp0" text="Label" x="167.68" y="11" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="agile0" text="Label" x="352.02" y="11.66" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="atk0" text="Label" x="167.69" y="55.66" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="hit0" text="Label" x="352.02" y="55.67" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="protected0" text="Label" x="167.68" y="101.26" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="crit0" text="Label" x="352.02" y="101.26" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Image id="equip_weapon0" width="117.6" height="24" x="536" y="12.66"/>
+			<e:Image id="equip_protected0" width="117.6" height="24" x="536" y="44"/>
+			<e:Image id="horseAtk0" width="117.6" height="24" x="536" y="76"/>
+			<e:Image id="horseProt0" width="117.6" height="24" x="536" y="107.66"/>
+		</e:Group>
+		<e:Group id="role_2" width="738.67" height="142" y="328" anchorOffsetX="0" x="0" visible="false">
+			<e:Rect width="517.32" height="141.33" x="148" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="icon_2" source="upgrade_icon_0_png" x="14" scaleX="1" scaleY="1" verticalCenter="0" width="123.6" height="123.6"/>
+			<e:Image source="upgrade_icon_bg_png" x="2" scaleX="1" scaleY="1" verticalCenter="0" width="147.6" height="141.6"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="4.67" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="50" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="154.67" y="94.6" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="4.67" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="50" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_property_png" x="339" y="94.6" scaleX="1" scaleY="1" width="180" height="42"/>
+			<e:Image source="upgrade_equip_bg_png" x="528" y="-2" scaleX="1" scaleY="1" width="136.79999999999998" height="136.79999999999998"/>
+			<e:Image id="mount_8" source="upgrade_mount_png" x="666.67" y="6" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_9" source="upgrade_mount_png" x="666.67" y="38" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_10" source="upgrade_mount_png" x="666.67" y="70" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Image id="mount_11" source="upgrade_mount_png" x="664.8" y="102.07" width="63.599999999999994" height="37.199999999999996"/>
+			<e:Label id="hp1" text="Label" x="167.68" y="11" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="agile1" text="Label" x="352.02" y="11.66" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="atk1" text="Label" x="167.69" y="55.66" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="hit1" text="Label" x="352.02" y="55.67" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="protected1" text="Label" x="167.68" y="101.26" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Label id="crit1" text="Label" x="352.02" y="101.26" anchorOffsetX="0" width="151" anchorOffsetY="0" height="28.67" size="24" textAlign="left" verticalAlign="middle"/>
+			<e:Image id="equip_weapon1" width="117.6" height="24" x="536" y="12.66"/>
+			<e:Image id="equip_protected1" width="117.6" height="24" x="536" y="44"/>
+			<e:Image id="horseAtk1" width="117.6" height="24" x="536" y="76"/>
+			<e:Image id="horseProt1" width="117.6" height="24" x="536" y="107.66"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="role" width="740" height="472" y="100" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+	<e:Image id="close_btn" source="upgrade_close_btn_png" width="51.6" height="55.199999999999996" x="1084.4" y="0"/>
+</e:Skin>

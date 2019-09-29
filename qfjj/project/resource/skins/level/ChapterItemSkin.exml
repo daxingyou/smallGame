@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChapterItemSkin" width="223" height="198" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img" anchorOffsetX="0" anchorOffsetY="0" source="level_1_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="name_label" text="" horizontalCenter="0" top="0" visible="false"/>
+</e:Skin>

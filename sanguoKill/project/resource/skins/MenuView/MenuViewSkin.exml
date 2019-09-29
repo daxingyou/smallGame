@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MenuViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="menu_bg_jpg" width="1152" horizontalCenter="0" verticalCenter="0" scaleX="1" scaleY="1" height="768"/>
+	<e:Image id="back_btn" source="menu_back_btn_png" y="422.33" scaleX="1" scaleY="1" width="210" height="51.6" x="463"/>
+	<e:Image id="bag_btn" source="menu_bag_btn_png" y="341" horizontalCenter="0" scaleX="1" scaleY="1" width="210" height="51.6"/>
+	<e:Image id="shop_btn" source="menu_shop_btn_png" y="260" scaleX="1" scaleY="1" width="210" height="51.6" x="463"/>
+	<e:Image id="upgrade_btn" source="menu_upgrade_btn_png" y="178" scaleX="1" scaleY="1" width="210" height="51.6" x="463"/>
+</e:Skin>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OwnHeroItemSkin" width="260" height="118" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" left="0" top="0" anchorOffsetX="0" width="259">
+		<e:Image source="equipBg_png" x="0" y="2"/>
+		<e:Image id="weaponImg" width="98" height="20" x="27" y="15"/>
+		<e:Image id="protectedImg" width="98" height="20" x="27" y="41"/>
+		<e:Image id="horseAtkImg" width="98" height="20" x="27" y="67"/>
+		<e:Image id="horseProtImg" width="98" height="20" x="27" y="93"/>
+		<e:Image id="heroImg" source="role_0_png" x="68" y="10"/>
+		<e:Rect width="98.5" height="41.17" x="69" y="70.83" alpha="1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label text="生命值" x="74.33" y="75.98" size="14" fontFamily="yt"/>
+		<e:Label id="hpLab" text="100/120" x="74.49" y="94.34" size="14" fontFamily="yt"/>
+		<e:Image source="role_bg_png" x="57" y="0"/>
+		<e:Group id="operGroup" x="192.03" y="20.31" touchChildren="true" touchEnabled="false" touchThrough="true">
+			<e:Image id="killBtn" source="open_atk_png" x="0" y="0"/>
+			<e:Image id="propBtn" source="oper_prop_png" x="0" y="49.86"/>
+		</e:Group>
+		<e:Rect id="effpoint" width="20" height="20" x="119.82" y="101.42" anchorOffsetX="9.33" anchorOffsetY="10" touchChildren="false" touchEnabled="false" alpha="0"/>
+	</e:Group>
+</e:Skin>

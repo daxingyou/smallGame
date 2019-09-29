@@ -1,0 +1,76 @@
+{"mc":{
+	"border":{
+		"frameRate":12,
+		"labels":[
+			{"name":"run","frame":1,"end":10}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"Image 1_png",
+			"x":0,
+			"y":-2
+			},
+			{
+			"res":"Image 2_png",
+			"x":-1,
+			"y":-2
+			},
+			{
+			"res":"Image 3_png",
+			"x":-1,
+			"y":-1
+			},
+			{
+			"res":"Image 4_png",
+			"x":-1,
+			"y":-2
+			},
+			{
+			"res":"Image 5_png",
+			"x":-1,
+			"y":-2
+			},
+			{
+			"res":"Image 6_png",
+			"x":0,
+			"y":-2
+			},
+			{
+			"res":"Image 7_png",
+			"x":-1,
+			"y":-2
+			},
+			{
+			"res":"Image 8_png",
+			"x":-1,
+			"y":-2
+			},
+			{
+			"res":"Image 9_png",
+			"x":0,
+			"y":-2
+			},
+			{
+			"res":"Image 10_png",
+			"x":0,
+			"y":-2
+			}
+			]
+}},
+	"res":{
+		"Image 1_png":{"x":147,"y":152,"w":70,"h":74},
+		"Image 10_png":{"x":0,"y":152,"w":70,"h":74},
+		"Image 5_png":{"x":74,"y":151,"w":71,"h":74},
+		"Image 6_png":{"x":148,"y":76,"w":71,"h":74},
+		"Image 8_png":{"x":148,"y":0,"w":72,"h":74},
+		"Image 9_png":{"x":72,"y":227,"w":70,"h":74},
+		"Image 3_png":{"x":74,"y":76,"w":72,"h":73},
+		"Image 4_png":{"x":0,"y":0,"w":72,"h":74},
+		"Image 7_png":{"x":74,"y":0,"w":72,"h":74},
+		"Image 2_png":{"x":0,"y":76,"w":72,"h":74}
+	}}

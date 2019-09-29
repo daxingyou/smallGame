@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SetViewSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="960" height="640" x="0" y="0">
+        <e:Image id="setViewBg" width="960" height="640" x="0" y="0" source="menuViewBg_jpg"/>
+		<e:Image id="setView_xian1" width="711" height="10.97" x="124.5" y="128.48" anchorOffsetX="0" anchorOffsetY="0" source="menuView_xian_png"/>
+        <e:Image id="setView_xian2" width="711" height="10.97" x="124.5" y="504.24" anchorOffsetX="0" anchorOffsetY="0" source="menuView_xian_png"/>
+		<e:Image id="setView_black" width="960" height="373.52" x="480" y="320.09" anchorOffsetX="480" anchorOffsetY="186.76" source="menuView_black_png"/>
+        <e:Image id="setView_btn4" width="175" height="43" x="391.32" y="418.45" source="menuView_btn_png"/>
+		<e:Image id="setView_label4" width="175" height="43" x="391.32" y="418.45" source="menuView_label4_png"/>
+		<e:Image id="setView_yinliang" width="124" height="32" x="145" y="212" source="setView_yinliang_png"/>
+		<e:Image id="setView_lianxian" width="192" height="9" x="124.5" y="287" anchorOffsetX="0" anchorOffsetY="0" source="setView_lianxian_jpg"/>
+		<e:Image id="setView_niu" width="34" height="34" x="116.5" y="289.5" source="setView_niu_png" anchorOffsetX="17" anchorOffsetY="17"/>
+	</e:Group>
+</e:Skin>

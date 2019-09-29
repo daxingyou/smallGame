@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelSelectViewSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="common_bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:List id="list" width="600.37" anchorOffsetX="0" anchorOffsetY="0" top="173" horizontalCenter="1" bottom="64">
+		<e:layout>
+			<e:TileLayout rowAlign="top" columnAlign="justifyUsingGap" horizontalAlign="center" verticalAlign="top"/>
+		</e:layout>
+	</e:List>
+	<e:Image source="common_title_bg_png" horizontalCenter="0.5" top="41"/>
+	<e:Label id="title" text="帝国の入り口" anchorOffsetX="0" width="197.5" anchorOffsetY="0" height="57" textAlign="center" verticalAlign="middle" horizontalCenter="2.5" top="47" textColor="0xf79f0e"/>
+</e:Skin>

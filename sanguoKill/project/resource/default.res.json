@@ -1,0 +1,1143 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,vitural_bg_png,vitural_point_png,config_zip,map_json,progress_bg_png,progress_pro_png,bg_png,egret_icon_png,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,tipsBg_png,10003_jpg,10000_jpg,10001_jpg,10002_jpg,10004_jpg,10005_jpg,10006_jpg,10007_jpg,10008_jpg,10009_jpg,10010_jpg,10011_jpg,10012_jpg,10013_jpg,10014_jpg,10015_jpg,10016_jpg,10017_jpg,10018_jpg,10019_jpg,10020_jpg,10021_jpg,10022_jpg,10023_jpg,10024_jpg,10025_jpg,10026_jpg,10027_jpg,10028_jpg,10029_jpg,10030_jpg,10031_jpg,10032_jpg,10033_jpg,10034_jpg,10035_jpg,10036_jpg,10037_jpg,10038_jpg,10039_jpg,10040_jpg,menu_shop_btn_png,menu_bag_btn_png,menu_back_btn_png,menu_upgrade_btn_png,menu_bg_jpg,upgrade_equip_bg_png,upgrade_icon_1_png,upgrade_icon_bg_png,upgrade_icon_0_png,upgrade_icon_2_png,upgrade_close_btn_png,upgrade_line_png,upgrade_property_png,upgrade_mount_png,select_bg_png,select_card_0_png,select_confirm_png,select_cancel_png,upgrade_10000_jpg,upgrade_10001_jpg,upgrade_10002_jpg,upgrade_10003_jpg,upgrade_10004_jpg,upgrade_10005_jpg,upgrade_10006_jpg,upgrade_10007_jpg,upgrade_10008_jpg,upgrade_10009_jpg,upgrade_10010_jpg,upgrade_10011_jpg,upgrade_10012_jpg,upgrade_10013_jpg,upgrade_10014_jpg,upgrade_10018_jpg,upgrade_10019_jpg,upgrade_10020_jpg,upgrade_10021_jpg,upgrade_10022_jpg,upgrade_10023_jpg,upgrade_10015_jpg,upgrade_10016_jpg,upgrade_10017_jpg,upgrade_10024_jpg,upgrade_10025_jpg,upgrade_10026_jpg,upgrade_10027_jpg,select_item_kuang_png,shop_bg_jpg,shop_kuang_png,shop_close_1_png,shop_close_0_png,direction_jiantou_0_png,direction_jiantou_1_png,add_jiantou_1_png,add_jiantou_0_png,shop_prop_png,shop_protection_png,shop_weapon_png,shop_btn_0_png,shop_btn_1_png,shop_name_kuang_png,shop_tip_bg_jpg,shop_buy_btn0_png,shop_buy_btn1_png,shop_buy_text_png,shop_buy_num_bg_png,shop_text_png,queding_1_png,queding_0_png,bag_item_bg_png,bag_xian_png,bag_up_1_png,bag_up_0_png,bag_zhuang_1_png,bag_zhuang_0_png,bag_sell_1_png,bag_sell_0_png,guan_png,liu_png,zhang_png,chapter_json,beginView_btn2_png,beginView_btn1_png,beginView_name_png,beginView_login_png,beginView_bg_jpg,selectFightView_A_png,selectFightView_caidan_png,selectFightView_B_png,selectFightView_map_png,selectFightView_up_png,selectFightView_zhan_png,selectFightView_bg_jpg,selectFightView_chuzhan_png,selectFightView_kuang_png,setView_niu_png,setView_lianxian_jpg,setView_yinliang_png,image 636_png,arrow_png,bag_text_png,selectFightView_quan_png,selectFightView_yuan_png,select_left_bg_png",
+			"name": "preload"
+		},
+		{
+			"keys": "start_btn_png,start_bg_jpg",
+			"name": "start"
+		},
+		{
+			"keys": "button_bg_png,continue_title_png,enemy_atk_title_png,equipBg_png,exit_title_png,fail_title_png,mark_le_png,mark_r_atk_png,mark_r_pro_png,menu_title_png,menuBtn_down_png,menuBtn_up_png,open_atk_png,oper_prop_png,own_atk_title_png,role_0_png,role_1_png,role_2_png,role_bg_png,scene_1_jpg,top_bg_png,wain_title_png,settingbg_jpg,h_line_png,common_bg_png,loading_btm_png,prop_bg_png,cancleBtn_down_png,cancleBtn_up_png,sureBtn_down_png,sureBtn_up_png,propFocus_png,closeBtn_down_png,closeBtn_up_png,effbg_jpg,effline_png,role_eff_0_png,role_eff_1_png,role_eff_2_png,failbg_jpg,winbg_jpg,guide_role_png",
+			"name": "battleView"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "res/common/vitural_bg.png",
+			"type": "image",
+			"name": "vitural_bg_png"
+		},
+		{
+			"url": "res/common/vitural_point.png",
+			"type": "image",
+			"name": "vitural_point_png"
+		},
+		{
+			"url": "config/config.zip",
+			"type": "bin",
+			"name": "config_zip"
+		},
+		{
+			"url": "map/map.json",
+			"type": "json",
+			"name": "map_json"
+		},
+		{
+			"url": "res/common/progress_bg.png",
+			"type": "image",
+			"name": "progress_bg_png"
+		},
+		{
+			"url": "res/common/progress_pro.png",
+			"type": "image",
+			"name": "progress_pro_png"
+		},
+		{
+			"url": "assets/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "res/common/tipsBg.png",
+			"type": "image",
+			"name": "tipsBg_png"
+		},
+		{
+			"url": "res/view/start/start_bg.jpg",
+			"type": "image",
+			"name": "start_bg_jpg"
+		},
+		{
+			"url": "res/view/start/start_btn.png",
+			"type": "image",
+			"name": "start_btn_png"
+		},
+		{
+			"url": "res/view/menu/menu_shop_btn.png",
+			"type": "image",
+			"name": "menu_shop_btn_png"
+		},
+		{
+			"url": "res/view/menu/menu_bag_btn.png",
+			"type": "image",
+			"name": "menu_bag_btn_png"
+		},
+		{
+			"url": "res/view/menu/menu_back_btn.png",
+			"type": "image",
+			"name": "menu_back_btn_png"
+		},
+		{
+			"url": "res/view/menu/menu_upgrade_btn.png",
+			"type": "image",
+			"name": "menu_upgrade_btn_png"
+		},
+		{
+			"url": "res/view/menu/menu_bg.jpg",
+			"type": "image",
+			"name": "menu_bg_jpg"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_equip_bg.png",
+			"type": "image",
+			"name": "upgrade_equip_bg_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_icon_1.png",
+			"type": "image",
+			"name": "upgrade_icon_1_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_icon_bg.png",
+			"type": "image",
+			"name": "upgrade_icon_bg_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_icon_0.png",
+			"type": "image",
+			"name": "upgrade_icon_0_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_icon_2.png",
+			"type": "image",
+			"name": "upgrade_icon_2_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_close_btn.png",
+			"type": "image",
+			"name": "upgrade_close_btn_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_line.png",
+			"type": "image",
+			"name": "upgrade_line_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_property.png",
+			"type": "image",
+			"name": "upgrade_property_png"
+		},
+		{
+			"url": "res/view/upgrade/upgrade_mount.png",
+			"type": "image",
+			"name": "upgrade_mount_png"
+		},
+		{
+			"url": "res/view/select/select_bg.png",
+			"type": "image",
+			"name": "select_bg_png"
+		},
+		{
+			"url": "res/view/select/select_card_0.png",
+			"type": "image",
+			"name": "select_card_0_png"
+		},
+		{
+			"url": "res/view/select/select_confirm.png",
+			"type": "image",
+			"name": "select_confirm_png"
+		},
+		{
+			"url": "res/view/select/select_cancel.png",
+			"type": "image",
+			"name": "select_cancel_png"
+		},
+		{
+			"url": "res/view/battleView/button_bg.png",
+			"type": "image",
+			"name": "button_bg_png"
+		},
+		{
+			"url": "res/view/battleView/continue_title.png",
+			"type": "image",
+			"name": "continue_title_png"
+		},
+		{
+			"url": "res/view/battleView/enemy_atk_title.png",
+			"type": "image",
+			"name": "enemy_atk_title_png"
+		},
+		{
+			"url": "res/view/battleView/equipBg.png",
+			"type": "image",
+			"name": "equipBg_png"
+		},
+		{
+			"url": "res/view/battleView/exit_title.png",
+			"type": "image",
+			"name": "exit_title_png"
+		},
+		{
+			"url": "res/view/battleView/fail_title.png",
+			"type": "image",
+			"name": "fail_title_png"
+		},
+		{
+			"url": "res/view/battleView/mark_le.png",
+			"type": "image",
+			"name": "mark_le_png"
+		},
+		{
+			"url": "res/view/battleView/mark_r_atk.png",
+			"type": "image",
+			"name": "mark_r_atk_png"
+		},
+		{
+			"url": "res/view/battleView/mark_r_pro.png",
+			"type": "image",
+			"name": "mark_r_pro_png"
+		},
+		{
+			"url": "res/view/battleView/menu_title.png",
+			"type": "image",
+			"name": "menu_title_png"
+		},
+		{
+			"url": "res/view/battleView/menuBtn_down.png",
+			"type": "image",
+			"name": "menuBtn_down_png"
+		},
+		{
+			"url": "res/view/battleView/menuBtn_up.png",
+			"type": "image",
+			"name": "menuBtn_up_png"
+		},
+		{
+			"url": "res/view/battleView/open_atk.png",
+			"type": "image",
+			"name": "open_atk_png"
+		},
+		{
+			"url": "res/view/battleView/oper_prop.png",
+			"type": "image",
+			"name": "oper_prop_png"
+		},
+		{
+			"url": "res/view/battleView/own_atk_title.png",
+			"type": "image",
+			"name": "own_atk_title_png"
+		},
+		{
+			"url": "res/view/battleView/role_0.png",
+			"type": "image",
+			"name": "role_0_png"
+		},
+		{
+			"url": "res/view/battleView/role_1.png",
+			"type": "image",
+			"name": "role_1_png"
+		},
+		{
+			"url": "res/view/battleView/role_2.png",
+			"type": "image",
+			"name": "role_2_png"
+		},
+		{
+			"url": "res/view/battleView/role_bg.png",
+			"type": "image",
+			"name": "role_bg_png"
+		},
+		{
+			"url": "res/view/battleView/scene_1.jpg",
+			"type": "image",
+			"name": "scene_1_jpg"
+		},
+		{
+			"url": "res/view/battleView/top_bg.png",
+			"type": "image",
+			"name": "top_bg_png"
+		},
+		{
+			"url": "res/view/battleView/wain_title.png",
+			"type": "image",
+			"name": "wain_title_png"
+		},
+		{
+			"url": "res/view/battleView/loading_btm.png",
+			"type": "image",
+			"name": "loading_btm_png"
+		},
+		{
+			"url": "res/view/battleView/settingbg.jpg",
+			"type": "image",
+			"name": "settingbg_jpg"
+		},
+		{
+			"url": "res/view/battleView/h_line.png",
+			"type": "image",
+			"name": "h_line_png"
+		},
+		{
+			"url": "res/view/battleView/common_bg.png",
+			"type": "image",
+			"name": "common_bg_png"
+		},
+		{
+			"url": "res/view/shopView/card/10003.jpg",
+			"type": "image",
+			"name": "10003_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10000.jpg",
+			"type": "image",
+			"name": "10000_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10001.jpg",
+			"type": "image",
+			"name": "10001_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10002.jpg",
+			"type": "image",
+			"name": "10002_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10004.jpg",
+			"type": "image",
+			"name": "10004_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10005.jpg",
+			"type": "image",
+			"name": "10005_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10006.jpg",
+			"type": "image",
+			"name": "10006_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10007.jpg",
+			"type": "image",
+			"name": "10007_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10008.jpg",
+			"type": "image",
+			"name": "10008_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10009.jpg",
+			"type": "image",
+			"name": "10009_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10010.jpg",
+			"type": "image",
+			"name": "10010_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10011.jpg",
+			"type": "image",
+			"name": "10011_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10012.jpg",
+			"type": "image",
+			"name": "10012_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10013.jpg",
+			"type": "image",
+			"name": "10013_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10014.jpg",
+			"type": "image",
+			"name": "10014_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10015.jpg",
+			"type": "image",
+			"name": "10015_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10016.jpg",
+			"type": "image",
+			"name": "10016_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10017.jpg",
+			"type": "image",
+			"name": "10017_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10018.jpg",
+			"type": "image",
+			"name": "10018_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10019.jpg",
+			"type": "image",
+			"name": "10019_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10020.jpg",
+			"type": "image",
+			"name": "10020_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10021.jpg",
+			"type": "image",
+			"name": "10021_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10022.jpg",
+			"type": "image",
+			"name": "10022_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10023.jpg",
+			"type": "image",
+			"name": "10023_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10024.jpg",
+			"type": "image",
+			"name": "10024_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10025.jpg",
+			"type": "image",
+			"name": "10025_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10026.jpg",
+			"type": "image",
+			"name": "10026_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10027.jpg",
+			"type": "image",
+			"name": "10027_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10028.jpg",
+			"type": "image",
+			"name": "10028_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10029.jpg",
+			"type": "image",
+			"name": "10029_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10030.jpg",
+			"type": "image",
+			"name": "10030_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10031.jpg",
+			"type": "image",
+			"name": "10031_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10032.jpg",
+			"type": "image",
+			"name": "10032_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10033.jpg",
+			"type": "image",
+			"name": "10033_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10034.jpg",
+			"type": "image",
+			"name": "10034_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10035.jpg",
+			"type": "image",
+			"name": "10035_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10036.jpg",
+			"type": "image",
+			"name": "10036_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10037.jpg",
+			"type": "image",
+			"name": "10037_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10038.jpg",
+			"type": "image",
+			"name": "10038_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10039.jpg",
+			"type": "image",
+			"name": "10039_jpg"
+		},
+		{
+			"url": "res/view/shopView/card/10040.jpg",
+			"type": "image",
+			"name": "10040_jpg"
+		},
+		{
+			"url": "res/view/battleView/prop_bg.png",
+			"type": "image",
+			"name": "prop_bg_png"
+		},
+		{
+			"url": "res/view/battleView/cancleBtn_down.png",
+			"type": "image",
+			"name": "cancleBtn_down_png"
+		},
+		{
+			"url": "res/view/battleView/cancleBtn_up.png",
+			"type": "image",
+			"name": "cancleBtn_up_png"
+		},
+		{
+			"url": "res/view/battleView/sureBtn_down.png",
+			"type": "image",
+			"name": "sureBtn_down_png"
+		},
+		{
+			"url": "res/view/battleView/sureBtn_up.png",
+			"type": "image",
+			"name": "sureBtn_up_png"
+		},
+		{
+			"url": "res/view/battleView/propFocus.png",
+			"type": "image",
+			"name": "propFocus_png"
+		},
+		{
+			"url": "res/view/battleView/closeBtn_down.png",
+			"type": "image",
+			"name": "closeBtn_down_png"
+		},
+		{
+			"url": "res/view/battleView/closeBtn_up.png",
+			"type": "image",
+			"name": "closeBtn_up_png"
+		},
+		{
+			"url": "res/view/battleView/effbg.jpg",
+			"type": "image",
+			"name": "effbg_jpg"
+		},
+		{
+			"url": "res/view/battleView/effline.png",
+			"type": "image",
+			"name": "effline_png"
+		},
+		{
+			"url": "res/view/battleView/role_eff_0.png",
+			"type": "image",
+			"name": "role_eff_0_png"
+		},
+		{
+			"url": "res/view/battleView/role_eff_1.png",
+			"type": "image",
+			"name": "role_eff_1_png"
+		},
+		{
+			"url": "res/view/battleView/role_eff_2.png",
+			"type": "image",
+			"name": "role_eff_2_png"
+		},
+		{
+			"url": "res/view/result/failbg.jpg",
+			"type": "image",
+			"name": "failbg_jpg"
+		},
+		{
+			"url": "res/view/result/winbg.jpg",
+			"type": "image",
+			"name": "winbg_jpg"
+		},
+		{
+			"url": "res/view/shopView/shop_bg.jpg",
+			"type": "image",
+			"name": "shop_bg_jpg"
+		},
+		{
+			"url": "res/view/shopView/shop_kuang.png",
+			"type": "image",
+			"name": "shop_kuang_png"
+		},
+		{
+			"url": "res/view/shopView/shop_close_1.png",
+			"type": "image",
+			"name": "shop_close_1_png"
+		},
+		{
+			"url": "res/view/shopView/shop_close_0.png",
+			"type": "image",
+			"name": "shop_close_0_png"
+		},
+		{
+			"url": "res/view/shopView/direction_jiantou_0.png",
+			"type": "image",
+			"name": "direction_jiantou_0_png"
+		},
+		{
+			"url": "res/view/shopView/direction_jiantou_1.png",
+			"type": "image",
+			"name": "direction_jiantou_1_png"
+		},
+		{
+			"url": "res/view/shopView/add_jiantou_1.png",
+			"type": "image",
+			"name": "add_jiantou_1_png"
+		},
+		{
+			"url": "res/view/shopView/add_jiantou_0.png",
+			"type": "image",
+			"name": "add_jiantou_0_png"
+		},
+		{
+			"url": "res/view/shopView/shop_prop.png",
+			"type": "image",
+			"name": "shop_prop_png"
+		},
+		{
+			"url": "res/view/shopView/shop_protection.png",
+			"type": "image",
+			"name": "shop_protection_png"
+		},
+		{
+			"url": "res/view/shopView/shop_weapon.png",
+			"type": "image",
+			"name": "shop_weapon_png"
+		},
+		{
+			"url": "res/view/shopView/shop_btn_0.png",
+			"type": "image",
+			"name": "shop_btn_0_png"
+		},
+		{
+			"url": "res/view/shopView/shop_btn_1.png",
+			"type": "image",
+			"name": "shop_btn_1_png"
+		},
+		{
+			"url": "res/view/shopView/shop_name_kuang.png",
+			"type": "image",
+			"name": "shop_name_kuang_png"
+		},
+		{
+			"url": "res/view/shopView/shop_tip_bg.jpg",
+			"type": "image",
+			"name": "shop_tip_bg_jpg"
+		},
+		{
+			"url": "res/view/shopView/shop_buy_btn0.png",
+			"type": "image",
+			"name": "shop_buy_btn0_png"
+		},
+		{
+			"url": "res/view/shopView/shop_buy_btn1.png",
+			"type": "image",
+			"name": "shop_buy_btn1_png"
+		},
+		{
+			"url": "res/view/shopView/shop_buy_text.png",
+			"type": "image",
+			"name": "shop_buy_text_png"
+		},
+		{
+			"url": "res/view/shopView/shop_buy_num_bg.png",
+			"type": "image",
+			"name": "shop_buy_num_bg_png"
+		},
+		{
+			"url": "res/view/shopView/shop_text.png",
+			"type": "image",
+			"name": "shop_text_png"
+		},
+		{
+			"url": "res/view/shopView/queding_1.png",
+			"type": "image",
+			"name": "queding_1_png"
+		},
+		{
+			"url": "res/view/shopView/queding_0.png",
+			"type": "image",
+			"name": "queding_0_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_item_bg.png",
+			"type": "image",
+			"name": "bag_item_bg_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_xian.png",
+			"type": "image",
+			"name": "bag_xian_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_up_1.png",
+			"type": "image",
+			"name": "bag_up_1_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_up_0.png",
+			"type": "image",
+			"name": "bag_up_0_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_zhuang_1.png",
+			"type": "image",
+			"name": "bag_zhuang_1_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_zhuang_0.png",
+			"type": "image",
+			"name": "bag_zhuang_0_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_sell_1.png",
+			"type": "image",
+			"name": "bag_sell_1_png"
+		},
+		{
+			"url": "res/view/bagIView/bag_sell_0.png",
+			"type": "image",
+			"name": "bag_sell_0_png"
+		},
+		{
+			"url": "res/view/bagIView/guan.png",
+			"type": "image",
+			"name": "guan_png"
+		},
+		{
+			"url": "res/view/bagIView/liu.png",
+			"type": "image",
+			"name": "liu_png"
+		},
+		{
+			"url": "res/view/bagIView/zhang.png",
+			"type": "image",
+			"name": "zhang_png"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10000.jpg",
+			"type": "image",
+			"name": "upgrade_10000_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10001.jpg",
+			"type": "image",
+			"name": "upgrade_10001_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10002.jpg",
+			"type": "image",
+			"name": "upgrade_10002_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10003.jpg",
+			"type": "image",
+			"name": "upgrade_10003_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10004.jpg",
+			"type": "image",
+			"name": "upgrade_10004_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10005.jpg",
+			"type": "image",
+			"name": "upgrade_10005_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10006.jpg",
+			"type": "image",
+			"name": "upgrade_10006_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10007.jpg",
+			"type": "image",
+			"name": "upgrade_10007_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10008.jpg",
+			"type": "image",
+			"name": "upgrade_10008_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10009.jpg",
+			"type": "image",
+			"name": "upgrade_10009_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10010.jpg",
+			"type": "image",
+			"name": "upgrade_10010_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10011.jpg",
+			"type": "image",
+			"name": "upgrade_10011_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10012.jpg",
+			"type": "image",
+			"name": "upgrade_10012_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10013.jpg",
+			"type": "image",
+			"name": "upgrade_10013_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10014.jpg",
+			"type": "image",
+			"name": "upgrade_10014_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10018.jpg",
+			"type": "image",
+			"name": "upgrade_10018_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10019.jpg",
+			"type": "image",
+			"name": "upgrade_10019_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10020.jpg",
+			"type": "image",
+			"name": "upgrade_10020_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10021.jpg",
+			"type": "image",
+			"name": "upgrade_10021_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10022.jpg",
+			"type": "image",
+			"name": "upgrade_10022_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10023.jpg",
+			"type": "image",
+			"name": "upgrade_10023_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10015.jpg",
+			"type": "image",
+			"name": "upgrade_10015_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10016.jpg",
+			"type": "image",
+			"name": "upgrade_10016_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10017.jpg",
+			"type": "image",
+			"name": "upgrade_10017_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10024.jpg",
+			"type": "image",
+			"name": "upgrade_10024_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10025.jpg",
+			"type": "image",
+			"name": "upgrade_10025_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10026.jpg",
+			"type": "image",
+			"name": "upgrade_10026_jpg"
+		},
+		{
+			"url": "res/view/upgrade/card/upgrade_10027.jpg",
+			"type": "image",
+			"name": "upgrade_10027_jpg"
+		},
+		{
+			"url": "res/view/select/select_item_kuang.png",
+			"type": "image",
+			"name": "select_item_kuang_png"
+		},
+		{
+			"url": "config/chapter.json",
+			"type": "json",
+			"name": "chapter_json"
+		},
+		{
+			"url": "res/beginView/beginView_btn2.png",
+			"type": "image",
+			"name": "beginView_btn2_png"
+		},
+		{
+			"url": "res/beginView/beginView_btn1.png",
+			"type": "image",
+			"name": "beginView_btn1_png"
+		},
+		{
+			"url": "res/beginView/beginView_name.png",
+			"type": "image",
+			"name": "beginView_name_png"
+		},
+		{
+			"url": "res/beginView/beginView_login.png",
+			"type": "image",
+			"name": "beginView_login_png"
+		},
+		{
+			"url": "res/beginView/beginView_bg.jpg",
+			"type": "image",
+			"name": "beginView_bg_jpg"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_A.png",
+			"type": "image",
+			"name": "selectFightView_A_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_caidan.png",
+			"type": "image",
+			"name": "selectFightView_caidan_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_B.png",
+			"type": "image",
+			"name": "selectFightView_B_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_map.png",
+			"type": "image",
+			"name": "selectFightView_map_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_up.png",
+			"type": "image",
+			"name": "selectFightView_up_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_zhan.png",
+			"type": "image",
+			"name": "selectFightView_zhan_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_bg.jpg",
+			"type": "image",
+			"name": "selectFightView_bg_jpg"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_chuzhan.png",
+			"type": "image",
+			"name": "selectFightView_chuzhan_png"
+		},
+		{
+			"url": "res/selectFightview/selectFightView_kuang.png",
+			"type": "image",
+			"name": "selectFightView_kuang_png"
+		},
+		{
+			"url": "res/setView/setView_niu.png",
+			"type": "image",
+			"name": "setView_niu_png"
+		},
+		{
+			"url": "res/setView/setView_lianxian.jpg",
+			"type": "image",
+			"name": "setView_lianxian_jpg"
+		},
+		{
+			"url": "res/setView/setView_yinliang.png",
+			"type": "image",
+			"name": "setView_yinliang_png"
+		},
+		{
+			"url": "res/setView/image 636.png",
+			"type": "image",
+			"name": "image 636_png"
+		},
+		{
+			"url": "res/view/battleView/arrow.png",
+			"type": "image",
+			"name": "arrow_png"
+		},
+		{
+			"url": "res/view/battleView/guide_role.png",
+			"type": "image",
+			"name": "guide_role_png"
+		},
+		{
+			"name": "bag_text_png",
+			"type": "image",
+			"url": "res/view/bagIView/bag_text.png"
+		},
+		{
+			"name": "selectFightView_quan_png",
+			"type": "image",
+			"url": "res/selectFightview/selectFightView_quan.png"
+		},
+		{
+			"name": "selectFightView_yuan_png",
+			"type": "image",
+			"url": "res/selectFightview/selectFightView_yuan.png"
+		},
+		{
+			"name": "about_bg_jpg",
+			"type": "image",
+			"url": "res/view/menu/about_bg.jpg"
+		},
+		{
+			"name": "about_btn_1_png",
+			"type": "image",
+			"url": "res/view/menu/about_btn_1.png"
+		},
+		{
+			"name": "about_btn_0_png",
+			"type": "image",
+			"url": "res/view/menu/about_btn_0.png"
+		},
+		{
+			"name": "select_left_bg_png",
+			"type": "image",
+			"url": "res/selectFightview/select_left_bg.png"
+		}
+	]
+}

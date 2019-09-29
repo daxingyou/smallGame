@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainGameViewItemSkin" width="430" height="270" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="itemImg" x="0" y="0" source="select_type_1_png" width="430" height="270"/>
+</e:Skin>

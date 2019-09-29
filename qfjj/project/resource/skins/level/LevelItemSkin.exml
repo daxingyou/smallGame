@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="137">
+	<e:Image id="img" x="0.34" y="0" source="level_s_1_png"/>
+	<e:Image source="bottom_bg_png" x="34.34" y="100"/>
+	<e:Label id="level_label" text="1 - 1" x="27.18" y="105.66" size="20" anchorOffsetX="0" width="106.33" verticalAlign="middle" textAlign="center" anchorOffsetY="0" height="23.67"/>
+</e:Skin>

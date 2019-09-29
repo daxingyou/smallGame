@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PropUseItemSkin" width="71" height="76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" top="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+		<e:Image id="roleImg" source="role_0_png" x="4.5" y="6.32" anchorOffsetX="0" width="62" anchorOffsetY="0" height="62" rotation="360"/>
+		<e:Image id="focusImg" source="propFocus_png" x="0" y="0" anchorOffsetX="0" width="71" anchorOffsetY="0" height="75.55" scale9Grid="32,41,51,62"/>
+	</e:Group>
+</e:Skin>
