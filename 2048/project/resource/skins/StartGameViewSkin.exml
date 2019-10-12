@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGameViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="mainbg_png" left="-56" top="0" right="-54" bottom="0"/>
+	<e:Group right="34" top="26">
+		<e:Image source="gold_png" x="0" y="0"/>
+		<e:Label id="goldLab" text="000" x="60" y="19.17" textColor="0x594a4a" size="20"/>
+	</e:Group>
+	<e:Image source="logo_png" x="22.7" y="26"/>
+	<e:Scroller id="scroller" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off" top="268" bottom="28" right="19" left="24">
+		<e:List id="list" useVirtualLayout="false" anchorOffsetX="0" width="710.12">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

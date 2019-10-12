@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="loadingbg_png" alpha="1" left="0" top="0" right="0" bottom="0"/>
+	<e:Image source="top-lvl_png" scale9Grid="93,350,564,11" anchorOffsetY="0" right="0" left="0" top="0" bottom="0" alpha="0.8"/>
+	<e:Image id="returnBtn" source="btn-back_png" left="30" top="31"/>
+	<e:Label text="闯关目标" textColor="0x8c654f" size="25" horizontalCenter="-97" top="24"/>
+	<e:Label text="当前分数" textColor="0x8C654F" size="25" horizontalCenter="79" top="24"/>
+	<e:Label id="tarScoreLab" text="500" textColor="0x8C654F" size="25" horizontalCenter="-95" top="63"/>
+	<e:Label id="curScoreLab" text="500" textColor="0x8C654F" size="25" horizontalCenter="58" top="63"/>
+	<e:Image source="sign-done_png" horizontalCenter="155" top="11"/>
+	<e:Scroller id="scroller" height="132" anchorOffsetX="0" anchorOffsetY="0" left="0" top="168" right="0" scrollPolicyV="off" bounces="false">
+		<e:List id="list" useVirtualLayout="false">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="left" gap="0"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="playgroup" anchorOffsetX="0" anchorOffsetY="0" top="314" left="0" right="0" bottom="0">
+	</e:Group>
+	<e:Group id="guideGroup" left="0" right="0" top="0" bottom="0">
+		<e:Rect alpha="0.3" left="0" top="0" right="0" bottom="0"/>
+		<e:Image id="ownIcon" source="guider_png" y="707.45" x="21.21"/>
+		<e:Image source="pop_png" x="15" y="1046"/>
+		<e:Label id="nameLab" text="我：" x="91" y="1067.45" textColor="0x665151" size="25"/>
+		<e:Label id="wordLab" text="这是一段对话" x="107.67" y="1101.14" textColor="0x665151" anchorOffsetY="0" height="92.13" anchorOffsetX="0" width="550.91" size="20"/>
+	</e:Group>
+</e:Skin>

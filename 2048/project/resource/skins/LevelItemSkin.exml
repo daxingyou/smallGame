@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelItemSkin" width="640" height="217" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon" source="level_1_png" y="0"/>
+	<e:Image id="lockImg" source="sign-look_png" x="237" y="0"/>
+</e:Skin>

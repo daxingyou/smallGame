@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rect" left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="box_png" x="0" y="0"/>
+		<e:Label text="已无路可走～" y="99" textColor="0x5b4e4e" size="30" x="236"/>
+		<e:Group id="resetBtn" x="67.5" y="235" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="reset_png" x="0" y="0"/>
+			<e:Label text="重新开始" x="69.5" y="29.5"/>
+		</e:Group>
+		<e:Group id="sureBtn" x="354.5" y="235" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="reset_png" x="0" y="0"/>
+			<e:Label text="确定" x="99.5" y="29.5"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>
