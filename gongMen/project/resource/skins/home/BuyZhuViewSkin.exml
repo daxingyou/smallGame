@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BuyZhuViewSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect fillAlpha="0.4" left="0" top="0" bottom="0" right="0"/>
+	<e:Group horizontalCenter="0.5" verticalCenter="-50.5">
+		<e:Image source="img_dh_content_bg_png" x="0" y="0" scale9Grid="146,117,39,26" anchorOffsetX="0" width="496.67" anchorOffsetY="0" height="359"/>
+		<e:Label text="购买五彩珠" x="122.69" y="28.18" anchorOffsetX="0" width="182" anchorOffsetY="0" height="43.33" verticalAlign="middle" size="34"/>
+		<e:Image id="back_img" source="btn_wucai_cancel_png" x="429.67" y="11.03"/>
+		<e:Label text="购买数量：" x="59.7" y="125.83" textColor="0x070707"/>
+		<e:Label text="花费金币：" x="59.7" y="188.2" textColor="0x070707"/>
+		<e:Button id="confirm_img" label="确   定" x="157.66" y="254.2">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_first_dh_sure_png" source.down="btn_first_dh_sure_png" source.disabled="btn_first_dh_sure_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Rect width="253.34" height="53.33" x="201.69" y="176.53" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x987af4" ellipseHeight="50" ellipseWidth="50"/>
+		<e:Rect width="141.34" height="53.33" x="261.02" y="114.17" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x987AF4" ellipseHeight="50" ellipseWidth="50"/>
+		<e:Image id="sub_btn" source="btn_wucai_duihuan_delete_png" x="206.02" y="112.5"/>
+		<e:Image id="add_btn" source="btn_wucai_duihuan_add_png" x="400.84" y="112.84"/>
+		<e:Label id="gold_label" text="100" x="226.03" y="185.54" anchorOffsetX="0" width="207.33" anchorOffsetY="0" height="35.33" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="num_label" text="1" x="268.19" y="119.67" anchorOffsetX="0" width="129.99" anchorOffsetY="0" height="43.33" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+</e:Skin>

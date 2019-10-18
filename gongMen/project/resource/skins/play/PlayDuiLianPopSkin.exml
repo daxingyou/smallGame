@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayDuiLianPopSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="img_duilian_bg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Label text="猜对联" horizontalCenter="8" top="29" textColor="0x934e1c"/>
+	<e:Image id="returnBtn" source="btn_global_back_png" x="4" y="2"/>
+	<e:Image id="infoBtn" source="btn_youwan_help_click_png" right="12" top="21"/>
+	<e:Group horizontalCenter="0" top="143" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image id="roleImg" source="img_syn_half_normal_01_png" x="0" y="0" anchorOffsetX="0" width="158" anchorOffsetY="0" height="287.22"/>
+		<e:Image source="img_duilian_content_bg_png" x="4" y="259" scale9Grid="115,73,38,11" anchorOffsetY="0" height="292" anchorOffsetX="0" width="466"/>
+		<e:Image id="sureBtn" source="btn_duilian_result_good_png" x="123" y="571"/>
+		<e:Image id="wrongBtn" source="btn_duilian_result_bad_png" x="263" y="571"/>
+		<e:Label text="上联:" x="100" y="329.67" textColor="0xa58066" size="20"/>
+		<e:Label id="up" text="上联:" x="155.34" y="329.67" textColor="0xA58066" size="20" anchorOffsetX="0" width="265.33"/>
+		<e:Label id="down" text="上联:" x="153.99" y="369" textColor="0xA58066" size="20" anchorOffsetX="0" width="265.33"/>
+		<e:Label text="下联:" x="100" y="369" textColor="0xA58066" size="20"/>
+	</e:Group>
+</e:Skin>

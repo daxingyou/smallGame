@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RewardPopSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+		<e:Image source="img_tip_help_bg_png" x="0" y="0" anchorOffsetX="0" width="412" anchorOffsetY="0" height="544.34" scale9Grid="66,224,400,118"/>
+		<e:Image source="img_bottom_continue_tip_png" x="106" y="544.34"/>
+		<e:Label id="title" text="奖励" x="186" y="51.52" textColor="0xed8c3d" size="20"/>
+		<e:Label id="cnt" text="您在乐山游玩" x="53" y="102" textColor="0xed8c3d" size="20" anchorOffsetY="0" height="392.73" anchorOffsetX="0" width="303.33"/>
+	</e:Group>
+</e:Skin>

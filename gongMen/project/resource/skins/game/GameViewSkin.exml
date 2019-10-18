@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameViewSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_img" source="img_juqing_bg_01_01_jpg" left="0" top="0" bottom="0" right="0"/>
+	<e:Image id="back_img" source="btn_global_back_png" scaleX="0.8" scaleY="0.8" left="9" top="11"/>
+	<e:Group width="492" height="610.67" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="2" bottom="8">
+		<e:Image id="img" scaleX="1" scaleY="1" x="235" bottom="193.66999999999996" source=""/>
+		<e:Image source="img_syn_des_bottom_png" x="-1.160000000000002" y="400.33999999999986" scale9Grid="33,54,123,27" anchorOffsetX="0" width="490.33" anchorOffsetY="0" height="210.34" scaleX="1" scaleY="1"/>
+		<e:Image source="img_syn_text_name_png" x="25.489999999999995" y="378.1799999999999" scaleX="1" scaleY="1"/>
+		<e:Label id="role_dialogue" text="Label" x="14.479999999999997" y="425.1799999999999" anchorOffsetX="0" width="462" anchorOffsetY="0" height="143.33" verticalAlign="middle" textAlign="center" textColor="0xbf5122" scaleX="1" scaleY="1" size="24"/>
+		<e:Image id="auto_btn" source="btn_syn_auto_next_png" x="335.83" y="549.1700000000001" scaleX="1" scaleY="1"/>
+		<e:Label id="role_name" text="Label" x="42.48" y="378.18" anchorOffsetX="0" width="131.33" anchorOffsetY="0" height="39.33" verticalAlign="middle" textAlign="center" size="24" textColor="0xbf5122"/>
+	</e:Group>
+	<e:Image id="jump_img" source="btn_skip_out_click_png" right="16" top="20"/>
+</e:Skin>

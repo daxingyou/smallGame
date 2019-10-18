@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StoryLineItemSkin" width="448" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="img_juqing_cell_gray_png" x="0" y="0" scaleX="0.7" scaleY="0.7"/>
+	<e:Label id="label" text="" x="14" y="5" anchorOffsetX="0" width="418" anchorOffsetY="0" height="46" verticalAlign="middle" textAlign="center" textColor="0xa36032" size="20"/>
+</e:Skin>

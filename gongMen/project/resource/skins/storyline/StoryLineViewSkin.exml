@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StoryLineViewSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="img_juqing_home_bg_jpg" left="0" top="0" bottom="0" right="0"/>
+	<e:Label text="剧情" anchorOffsetX="0" width="147.33" anchorOffsetY="0" height="76.67" verticalAlign="middle" textAlign="center" textColor="0xdb7039" size="40" horizontalCenter="5.5" top="15"/>
+	<e:Image id="back_img" source="btn_global_back_png" scaleX="0.8" scaleY="0.8" left="9" top="11"/>
+	<e:Scroller id="scroller" width="450" height="780.36" anchorOffsetY="0" horizontalCenter="-2" verticalCenter="45">
+		<e:List id="list" anchorOffsetY="0" height="828.36" x="0" y="40">
+			<e:layout>
+				<e:TileLayout paddingLeft="1" verticalGap="15"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExchangeItemSkin" width="95.33" height="129.33" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="frame_img" source="img_head_frame_noraml_0_png" x="0" y="0"/>
+	<e:Group id="buy_group" x="6.83" y="98.99">
+		<e:Rect width="80" height="26" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="1" ellipseHeight="30" ellipseWidth="30" fillColor="0xefb243"/>
+		<e:Label id="huan_label" text="更换" x="21.23" y="2.75" textColor="0xAA5F27" size="20" visible="false"/>
+		<e:Group id="num_group" x="13.45" y="2.75">
+			<e:Image x="0" y="0.4" scaleX="0.1" scaleY="0.1" source="img_first_wucai_png"/>
+			<e:Label id="num_label" text="x 3" x="25.35" y="0" textColor="0xaa5f27" size="20"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

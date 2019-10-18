@@ -1,0 +1,4 @@
+class ResultPop {
+	public constructor() {
+	}
+}

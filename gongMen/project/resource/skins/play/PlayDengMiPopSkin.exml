@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayDengMiPopSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Image source="img_dengmi_global_bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Label text="猜灯谜" horizontalCenter="8" top="29" textColor="0xf27a24"/>
+	<e:Group id="wordGroup" horizontalCenter="0" top="533" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Group id="word1" x="0" y="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="0" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word2" x="94" y="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="2" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word3" x="190" y="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="2" y="0" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word4" x="286" y="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="2" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word5" x="0" y="96" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="4" y="0" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word6" x="94" y="96" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="0" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word7" x="190" y="96" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="2" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word8" x="286" y="96" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="0" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word9" x="0" y="194" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="2" y="0"/>
+			<e:Label text="我" x="0" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="word10" x="96" y="194" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0"/>
+			<e:Label text="我" x="0" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="76" name="lab"/>
+		</e:Group>
+		<e:Group id="sureBtn" x="190" y="194" touchChildren="false" touchEnabled="true" touchThrough="false">
+			<e:Image source="img_dengmi_cell_bg_png" x="0" y="0" anchorOffsetX="0" width="176"/>
+			<e:Label text="确定" x="0" y="2" anchorOffsetY="0" height="78" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="176"/>
+		</e:Group>
+	</e:Group>
+	<e:Group horizontalCenter="-1" top="487" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Rect width="230" height="37.33" x="0" y="0" strokeColor="0xffffff" strokeWeight="2" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0"/>
+		<e:Group id="guessGroup" touchChildren="true" touchEnabled="false" touchThrough="true" height="38" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" top="92">
+		<e:Image source="img_dengmi_content_bg_png" anchorOffsetX="0" width="354.55" anchorOffsetY="0" height="390" x="0" y="0"/>
+		<e:Label id="guessLab" text="Label" x="56" y="93.33" anchorOffsetX="0" width="243.7" anchorOffsetY="0" height="58.79" textAlign="center" verticalAlign="middle" size="20"/>
+		<e:Label id="typeLab" text="打一成语" x="229.78" y="183.03" anchorOffsetX="0" width="118.43" anchorOffsetY="0" height="23.94" size="20"/>
+	</e:Group>
+	<e:Image id="returnBtn" source="btn_global_back_png" x="4" y="2"/>
+</e:Skin>

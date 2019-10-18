@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuessPlaySkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="img_denghui_bg_jpg" left="0" top="0" right="0" bottom="0"/>
+	<e:Image id="jumpBtn" source="btn_skip_out_click_png" right="20" top="128"/>
+	<e:Image id="returnBtn" source="btn_global_back_png" x="14" y="14"/>
+	<e:Label text="花灯会" horizontalCenter="8" top="29" textColor="0xed9f65"/>
+	<e:Group id="storyGroup" bottom="32" width="488" horizontalCenter="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+		<e:Image id="leftRole" source="img_syn_half_normal_01_png" left="0" top="0"/>
+		<e:Image id="rightRole" source="img_juqing_half_01_0101_png" right="0" top="127"/>
+		<e:Image source="img_syn_des_bottom_png" anchorOffsetX="0" anchorOffsetY="0" height="180.47" scale9Grid="23,16,143,101" y="469" left="20" right="0"/>
+		<e:Label id="wordLab" text="好热闹啊" textColor="0x8e5430" size="20" anchorOffsetY="0" height="99.77" anchorOffsetX="0" left="44" right="28" bottom="40"/>
+	</e:Group>
+	<e:Group id="playGroup" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" bottom="32" visible="false">
+		<e:Image source="img_syn_des_bottom_png" anchorOffsetX="0" anchorOffsetY="0" height="180.47" scale9Grid="23,16,143,101" width="492" x="0" y="0"/>
+		<e:Image id="dengmiBtn" source="btn_denghui_dengmi_enter_png" x="154" y="25.34"/>
+		<e:Image id="duilianBtn" source="btn_denghui_duilian_enter_png" x="154" y="102.23"/>
+	</e:Group>
+</e:Skin>

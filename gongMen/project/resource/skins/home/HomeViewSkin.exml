@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HomeViewSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="img_home_global_bg_jpg" left="0" top="0" bottom="0" right="0"/>
+	<e:Image id="cloth" source="img_cloth_list_normal_default_png" scaleX="0.5" scaleY="0.5" horizontalCenter="2" bottom="123"/>
+	<e:Group id="head_group" left="9" top="5">
+		<e:Image source="img_bg_home_head_png" x="6" y="8"/>
+		<e:Image id="head_img" source="img_icon_head_normal_default_png" x="12" y="10"/>
+		<e:Image id="head_frame" source="img_head_frame_noraml_default_png" x="3" y="4" scaleX="1" scaleY="1" width="95" height="95"/>
+		<e:Image id="level_name" source="img_level_normal_00_png" x="11.5" y="84.9"/>
+	</e:Group>
+	<e:Group right="12" top="13">
+		<e:Rect width="152" height="29.33" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xa8a8a8" strokeColor="0xfcfcfc" strokeAlpha="1" strokeWeight="2" fillAlpha="0.5" ellipseHeight="30" ellipseWidth="30"/>
+		<e:Image source="img_global_coin_png" x="7.5" y="4.66" scaleX="0.3" scaleY="0.3"/>
+		<e:Label id="gold" text="" x="29.4" y="4.66" anchorOffsetY="0" height="20.5" anchorOffsetX="0" width="97" size="22" textAlign="left" verticalAlign="middle"/>
+		<e:Rect width="152" height="29.33" x="-0.62" y="40" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xA8A8A8" strokeColor="0xFCFCFC" strokeAlpha="1" strokeWeight="2" fillAlpha="0.5" ellipseHeight="30" ellipseWidth="30"/>
+		<e:Image x="7.08" y="45.46" scaleX="0.1" scaleY="0.1" source="img_first_wucai_png"/>
+		<e:Image id="add_zhu" source="btn_first_zhu_add_png" x="125.78" y="44.66"/>
+		<e:Label id="zhu" text="" x="28.78" y="44.66" anchorOffsetY="0" height="20.5" anchorOffsetX="0" width="97" size="22" textAlign="left" verticalAlign="middle"/>
+	</e:Group>
+	<e:Group verticalCenter="-98.5" left="22">
+		<e:Image id="juqing" source="btn_first_juqing_png" x="0" y="0"/>
+		<e:Image id="denghui" source="btn_first_hdh_png" x="0" y="127.18"/>
+		<e:Image id="nishang" source="btn_first_fushi_png" x="6.5" y="255.75"/>
+	</e:Group>
+	<e:Image id="duihuan" source="btn_first_duihuan_png" right="28" top="125"/>
+	<e:Image id="xiang" source="btn_first_xge_png" right="28" bottom="242"/>
+	<e:Group bottom="30" width="337" horizontalCenter="5.5">
+		<e:Rect width="287" height="65" x="49.5" y="22" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xdbd9d6" ellipseHeight="30" ellipseWidth="30"/>
+		<e:Image id="youwan" source="btn_first_youwan_png" left="0" verticalCenter="0"/>
+		<e:Label id="miaoshu" text="回眸一笑百媚生\n六宫粉黛无颜色" x="91" y="24.5" anchorOffsetX="0" width="238" anchorOffsetY="0" height="62" verticalAlign="middle" textAlign="center" size="20" textColor="0x8c653f"/>
+	</e:Group>
+	<e:Group id="roleGroup" width="135" height="135" anchorOffsetX="0" anchorOffsetY="0" bottom="153" horizontalCenter="-174.5"/>
+</e:Skin>

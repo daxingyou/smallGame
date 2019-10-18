@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OutHomeViewSkin" width="512" height="1024" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="img_youwan_bg_jpg" left="0" top="0" right="0" bottom="0"/>
+	<e:Group left="120" top="25">
+		<e:Rect width="152" height="29.33" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" fillColor="0xA8A8A8" strokeColor="0xFCFCFC" strokeAlpha="1" strokeWeight="2" fillAlpha="0.5" ellipseHeight="30" ellipseWidth="30"/>
+		<e:Image source="img_global_coin_png" x="7.5" y="4.66" scaleX="0.3" scaleY="0.3"/>
+		<e:Label id="gold" text="" x="29.4" y="4.66" anchorOffsetY="0" height="20.5" anchorOffsetX="0" width="97" size="22" textAlign="left" verticalAlign="middle"/>
+	</e:Group>
+	<e:Image id="infoBtn" source="btn_youwan_help_click_png" right="437" top="104"/>
+	<e:Image id="returnBtn" source="btn_global_back_png" x="4" y="2"/>
+	<e:Image source="img_youwan_title_name_png" horizontalCenter="0" top="86"/>
+	<e:Image id="rewardBtn" source="btn_youwan_jiangli_click_png" right="15" bottom="199"/>
+	<e:Image id="wayLineBtn" source="btn_youwan_zuji_click_png" right="15" bottom="97"/>
+	<e:Group horizontalCenter="0.5" bottom="11" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Button id="startBtn" label="Button" x="44.5" y="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_youwan_start_click_png" source.down="btn_youwan_end_click_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="img_youwan_time_bottom_png" x="0" y="94.56"/>
+		<e:Label id="timeLab" text="00:00:00" x="7.9" y="97.06" textColor="0xaf80d6" size="25" anchorOffsetY="0" height="40" anchorOffsetX="0" width="161" textAlign="center" verticalAlign="middle"/>
+	</e:Group>
+	<e:Image id="img8" source="img_youwan_float_daming_png" x="83.18" y="334.64" name="大明宫"/>
+	<e:Image id="img2" source="img_youwan_float_jinshan_png" x="353.98" y="733.67" name="金山寺"/>
+	<e:Image id="img6" source="img_youwan_float_leifeng_png" x="403.66" y="445" name="雷锋塔"/>
+	<e:Image id="img3" source="img_youwan_float_leshan_png" x="10.66" y="545.65" name="乐山岩"/>
+	<e:Image id="img9" source="img_youwan_float_qianfo_png" x="432" y="312" name="千佛殿"/>
+	<e:Image id="img13" source="img_youwan_float_qingfu_png" x="383" y="129.68" name="清福凌"/>
+	<e:Image id="img10" source="img_youwan_float_shiyue_png" x="345" y="260.5" name="待月楼"/>
+	<e:Image id="img4" source="img_youwan_float_tianxin_png" x="167" y="512" name="天心阁"/>
+	<e:Image id="img5" source="img_youwan_float_wanshou_png" x="316.98" y="494.15" name="万寿宫"/>
+	<e:Image id="img7" source="img_youwan_float_xiangguo_png" x="197.9" y="386.64" name="相国府"/>
+	<e:Image id="img11" source="img_youwan_float_xinghua_png" x="11.66" y="181.68" name="杏花岭"/>
+	<e:Image id="img1" source="img_youwan_float_yuehai_png" x="108.5" y="779" name="粤海关"/>
+	<e:Image id="img12" source="img_youwan_float_zijing_png" x="173.5" y="181.68" name="紫荆城门"/>
+</e:Skin>
