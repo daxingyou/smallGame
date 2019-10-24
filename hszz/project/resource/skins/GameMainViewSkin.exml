@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="16de20c0ee8" left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="main_bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Image source="main_top_bg_png" left="0" right="0" top="0"/>
+	<e:Image source="title_own_card_png" horizontalCenter="0" top="83"/>
+	<e:Group right="186" top="19">
+		<e:Image source="common_input_bg_png" x="0" y="0"/>
+		<e:Image source="icon_xunzhang_png" x="7" y="0.31"/>
+		<e:Label id="medalLab" text="0" x="44" y="6.81" size="20" anchorOffsetY="0" height="31.33" anchorOffsetX="0" width="105.67" textAlign="center" verticalAlign="middle" textColor="0xed7b1e"/>
+	</e:Group>
+	<e:Group touchChildren="true" touchEnabled="false" touchThrough="true" right="12" top="19">
+		<e:Image source="common_input_bg_png" x="0" y="0"/>
+		<e:Image x="7" y="1.31" source="icon_gold_png"/>
+		<e:Label id="goldLab" text="0" x="44" y="6.81" size="20" anchorOffsetY="0" height="31.33" anchorOffsetX="0" width="65.67" textAlign="center" verticalAlign="middle" textColor="0xed7b1e"/>
+		<e:Image id="addBtn" source="common_add_btn_png" x="118" y="7.81"/>
+	</e:Group>
+	<e:Group left="0" top="0">
+		<e:Image source="common_top_bg_png" x="0" y="0"/>
+		<e:Label id="levelLab" text="1级" x="56" y="119.5" size="15" anchorOffsetY="0" height="18.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="60.5" textColor="0xce9c4a"/>
+		<e:Image id="expBar" source="expBar_png" x="149.5" y="40"/>
+		<e:Rect id="expMask" width="232" height="26.5" x="149.5" y="34.81" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="progressLab" text="0/100" size="16" horizontalCenter="64.5" top="42"/>
+	</e:Group>
+	<e:Image id="helpBtn" source="helpBtn_png" right="21" top="103" visible="false"/>
+	<e:Group id="navGroup" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" bottom="5">
+		<e:Image id="battleBtn" source="battleBtn_png" x="560" y="24"/>
+		<e:Image id="boxBtn" source="boxBtn_png" x="1" y="24"/>
+		<e:Image id="cardBtn" source="cardBtn_png" x="370.5" y="24"/>
+		<e:Image id="shopBtn" source="shopBtn_png" x="184.5" y="24"/>
+	</e:Group>
+	<e:Group touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0.5" bottom="189">
+		<e:Image source="no_collect_bg_png" x="0" y="0"/>
+		<e:Scroller id="scroller" width="582" height="210" x="37" y="74.71" scrollPolicyV="off">
+			<e:List id="list" useVirtualLayout="false">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="cardGroup" width="823" height="426" anchorOffsetX="0" scaleX="0.8" scaleY="0.8" anchorOffsetY="0" rotation="-0" horizontalCenter="-3" top="260">
+		
+	</e:Group>
+	<e:Rect id="cardMask" anchorOffsetY="0" width="660.61" touchChildren="false" touchEnabled="false" height="498" horizontalCenter="0.5" top="106" anchorOffsetX="0"/>
+</e:Skin>

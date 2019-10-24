@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OverViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0.3"/>
+	<e:Group horizontalCenter="0.5" verticalCenter="-93.5">
+		<e:Image id="over_bg" source="win_bg_png" x="0" y="0"/>
+		<e:Image source="over_jiang_png" x="190.5" y="245.5"/>
+		<e:Image source="over_kuang_png" x="128.5" y="366.38"/>
+		<e:Label id="huizhang_num" text="徽章x500" x="131.5" y="367.38" anchorOffsetX="0" width="218" anchorOffsetY="0" height="33" verticalAlign="middle" textAlign="center" size="28" textColor="0xb24f0a" stroke="1"/>
+		<e:Image id="over_btn" source="over_btn_png" x="138" y="439.44"/>
+		<e:Image id="star_bg1" source="win_stars_0_png" x="215.5" y="146.77"/>
+		<e:Image id="star_bg0" source="win_stars_0_png" x="138" y="146.77"/>
+		<e:Image id="star_bg2" source="win_stars_0_png" x="290.5" y="146.77"/>
+		<e:Image id="star_0" source="win_stars_1_png" x="137.5" y="146.27" visible="false"/>
+		<e:Image id="star_1" source="win_stars_1_png" x="215.5" y="146.77" visible="false"/>
+		<e:Image id="star_2" source="win_stars_1_png" x="290.5" y="146.27" visible="false"/>
+	</e:Group>
+</e:Skin>

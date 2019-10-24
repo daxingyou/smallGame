@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TreasureBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0.5" verticalCenter="-48">
+		<e:Image source="treasurebox_bg_png" x="0" y="0"/>
+		<e:Image id="btn_img" source="treasurebox_btn_png" x="259" y="821.09"/>
+		<e:Group id="gold_group" x="313.5" y="638.85" visible="false">
+			<e:Image source="treasurebox_gold_png" x="0" y="0"/>
+			<e:Label id="gold_label" text="200" x="0" y="76" size="24" anchorOffsetX="0" width="98.33" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:Group id="item_group" x="89.93" y="245.57" visible="false">
+			<e:Image id="item1" source="box_card_1_png" x="0" y="0" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="item2" source="box_card_1_png" x="189.7" y="0" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="item3" source="box_card_1_png" x="379.4" y="0" scaleX="0.8" scaleY="0.8"/>
+		</e:Group>
+		<e:Label id="time_label" text="" horizontalCenter="-0.5" bottom="231" textColor="0xaf630a" stroke="1.5" visible="false"/>
+	</e:Group>
+</e:Skin>

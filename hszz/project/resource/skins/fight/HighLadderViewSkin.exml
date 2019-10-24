@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HighLadderViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0.5" anchorOffsetY="0" height="1032" verticalCenter="-50">
+		<e:Image source="tt_bg_png" x="0" y="0"/>
+		<e:Group id="map_group" width="638" height="1290" x="44.98" y="-538">
+			<e:Image source="level_map_png" x="0" y="0" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Rect id="map_mask" width="632.55" height="678" x="48" y="75" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="1"/>
+		<e:Image source="tt_kuang_png" x="44" y="63" touchEnabled="false" locked="true"/>
+		<e:Image id="tiaozhan" source="tt_ta_png" x="106" y="101" visible="false"/>
+		<e:Group id="gold_group0" x="243.16" y="787.81">
+			<e:Image source="treasurebox_gold_png" x="0" y="0"/>
+			<e:Label id="gold_label0" text="200" x="0" y="78.01" size="20" anchorOffsetX="0" width="98.33" verticalAlign="middle" textAlign="center"/>
+			<e:Image source="tt_jiang_png" x="-1.33" y="106.32"/>
+			<e:Label id="keling0" text="可领取" x="0" y="106.98" anchorOffsetX="0" width="99.33" anchorOffsetY="0" height="29.34" size="16" verticalAlign="middle" textAlign="center" stroke="1" bold="true" fontFamily="DFKai-SB" textColor="0xc18919" visible="false"/>
+			<e:Group id="xu_group0" x="6.17" y="107.34">
+				<e:Label id="xu_label0" text="需4600点" x="0" y="0" anchorOffsetX="0" width="65.33" anchorOffsetY="0" height="29.34" size="16" verticalAlign="middle" textAlign="left" stroke="1" bold="true" fontFamily="DFKai-SB" textColor="0x9b9a98"/>
+				<e:Image source="tt_img1_png" x="63.53" y="2.32"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="gold_group1" x="391.16" y="788.17">
+			<e:Image source="treasurebox_gold_png" x="0" y="0"/>
+			<e:Label id="gold_label1" text="200" x="0" y="78.01" size="20" anchorOffsetX="0" width="98.33" verticalAlign="middle" textAlign="center"/>
+			<e:Image source="tt_jiang_png" x="-1.33" y="106.32"/>
+			<e:Group x="6.17" y="107.34" id="xu_group1">
+				<e:Label text="需4600点" x="0" y="0" anchorOffsetX="0" width="65.33" anchorOffsetY="0" height="29.34" size="16" verticalAlign="middle" textAlign="left" stroke="1" bold="true" fontFamily="DFKai-SB" textColor="0x9B9A98" id="xu_label1"/>
+				<e:Image source="tt_img1_png" x="63.53" y="2.32"/>
+			</e:Group>
+			<e:Label text="可领取" x="0" y="106.98" anchorOffsetX="0" width="99.33" anchorOffsetY="0" height="29.34" size="16" verticalAlign="middle" textAlign="center" stroke="1" bold="true" fontFamily="DFKai-SB" textColor="0xC18919" id="keling1" visible="false"/>
+		</e:Group>
+		<e:Image id="lingqu_btn" source="tt_btn_png" x="303.5" y="935.84"/>
+		<e:Image source="help_btn_png" x="677" y="42"/>
+		<e:Rect id="close_btn" width="64" height="61" x="659.5" y="26" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardItem2Skin" width="147.67" height="193.33" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cardGroup" left="0" top="0" right="0" touchChildren="false" touchEnabled="true" touchThrough="false" height="193.33">
+		<e:Image id="img" source="box_card_1_png" left="0" top="0" right="0" bottom="0"/>
+		<e:Image source="energyIcon_png" anchorOffsetX="0" width="29.5" anchorOffsetY="0" height="29.5" left="7" top="6"/>
+		<e:Label id="levelLab" text="1" size="25" anchorOffsetX="0" width="29" anchorOffsetY="0" height="29.36" textAlign="center" verticalAlign="middle" left="6" top="6" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>

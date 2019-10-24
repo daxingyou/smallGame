@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FightingViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0.5" verticalCenter="-48">
+		<e:Image source="fight_bg_png" x="0" y="0"/>
+		<e:Image id="tianti" source="fight_tt_png" x="49" y="99.91"/>
+		<e:Image id="duoqi" source="fight_dq_png" x="50.83" y="393.91"/>
+		<e:Image id="fengkuang" source="fight_fk_png" x="49.33" y="689.91"/>
+	</e:Group>
+</e:Skin>

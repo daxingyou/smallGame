@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0.5" verticalCenter="-48">
+		<e:Image source="shopbg_png" x="0" y="0"/>
+		<e:Scroller id="scroller" width="616.66" height="857.58" x="55.05" y="128.47" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="list">
+				<e:layout>
+					<e:TileLayout requestedRowCount="2" requestedColumnCount="2" paddingLeft="40" horizontalGap="50" verticalGap="40"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Label id="time_label" text="Label" x="487.04" y="77.41" anchorOffsetX="0" width="188" anchorOffsetY="0" height="34.67" textAlign="center" verticalAlign="middle" size="22" stroke="1.5" textColor="0xaf630a"/>
+		<e:Label text="卡牌刷新倒计时:" x="319.71" y="77.41" anchorOffsetX="0" width="167.33" anchorOffsetY="0" height="34.67" textAlign="center" verticalAlign="middle" stroke="1.5" size="22" textColor="0xaf630a"/>
+	</e:Group>
+</e:Skin>

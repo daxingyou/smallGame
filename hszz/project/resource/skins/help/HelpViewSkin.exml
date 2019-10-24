@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0.3"/>
+	<e:Group horizontalCenter="0.5" verticalCenter="0.5">
+		<e:Image source="help_kuang_png" x="0" y="0"/>
+		<e:Image id="close_btn" source="help_btn_png" x="587" y="0" scaleX="2" scaleY="2"/>
+		<e:Label id="help_text" text="" x="42" y="107.67" anchorOffsetX="0" width="558" anchorOffsetY="0" height="507.33" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+</e:Skin>

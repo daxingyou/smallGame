@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItemSkin" width="246" height="405.3" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="card_img" source="card_1_png" x="-7" y="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Group x="16.2" y="281.63" scaleX="0.8" scaleY="0.8">
+		<e:Image source="card_pro_bg_png" x="18.5" y="9"/>
+		<e:Image id="tiao" source="card_pro_bar_png" x="18.5" y="9.64"/>
+		<e:Rect id="mask_rect" width="0" height="20" x="22.1" y="11.5" anchorOffsetX="0"/>
+		<e:Image source="icon_shield_png" x="0" y="0"/>
+		<e:Label id="num_label" text="1 / 2" x="18.5" y="5.83" anchorOffsetX="0" width="247.33" anchorOffsetY="0" height="31.33" verticalAlign="middle" textAlign="center" size="18" textColor="0xED6E1E" stroke="1"/>
+	</e:Group>
+	<e:Label id="card_name" text="大约只有七个字" x="26.5" y="7" anchorOffsetX="0" width="194" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" size="20" textColor="0xf47618" stroke="1.5"/>
+	<e:Image source="shop_btn_png" x="35" y="347.8"/>
+	<e:Image source="icon_gold_png" x="109.1" y="353.8"/>
+	<e:Label id="gold" text="500" x="146.1" y="358.8" size="22" anchorOffsetX="0" width="63" anchorOffsetY="0" height="29" verticalAlign="middle" textColor="0xef9a1a" stroke="1" strokeColor="0x3a3939"/>
+	<e:Rect id="btn_rect" width="181.33" height="48.67" x="35" y="348.8" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0"/>
+	<e:Image source="shop_num_png" x="30.3" y="238.87" scaleX="0.8" scaleY="0.8"/>
+	<e:Label id="card_num" text="20" x="130.6" y="240.27" size="18" textColor="0xefc145" stroke="1"/>
+</e:Skin>

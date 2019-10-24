@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="bg" source="battleBg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="enemyHpGroup" horizontalCenter="0" top="33">
+		<e:Image source="hpBg_png" x="0" y="0"/>
+		<e:Image id="enemyBar" source="enemyBar_png" x="0" y="0"/>
+		<e:Rect id="enemyMask" width="100.4" height="12.8" x="9.83" y="0.8" anchorOffsetY="0" anchorOffsetX="0"/>
+	</e:Group>
+	<e:Group id="hpGroup" horizontalCenter="0" bottom="467">
+		<e:Image source="hpBg_png" x="0.5" y="2"/>
+		<e:Image id="hpBar" source="hpBar_png" x="0" y="1.67"/>
+		<e:Rect id="hpMask" width="100.66" height="20" x="10.33" y="0" anchorOffsetX="0"/>
+	</e:Group>
+	<e:List id="list" height="170" anchorOffsetY="0" anchorOffsetX="0" left="198" right="40" bottom="84" useVirtualLayout="false">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="20"/>
+		</e:layout>
+	</e:List>
+	<e:Group id="energyGroup" bottom="25" horizontalCenter="69.5">
+		<e:Image source="energyProBg_png" x="32" y="17.5"/>
+		<e:Image id="energyPro" source="energyBar_png" x="32.02" y="17.5"/>
+		<e:Image source="point2_png" x="32.02" y="17.5"/>
+		<e:Rect id="energyMask" width="483" height="17.33" x="35" y="17.5" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Image source="energyIcon_png" x="0" y="0"/>
+	</e:Group>
+	<e:Group id="nextGroup" x="25" y="1073">
+		<e:Image source="nextTitle_png" x="27" y="0"/>
+		<ns1:CardItem2 id="nextCard" skinName="CardItem2Skin" anchorOffsetX="0" width="138.65" anchorOffsetY="0" height="178.61" x="0" y="62.39"/>
+	</e:Group>
+	<e:Rect id="touchRect" anchorOffsetY="0" anchorOffsetX="0" left="0" top="0" right="0" bottom="330" alpha="0"/>
+	<e:Rect id="enemyArea" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" bottom="805" top="230" alpha="0" touchChildren="false" touchEnabled="false"/>
+	<e:Rect id="ownArea" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" bottom="496" top="526" alpha="0" touchChildren="false" touchEnabled="false"/>
+	<e:Rect id="skillArea" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" bottom="329" top="0" alpha="0" touchChildren="false" touchEnabled="false"/>
+	<e:Rect id="enemyBorder" height="20" anchorOffsetX="0" left="0" right="0" top="206" alpha="0" touchChildren="false" touchEnabled="false"/>
+	<e:Rect id="ownBorder" height="20" anchorOffsetX="0" left="1" right="-1" alpha="0" bottom="496" touchChildren="false" touchEnabled="false"/>
+	<e:Label text="离战斗结束还有:" textColor="0xc9ceaf" size="20" right="40" top="24"/>
+	<e:Label id="remainTime" text="00:00:00" textColor="0xC9CEAF" size="20" right="74" top="65"/>
+</e:Skin>
