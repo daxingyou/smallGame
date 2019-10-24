@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItemSkin" width="195" height="284.33" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" top="0" anchorOffsetY="0" height="284.33" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="item_bg2_png" x="0" y="0"/>
+		<e:Image source="itembox_png" x="49" y="66.5"/>
+		<e:Image source="gold_png" x="26" y="185" anchorOffsetX="0" width="31" anchorOffsetY="0" height="31"/>
+		<e:Image id="buyBtn" source="buyBtn_png" x="29" y="234"/>
+		<e:Image id="icon" source="10000_png" x="57" y="70"/>
+		<e:Label id="costLab" text="200" x="29.67" y="190.5" size="20" anchorOffsetX="0" width="135.66" textAlign="center" verticalAlign="middle"/>
+		<e:Label id="numLab" text="200" x="54.67" y="138" size="20" anchorOffsetX="0" width="81.66" textAlign="right" verticalAlign="middle"/>
+		<e:Label id="nameLab" text="物品名" x="22.17" y="15.83" size="20" anchorOffsetX="0" width="152.99" textAlign="center" verticalAlign="middle" textColor="0x704d4d"/>
+	</e:Group>
+</e:Skin>

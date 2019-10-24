@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StoryViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="story_bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="talkGroup1" touchChildren="true" touchEnabled="true" touchThrough="true" scaleX="0.8" scaleY="0.8" left="0" bottom="0">
+		<e:Image source="talk1_png" y="0" x="0"/>
+		<e:Image id="nextIcon1" source="nextBtn_png" x="1152" y="465"/>
+		<e:Label id="talkTxtLab1" text="这是一句对话 对话对话" fontFamily="yt" size="20" anchorOffsetX="0" width="869" anchorOffsetY="0" height="104" x="207" y="508" textColor="0x754207"/>
+	</e:Group>
+	<e:Group id="talkGroup2" touchChildren="true" touchEnabled="true" touchThrough="true" right="0" bottom="0" scaleX="0.8" scaleY="0.8">
+		<e:Image source="talk2_png" x="0" y="0"/>
+		<e:Image id="nextIcon2" source="nextBtn_png" x="41" y="458"/>
+		<e:Label id="talkTxtLab2" text="Label" x="155" y="490" textColor="0x754207" anchorOffsetY="0" height="116" anchorOffsetX="0" width="750" size="20" fontFamily="yt"/>
+	</e:Group>
+	<e:Image id="jumpBtn" source="jumpBtn_png" right="0" top="48"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AdventureOverItemSkin" width="237.75" height="54.25" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="adventureover_tiao_png" x="49.8" y="12.88"/>
+	<e:Image id="img" source="10000_png" x="0" y="0" scaleX="0.6" scaleY="0.6"/>
+	<e:Label id="num" text="" x="49.8" y="11.16" anchorOffsetX="0" width="185" anchorOffsetY="0" height="31.67" verticalAlign="middle" textAlign="center" size="20" textColor="0x9b4d1b"/>
+</e:Skin>

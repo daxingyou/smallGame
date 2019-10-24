@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargePopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect alpha="0.3" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="0" scaleX="0.8" scaleY="0.8">
+		<e:Image source="recharge_bg_png" x="0" y="0"/>
+		<e:Label text="充值" x="422" y="19.17" size="25"/>
+		<e:Image id="returnBtn" source="closeBtn_png" x="789.66" y="2.81"/>
+		<e:Scroller id="scroller" width="750.67" height="540" x="74.33" y="82.5" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="list" useVirtualLayout="false">
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

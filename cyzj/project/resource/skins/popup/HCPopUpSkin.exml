@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HCPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="hc_bg_png" x="0" y="0"/>
+		<e:Image source="hc_bottom_bg_png" x="80" y="90.5"/>
+		<e:Image id="hcBtn" source="hcBtn_png" x="228" y="498.51"/>
+		<e:Image id="returnBtn" source="closeBtn_png" x="1064" y="9.5"/>
+		<e:Label text="合成" x="564" y="24" anchorOffsetY="0" height="30" size="25"/>
+		<e:Scroller id="scroller" width="466" height="544" x="632" y="83" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="list">
+			<e:layout>
+				<e:TileLayout requestedColumnCount="3" horizontalGap="24" horizontalAlign="center" paddingLeft="60" paddingTop="20"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image id="item1" source="10000_png" x="286" y="103"/>
+		<e:Image id="item2" source="10001_png" x="106" y="385"/>
+		<e:Image id="item3" source="10002_png" x="472" y="382"/>
+		<e:Image id="hc_item" source="10009_png" horizontalCenter="-261.5" verticalCenter="-5.5"/>
+		<e:Label id="noDataLab" text="暂无合成材料" x="787" y="322.45" size="25" textColor="0x605353" visible="false"/>
+		<e:Label text="同等级同类型的晶石合成高一级的晶石。同等级不同类型的晶石合成经验符。" x="136.37" y="573.84" fontFamily="yt" size="24" anchorOffsetX="0" width="443.66" anchorOffsetY="0" height="50.67" textColor="0xe09211"/>
+	</e:Group>
+</e:Skin>

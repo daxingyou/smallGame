@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BoxItemSkin" width="157" height="32" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="adventure_tiao_png" x="0" y="0"/>
+	<e:Image id="img" source="10000_png" x="22.8" y="-6.5" scaleX="0.5" scaleY="0.5"/>
+	<e:Label text="x 1" x="73.13" y="1"/>
+</e:Skin>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleInfoPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="info_bg_png" x="0" y="0"/>
+		<e:Image id="roleModel" anchorOffsetX="0" anchorOffsetY="0" source="role_10001_png" scaleX="0.7" scaleY="0.7" horizontalCenter="-76.5" bottom="35"/>
+		<e:Image source="head_bottom_png" x="73.62" y="73.56"/>
+		<e:Image source="levelicon_1_png" x="677" y="83.06"/>
+		<e:Image source="levelicon_2_png" x="677" y="142.1"/>
+		<e:Image source="levelicon_3_png" x="677" y="202.66"/>
+		<e:Image source="levelicon_4_png" x="677" y="262.7"/>
+		<e:Image source="levelicon_5_png" x="677" y="324.55"/>
+		<e:Image source="levelicon_6_png" x="677" y="384.78"/>
+		<e:Image source="levelicon_7_png" x="677" y="445.34"/>
+		<e:Image source="levelicon_8_png" x="677" y="500.24"/>
+		<e:Image source="levelicon_9_png" x="677" y="558.76"/>
+		<e:Label text="信息" x="422" y="18.06" size="25"/>
+		<e:Image id="levelIcon" source="levelicon_1_png" x="506.67" y="79.55"/>
+		<e:Label id="nameLab" text="名字" x="197" y="82.39" size="20" anchorOffsetX="0" width="198.17" anchorOffsetY="0" height="31.34" textAlign="center" verticalAlign="middle"/>
+		<e:Label id="levelLab" text="Lv.9" x="296" y="82.39" size="20" anchorOffsetX="0" width="99" anchorOffsetY="0" height="31.34" textAlign="center" verticalAlign="middle" textColor="0xf2983a" visible="false"/>
+		<e:Image id="changeBtn" source="changeBtn_png" x="317.5" y="552.59"/>
+		<e:Image id="role1" source="info_head_1_png" x="85.12" y="107.16"/>
+		<e:Image id="role2" source="info_head_2_png" x="85.12" y="203.66"/>
+		<e:Image id="role3" source="info_head_3_png" x="85.12" y="300.05"/>
+		<e:Image id="role4" source="info_head_4_png" x="85.12" y="397.34"/>
+		<e:Image id="role5" source="info_head_5_png" x="85.12" y="495.68"/>
+		<e:Image id="returnBtn" source="closeBtn_png" x="789" y="0"/>
+		<e:Image id="select" source="select_png" x="81" y="101"/>
+	</e:Group>
+</e:Skin>

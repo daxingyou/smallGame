@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="bag_bg_png" x="0" y="0"/>
+		<e:Image id="returnBtn" source="closeBtn_png" x="1066" y="7"/>
+		<e:Label text="背包" x="564" y="23.83" size="25"/>
+		<e:Scroller id="scroller" width="1046" height="498" x="64" y="89" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="list" useVirtualLayout="false">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="9" columnAlign="left"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Label id="descLab" text="" horizontalCenter="0" bottom="90" size="20"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_0" source="adventure_bg_jpg" width="1334" height="750" x="0" y="0"/>
+	<e:Image id="bg_1" source="adventure_bg_jpg" y="0" width="1334" x="1334"/>
+	<e:Group id="world_group" left="0" top="0" right="0" bottom="0">
+		<e:Group left="0" top="0">
+			<e:Image source="round_di_png" x="0" y="0"/>
+			<e:Label id="round" text="2 / 3" x="77.67" y="5.16" anchorOffsetX="0" width="131.33" anchorOffsetY="0" height="50" verticalAlign="middle" textAlign="center" bold="true" size="36" textColor="0xf7e5c5" stroke="2"/>
+		</e:Group>
+		<e:Group right="11" top="0">
+			<e:Image id="back_img" source="game_back_png" x="164.06" y="54.51" anchorOffsetX="56.06" anchorOffsetY="54.55"/>
+			<e:Image id="auto_img" source="game_auto_png" x="56.06" y="53.03" anchorOffsetX="56.06" anchorOffsetY="53.03"/>
+			<e:Rect id="rect" width="87.33" height="86.66" x="10.34" y="11.3" anchorOffsetX="0" anchorOffsetY="0" ellipseHeight="100" ellipseWidth="100" alpha="0.6" touchEnabled="false"/>
+		</e:Group>
+		<e:Image id="warnLab" source="warn_png" right="68" top="230"/>
+	</e:Group>
+</e:Skin>

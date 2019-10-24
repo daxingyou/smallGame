@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="mainbg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Group touchChildren="true" touchEnabled="false" touchThrough="true" right="0" top="0">
+		<e:Image source="top_bg_png" x="0" y="0"/>
+		<e:Image id="addBtn" source="addBtn_png" x="489" y="11.94"/>
+		<e:Image source="gold_font_bg_png" x="321.72" y="7.98"/>
+		<e:Image source="goldIcon_png" x="301.72" y="7.98"/>
+		<e:Label id="goldLab" text="2000" x="343.05" y="12.33" size="20" fontFamily="yt" anchorOffsetX="0" width="116" anchorOffsetY="0" height="30.67" textAlign="center" verticalAlign="middle"/>
+	</e:Group>
+	<e:Group left="0" top="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="headbg_png" x="0" y="0"/>
+		<e:Image id="roleHead" source="head_10001_png" x="3.44" y="4.9"/>
+		<e:Image id="expBar" source="exp_bar_png" x="151" y="13.67" anchorOffsetX="0" width="214"/>
+		<e:Image id="levelIcon" source="levelicon_1_png" x="389.48" y="2.44"/>
+		<e:Label id="nameLab" text="名字" x="102" y="35" size="20" fontFamily="yt" anchorOffsetY="0" height="25.33" anchorOffsetX="0" width="112.67" textAlign="center" verticalAlign="middle" textColor="0xf4dac1"/>
+		<e:Label id="levelLab" text="Lv.9" x="108.67" y="65.98" size="20" fontFamily="yt" anchorOffsetY="0" height="25.33" anchorOffsetX="0" width="89.34" textAlign="center" verticalAlign="middle" textColor="0xF4DAC1" visible="false"/>
+		<e:Rect id="expMask" width="215" height="20" x="151" y="11.94" anchorOffsetX="0" fillColor="0x070707"/>
+		<e:Label id="progressLab" text="0/500" size="16" horizontalCenter="-1.5" top="13"/>
+	</e:Group>
+	<e:Image id="roleMode" source="role_10001_png" x="0" y="83"/>
+	<e:Image id="signBtn" source="signBtn_png" left="36" top="142"/>
+	<e:Image id="shopBtn" source="shopBtn_png" right="28" top="83"/>
+	<e:Image id="syntheBtn" source="synthesis_png" left="36" top="389"/>
+	<e:Image id="bagBtn" left="37" top="265" source="bagBtn_png"/>
+	<e:Image id="soulBtn" source="soulBtn_png" left="36" top="506"/>
+	<e:Image id="bossTitle" source="boss_title_png" x="1051.72" y="489.66"/>
+	<e:Scroller id="scroller" anchorOffsetY="0" anchorOffsetX="0" scrollPolicyV="off" width="478" height="172" x="843" y="535">
+		<e:List id="list" useVirtualLayout="false">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="left"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="level_group" x="1102.09" y="310.09" anchorOffsetX="109.09" anchorOffsetY="109.09">
+		<e:Image id="levelBtn" x="109" y="92.5" source="levelBtn_png" anchorOffsetX="109" anchorOffsetY="92.5"/>
+		<e:Group id="time_group" x="0" y="168.17" visible="false">
+			<e:Label id="time_label" text="300 s" y="0" anchorOffsetX="0" width="122" anchorOffsetY="0" height="47.33" verticalAlign="middle" textAlign="center" textColor="0xf2e8e8" bold="true" fontFamily="yt" size="26" x="0"/>
+			<e:Label text="500" y="6" anchorOffsetX="0" width="91" anchorOffsetY="0" height="39.33" verticalAlign="middle" textAlign="center" textColor="0xF2E8E8" bold="true" fontFamily="yt" size="20" x="128"/>
+			<e:Image source="goldIcon_png" x="111.72" y="1.66"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

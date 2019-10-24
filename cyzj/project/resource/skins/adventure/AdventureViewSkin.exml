@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AdventureViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_0" source="adventure_bg_jpg" top="0" bottom="0" width="1334" x="0"/>
+	<e:Image id="bg_1" source="adventure_bg_jpg" top="0" bottom="0" width="1334" x="1334"/>
+	<e:Group id="item_group" width="200" height="200" x="0" y="0"/>
+	<e:Group id="world_group" width="1334" height="750" x="0" y="0">
+		<e:Group id="touch_group" width="1334" height="750" x="0" y="0" locked="true">
+		</e:Group>
+		<e:Label id="countdown" text="50 s" size="50" anchorOffsetX="0" width="174.52" anchorOffsetY="0" height="75.76" verticalAlign="middle" textAlign="center" textColor="0x9af229" horizontalCenter="0.5" top="1"/>
+		<e:Image id="back_img" source="game_back_png" anchorOffsetX="56.06" anchorOffsetY="54.55" right="2" top="1"/>
+		<e:Group id="box_list" right="56" top="134" visible="false">
+			<e:Image source="adventure_kuang_png" x="0" y="0"/>
+			<e:Scroller id="scroller" width="158" height="200" x="11" y="44" anchorOffsetX="0">
+				<e:List id="list">
+					<e:layout>
+						<e:TileLayout requestedColumnCount="1" columnWidth="36"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Image id="miwu" source="miwu_img_png" x="667" y="458.82" anchorOffsetX="569.5" width="1139" anchorOffsetY="569.5" height="1139" touchEnabled="false"/>
+		<e:Label id="fire" text="烈焰冲击" x="667" y="283.67" textColor="0xff3248" fontFamily="yt" anchorOffsetX="62.67" width="125.33" anchorOffsetY="22.67" height="47.33" verticalAlign="middle" textAlign="center" visible="false"/>
+		<e:Label id="tip_label" text="这一片神秘的区域，很多冒险人都喜欢来这里寻宝，虽然可以宝物，不过也要小心陷进呐！" size="22" horizontalCenter="0" bottom="99"/>
+	</e:Group>
+</e:Skin>

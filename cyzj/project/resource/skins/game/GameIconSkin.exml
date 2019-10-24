@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameIconSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="icon_group" width="659.09" height="137.88" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" bottom="14">
+		<e:Image source="icon_di_png" scale9Grid="633,35,47,26" height="178" width="1334" x="-338" y="-26.120000000000005" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

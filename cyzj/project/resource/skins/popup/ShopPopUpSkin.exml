@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect alpha="0.3" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="shopBg_png" x="0" y="0"/>
+		<e:Image id="returnBtn" source="closeBtn_png" x="1072" y="0"/>
+		<e:Label text="商城" x="564" y="24" size="25"/>
+		<e:Scroller id="scroller" width="1038" height="550" x="72" y="89" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="list" useVirtualLayout="false">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="5" horizontalAlign="center" columnAlign="justifyUsingGap"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

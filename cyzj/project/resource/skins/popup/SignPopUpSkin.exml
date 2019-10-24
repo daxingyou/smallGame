@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SignPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" bottom="0" right="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="0" scaleX="0.8" scaleY="0.8">
+		<e:Image source="singBg_png" x="0" y="0"/>
+		<e:Image source="sign_1_png" x="72" y="92"/>
+		<e:Image source="sign_2_png" x="292" y="91"/>
+		<e:Image source="sign_3_png" x="514" y="92"/>
+		<e:Image source="sign_4_png" x="66" y="369"/>
+		<e:Image source="sign_5_png" x="292" y="369"/>
+		<e:Image source="sign_6_png" x="514" y="369"/>
+		<e:Image source="sign_7_png" x="726" y="91"/>
+		<e:Image id="returnBtn" source="closeBtn_png" x="1070.5" y="8"/>
+		<e:Label text="签到" x="561" y="24.06" size="25"/>
+		<e:Image id="getBtn1" source="getBtn_png" x="100.02" y="288.04"/>
+		<e:Image id="getBtn2" source="getBtn_png" x="322.83" y="290.65"/>
+		<e:Image id="getBtn3" source="getBtn_png" x="545.34" y="290.65"/>
+		<e:Image id="getBtn4" source="getBtn_png" x="98.5" y="570"/>
+		<e:Image id="getBtn5" source="getBtn_png" x="324.72" y="569.44"/>
+		<e:Image id="getBtn6" source="getBtn_png" x="545.34" y="568.11"/>
+		<e:Image id="getBtn7" source="getBtn2_png" x="792.6" y="495.44"/>
+		<e:Image source="gold_png" x="137.52" y="147.48"/>
+		<e:Label id="numLab1" text="60" x="173.01" y="189.34"/>
+		<e:Image source="10001_png" x="355" y="134.48"/>
+		<e:Image x="879.5" y="228.54" source="10015_png"/>
+		<e:Image source="10009_png" x="574" y="136.48"/>
+		<e:Image source="10006_png" x="571.84" y="410"/>
+		<e:Image source="10010_png" x="346" y="410"/>
+		<e:Image source="10003_png" x="129.52" y="408"/>
+		<e:Label id="numLab2" text="10" x="396" y="189.34"/>
+		<e:Label id="numLab3" text="1" x="636.84" y="189.34"/>
+		<e:Label id="numLab4" text="5" x="183.52" y="465.44"/>
+		<e:Label id="numLab5" text="1" x="413" y="465.44"/>
+		<e:Label id="numLab6" text="3" x="636.84" y="465.44"/>
+		<e:Label id="numLab7" text="10" x="937.17" y="289.37"/>
+		<e:Label id="getLab1" text="已领取" x="136" y="297.21" textColor="0x737f3d" size="20" visible="false"/>
+		<e:Label id="getLab2" text="已领取" x="360.67" y="297.7" textColor="0x737F3D" size="20" visible="false"/>
+		<e:Label id="getLab3" text="已领取" x="584.66" y="297.7" textColor="0x737F3D" size="20" visible="false"/>
+		<e:Label id="getLab4" text="已领取" x="136" y="577.5" textColor="0x737F3D" size="20" visible="false"/>
+		<e:Label id="getLab5" text="已领取" x="360.67" y="577.5" textColor="0x737F3D" size="20" visible="false"/>
+		<e:Label id="getLab6" text="已领取" x="582.84" y="575.61" textColor="0x737F3D" size="20" visible="false"/>
+		<e:Label id="getLab7" text="已领取" x="879.5" y="513.94" textColor="0x737F3D" size="30" visible="false"/>
+	</e:Group>
+</e:Skin>

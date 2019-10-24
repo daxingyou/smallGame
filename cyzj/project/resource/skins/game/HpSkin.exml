@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HpSkin" width="107" height="23" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="player_hp0_png" x="0" y="0"/>
+	<e:Group x="22.6" y="8.6">
+		<e:Image id="tiao" source="player_hp1_png" x="0" y="0"/>
+		<e:Rect id="hp_mask" width="80" height="7.2" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Image id="titleIcon" source="title_icon_1_png" x="-4" y="-4" anchorOffsetX="0" width="31.9" anchorOffsetY="0" height="30.83"/>
+</e:Skin>

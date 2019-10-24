@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BagItemSkin" width="97" height="123" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" top="0">
+		<e:Image source="itembox_png" x="0" y="0"/>
+		<e:Image id="icon" source="10000_png" horizontalCenter="0" verticalCenter="-12.5"/>
+		<e:Label id="nameLab" text="初级木晶" x="6" y="103" size="20" anchorOffsetX="0" width="85.5" textAlign="center" verticalAlign="middle" textColor="0x5e5953"/>
+		<e:Label id="numLab" text="200" x="7.5" y="68.5" size="20" anchorOffsetX="0" width="82.5" textAlign="right"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AdventureEffectSkin" width="106" height="63" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img" source="10000_png" x="0" y="0" scaleX="0.7" scaleY="0.7"/>
+	<e:Label id="num_label" text="+ 1" x="61.76" y="19.5" size="24" fontFamily="yt" bold="true" textColor="0xe54006"/>
+</e:Skin>

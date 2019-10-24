@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGameViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Image id="role" source="role_png" scaleX="0.8" scaleY="0.8" left="-900" top="8"/>
+	<e:Image id="startGameBtn" source="startBtn_png" horizontalCenter="0" bottom="96"/>
+	<e:Group id="logoGroup" horizontalCenter="194" top="70">
+		<e:Image source="logo_png" scaleX="1" scaleY="1" x="37.6" y="0"/>
+		<e:Image id="start1" source="star_png" x="25.76" y="141.39" anchorOffsetX="20" anchorOffsetY="18.66" rotation="303.52"/>
+		<e:Image id="start2" source="star_png" x="77.63" y="83.9" anchorOffsetX="30.67" width="61" anchorOffsetY="29.33" height="61"/>
+		<e:Image id="start3" source="star_png" x="181.33" y="106.48" anchorOffsetX="25.97" width="51.66" anchorOffsetY="24.84" height="51.66" rotation="339.72"/>
+		<e:Image id="start4" source="star_png" x="229.18" y="140.09" anchorOffsetX="15.69" width="31.21" anchorOffsetY="15.01" height="31.21" rotation="16.4"/>
+	</e:Group>
+	<e:Image id="img" source="tipsfont_png" horizontalCenter="0" bottom="23"/>
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargeItemSkin" width="743" height="136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="item_bg_png" left="0" top="0"/>
+	<e:Image source="itembox_png" x="24" y="15"/>
+	<e:Image source="gold_png" x="42" y="33"/>
+	<e:Label id="numLab" text="60" right="633" bottom="28"/>
+	<e:Label id="costLab" text="¥6" x="153" y="48.5" textColor="0x684848"/>
+	<e:Image id="buyBtn" source="rechargeBtn_png" x="572" y="30"/>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="IconItemSkin" width="127" height="132" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="icon_kuang_png" x="0" y="0"/>
+	<e:Image id="icon_img" source="icon_1_png" x="10.5" y="3"/>
+	<e:Image id="effect" source="icon_effect_png" x="0.2" y="-9.7" scaleX="0.8" scaleY="0.8" touchEnabled="false" visible="false"/>
+	<e:Group x="29.75" y="110">
+		<e:Image id="mask_tiao" source="nu_tiao_png" x="0" y="0"/>
+		<e:Image id="nu_tiao" source="nu_tiao_png" x="-68" y="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EffectFontSkin" width="250" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:BitmapLabel id="hurt" width="250" height="60" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" font="number_fnt" text=""/>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PauseViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="2" fillAlpha="0.3"/>
+	<e:Group horizontalCenter="-1" verticalCenter="0.5">
+		<e:Image source="pause_bg_png" x="0" y="0"/>
+		<e:Label text="是否确认退出" x="58.66" y="38.49" textColor="0xb55a2b" anchorOffsetX="0" width="340.67" anchorOffsetY="0" height="108.67" verticalAlign="middle" textAlign="center"/>
+		<e:Image id="btn_0" source="pause_btn0_png" x="279.33" y="136.5"/>
+		<e:Image id="btn_1" source="pause_btn1_png" x="58.66" y="136.5"/>
+	</e:Group>
+</e:Skin>

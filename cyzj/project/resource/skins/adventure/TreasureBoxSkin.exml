@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TreasureBoxSkin" width="101" height="97" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="box_img" source="box_img_png" horizontalCenter="0" verticalCenter="-7.5"/>
+	<e:Group id="group" x="22" y="82">
+		<e:Image source="monster_hp0_png" x="0" y="0"/>
+		<e:Image id="tiao" source="monster_hp1_png" x="1.87" y="2" anchorOffsetX="0" width="53"/>
+		<e:Rect id="mask_rect" width="0" height="6" y="1" x="1.87" anchorOffsetY="0" anchorOffsetX="0"/>
+	</e:Group>
+</e:Skin>

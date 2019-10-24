@@ -1,0 +1,58 @@
+{"mc":{
+	"role_effect_4":{
+		"frameRate":10,
+		"labels":[
+			{"name":"","frame":1,"end":7}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"mushinv_attack_hit_attack_hit_03",
+			"x":-36,
+			"y":-2
+			},
+			{
+			"res":"mushinv_attack_hit_attack_hit_04",
+			"x":-38,
+			"y":-26
+			},
+			{
+			"res":"mushinv_attack_hit_attack_hit_05",
+			"x":-27,
+			"y":-28
+			},
+			{
+			"res":"mushinv_attack_hit_attack_hit_06",
+			"x":-36,
+			"y":-26
+			},
+			{
+			"res":"mushinv_attack_hit_attack_hit_07",
+			"x":13,
+			"y":-3
+			},
+			{
+			"res":"mushinv_attack_hit_attack_hit_08",
+			"x":7,
+			"y":-6
+			},
+			{
+			"res":"mushinv_attack_hit_attack_hit_09",
+			"x":5,
+			"y":-6
+			}
+			]
+}},
+	"res":{
+		"mushinv_attack_hit_attack_hit_07":{"x":112,"y":26,"w":14,"h":16},
+		"mushinv_attack_hit_attack_hit_06":{"x":0,"y":0,"w":58,"h":32},
+		"mushinv_attack_hit_attack_hit_09":{"x":0,"y":32,"w":33,"h":28},
+		"mushinv_attack_hit_attack_hit_08":{"x":85,"y":32,"w":27,"h":26},
+		"mushinv_attack_hit_attack_hit_03":{"x":100,"y":0,"w":26,"h":26},
+		"mushinv_attack_hit_attack_hit_05":{"x":33,"y":32,"w":52,"h":16},
+		"mushinv_attack_hit_attack_hit_04":{"x":58,"y":0,"w":42,"h":32}
+	}}

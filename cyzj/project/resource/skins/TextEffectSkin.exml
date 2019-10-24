@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TextEffectSkin" width="163" height="57" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="label" text="天火" x="0" y="0" fontFamily="yt" anchorOffsetX="0" width="163" anchorOffsetY="0" height="57" verticalAlign="middle" textAlign="center"/>
+</e:Skin>

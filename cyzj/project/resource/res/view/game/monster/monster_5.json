@@ -1,0 +1,175 @@
+{"mc":{
+	"monster_5":{
+		"frameRate":13,
+		"labels":[
+			{"name":"attack","frame":1,"end":8}
+			,{"name":"dead","frame":9,"end":16}
+			,{"name":"run","frame":17,"end":22}
+			,{"name":"idle","frame":23,"end":26}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"langrenerjie_attack_attack0000",
+			"x":-95,
+			"y":-108
+			},
+			{
+			"res":"langrenerjie_attack_attack0001",
+			"x":-84,
+			"y":-100
+			},
+			{
+			"res":"langrenerjie_attack_attack0002",
+			"x":-52,
+			"y":-149
+			},
+			{
+			"res":"langrenerjie_attack_attack0003",
+			"x":-61,
+			"y":-155
+			},
+			{
+			"res":"langrenerjie_attack_attack0004",
+			"x":-120,
+			"y":-154
+			},
+			{
+			"res":"langrenerjie_attack_attack0005",
+			"x":-127,
+			"y":-106
+			},
+			{
+			"res":"langrenerjie_attack_attack0006",
+			"x":-127,
+			"y":-131
+			},
+			{
+			"res":"langrenerjie_attack_attack0007",
+			"x":-65,
+			"y":-130
+			},
+			{
+			"res":"langrenerjie_dead_dead0001",
+			"x":-72,
+			"y":-102
+			},
+			{
+			"res":"langrenerjie_dead_dead0002",
+			"x":-73,
+			"y":-98
+			},
+			{
+			"res":"langrenerjie_dead_dead0003",
+			"x":-81,
+			"y":-89
+			},
+			{
+			"res":"langrenerjie_dead_dead0004",
+			"x":-73,
+			"y":-88
+			},
+			{
+			"res":"langrenerjie_dead_dead0005",
+			"x":-64,
+			"y":-88
+			},
+			{
+			"res":"langrenerjie_dead_dead0006",
+			"x":-84,
+			"y":-69
+			},
+			{
+			"res":"langrenerjie_dead_dead0007",
+			"x":-113,
+			"y":-53
+			},
+			{
+			"res":"langrenerjie_dead_dead0008",
+			"x":-113,
+			"y":-54
+			},
+			{
+			"res":"langrenerjie_move_move 0000",
+			"x":-69,
+			"y":-129
+			},
+			{
+			"res":"langrenerjie_move_move 0001",
+			"x":-78,
+			"y":-129
+			},
+			{
+			"res":"langrenerjie_move_move 0002",
+			"x":-77,
+			"y":-147
+			},
+			{
+			"res":"langrenerjie_move_move 0003",
+			"x":-79,
+			"y":-147
+			},
+			{
+			"res":"langrenerjie_move_move 0004",
+			"x":-81,
+			"y":-135
+			},
+			{
+			"res":"langrenerjie_move_move 0005",
+			"x":-77,
+			"y":-140
+			},
+			{
+			"res":"langrenerjie_idle_idle0000",
+			"x":-95,
+			"y":-108
+			},
+			{
+			"res":"langrenerjie_idle_idle0001",
+			"x":-95,
+			"y":-112
+			},
+			{
+			"res":"langrenerjie_idle_idle0002",
+			"x":-97,
+			"y":-110
+			},
+			{
+			"res":"langrenerjie_idle_idle0003",
+			"x":-97,
+			"y":-108
+			}
+			]
+}},
+	"res":{
+		"langrenerjie_dead_dead0001":{"x":875,"y":0,"w":143,"h":114},
+		"langrenerjie_idle_idle0000":{"x":630,"y":265,"w":150,"h":121},
+		"langrenerjie_move_move 0004":{"x":434,"y":0,"w":145,"h":146},
+		"langrenerjie_idle_idle0002":{"x":490,"y":434,"w":153,"h":123},
+		"langrenerjie_attack_attack0006":{"x":0,"y":0,"w":244,"h":143},
+		"langrenerjie_dead_dead0006":{"x":450,"y":557,"w":143,"h":74},
+		"langrenerjie_attack_attack0002":{"x":780,"y":265,"w":112,"h":161},
+		"langrenerjie_attack_attack0004":{"x":0,"y":143,"w":194,"h":167},
+		"langrenerjie_dead_dead0007":{"x":593,"y":557,"w":173,"h":61},
+		"langrenerjie_attack_attack0005":{"x":244,"y":0,"w":190,"h":118},
+		"langrenerjie_dead_dead0008":{"x":278,"y":534,"w":172,"h":62},
+		"langrenerjie_dead_dead0004":{"x":274,"y":439,"w":132,"h":95},
+		"langrenerjie_attack_attack0003":{"x":0,"y":310,"w":136,"h":167},
+		"langrenerjie_attack_attack0001":{"x":0,"y":477,"w":138,"h":111},
+		"langrenerjie_move_move 0000":{"x":490,"y":293,"w":136,"h":141},
+		"langrenerjie_move_move 0005":{"x":490,"y":146,"w":140,"h":147},
+		"langrenerjie_idle_idle0001":{"x":630,"y":141,"w":151,"h":124},
+		"langrenerjie_dead_dead0003":{"x":138,"y":544,"w":140,"h":96},
+		"langrenerjie_attack_attack0007":{"x":194,"y":143,"w":182,"h":143},
+		"langrenerjie_attack_attack0000":{"x":781,"y":120,"w":149,"h":120},
+		"langrenerjie_dead_dead0002":{"x":138,"y":439,"w":136,"h":105},
+		"langrenerjie_dead_dead0005":{"x":0,"y":588,"w":127,"h":97},
+		"langrenerjie_move_move 0002":{"x":344,"y":286,"w":146,"h":153},
+		"langrenerjie_move_move 0001":{"x":579,"y":0,"w":144,"h":141},
+		"langrenerjie_move_move 0003":{"x":194,"y":286,"w":150,"h":153},
+		"langrenerjie_idle_idle0003":{"x":723,"y":0,"w":152,"h":120}
+	}}

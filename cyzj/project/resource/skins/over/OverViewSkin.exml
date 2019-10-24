@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OverViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="over_bg_png" left="0" top="0" bottom="0" right="0"/>
+	<e:Image id="img" source="win_png" left="0" top="0" bottom="0" right="0"/>
+	<e:Image id="over_btn" source="over_btn_png" right="259" top="631"/>
+	<e:Group id="item_group" right="17" top="397">
+		<e:Image source="over_kuang_png" x="0" y="0"/>
+		<e:Image source="over_item_png" x="262" y="65.46"/>
+		<e:Image source="over_item_png" x="412.91" y="65.46"/>
+		<e:Image source="over_item_png" x="110.79" y="65.46"/>
+		<e:Image id="item0" source="10000_png" x="117.79" y="65.46"/>
+		<e:Image id="item1" source="10000_png" x="269" y="68.96"/>
+		<e:Image id="item2" source="10000_png" x="419.91" y="68.96"/>
+		<e:Image source="gold_png" x="422.95" y="-46.54"/>
+		<e:Label id="money" text="Label" x="497.91" y="-23" textColor="0xf9c834"/>
+	</e:Group>
+</e:Skin>
