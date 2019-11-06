@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardItemSkin" width="439" height="680" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cardGroup" x="0" y="0" touchChildren="false" touchEnabled="true" touchThrough="false">
+		<e:Image id="cardImg" x="0" source="card_1_1_png" y="0"/>
+		<e:Label id="nameLab" text="这是一个名字" anchorOffsetX="0" width="228.5" anchorOffsetY="0" height="39" textAlign="center" verticalAlign="middle" size="25" horizontalCenter="0" top="30" stroke="2"/>
+		<e:Image source="common_level_bg_png" horizontalCenter="-89" top="51" visible="false"/>
+		<e:Label id="levelLab" text="数量:1" size="20" anchorOffsetX="0" width="113" anchorOffsetY="0" height="31.2" textAlign="center" verticalAlign="middle" top="65" stroke="2" left="23"/>
+		<!--<e:Image source="card_pro_bg_png" left="47" right="29" bottom="31" visible="false"/>-->
+		<!--<e:Image id="cardProBar" source="card_pro_bar_png" left="47" right="29" bottom="31" visible="false"/>-->
+		<e:Rect id="cardMask" height="20" anchorOffsetX="0" width="177" x="51" y="284" visible="false"/>
+		<e:Label id="progressLab" text="0/2" size="20" horizontalCenter="9" bottom="35" visible="false"/>
+		<e:Image source="icon_shield_png" left="31" bottom="20" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="16de20c0ee8" left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="main_bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Label id="levelLab" text="Lv.20" size="25" anchorOffsetY="0" height="25.17" textAlign="left" verticalAlign="middle" anchorOffsetX="0" width="99.17" left="126" top="22" textColor="0xd8c4a4" fontFamily="ht"/>
+	<e:Label id="nameLab" text="名字5个字" size="25" anchorOffsetY="0" height="26.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" width="193.57" left="123" top="77" textColor="0xd8c4a4" fontFamily="ht"/>
+	<e:Image id="helpBtn" source="helpBtn_png" right="21" top="103" visible="false"/>
+	<e:Image source="boxBtn_png" right="47" top="68"/>
+	<e:Group touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0.5" bottom="189" visible="false">
+		<!--<e:Image source="no_collect_bg_png" x="0" y="0"/>-->
+		<e:Scroller id="scroller" width="582" height="210" x="37" y="74.71" scrollPolicyV="off" visible="false">
+			<e:List id="list" useVirtualLayout="false" visible="false">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="cardGroup" height="713.88" anchorOffsetX="0" scaleX="1" scaleY="1" anchorOffsetY="0" rotation="-0" top="180" width="628.5" horizontalCenter="1.5">
+		
+	</e:Group>
+	<e:Image id="cardMask" source="common_mask_png" horizontalCenter="0" top="212" visible="false"/>
+	<e:Rect id="postion" width="20" height="20" y="636" horizontalCenter="0" visible="false"/>
+	<e:Group right="41" top="9">
+		<e:Image source="gold_bottom_png" x="0" y="0"/>
+		<e:Label id="goldLab" text="0" x="39.67" y="1.67" size="20" anchorOffsetY="0" height="31.33" anchorOffsetX="0" width="101.67" textAlign="center" verticalAlign="middle" textColor="0xed7b1e" fontFamily="ht"/>
+	</e:Group>
+	<e:Group right="208" top="9" visible="false">
+		<e:Image source="xunzhang_bottom_png" x="0" y="0.33"/>
+		<e:Label id="medalLab" text="0" x="39.33" y="0" size="20" anchorOffsetY="0" height="31.33" anchorOffsetX="0" width="105.67" textAlign="center" verticalAlign="middle" textColor="0xed7b1e" fontFamily="ht"/>
+	</e:Group>
+	<e:Image id="headImg" source="head_0_png" left="6" top="6"/>
+	<e:Image id="rechargeBtn" source="rechargeBtn_png" right="143" top="68"/>
+	<e:Image id="boxBtn" right="47" top="70" source="boxBtn_png"/>
+	<e:Group horizontalCenter="0" bottom="0">
+		<e:Image source="expbg_png" x="36" y="149.44"/>
+		<e:Image id="expBar" source="expbar_png" x="35.9" y="149.44"/>
+		<e:Rect id="expMask" width="671.2" height="13.5" x="35.1" y="147.69" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Image source="main_bottom_png" x="0" y="0"/>
+		<e:Image source="mp_img_png" x="357.33" y="5.56"/>
+		<e:Image source="hp_img_png" x="302.25" y="8.4"/>
+	</e:Group>
+	<e:Group id="navGroup" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" bottom="29" anchorOffsetX="0" width="743">
+		<e:Image id="battleBtn" source="battleBtn_png" right="159" top="7"/>
+		<e:Image id="cardBtn" source="cardBtn_png" left="31" top="12"/>
+		<e:Image id="shopBtn" source="shopBtn_png" top="12" left="154"/>
+		<e:Image id="bossBtn" source="bossBtn_png" right="32" top="5"/>
+		<e:Label id="timeLab" text="冷却中:09:59" x="589.83" y="-10.68" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="133.32" size="20" fontFamily="ht" textColor="0xd3bebe"/>
+	</e:Group>
+	<e:Group horizontalCenter="0.5" bottom="169">
+		<e:Image source="storydesc_png" x="0" y="0"/>
+		<e:Label id="cardName" text="名称5个字" x="17" y="10.64" textColor="0xeac15d" stroke="1" fontFamily="ht"/>
+		<e:Label id="descLab" text="这是一段描述" x="20.5" y="64.09" anchorOffsetY="0" height="134.55" anchorOffsetX="0" width="652.79" size="20" textColor="0xcec784" lineSpacing="10" fontFamily="ht"/>
+	</e:Group>
+</e:Skin>

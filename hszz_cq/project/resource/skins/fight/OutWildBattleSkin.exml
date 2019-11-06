@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OutWildBattleSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group horizontalCenter="0" top="0">
+		<e:Image source="topbg_png" width="750" x="0" y="0"/>
+		<e:Label id="levelLab" text="Lv.20" size="25" anchorOffsetY="0" height="25.17" textAlign="left" verticalAlign="middle" anchorOffsetX="0" width="99.17" textColor="0xD8C4A4" fontFamily="ht" x="126" y="22"/>
+		<e:Label id="nameLab" text="名字5个字" size="25" anchorOffsetY="0" height="26.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" width="193.57" textColor="0xD8C4A4" fontFamily="ht" x="123" y="77"/>
+		<e:Group x="564" y="9">
+		<e:Image source="gold_bottom_png" x="0" y="0"/>
+		<e:Label id="goldLab" text="0" x="39.67" y="1.67" size="20" anchorOffsetY="0" height="31.33" anchorOffsetX="0" width="101.67" textAlign="center" verticalAlign="middle" textColor="0xED7B1E" fontFamily="ht"/>
+		</e:Group>
+		<e:Group x="397" y="9" visible="false">
+		<e:Image source="xunzhang_bottom_png" x="0" y="0.33"/>
+		<e:Label id="medalLab" text="0" x="39.33" y="0" size="20" anchorOffsetY="0" height="31.33" anchorOffsetX="0" width="105.67" textAlign="center" verticalAlign="middle" textColor="0xED7B1E" fontFamily="ht"/>
+		</e:Group>
+		<e:Image id="headImg" source="head_0_png" x="6" y="6"/>
+	</e:Group>
+	<e:Image id="returnBtn" source="returnBtn_png" horizontalCenter="320" top="64"/>
+	<e:Image id="boxBtn" source="boxBtn_png" top="68" horizontalCenter="232.5"/>
+	<e:Image id="rechargeBtn" source="rechargeBtn_png" top="67" y="10" horizontalCenter="147.5"/>
+	<ns1:BossHpCom id="bossHpCom" skinName="BossHpComSkin" horizontalCenter="0" top="167"/>
+	<e:Image id="type_0" source="type_0_png" right="21" top="411" alpha="1" name="0"/>
+	<e:Image id="type_1" source="type_1_png" right="21" top="531" name="1"/>
+	<e:Image id="type_2" source="type_2_png" right="21" top="647" name="2"/>
+	<e:Group id="bloodGroup" left="0" right="0" top="0" bottom="0" touchChildren="false" touchEnabled="false" touchThrough="false" visible="false">
+		<e:Image id="blood0" source="blood_png" touchEnabled="false" anchorOffsetY="0" rotation="89.99" width="1333.9621062480335" top="3" bottom="-3" right="-73"/>
+		<e:Image id="blood1" source="blood_png" touchEnabled="false" anchorOffsetY="0" rotation="270.2" width="1333.9621062480335" scaleX="1" top="0" bottom="-1" left="-127"/>
+		<e:Image id="blood2" source="blood_png" touchEnabled="false" anchorOffsetY="0" height="229.36" left="-10" right="10" top="-82"/>
+	</e:Group>
+	<e:Image source="cardGroupbg_png" horizontalCenter="0" bottom="0"/>
+	<e:Scroller id="scroller" height="190.06" scrollPolicyV="off" bottom="29" anchorOffsetY="0" anchorOffsetX="0" width="628" horizontalCenter="0">
+		<e:List id="list" useVirtualLayout="false" anchorOffsetY="0" height="366.67" x="0" y="-166.67">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="18" paddingLeft="4"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group horizontalCenter="5.5" bottom="0">
+		<e:Image id="expBar" source="mainexpbar_png" x="0.66" y="0"/>
+		<e:Image source="expbarpoint_png" x="3.66" y="1"/>
+		<e:Rect id="expMask" width="639.5" height="12.67" x="0" y="3.5" anchorOffsetY="0" anchorOffsetX="0"/>
+	</e:Group>
+	<e:Image id="tipBg" source="tipbg_png" y="317" x="613"/>
+</e:Skin>

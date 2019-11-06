@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CultivateViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0.3"/>
+	<e:Group id="group" horizontalCenter="0.5" verticalCenter="0.5">
+		<e:Image source="cultivate_bg_png" x="0" y="0"/>
+		<e:Image id="btn" source="cultivate_btn_png" x="116.5" y="559.17"/>
+		<e:Image source="cultivate_gold_bg_png" x="133.49" y="523.5"/>
+		<e:Image id="card" source="card_1_png" x="33.5" y="77.28"/>
+		<e:Label id="gold" text="200" x="177.49" y="525.5" anchorOffsetX="0" width="83.34" anchorOffsetY="0" height="26" textAlign="left" verticalAlign="middle" size="22" textColor="0xef7d1f" stroke="1"/>
+		<e:Image source="help_btn_png" x="608.5" y="7.5"/>
+		<e:Rect id="close_btn" width="44" height="41" x="601" y="3" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0"/>
+		<e:Label id="card_name" text="11" x="74.5" y="85.5" anchorOffsetX="0" width="245" anchorOffsetY="0" height="42" verticalAlign="middle" textAlign="center" stroke="1.5" size="20" textColor="0x182acc"/>
+		<!--<e:Image source="card_pro_bg_png" x="76.5" y="437.5"/>-->
+		<!--<e:Image id="tiao" source="card_pro_bar_png" x="76.5" y="437.5"/>-->
+		<e:Rect id="mask_rect" width="0" height="20" x="80.1" y="440" anchorOffsetX="0"/>
+		<e:Image source="icon_shield_png" x="58" y="428.5"/>
+		<e:Label id="num_label" text="1 / 2" x="76.5" y="434.33" anchorOffsetX="0" width="247.33" anchorOffsetY="0" height="31.33" verticalAlign="middle" textAlign="center" size="18" textColor="0xed6e1e" stroke="1"/>
+		<e:Image source="common_level_bg_png" horizontalCenter="-225.5" top="155"/>
+		<e:Label id="levelLab" text="1" size="16" anchorOffsetX="0" width="30" anchorOffsetY="0" height="31.2" textAlign="center" verticalAlign="middle" horizontalCenter="-226.5" top="155"/>
+		<e:Group x="406.34" y="178.34">
+			<e:Label text="生  命:" x="-3" y="5.5" textColor="0x966b3d" stroke="1.5" size="18"/>
+			<e:Image source="cultivate_kuang_png" x="67" y="0"/>
+			<e:Label id="hp_num" text="1000" x="68.5" y="1.5" textColor="0x966B3D" stroke="1.5" size="18" anchorOffsetX="0" width="125.67" anchorOffsetY="0" height="25.33" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:Group x="406.34" y="226.84">
+			<e:Label text="攻击距离:" x="-13" y="5.5" textColor="0x966B3D" stroke="1.5" size="18"/>
+			<e:Image source="cultivate_kuang_png" x="67" y="0"/>
+			<e:Label id="attack_dis" text="1000" x="68.5" y="1.5" textColor="0x966B3D" stroke="1.5" size="18" anchorOffsetX="0" width="125.67" anchorOffsetY="0" height="25.33" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:Group x="407.34" y="273.84">
+			<e:Label text="攻击速度:" x="-13" y="5.5" textColor="0x966B3D" stroke="1.5" size="18"/>
+			<e:Image source="cultivate_kuang_png" x="67" y="0"/>
+			<e:Label id="attack_spd" text="1000" x="68.5" y="1.5" stroke="1.5" size="18" anchorOffsetX="0" width="125.67" anchorOffsetY="0" height="25.33" verticalAlign="middle" textAlign="center" textColor="0x966b3d"/>
+		</e:Group>
+		<e:Group x="406.34" y="130.17">
+			<e:Label text="攻  击:" x="-3" y="5.17" textColor="0x966b3d" stroke="1.5" size="18"/>
+			<e:Image source="cultivate_kuang_png" x="67" y="0"/>
+			<e:Label id="attack_num" text="1000" x="68.5" y="1.84" textColor="0x966B3D" stroke="1.5" size="18" anchorOffsetX="0" width="125.67" anchorOffsetY="0" height="25.33" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+		<e:Label id="descLab" text="Label" x="402.67" y="386" size="18" anchorOffsetY="0" height="198.67" anchorOffsetX="0" width="202.33" textColor="0x966b3d" stroke="1" lineSpacing="12"/>
+	</e:Group>
+</e:Skin>

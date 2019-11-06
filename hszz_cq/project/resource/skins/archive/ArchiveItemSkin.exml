@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ArchiveItemSkin" width="220" height="340" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="card_img" x="0" y="0" scaleX="0.5" scaleY="0.5" source="card_1_1_png"/>
+	<e:Label id="card_name" text="大约只有七个字" x="12.75" y="10" anchorOffsetX="0" width="194" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" size="12" stroke="1.5" textColor="0xEFC145"/>
+	<e:Label id="card_num" text="数量:20" x="18.5" y="41" size="16" stroke="1" textColor="0xEFC145"/>
+</e:Skin>
