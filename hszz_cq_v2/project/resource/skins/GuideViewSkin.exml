@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bg_left" width="383" height="494" anchorOffsetX="0" anchorOffsetY="0" alpha="0.5" left="0" top="0"/>
+	<e:Rect id="bg_bottom" width="311" height="840" anchorOffsetX="0" anchorOffsetY="0" alpha="0.5" left="0" x="10" bottom="0"/>
+	<e:Rect id="bg_top" width="367" height="568.06" anchorOffsetX="0" anchorOffsetY="0" alpha="0.5" right="0" top="0"/>
+	<e:Rect id="bg_right" width="438.67" height="766" anchorOffsetX="0" anchorOffsetY="0" alpha="0.5" right="0" bottom="0"/>
+	<e:Image id="rect" source="common_xuanzhong_png" x="309" y="496" scale9Grid="9,9,57,56" touchEnabled="true" pixelHitTest="false"/>
+	<e:Group id="tipGroup" x="297.47" y="534.67" anchorOffsetX="233.33" anchorOffsetY="26.67">
+		<e:Image source="guide_tip_bg_png" x="0" y="0" anchorOffsetX="0" width="233" scale9Grid="10,6,14,38"/>
+		<e:Label text="使用系统奖励的卡牌进行历练吧" x="3.86" y="5.93" anchorOffsetY="0" height="43.64" anchorOffsetX="0" width="170.97" size="16" textAlign="center" verticalAlign="middle" lineSpacing="5"/>
+	</e:Group>
+</e:Skin>

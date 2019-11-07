@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGameViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="game_btn" source="loading_btn_png" horizontalCenter="0" bottom="146"/>
+</e:Skin>
