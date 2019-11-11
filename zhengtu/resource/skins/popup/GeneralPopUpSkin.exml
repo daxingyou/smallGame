@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GeneralPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="-600">
+		<e:Image x="0" y="0" scale9Grid="50,11,307,68" anchorOffsetX="0" anchorOffsetY="0" source="general_bg_png"/>
+		<e:Scroller id="scroller" width="188.67" height="371.33" x="21.66" y="51.94" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="list">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="top"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image source="name_bg2_png" x="516.49" y="87.92"/>
+		<e:Image source="level_bg_png" x="516" y="119.99"/>
+		<e:Image source="exp_bg_png" x="516.99" y="149.01"/>
+		<e:Label id="nameLab" text="xxxxx" x="592.34" y="87.92" size="20" fontFamily="yt" textColor="0xa38f63"/>
+		<e:Label id="levelLab" text="xxxxx" x="592.34" y="119.99" size="20" fontFamily="yt" textColor="0xa38f63"/>
+		<e:Label id="expLab" text="xxxxx" size="20" fontFamily="yt" x="592.34" y="149.01" textColor="0xa38f63"/>
+		<e:Image source="hp_bg_png" x="517.65" y="242.96"/>
+		<e:Image source="atk_bg_png" x="518.65" y="285.28"/>
+		<e:Image source="brains_bg_png" x="517.65" y="325.29"/>
+		<e:Image source="potential_bg_png" x="517.65" y="327" visible="false"/>
+		<e:Label id="qianliLab" text="xxxxx" x="590.69" y="326.49" size="20" fontFamily="yt" textColor="0xa38f63" visible="false"/>
+		<e:Label id="hpLab" text="xxxxxx" x="591.65" y="242.29" size="20" fontFamily="yt" textColor="0xa38f63"/>
+		<e:Label id="atkLab" text="xxxxx" x="591.65" y="284.1" size="20" fontFamily="yt" textColor="0xa38f63"/>
+		<e:Label id="zhiliLab" text="xxxxxx" x="590.69" y="324.62" size="20" fontFamily="yt" textColor="0xa38f63"/>
+		<e:Image id="fontBg" source="soldier_0_font_bg_png" x="521" y="386.13" scaleX="0.8" scaleY="0.8"/>
+		<e:Label id="rongliangLab" text="xxxxx" x="590.34" y="385.33" size="20" fontFamily="yt" textColor="0xa38f63"/>
+		<e:Image id="returnBtn" source="close_btn_png" x="768.67" y="4.61" anchorOffsetX="0" width="47.33" anchorOffsetY="0" height="47.33"/>
+		<e:Image id="roleImg" source="general_body_0_png" x="221.34" y="43"/>
+		<e:Image id="addSoldierBtn" source="addSoldier_png" x="706.33" y="382.83"/>
+		<e:Image source="bottom_bg_png" x="63.69" y="443.02"/>
+		<e:Image source="soldier_0_font_bg_png" x="79.03" y="448"/>
+		<e:Image source="soldier_1_font_bg_png" x="303.03" y="447"/>
+		<e:Image source="soldier_2_font_bg_png" x="531.36" y="446"/>
+		<e:Label id="soldire0NumLab" text="000" x="161.34" y="450.67" size="20" fontFamily="yt" anchorOffsetX="0" width="126" anchorOffsetY="0" height="21.33" textAlign="center" verticalAlign="middle" textColor="0xa38f63"/>
+		<e:Label id="soldire1NumLab" text="000" x="386.03" y="449.67" size="20" fontFamily="yt" anchorOffsetX="0" width="126" anchorOffsetY="0" height="21.33" textAlign="center" verticalAlign="middle" textColor="0xA38F63"/>
+		<e:Label id="soldire2NumLab" text="000" x="615.34" y="448.67" size="20" fontFamily="yt" anchorOffsetX="0" width="126" anchorOffsetY="0" height="21.33" textAlign="center" verticalAlign="middle" textColor="0xA38F63"/>
+	</e:Group>
+</e:Skin>

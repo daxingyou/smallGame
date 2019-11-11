@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" horizontalCenter="0" verticalCenter="-600" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8">
+		<e:Image source="shopPanel_png" x="0" y="0"/>
+		<e:Image id="btnClose" source="close_btn_png" right="19" top="19" width="41" height="41"/>
+		<e:List id="list" width="1024.17" height="501.33" anchorOffsetX="0" anchorOffsetY="0" touchThrough="true" touchChildren="true" horizontalCenter="-2.5" top="73">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+</e:Skin>

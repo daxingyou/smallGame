@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultPopUpSkin" width="1136" height="640" currentState="win" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="win,fail" >
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content2" includeIn="fail" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="failbg_png" includeIn="fail" x="0" y="0"/>
+		<e:Image id="correctBtn" source="sureBtn_png" includeIn="fail" x="229" y="238.22"/>
+		<e:Image id="resetBtn" source="resetBtn_png" includeIn="fail" x="362.97" y="238.22" visible="false"/>
+	</e:Group>
+	<e:Group id="content1" includeIn="win" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="winbg_png" includeIn="win" x="0" y="0"/>
+		<e:Image source="win_title_png" includeIn="win" x="117" y="0.07"/>
+		<e:Image source="get_font_png" includeIn="win" x="59.56" y="76.01"/>
+		<e:Image source="woods_icon_png" includeIn="win" x="219.26" y="129.91"/>
+		<e:Image source="gem_icon_png" includeIn="win" x="219.26" y="177.49"/>
+		<e:Image source="goods_icon_png" includeIn="win" x="338.05" y="174.46"/>
+		<e:Image source="gold_icon_png" includeIn="win" x="341.09" y="130.91"/>
+		<e:Image id="sureBtn" source="sureBtn_png" includeIn="win" x="222" y="236.39"/>
+		<e:Label id="woodLab" text="0" includeIn="win" x="254.26" y="133.91" size="14" fontFamily="yt" anchorOffsetX="0" width="79.5"/>
+		<e:Label id="feLab" text="0" includeIn="win" x="254.26" y="183.99" size="14" fontFamily="yt" anchorOffsetX="0" width="79.5"/>
+		<e:Label id="goodLab" text="0" includeIn="win" x="373.05" y="183.49" size="14" fontFamily="yt" anchorOffsetX="0" width="79.5"/>
+		<e:Label id="goldLab" text="0" includeIn="win" x="373.05" y="133.91" size="14" fontFamily="yt" anchorOffsetX="0" width="79.5"/>
+		<e:Group id="awardRoleGroup" x="115" y="124.49">
+			<e:Image id="icon" includeIn="win" x="0" y="0" source="progress_head_5_png"/>
+			<e:Label id="nameLab" text="黄忠" includeIn="win" x="1" y="66.9" size="14" fontFamily="yt" anchorOffsetY="0" height="13" anchorOffsetX="0" width="67.5" textAlign="center" verticalAlign="middle" textColor="0xeaa133"/>
+		</e:Group>
+		<e:Label id="expLab" text="000经验" x="125.84" y="80.41" fontFamily="yt" size="20" textColor="0x65e21b" includeIn="win"/>
+	</e:Group>
+</e:Skin>

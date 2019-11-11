@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CollectViewSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:VirtualJoystick id="vj" skinName="VirtualJoystickSkin" left="-213" bottom="19" anchorOffsetX="71.21" anchorOffsetY="74.24"/>
+	<e:Image id="bagImg" source="main_pack_png" right="17" top="9" visible="false"/>
+	<e:Image id="cityBtn" source="homeBtn_png" right="169" top="-143"/>
+	<e:Label text="在郊外游猎可获取额外的物资和军事信息" fontFamily="yt" size="20" horizontalCenter="0" top="10" textColor="0xd8c8ab" stroke="1"/>
+	<!--<e:Image id="atkBtn" source="skill_atk_png" right="-173" bottom="41"/>-->
+	<!--<e:Image id="cityBtn" source="cityBtn_png" right="28" top="-100"/>-->
+</e:Skin>

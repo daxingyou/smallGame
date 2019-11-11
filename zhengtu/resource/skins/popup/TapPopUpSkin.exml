@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TapPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="-600">
+		<e:Image source="taxbg_png" x="0" y="0"/>
+		<e:Group id="feGroup" x="15.63" y="43.33" touchChildren="true" touchEnabled="false" touchThrough="true">
+			<e:Image source="icon_fe_png" x="0" y="0"/>
+			<e:Image source="common_font_bg_2_png" x="9.18" y="328" anchorOffsetX="0" width="241"/>
+			<e:Label text="运输时间:" x="22.18" y="346.82" size="15" fontFamily="yt" textColor="0xf7d399"/>
+			<e:Group x="95.68" y="348.82">
+			<e:Image source="tpx_progress_bg_png" x="0" y="0" anchorOffsetX="0"/>
+			<e:Image id="fe_Pro" source="tpx_progress_bar_png" x="0" y="0"/>
+			<e:Rect id="fe_mask" width="144.5" height="11.5" x="0" y="0.5" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label id="feTimeLab" text="00:00" size="12" fontFamily="yt" x="59" y="0"/>
+			</e:Group>
+			<e:Image source="common_font_bg_png" x="9.18" y="388.66" anchorOffsetX="0" width="148" anchorOffsetY="0" height="32" scale9Grid="19,3,115,19"/>
+			<e:Group id="feQuickGroup" touchChildren="false" touchEnabled="true" touchThrough="false" x="11.68" y="391.16" anchorOffsetX="0" width="142" anchorOffsetY="0" height="25.5">
+			<e:Image source="gold_icon_png" x="5" y="2"/>
+			<e:Label id="feCostLab" text="100" x="34" y="2" size="20" fontFamily="yt" anchorOffsetX="0" width="106" textColor="0xeabc70"/>
+			</e:Group>
+			<e:Image id="feQuickBtn" source="tpx_quick_png" x="162.18" y="386.96"/>
+			<e:Image id="feGetBtn" source="getGood_png" y="387.16" x="162.18"/>
+		</e:Group>
+		<e:Group id="woodGroup" x="278.98" y="43.33" touchChildren="true" touchEnabled="false" touchThrough="true">
+			<e:Image source="icon_woods_png" x="0" y="0"/>
+			<e:Image source="common_font_bg_2_png" x="10" y="328.33" anchorOffsetX="0" width="240"/>
+			<e:Label text="运输时间:" x="22.19" y="347.82" size="15" fontFamily="yt" textColor="0xF7D399"/>
+			<e:Group x="96.66" y="348.83">
+			<e:Image source="tpx_progress_bg_png" x="0" y="1" anchorOffsetX="0"/>
+			<e:Image id="wood_Pro" source="tpx_progress_bar_png" x="0" y="1"/>
+			<e:Rect id="wood_mask" width="146" height="13" x="0" y="1" anchorOffsetX="0"/>
+			<e:Label id="woodTimeLab" text="00:00" size="12" fontFamily="yt" x="60.34" y="0"/>
+			</e:Group>
+			<e:Image source="common_font_bg_png" x="6.67" y="389.02" anchorOffsetX="0" width="146.33" anchorOffsetY="0" height="28.33"/>
+			<e:Group id="woodQuickGroup" y="392.51" touchChildren="false" touchEnabled="true" touchThrough="false" x="9.67" anchorOffsetX="0" width="139.67">
+			<e:Image source="gold_icon_png" x="4.67" y="0" anchorOffsetX="0"/>
+			<e:Label id="woodCostLab" text="100" x="34.99" y="1.31" size="20" fontFamily="yt" anchorOffsetX="0" width="104" textColor="0xeabc70"/>
+			</e:Group>
+			<e:Image id="woodQuickBtn" source="tpx_quick_png" x="162" y="388.67"/>
+			<e:Image id="woodGetBtn" source="getGood_png" y="388.51" x="162.32"/>
+		</e:Group>
+		<e:Group id="goodGroup" x="542.65" y="43.33" touchChildren="true" touchEnabled="false" touchThrough="true">
+			<e:Image source="icon_goods_png" x="0" y="0"/>
+			<e:Image source="common_font_bg_2_png" x="9" y="328.01" anchorOffsetX="0" width="242"/>
+			<e:Group x="97" y="349.49">
+			<e:Image source="tpx_progress_bg_png" x="0" y="0" anchorOffsetX="0"/>
+			<e:Image id="good_Pro" source="tpx_progress_bar_png" x="0" y="0"/>
+			<e:Rect id="good_mask" width="146" height="13" x="0" y="0.57" anchorOffsetX="0"/>
+			<e:Label id="goodTimeLab" text="00:00" size="12" fontFamily="yt" x="59.67" y="0.9"/>
+			</e:Group>
+			<e:Image source="common_font_bg_png" x="8" y="390.01" anchorOffsetX="0" width="146" scale9Grid="19,3,115,19" anchorOffsetY="0" height="28"/>
+			<e:Label text="运输时间:" x="20.67" y="348.06" size="15" fontFamily="yt" textColor="0xF7D399"/>
+			<e:Group id="goodQuickGroup" y="392.16" touchChildren="false" touchEnabled="true" touchThrough="false" x="12" anchorOffsetX="0" width="139">
+			<e:Image source="gold_icon_png" x="4.67" y="0"/>
+			<e:Label id="goodCostLab" text="100" x="34.99" y="1.31" size="20" fontFamily="yt" textColor="0xeabc70" anchorOffsetX="0" width="103.33"/>
+			</e:Group>
+			<e:Image id="goodQuickBtn" source="tpx_quick_png" x="161.67" y="386.68"/>
+			<e:Image id="goodGetBtn" source="getGood_png" y="386.66" x="162.5"/>
+		</e:Group>
+		<e:Image id="returnBtn" source="close_btn_png" x="765.98" y="1.31" anchorOffsetX="0" width="48.67" anchorOffsetY="0" height="48.67"/>
+	</e:Group>
+</e:Skin>

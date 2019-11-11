@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" top="0" right="0" bottom="0" source="gameMainbg_png"/>
+	<e:Image source="main_top_png" left="0" right="0" top="0"/>
+	<e:Group top="2" right="503">
+		<e:Image source="main_gold_png" x="0" y="0"/>
+		<e:Label id="goldLab" text="000" x="41.15" y="4.5" size="15" fontFamily="yt" anchorOffsetX="0" width="93.83" anchorOffsetY="0" height="22.5" textAlign="center" verticalAlign="middle" textColor="0xedc76d"/>
+	</e:Group>
+	<e:Group right="34" top="2">
+		<e:Image source="main_fe_png" x="0" y="0"/>
+		<e:Label id="feLab" text="000" x="39.47" y="4.13" size="15" fontFamily="yt" anchorOffsetX="0" width="95.73" anchorOffsetY="0" height="23.4" textAlign="center" verticalAlign="middle" textColor="0xedc76d"/>
+	</e:Group>
+	<e:Group top="2" right="346">
+		<e:Image source="main_goods_png" x="0" y="0"/>
+		<e:Label id="goodLab" text="000" x="41.7" y="5.13" size="15" fontFamily="yt" anchorOffsetX="0" width="92.83" anchorOffsetY="0" height="21" textAlign="center" verticalAlign="middle" textColor="0xedc76d"/>
+	</e:Group>
+	<e:Group right="188" top="2">
+		<e:Image source="main_woods_png" x="0" y="0"/>
+		<e:Label id="woodLab" text="000" x="40.98" y="5" size="15" fontFamily="yt" anchorOffsetX="0" width="94.33" anchorOffsetY="0" height="22" textAlign="center" verticalAlign="middle" textColor="0xedc76d"/>
+	</e:Group>
+	<e:Image id="jobIcon" source="type_0_png" left="81" top="1"/>
+	<e:Image id="headIcon" source="head_0_png" left="-7" top="0"/>
+	<e:Label id="nameLab" text="夏侯惇" size="14" fontFamily="yt" left="118" top="9" textColor="0xf2d47b"/>
+	<e:Label id="levelLab" text="Lv:10" size="14" left="18" top="69" textAlign="center" verticalAlign="middle" width="35" height="14" fontFamily="yt" textColor="0xedc76d"/>
+	<e:Image id="other_build_1" source="other_build_1_png" x="656.38" y="439"/>
+	<e:Image id="other_build_2" source="other_build_2_png" x="773.33" y="207.48"/>
+	<e:Image id="other_build_4" x="951" y="103.66" source="other_build_4_png"/>
+	<e:Image id="other_build_5" source="other_build_5_png" x="190.68" y="237.66"/>
+	<e:Button id="buildMain" label="Button" x="427" y="145" anchorOffsetX="0" width="403" anchorOffsetY="0" height="137.57">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_main_png" source.down="build_main_focus_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="buildGoods" label="Button" x="693" y="103" anchorOffsetX="0" width="211" anchorOffsetY="0" height="78.48">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_skill_png" source.down="build_skill_focus_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="other_build_3" label="Button" x="772" y="281" anchorOffsetX="0" width="243" anchorOffsetY="0" height="93.64">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_tax_png" source.down="build_tax_focus_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="buildSkill" label="Button" x="539.02" y="295.82">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="other_build_3_png" source.down="other_build_3_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="buildSolid_1" label="Button" x="430" y="394" anchorOffsetX="0" width="328">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_soldier_1_png" source.down="build_soldier_1_focus_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="buildSolid_2" label="Button" x="129" y="283" anchorOffsetX="0" width="286">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_soldier_0_png" source.down="build_soldier_0_focus_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="buildSolid_0" label="Button" x="305" y="244" anchorOffsetX="0" width="249">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_soldier_2_png" source.down="build_soldier_2_focus_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="buildShop" label="Button" x="908" y="153.66">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="build_shop_up_png" source.down="build_shop_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="title_2" x="547.83" y="402.66" touchEnabled="false" source="title_1_png"/>
+	<e:Image id="title_3" x="208" y="311" touchEnabled="false" source="title_2_png"/>
+	<e:Image id="title_1" x="371.66" y="233.67" touchEnabled="false" source="title_0_png"/>
+	<e:Image id="title_5" source="title_main_png" x="597" y="164.33" touchEnabled="false"/>
+	<e:Image id="title_6" source="title_skill_png" x="648.7" y="330.5" touchEnabled="false"/>
+	<e:Image id="title_4" source="title_tax_png" x="802.33" y="135.67" touchEnabled="false" anchorOffsetX="47" anchorOffsetY="19.5"/>
+	<e:Image id="title_7" source="title_shop_png" x="958.47" y="157.83" touchEnabled="false"/>
+	<e:Image source="icon_bg_png" right="-1" bottom="21" visible="false"/>
+	<e:Image source="bottombg_png" right="0" bottom="0"/>
+	<e:Image id="fightBtn" source="battle_icon_png" bottom="5" right="28"/>
+	<e:Image id="readyBtn" right="28" bottom="5" source="collect_icon_png"/>
+	<e:Image id="fuben1_focus" source="iconFocus_png" right="123" bottom="-19"/>
+	<e:Image id="fuben2_focus" source="iconFocus_png" right="211" bottom="-19"/>
+	<e:Image id="fuben3_focus" source="iconFocus_png" right="311" bottom="-19"/>
+	<e:Image id="fuben1" right="129" bottom="3" source="icon1_up_png"/>
+	<e:Image id="fuben2" source="icon_2_up_png" right="246" bottom="4"/>
+	<e:Image id="fuben3" source="icon_3_up_png" right="340" bottom="4"/>
+	<e:Label id="fuben1Lab" text="00:00" size="15" fontFamily="yt" right="170" bottom="87"/>
+	<e:Label id="fuben2Lab" text="00:00" size="15" fontFamily="yt" right="259" bottom="87"/>
+	<e:Label id="fuben3Lab" text="00:00" size="15" fontFamily="yt" right="352" bottom="87"/>
+	<e:Image id="firePosimg" source="checkbox_unselect_png" x="847.66" y="222.33" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag2Posimg" source="checkbox_unselect_png" x="798.83" y="555" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag3Posimg" source="checkbox_unselect_png" x="419.99" y="474" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag4Posimg" source="checkbox_unselect_png" x="143.32" y="400" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag5Posimg" source="checkbox_unselect_png" x="275.31" y="204.33" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag6Posimg" source="checkbox_unselect_png" x="395.32" y="169.33" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag7Posimg" source="checkbox_unselect_png" x="733.36" y="62.66" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag8Posimg" source="checkbox_unselect_png" x="931.98" y="261.66" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flag9Posimg" source="checkbox_unselect_png" x="999.64" y="198.47" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="rectPoint" source="checkbox_unselect_png" x="560.33" y="293.26" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="rectPoint2" source="checkbox_unselect_png" x="268.33" y="486" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="point1" source="checkbox_unselect_png" x="221.33" y="508" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="point3" source="checkbox_unselect_png" x="274.66" y="204.98" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="point2" source="checkbox_unselect_png" x="617.33" y="286" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flagPosImg2" source="checkbox_unselect_png" x="610.33" y="274.35" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="startP" source="checkbox_unselect_png" x="634.33" y="228.33" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="endP" source="checkbox_unselect_png" x="644.71" y="233.66" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image id="flagPosImg1" source="checkbox_unselect_png" x="539.8" y="256.67" anchorOffsetX="13.33" anchorOffsetY="19" alpha="0"/>
+	<e:Image source="main_show_png" left="0" top="0" right="0" bottom="0" pixelHitTest="true" touchEnabled="false"/>
+	<e:Rect id="clickRect" fillAlpha="1" left="0" top="0" right="0" bottom="0" alpha="0.3" visible="false"/>
+	<e:Group id="talkGroup" left="-700" bottom="3" scaleX="0.8" scaleY="0.8" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="show_bg_png" x="0" y="0"/>
+		<e:Label id="contentLab" text="士兵已集结完毕" x="301.83" y="177.95" anchorOffsetX="0" width="506.84" anchorOffsetY="0" height="34.97" size="16" fontFamily="yt" textColor="0xbcb5b5"/>
+		<e:Label text="旗令官:" x="262.42" y="138.98" anchorOffsetX="0" width="155.17" anchorOffsetY="0" height="28.3" size="20" fontFamily="yt" textColor="0xefa623"/>
+		<e:Image id="sureBtn" source="sureBtn_png" x="489.75" y="222.29"/>
+	</e:Group>
+</e:Skin>

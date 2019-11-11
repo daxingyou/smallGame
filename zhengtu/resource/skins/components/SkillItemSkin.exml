@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillItemSkin" width="392" height="131" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="skill_item_bg_png" x="0" y="0"/>
+		<e:Image id="skillIcon" source="skill_icon_1_png" x="12" y="15.5"/>
+		<e:Label id="skillNameLab" text="技能名称" x="115" y="21" size="15" fontFamily="yt" anchorOffsetX="0" width="148.5" anchorOffsetY="0" height="21" textAlign="left" verticalAlign="middle" textColor="0xed9910"/>
+		<e:Label id="skillLevelLab" text="等级" x="273" y="25" size="15" fontFamily="yt" anchorOffsetX="0" width="65" textColor="0xefd2b3" visible="false"/>
+		<e:Label id="skillDescLab" text="技能描述" x="115" y="50.5" size="15" fontFamily="yt" anchorOffsetX="0" width="180" anchorOffsetY="0" height="58.5"/>
+		<e:Image id="studyBtn" source="studyBtn_png" x="304.5" y="88"/>
+		<e:Image source="gold_icon_png" x="301.15" y="59.75"/>
+		<e:Label id="skillCostLab" text="0000" x="327.15" y="63.25" size="15" fontFamily="yt"/>
+	</e:Group>
+</e:Skin>

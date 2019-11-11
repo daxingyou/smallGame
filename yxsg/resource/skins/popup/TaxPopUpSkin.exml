@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaxPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Image x="350.87" y="288.9" source="gold_icon_png" anchorOffsetX="0" width="43.25" anchorOffsetY="0" height="48" visible="false"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="-600">
+		<e:Image y="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="166,18,1002,108" scaleX="1" scaleY="1" x="0" source="tpxBg_png"/>
+		<e:Image source="market_bg_png" x="55.5" y="67.64"/>
+		<e:Image x="224.59" y="406.73" source="gold_icon_png" anchorOffsetX="0" width="66.66" anchorOffsetY="0" height="47.73"/>
+		<e:Image source="field_bg_png" x="563.5" y="63.64"/>
+		<e:Label text="产出速度:" x="85.17" y="418.14" size="20" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		<e:Label text="满仓时间：" x="85.17" y="463.4" size="20" stroke="1" fontFamily="yt" textColor="0xc6b589"/>
+		<e:Label text="1" x="185.17" y="420.07" size="20" anchorOffsetX="0" width="61.33" textAlign="left" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		<e:Label text="/分钟" x="283.34" y="420.97" size="20" anchorOffsetX="0" width="61.33" stroke="1" fontFamily="yt" textColor="0xc6b589"/>
+		<e:Image x="202.37" y="241.86" source="gold_icon_png" anchorOffsetX="0" width="111.63" anchorOffsetY="0" height="79.93"/>
+		<e:Image id="market_collect" x="232" y="506.49" source="getGood_png"/>
+		<e:Group x="181.17" y="458.02">
+		<e:Image x="1.33" y="0.02" scale9Grid="122,3,737,24" anchorOffsetX="0" width="263" source="tpx_progress_bg_png"/>
+		<e:Image id="market_pro" x="0" y="0" anchorOffsetX="0" width="306" source="tpx_progress_bar_png"/>
+		<e:Rect id="market_mask" width="274" height="26" x="16.33" y="2.38" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Label id="marketTimeLab" text="Label" x="30.74" y="3.55" size="20" anchorOffsetX="0" width="251.5" anchorOffsetY="0" height="22.5" textAlign="center" verticalAlign="middle" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		</e:Group>
+		<e:Label text="产出速度:" x="590.34" y="415.97" size="20" fontFamily="yt" stroke="1" textColor="0xc6b589"/>
+		<e:Label text="满仓时间：" x="590.34" y="460.4" size="20" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		<e:Label text="1" x="690.09" y="415.97" size="20" anchorOffsetX="0" width="61.33" textAlign="left" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		<e:Label text="/分钟" x="773.85" y="414.01" size="20" anchorOffsetX="0" width="61.33" stroke="1" fontFamily="yt" textColor="0xc6b589"/>
+		<e:Image x="729.18" y="403.63" source="goods_icon_png" anchorOffsetX="0" width="44.67" anchorOffsetY="0" height="44.67"/>
+		<e:Group x="688.52" y="451.31">
+		<e:Image x="0" y="1.17" scale9Grid="122,3,737,24" anchorOffsetX="0" width="263" source="tpx_progress_bg_png"/>
+		<e:Image id="field_pro" x="0" y="0" width="304.67" anchorOffsetX="0" source="tpx_progress_bar_png"/>
+		<e:Rect id="field_mask" width="273" height="26" x="16.33" y="2.62" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Label id="fieldTimeLab" text="Label" x="26.58" y="4.92" size="20" anchorOffsetX="0" width="251.5" anchorOffsetY="0" height="22.5" textAlign="center" verticalAlign="middle" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		</e:Group>
+		<e:Image id="field_collect" x="751.51" y="502.49" source="getGood_png"/>
+		<e:Image id="returnBtn" source="close_btn_png" right="25" top="23" width="41" height="41"/>
+		<e:Image x="741.14" y="252.84" anchorOffsetX="0" width="52.34" anchorOffsetY="0" height="58.09" source="goods_icon_png" scaleX="1.25" scaleY="1.25"/>
+		<e:Label id="fieldNumLab" text="1" x="814.01" y="268.75" size="30" anchorOffsetX="0" width="61.33" textAlign="left" scaleX="1.25" scaleY="1.25" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+		<e:Label id="marketNumLab" text="0" x="304.5" y="267.38" size="30" anchorOffsetX="0" width="61.33" textAlign="left" scaleX="1.25" scaleY="1.25" fontFamily="yt" textColor="0xc6b589" stroke="1"/>
+	</e:Group>
+	<!--<e:Image source="common_rect_png" x="318.24" y="386.21" anchorOffsetX="0" width="222" anchorOffsetY="0" height="36.34" visible="false"/>-->
+	<e:Label text="Label" x="696.51" y="442.76" size="20" anchorOffsetX="0" width="251.5" anchorOffsetY="0" height="22.5" textAlign="center" verticalAlign="middle" id="markTimeLab0" visible="false"/>
+	<!--<e:Image source="common_rect_png" x="691.08" y="388.16" anchorOffsetX="0" width="222" anchorOffsetY="0" height="36.34" visible="false"/>-->
+</e:Skin>

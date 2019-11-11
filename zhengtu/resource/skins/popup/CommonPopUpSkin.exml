@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" horizontalCenter="0" verticalCenter="-600" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="prompt_bg_png" x="0" y="0"/>
+		<e:Image id="sureBtn" source="sureBtn_png" x="126" y="166"/>
+		<e:Label id="contentLab" text="兵力不足，请补兵" x="14" y="47" anchorOffsetX="0" width="311" anchorOffsetY="0" height="104" size="20" fontFamily="yt" textAlign="center" verticalAlign="middle"/>
+		<e:Image id="returnBtn" source="close_btn_png" x="303.83" y="0" anchorOffsetX="0" width="36.17" anchorOffsetY="0" height="35"/>
+	</e:Group>
+</e:Skin>

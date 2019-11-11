@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FuBenPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" top="0" right="0" bottom="0" source="scene_1_png"/>
+	<e:Image id="returnBtn" source="battle_return_png" right="25" bottom="20"/>
+	<e:Group id="openGroup" horizontalCenter="0.5" verticalCenter="0.5" visible="false">
+		<e:Image source="open_box_bg_png" x="0" y="0"/>
+		<e:Group x="10.5" y="52.63">
+			<e:Image source="open_progress_bg_png" x="0.67" y="0"/>
+			<e:Image id="progressBar" source="open_progress_png" x="0" y="0.66"/>
+			<e:Rect id="progressMask" width="219.34" height="13.33" x="3" y="0.32" anchorOffsetY="0" anchorOffsetX="0"/>
+		</e:Group>
+		<e:Label id="percentLab" text="20%" x="206.84" y="22.16" size="14" fontFamily="yt"/>
+	</e:Group>
+	<e:Image source="scene_1_title_png" left="0" top="0"/>
+</e:Skin>

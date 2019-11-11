@@ -1,0 +1,64 @@
+{"mc":{
+	"skill_0_2":{
+		"frameRate":24,
+		"labels":[
+			{"name":"play","frame":1,"end":8}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"sm_gs_superskill1_0_hit_108801_png",
+			"x":-14,
+			"y":-357
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108802_png",
+			"x":-123,
+			"y":-357
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108803_png",
+			"x":-189,
+			"y":-357
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108804_png",
+			"x":-215,
+			"y":-206
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108805_png",
+			"x":-215,
+			"y":-206
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108806_png",
+			"x":-214,
+			"y":-206
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108807_png",
+			"x":-155,
+			"y":-265
+			},
+			{
+			"res":"sm_gs_superskill1_0_hit_108808_png",
+			"x":-106,
+			"y":-161
+			}
+			]
+}},
+	"res":{
+		"sm_gs_superskill1_0_hit_108803_png":{"x":0,"y":0,"w":390,"h":427},
+		"sm_gs_superskill1_0_hit_108804_png":{"x":440,"y":314,"w":440,"h":310},
+		"sm_gs_superskill1_0_hit_108807_png":{"x":834,"y":626,"w":324,"h":373},
+		"sm_gs_superskill1_0_hit_108801_png":{"x":834,"y":0,"w":32,"h":139},
+		"sm_gs_superskill1_0_hit_108808_png":{"x":440,"y":626,"w":226,"h":233},
+		"sm_gs_superskill1_0_hit_108806_png":{"x":0,"y":429,"w":438,"h":315},
+		"sm_gs_superskill1_0_hit_108802_png":{"x":882,"y":0,"w":260,"h":430},
+		"sm_gs_superskill1_0_hit_108805_png":{"x":392,"y":0,"w":440,"h":312}
+	}}

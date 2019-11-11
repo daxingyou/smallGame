@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroAttrItemSkin" width="188" height="63" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" top="0">
+		<e:Image source="general_tab_bg_png" x="0" y="0"/>
+		<e:Image id="headImg" source="general_head_0_png" x="6.5" y="7"/>
+		<e:Label id="levelLab" text="Lv.1" fontFamily="yt" size="20" anchorOffsetX="0" width="113.33" textAlign="center" textColor="0xc6b769" x="65" y="33"/>
+		<e:Label id="nameLab" text="吕布" fontFamily="yt" size="20" anchorOffsetX="0" width="118" textAlign="center" verticalAlign="middle" textColor="0xefe832" x="63" y="7"/>
+		<e:Group id="lockGroup" x="142.99" y="7.34">
+			<e:Image source="unlock_icon_png" x="8.34" y="0"/>
+			<e:Image source="unlock_title_png" x="0" y="17.65"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

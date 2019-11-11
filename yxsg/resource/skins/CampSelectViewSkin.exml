@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CampSelectViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group scaleX="0.9" scaleY="0.9" touchChildren="true" touchEnabled="false" touchThrough="true" left="0" top="0" bottom="0" right="0">
+		<e:Image source="campBg_png" left="0" top="16" right="0.2222222222221717" bottom="-15.888888888888914"/>
+		<e:Group id="camp_0" touchChildren="true" touchEnabled="false" touchThrough="true" top="-51" width="738" height="441" right="38.22222222222217">
+			<e:Image id="block_1" source="block_1_normal_png" x="0" y="0" pixelHitTest="true"/>
+			<e:Image id="font_1" source="camp_1_png" x="291" y="159.08"/>
+		</e:Group>
+		<e:Group id="camp_1" touchChildren="true" touchEnabled="false" touchThrough="true" top="55" width="738" height="441" right="318.2222222222222">
+			<e:Image id="block_2" source="block_2_normal_png" x="0" y="0" pixelHitTest="true"/>
+			<e:Image id="font_2" source="camp_2_png" x="231" y="177" touchEnabled="true"/>
+		</e:Group>
+		<e:Group id="camp_2" touchChildren="true" touchEnabled="false" touchThrough="true" top="59" width="738" height="441" right="-50.77777777777783">
+			<e:Image id="block_3" source="block_3_normal_png" x="0" y="0" pixelHitTest="true"/>
+			<e:Image id="font_3" source="camp_3_png" x="325" y="218.5"/>
+		</e:Group>
+		<e:Image id="roleImg" source="camp_1_role_png" bottom="-400" horizontalCenter="62.888888888888914" touchEnabled="false"/>
+		<!--<e:Image source="camp_title_png" horizontalCenter="-20" top="67" visible="false"/>-->
+		<e:Image id="startBtn" source="startGame_png" horizontalCenter="0" bottom="0"/>
+		<e:Image source="camp_select_tip_png" horizontalCenter="0" top="3" touchEnabled="false" pixelHitTest="true"/>
+		<e:Rect id="rect1" left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+		<e:Group id="wordGroup" horizontalCenter="62.888888888888914" verticalCenter="-0.055555555555542924" touchChildren="true" touchEnabled="false" touchThrough="true">
+			<e:Image id="storyBg" x="0" y="0" source="story_png"/>
+			<e:Label id="wordLab" text="时下世间，正值三国混战，百姓流离，乱世动荡中，各方势力皆广招天下英才，钻研战阵技能，以便在谋夺天下中占得先机。乱世英豪，群英荟萃，请英雄选择一方你想要历练的势力！" size="20" fontFamily="yt" anchorOffsetY="0" height="94.07" anchorOffsetX="0" width="720.07" x="228.34" y="168.56" lineSpacing="10" stroke="1" textColor="0xf4e1be"/>
+			<e:Image id="startGameBtn" x="501.39" y="259.04" anchorOffsetX="0" anchorOffsetY="0" source="storySure_png"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

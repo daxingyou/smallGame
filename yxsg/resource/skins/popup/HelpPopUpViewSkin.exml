@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpPopUpViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="-600">
+		<e:Image x="-0.5" y="0" source="helpBg_png"/>
+		<e:Image source="npc_city_title_png" x="76" y="103.41" anchorOffsetX="0" width="179.68" anchorOffsetY="0" height="44.25"/>
+		<e:Image source="pub_title_png" x="76" y="213" anchorOffsetX="0" width="174.61" anchorOffsetY="0" height="43"/>
+		<e:Image source="study_title_png" x="76" y="330.45" anchorOffsetX="0" width="179.61" anchorOffsetY="0" height="44.23"/>
+		<e:Image source="tpx_title_png" x="77.01" y="448.34" anchorOffsetX="0" width="167.84" anchorOffsetY="0" height="41.33"/>
+		<e:Label text="城主府：查看当前等级，称号和总属性值。研习“军事”，“攻击力”和“智谋”，以提升征战的获胜几率。" x="120" y="170.12" size="18" fontFamily="yt" textColor="0xd8c8ab"/>
+		<e:Label text="天坛：苦心练习先人遗留下来的旷世之功，可对应提升自己的属性值。" x="120" y="282.74" size="20" fontFamily="yt" textColor="0xd8c8ab"/>
+		<e:Label text="太学：谋天下，先谋智。广学治国安邦之道，经过重重考核方可为一方子民谋天下，每通过一次考核都会获得相应的物资，以助你完成雄心大业。" x="120" y="384.82" size="18" fontFamily="yt" textColor="0xd8c8ab" anchorOffsetX="0" width="870.42" anchorOffsetY="0" height="51.67" lineSpacing="10"/>
+		<e:Label text="税务司：民以食为天，行军打仗粮草先行，粮食和物品交换是一个国家繁荣昌盛必不可少的，在这里可以合理的征收集市，农业赋税，供给军事需求。" x="120" y="500.38" size="20" fontFamily="yt" textColor="0xd8c8ab" anchorOffsetY="0" height="61.67" anchorOffsetX="0" width="860" lineSpacing="10"/>
+		<e:Image id="returnBtn" source="close_btn_png" x="1048.77" y="21.41" width="41" height="41"/>
+	</e:Group>
+</e:Skin>

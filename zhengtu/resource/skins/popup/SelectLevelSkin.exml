@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelectLevelSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="-600">
+		<e:Image source="levelBg_png" x="0" y="0"/>
+		<e:Image id="returnBtn" source="close_btn_png" x="771.46" y="3.99" anchorOffsetX="0" width="44.2" anchorOffsetY="0" height="42.77"/>
+		<e:Group id="levelGroup1" x="73" y="105.99" touchChildren="false" touchEnabled="true" touchThrough="true" name="levelGroup1">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="凉州" y="77.35" size="14" fontFamily="yt" name="levelName" textColor="0xf2d72b" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup2" x="146" y="191.34" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup2">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="益州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup3" x="254" y="147.34" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup3">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="司隶" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup4" x="363" y="63.99" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup4">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="冀州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup5" x="442" y="143.35" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup5">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="豫州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup6" x="297" y="269.69" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup6">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="荆州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup7" x="411" y="304.69" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup7">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="扬州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup8" x="531" y="262.04" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup8">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="徐州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Group id="levelGroup9" x="625" y="157.35" touchChildren="false" touchEnabled="true" touchThrough="false" name="levelGroup9">
+			<e:Image source="level_icon_png" x="0" y="42.01"/>
+			<e:Label text="青州" y="77.35" size="14" fontFamily="yt" name="levelName" x="17"/>
+			<e:Image source="level_icon_0_png" x="6" y="0" name="icon"/>
+		</e:Group>
+		<e:Image id="leftArrow" source="level_arrow_png" x="746.46" y="227.7"/>
+	</e:Group>
+</e:Skin>

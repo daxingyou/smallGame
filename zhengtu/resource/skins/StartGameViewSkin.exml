@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGameViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_png" left="0" top="0" bottom="0" right="0"/>
+	<e:Image id="startGameBtn" source="common_begin_png" horizontalCenter="0" bottom="39"/>
+	<e:Scroller id="scroller" height="414" touchChildren="true" touchEnabled="false" scrollPolicyV="off" verticalCenter="-5" anchorOffsetX="0" left="0" right="0">
+		<e:Group id="heroGroup" anchorOffsetY="0" anchorOffsetX="0" width="1136" height="414" horizontalCenter="0" verticalCenter="-2" touchChildren="true" touchEnabled="true" touchThrough="true">
+		</e:Group>
+	</e:Scroller>
+	<e:Image source="top_font_png" horizontalCenter="0" top="72" scaleX="0.8" scaleY="0.8"/>
+	<e:Image source="view_title_png" horizontalCenter="0" top="19" scaleX="0.8" scaleY="0.8"/>
+	<e:Image source="logo_png" left="20" top="13" scaleX="0.8" scaleY="0.8"/>
+	<e:Label text="抵制不良游戏，拒绝盗版游戏。  注意自我保护，谨防受骗上当。  适度游戏益脑，沉迷游戏伤身。  合理安排时间，享受健康生活。" size="13" fontFamily="yt" horizontalCenter="0" bottom="5" textColor="0xe5d5d5"/>
+	
+</e:Skin>

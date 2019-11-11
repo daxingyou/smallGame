@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="-600">
+		<e:Image source="shopBg_png" x="0" y="0"/>
+		<e:Button id="tabBtn_good" label="商品" x="26.48" y="52.82" currentState="down" anchorOffsetX="0" width="66.67" anchorOffsetY="0" height="34.67">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tab_up_png" source.down="tab_down_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" fontFamily="yt" textColor.down="0xc4b4b4" stroke.down="1" stroke.up="1" textColor.up="0x635b5b"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="tabBtn_recharge" label="充值" x="101.48" y="52.82">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="tab_up_png" source.down="tab_down_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" fontFamily="yt" textColor.down="0xc4b4b4" stroke.down="1" stroke.up="1" textColor.up="0x635b5b"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller id="scroller" width="768.12" height="361.33" y="95.95" anchorOffsetX="0" anchorOffsetY="0" x="26" scrollPolicyH="off">
+			<e:List id="list" anchorOffsetX="0" width="771.15" x="10.61" y="0" useVirtualLayout="false">
+			<e:layout>
+				<e:TileLayout orientation="columns" requestedColumnCount="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image id="returnBtn" source="close_btn_png" x="772.13" y="5.61" anchorOffsetX="0" width="44.33" anchorOffsetY="0" height="42.9"/>
+	</e:Group>
+</e:Skin>

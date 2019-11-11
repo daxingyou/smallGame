@@ -1,0 +1,900 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,vitural_bg_png,vitural_point_png,config_zip,map_json,progress_bg_png,progress_pro_png,common_begin_png,bg_png,gold_icon_png,common_panel2_png,gem_icon_png,goods_icon_png,main_exp_png,main_bar_bg_png,close_btn_png,main_pack_png,pack_item_png,packBg_png,_DS_Store,egret_icon_png,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,outBtn_png,battleBtn_png,common_speak_bg_png,enemy_probg_png,enemy_pro_png,arrow_png,stone_png,light_box_png,common_panel_4_png,start_answerBtn_png,font_bottom_png,gold_icon2_png,submitBtn_png,item_gem_icon_png,item_gold_icon_png,item_goods_icon_png,sellBtn_png,role_info_bg_png,role_head_com_png,shopBtn_png,npc_city_title_png,levelBg_png,cloud_2_png,clound_1_png,start_lab_png,battle_bg_1_png,battle_bg_2_png,battle_bg_3_png,level_head_bg_png,level_bar_png,result_win_bg_png,common_exp_png,sureBtn_png,resetBtn_png,result_fail_bg_png,fail_txt_png,npc_wood_png,shopPanel_png,shop_item_png,buyBtn_png,gold_60_png,gold_500_png,gold_680_png,gold_980_png,level_1_head_png,level_2_head_png,level_3_head_png,homeBg_png,tipsBg_png,item_fire_1_png,item_fire_2_png,item_fire_3_png,item_fire_4_png,item_fire_5_png,item_fire_6_png,item_fire_7_png,red_bar_png,green_bar_png,hp_progress_bg_png,floor_divide_png,camp_1_png,camp_2_png,camp_3_png,campBg_png,startGame_png,camp_1_role_png,camp_2_role_png,camp_3_role_png,block_1_focus_png,block_1_normal_png,block_2_focus_png,block_2_normal_png,block_3_focus_png,block_3_normal_png,tpx_title_png,pub_title_png,study_title_png,battle_title_png,font_1_png,font_2_png,skill_0_0_png,skill_0_1_png,skill_0_2_png,skill_1_0_png,skill_1_1_png,skill_1_2_png,skill_2_0_png,skill_2_1_png,skill_2_2_png,head_0_png,head_1_png,head_2_png,fight_png,end_answerBtn_png,pubBg_png,pub_item_png,skill_icon_bg_png,skill_name_bg_png,getBtn_png,fontBg_png,tpxBg_png,market_bg_png,field_bg_png,tpx_progress_bar_png,tpx_progress_bg_png,getGood_png,iconBg_png,iconBg2_png,line_png,icon_1_png,icon_2_png,icon_3_png,icon_4_png,active_1_png,active_2_png,active_3_png,item_bg_png,upgrade_png,level_close_png,level_lock_png,level_pass_png,level_unlock_png,camp_select_tip_png,skill_icon_bg2_png,common_xuanzhong_png,story_png,storySure_png,helpBtn_png,studyBg_png,helpBg_png,camp_title_0_png,camp_title_1_png,camp_title_2_png,homeBtn_png,return_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "res/common/vitural_bg.png",
+			"type": "image",
+			"name": "vitural_bg_png"
+		},
+		{
+			"url": "res/common/vitural_point.png",
+			"type": "image",
+			"name": "vitural_point_png"
+		},
+		{
+			"url": "config/config.zip",
+			"type": "bin",
+			"name": "config_zip"
+		},
+		{
+			"url": "map/map.json",
+			"type": "json",
+			"name": "map_json"
+		},
+		{
+			"url": "res/common/progress_bg.png",
+			"type": "image",
+			"name": "progress_bg_png"
+		},
+		{
+			"url": "res/common/progress_pro.png",
+			"type": "image",
+			"name": "progress_pro_png"
+		},
+		{
+			"url": "res/common/common_begin.png",
+			"type": "image",
+			"name": "common_begin_png"
+		},
+		{
+			"url": "assets/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "res/item/gold_icon.png",
+			"type": "image",
+			"name": "gold_icon_png"
+		},
+		{
+			"url": "res/common/common_panel2.png",
+			"type": "image",
+			"name": "common_panel2_png"
+		},
+		{
+			"url": "res/item/gem_icon.png",
+			"type": "image",
+			"name": "gem_icon_png"
+		},
+		{
+			"url": "res/item/goods_icon.png",
+			"type": "image",
+			"name": "goods_icon_png"
+		},
+		{
+			"url": "res/view/main_exp.png",
+			"type": "image",
+			"name": "main_exp_png"
+		},
+		{
+			"url": "res/view/main_bar_bg.png",
+			"type": "image",
+			"name": "main_bar_bg_png"
+		},
+		{
+			"url": "res/common/close_btn.png",
+			"type": "image",
+			"name": "close_btn_png"
+		},
+		{
+			"url": "res/view/main_pack.png",
+			"type": "image",
+			"name": "main_pack_png"
+		},
+		{
+			"url": "res/view/bag/pack_item.png",
+			"type": "image",
+			"name": "pack_item_png"
+		},
+		{
+			"url": "res/view/bag/packBg.png",
+			"type": "image",
+			"name": "packBg_png"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"name": "outBtn_png",
+			"type": "image",
+			"url": "res/view/outBtn.png"
+		},
+		{
+			"name": "battleBtn_png",
+			"type": "image",
+			"url": "res/view/battleBtn.png"
+		},
+		{
+			"name": "common_speak_bg_png",
+			"type": "image",
+			"url": "res/common/common_speak_bg.png"
+		},
+		{
+			"name": "enemy_probg_png",
+			"type": "image",
+			"url": "res/common/enemy_probg.png"
+		},
+		{
+			"name": "enemy_pro_png",
+			"type": "image",
+			"url": "res/common/enemy_pro.png"
+		},
+		{
+			"name": "arrow_png",
+			"type": "image",
+			"url": "res/item/arrow.png"
+		},
+		{
+			"name": "stone_png",
+			"type": "image",
+			"url": "res/item/stone.png"
+		},
+		{
+			"name": "light_box_png",
+			"type": "image",
+			"url": "res/item/light_box.png"
+		},
+		{
+			"name": "common_panel_4_png",
+			"type": "image",
+			"url": "res/common/common_panel_4.png"
+		},
+		{
+			"name": "start_answerBtn_png",
+			"type": "image",
+			"url": "res/common/start_answerBtn.png"
+		},
+		{
+			"name": "font_bottom_png",
+			"type": "image",
+			"url": "res/common/font_bottom.png"
+		},
+		{
+			"name": "gold_icon2_png",
+			"type": "image",
+			"url": "res/common/gold_icon.png"
+		},
+		{
+			"name": "submitBtn_png",
+			"type": "image",
+			"url": "res/common/submitBtn.png"
+		},
+		{
+			"name": "item_gem_icon_png",
+			"type": "image",
+			"url": "res/item/item_gem_icon.png"
+		},
+		{
+			"name": "item_gold_icon_png",
+			"type": "image",
+			"url": "res/item/item_gold_icon.png"
+		},
+		{
+			"name": "item_goods_icon_png",
+			"type": "image",
+			"url": "res/item/item_goods_icon.png"
+		},
+		{
+			"name": "sellBtn_png",
+			"type": "image",
+			"url": "res/view/bag/sellBtn.png"
+		},
+		{
+			"name": "role_info_bg_png",
+			"type": "image",
+			"url": "res/view/roleinfo/role_info_bg.png"
+		},
+		{
+			"name": "role_head_com_png",
+			"type": "image",
+			"url": "res/view/roleinfo/role_head_com.png"
+		},
+		{
+			"name": "shopBtn_png",
+			"type": "image",
+			"url": "res/view/shopBtn.png"
+		},
+		{
+			"name": "npc_city_title_png",
+			"type": "image",
+			"url": "res/view/npc_city_title.png"
+		},
+		{
+			"name": "levelBg_png",
+			"type": "image",
+			"url": "res/view/level/levelBg.png"
+		},
+		{
+			"name": "cloud_2_png",
+			"type": "image",
+			"url": "res/view/level/cloud_2.png"
+		},
+		{
+			"name": "clound_1_png",
+			"type": "image",
+			"url": "res/view/level/clound_1.png"
+		},
+		{
+			"name": "start_lab_png",
+			"type": "image",
+			"url": "res/view/battle/start_lab.png"
+		},
+		{
+			"name": "battle_bg_1_png",
+			"type": "image",
+			"url": "res/view/battle/battle_bg_1.png"
+		},
+		{
+			"name": "battle_bg_2_png",
+			"type": "image",
+			"url": "res/view/battle/battle_bg_2.png"
+		},
+		{
+			"name": "battle_bg_3_png",
+			"type": "image",
+			"url": "res/view/battle/battle_bg_3.png"
+		},
+		{
+			"name": "level_head_bg_png",
+			"type": "image",
+			"url": "res/view/battle/level_head_bg.png"
+		},
+		{
+			"name": "level_bar_png",
+			"type": "image",
+			"url": "res/view/battle/level_bar.png"
+		},
+		{
+			"name": "result_win_bg_png",
+			"type": "image",
+			"url": "res/view/result/result_win_bg.png"
+		},
+		{
+			"name": "common_exp_png",
+			"type": "image",
+			"url": "res/common/common_exp.png"
+		},
+		{
+			"name": "sureBtn_png",
+			"type": "image",
+			"url": "res/view/result/sureBtn.png"
+		},
+		{
+			"name": "resetBtn_png",
+			"type": "image",
+			"url": "res/view/result/resetBtn.png"
+		},
+		{
+			"name": "result_fail_bg_png",
+			"type": "image",
+			"url": "res/view/result/result_fail_bg.png"
+		},
+		{
+			"name": "fail_txt_png",
+			"type": "image",
+			"url": "res/view/result/fail_txt.png"
+		},
+		{
+			"name": "npc_wood_png",
+			"type": "image",
+			"url": "res/view/npc_wood.png"
+		},
+		{
+			"name": "shopPanel_png",
+			"type": "image",
+			"url": "res/view/showView/shopPanel.png"
+		},
+		{
+			"name": "shop_item_png",
+			"type": "image",
+			"url": "res/view/showView/shop_item.png"
+		},
+		{
+			"name": "buyBtn_png",
+			"type": "image",
+			"url": "res/view/showView/buyBtn.png"
+		},
+		{
+			"name": "gold_60_png",
+			"type": "image",
+			"url": "res/view/showView/gold_60.png"
+		},
+		{
+			"name": "gold_500_png",
+			"type": "image",
+			"url": "res/view/showView/gold_500.png"
+		},
+		{
+			"name": "gold_680_png",
+			"type": "image",
+			"url": "res/view/showView/gold_680.png"
+		},
+		{
+			"name": "gold_980_png",
+			"type": "image",
+			"url": "res/view/showView/gold_980.png"
+		},
+		{
+			"name": "level_1_head_png",
+			"type": "image",
+			"url": "res/view/level/level_1_head.png"
+		},
+		{
+			"name": "level_2_head_png",
+			"type": "image",
+			"url": "res/view/level/level_2_head.png"
+		},
+		{
+			"name": "level_3_head_png",
+			"type": "image",
+			"url": "res/view/level/level_3_head.png"
+		},
+		{
+			"name": "homeBg_png",
+			"type": "image",
+			"url": "res/view/homeBg.png"
+		},
+		{
+			"name": "tipsBg_png",
+			"type": "image",
+			"url": "res/common/tipsBg.png"
+		},
+		{
+			"name": "item_fire_1_png",
+			"type": "image",
+			"url": "res/item/item_fire_1.png"
+		},
+		{
+			"name": "item_fire_2_png",
+			"type": "image",
+			"url": "res/item/item_fire_2.png"
+		},
+		{
+			"name": "item_fire_3_png",
+			"type": "image",
+			"url": "res/item/item_fire_3.png"
+		},
+		{
+			"name": "item_fire_4_png",
+			"type": "image",
+			"url": "res/item/item_fire_4.png"
+		},
+		{
+			"name": "item_fire_5_png",
+			"type": "image",
+			"url": "res/item/item_fire_5.png"
+		},
+		{
+			"name": "item_fire_6_png",
+			"type": "image",
+			"url": "res/item/item_fire_6.png"
+		},
+		{
+			"name": "item_fire_7_png",
+			"type": "image",
+			"url": "res/item/item_fire_7.png"
+		},
+		{
+			"name": "red_bar_png",
+			"type": "image",
+			"url": "res/common/red_bar.png"
+		},
+		{
+			"name": "green_bar_png",
+			"type": "image",
+			"url": "res/common/green_bar.png"
+		},
+		{
+			"name": "hp_progress_bg_png",
+			"type": "image",
+			"url": "res/common/hp_progress_bg.png"
+		},
+		{
+			"name": "floor_divide_png",
+			"type": "image",
+			"url": "res/view/floor_divide.png"
+		},
+		{
+			"name": "camp_1_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_1.png"
+		},
+		{
+			"name": "camp_2_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_2.png"
+		},
+		{
+			"name": "camp_3_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_3.png"
+		},
+		{
+			"name": "campBg_png",
+			"type": "image",
+			"url": "res/view/campselect/campBg.png"
+		},
+		{
+			"name": "startGame_png",
+			"type": "image",
+			"url": "res/view/campselect/startGame.png"
+		},
+		{
+			"name": "camp_1_role_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_1_role.png"
+		},
+		{
+			"name": "camp_2_role_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_2_role.png"
+		},
+		{
+			"name": "camp_3_role_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_3_role.png"
+		},
+		{
+			"name": "block_1_focus_png",
+			"type": "image",
+			"url": "res/view/campselect/block_1_focus.png"
+		},
+		{
+			"name": "block_1_normal_png",
+			"type": "image",
+			"url": "res/view/campselect/block_1_normal.png"
+		},
+		{
+			"name": "block_2_focus_png",
+			"type": "image",
+			"url": "res/view/campselect/block_2_focus.png"
+		},
+		{
+			"name": "block_2_normal_png",
+			"type": "image",
+			"url": "res/view/campselect/block_2_normal.png"
+		},
+		{
+			"name": "block_3_focus_png",
+			"type": "image",
+			"url": "res/view/campselect/block_3_focus.png"
+		},
+		{
+			"name": "block_3_normal_png",
+			"type": "image",
+			"url": "res/view/campselect/block_3_normal.png"
+		},
+		{
+			"name": "tpx_title_png",
+			"type": "image",
+			"url": "res/view/tpx_title.png"
+		},
+		{
+			"name": "pub_title_png",
+			"type": "image",
+			"url": "res/view/pub_title.png"
+		},
+		{
+			"name": "study_title_png",
+			"type": "image",
+			"url": "res/view/study_title.png"
+		},
+		{
+			"name": "battle_title_png",
+			"type": "image",
+			"url": "res/view/battle/battle_title.png"
+		},
+		{
+			"name": "font_1_png",
+			"type": "image",
+			"url": "res/view/battle/font_1.png"
+		},
+		{
+			"name": "font_2_png",
+			"type": "image",
+			"url": "res/view/battle/font_2.png"
+		},
+		{
+			"name": "skill_0_0_png",
+			"type": "image",
+			"url": "res/item/skill_0_0.png"
+		},
+		{
+			"name": "skill_0_1_png",
+			"type": "image",
+			"url": "res/item/skill_0_1.png"
+		},
+		{
+			"name": "skill_0_2_png",
+			"type": "image",
+			"url": "res/item/skill_0_2.png"
+		},
+		{
+			"name": "skill_1_0_png",
+			"type": "image",
+			"url": "res/item/skill_1_0.png"
+		},
+		{
+			"name": "skill_1_1_png",
+			"type": "image",
+			"url": "res/item/skill_1_1.png"
+		},
+		{
+			"name": "skill_1_2_png",
+			"type": "image",
+			"url": "res/item/skill_1_2.png"
+		},
+		{
+			"name": "skill_2_0_png",
+			"type": "image",
+			"url": "res/item/skill_2_0.png"
+		},
+		{
+			"name": "skill_2_1_png",
+			"type": "image",
+			"url": "res/item/skill_2_1.png"
+		},
+		{
+			"name": "skill_2_2_png",
+			"type": "image",
+			"url": "res/item/skill_2_2.png"
+		},
+		{
+			"name": "head_0_png",
+			"type": "image",
+			"url": "res/view/roleinfo/head_0.png"
+		},
+		{
+			"name": "head_1_png",
+			"type": "image",
+			"url": "res/view/roleinfo/head_1.png"
+		},
+		{
+			"name": "head_2_png",
+			"type": "image",
+			"url": "res/view/roleinfo/head_2.png"
+		},
+		{
+			"name": "fight_png",
+			"type": "image",
+			"url": "res/view/roleinfo/fight.png"
+		},
+		{
+			"name": "end_answerBtn_png",
+			"type": "image",
+			"url": "res/common/end_answerBtn.png"
+		},
+		{
+			"name": "pubBg_png",
+			"type": "image",
+			"url": "res/view/pub/pubBg.png"
+		},
+		{
+			"name": "pub_item_png",
+			"type": "image",
+			"url": "res/view/pub/pub_item.png"
+		},
+		{
+			"name": "skill_icon_bg_png",
+			"type": "image",
+			"url": "res/view/pub/skill_icon_bg.png"
+		},
+		{
+			"name": "skill_name_bg_png",
+			"type": "image",
+			"url": "res/view/pub/skill_name_bg.png"
+		},
+		{
+			"name": "getBtn_png",
+			"type": "image",
+			"url": "res/view/pub/getBtn.png"
+		},
+		{
+			"name": "fontBg_png",
+			"type": "image",
+			"url": "res/view/pub/fontBg.png"
+		},
+		{
+			"name": "tpxBg_png",
+			"type": "image",
+			"url": "res/view/tpx/tpxBg.png"
+		},
+		{
+			"name": "market_bg_png",
+			"type": "image",
+			"url": "res/view/tpx/market_bg.png"
+		},
+		{
+			"name": "field_bg_png",
+			"type": "image",
+			"url": "res/view/tpx/field_bg.png"
+		},
+		{
+			"name": "tpx_progress_bar_png",
+			"type": "image",
+			"url": "res/view/tpx/tpx_progress_bar.png"
+		},
+		{
+			"name": "tpx_progress_bg_png",
+			"type": "image",
+			"url": "res/view/tpx/tpx_progress_bg.png"
+		},
+		{
+			"name": "getGood_png",
+			"type": "image",
+			"url": "res/view/tpx/getGood.png"
+		},
+		{
+			"name": "iconBg_png",
+			"type": "image",
+			"url": "res/view/study/iconBg.png"
+		},
+		{
+			"name": "iconBg2_png",
+			"type": "image",
+			"url": "res/view/study/iconBg2.png"
+		},
+		{
+			"name": "line_png",
+			"type": "image",
+			"url": "res/view/study/line.png"
+		},
+		{
+			"name": "icon_1_png",
+			"type": "image",
+			"url": "res/view/study/icon_1.png"
+		},
+		{
+			"name": "icon_2_png",
+			"type": "image",
+			"url": "res/view/study/icon_2.png"
+		},
+		{
+			"name": "icon_3_png",
+			"type": "image",
+			"url": "res/view/study/icon_3.png"
+		},
+		{
+			"name": "icon_4_png",
+			"type": "image",
+			"url": "res/view/study/icon_4.png"
+		},
+		{
+			"name": "active_1_png",
+			"type": "image",
+			"url": "res/view/study/active_1.png"
+		},
+		{
+			"name": "active_2_png",
+			"type": "image",
+			"url": "res/view/study/active_2.png"
+		},
+		{
+			"name": "active_3_png",
+			"type": "image",
+			"url": "res/view/study/active_3.png"
+		},
+		{
+			"name": "item_bg_png",
+			"type": "image",
+			"url": "res/view/study/item_bg.png"
+		},
+		{
+			"name": "upgrade_png",
+			"type": "image",
+			"url": "res/view/study/upgrade.png"
+		},
+		{
+			"name": "level_close_png",
+			"type": "image",
+			"url": "res/view/level/level_close.png"
+		},
+		{
+			"name": "level_lock_png",
+			"type": "image",
+			"url": "res/view/level/level_lock.png"
+		},
+		{
+			"name": "level_pass_png",
+			"type": "image",
+			"url": "res/view/level/level_pass.png"
+		},
+		{
+			"name": "level_unlock_png",
+			"type": "image",
+			"url": "res/view/level/level_unlock.png"
+		},
+		{
+			"name": "camp_select_tip_png",
+			"type": "image",
+			"url": "res/view/campselect/camp_select_tip.png"
+		},
+		{
+			"name": "skill_icon_bg2_png",
+			"type": "image",
+			"url": "res/common/skill_icon_bg.png"
+		},
+		{
+			"name": "common_xuanzhong_png",
+			"type": "image",
+			"url": "res/common/common_xuanzhong.png"
+		},
+		{
+			"name": "story_png",
+			"type": "image",
+			"url": "res/view/campselect/story.png"
+		},
+		{
+			"name": "storySure_png",
+			"type": "image",
+			"url": "res/view/campselect/storySure.png"
+		},
+		{
+			"name": "helpBtn_png",
+			"type": "image",
+			"url": "res/view/helpBtn.png"
+		},
+		{
+			"name": "studyBg_png",
+			"type": "image",
+			"url": "res/view/study/studyBg.png"
+		},
+		{
+			"name": "helpBg_png",
+			"type": "image",
+			"url": "res/view/helpBg.png"
+		},
+		{
+			"name": "camp_title_0_png",
+			"type": "image",
+			"url": "res/view/roleinfo/camp_title_0.png"
+		},
+		{
+			"name": "camp_title_1_png",
+			"type": "image",
+			"url": "res/view/roleinfo/camp_title_1.png"
+		},
+		{
+			"name": "camp_title_2_png",
+			"type": "image",
+			"url": "res/view/roleinfo/camp_title_2.png"
+		},
+		{
+			"name": "homeBtn_png",
+			"type": "image",
+			"url": "res/view/homeBtn.png"
+		},
+		{
+			"name": "return_png",
+			"type": "image",
+			"url": "res/common/return.png"
+		}
+	]
+}

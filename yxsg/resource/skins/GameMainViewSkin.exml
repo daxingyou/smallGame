@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="actionGroup" source="homeBg_png" anchorOffsetX="480" anchorOffsetY="320" scaleX="1" width="960" height="640" x="480" y="320"/>
+	<!--<e:Group id="flagLeftGroup" width="163.06" height="196" anchorOffsetX="0" anchorOffsetY="0" left="99" top="156" visible="false">
+		<e:Image source="flag_pole_png" left="0" top="0"/>
+	</e:Group>-->
+	<!--<e:Group id="flagRightGroup" width="163.06" height="196" anchorOffsetX="0" anchorOffsetY="0" right="-43" top="156" visible="false">
+		<e:Image source="flag_pole_png" top="0" left="0"/>
+	</e:Group>-->
+	<e:Image source="npc_city_title_png" right="123" top="112"/>
+	<e:Group id="npc_city" width="532" height="218.66" touchChildren="false" touchEnabled="true" touchThrough="false" top="0" anchorOffsetX="0" anchorOffsetY="0" right="0" alpha="0">
+		<e:Rect left="0" top="0" bottom="0" right="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+	<e:Rect id="city_add" width="417.67" height="156" anchorOffsetX="0" anchorOffsetY="0" alpha="0" right="0" top="210"/>
+	<e:Image source="tpx_title_png" right="228" top="420"/>
+	<e:Group id="npc_answer" width="265.33" height="178.68" touchChildren="false" touchEnabled="true" touchThrough="false" top="386" anchorOffsetX="0" anchorOffsetY="0" alpha="0" right="169">
+		<e:Rect left="0" top="0" right="0" bottom="0"/>
+	</e:Group>
+	<e:Image source="study_title_png" left="163" top="401"/>
+	<e:Group id="npc_general" width="181.33" height="176" touchChildren="false" touchEnabled="true" touchThrough="false" top="334" anchorOffsetX="0" anchorOffsetY="0" left="133" alpha="0">
+		<e:Rect left="0" top="0" right="0" bottom="0" alpha="0"/>
+	</e:Group>
+	<e:Image source="pub_title_png" horizontalCenter="-61" top="279"/>
+	<e:Group id="npc_pub" width="208" height="149.33" touchChildren="false" touchEnabled="true" touchThrough="false" top="228" horizontalCenter="-52" anchorOffsetX="0" anchorOffsetY="0" alpha="0">
+		<e:Rect left="0" top="0" right="0" bottom="0" alpha="0"/>
+	</e:Group>
+	<e:Image id="outBtn" source="outBtn_png" right="11" bottom="10"/>
+	<e:Image id="battleBtn" source="battleBtn_png" anchorOffsetX="0" anchorOffsetY="0" right="102" bottom="10"/>
+	<e:Image id="infoBtn" source="helpBtn_png" x="866" y="10"/>
+	<e:Image id="bagBtn" source="main_pack_png" bottom="14" right="211"/>
+	<e:Image id="shopBtn" source="shopBtn_png" y="286" x="866"/>
+</e:Skin>

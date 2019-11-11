@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StudyPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="-600">
+		<e:Image source="studyBg_png" x="0" y="0"/>
+		<e:Image id="returnBtn" source="close_btn_png" width="41" height="41" right="17" top="18"/>
+		<e:Image source="line_png" x="107.88" y="137.74"/>
+		<e:Image source="iconBg_png" x="146.38" y="172.24"/>
+		<e:Image source="iconBg2_png" x="181.38" y="99.74"/>
+		<e:Image source="iconBg2_png" x="79.88" y="302.5"/>
+		<e:Image source="iconBg2_png" x="281.88" y="303.74"/>
+		<e:Image id="icon" source="icon_1_png" x="147.5" y="174"/>
+		<e:Image id="active_1" source="active_1_png" x="186.7" y="104.46" anchorOffsetX="0" width="47.33" anchorOffsetY="0" height="44.57"/>
+		<e:Image id="active_2" source="active_2_png" x="84.52" y="308.74" anchorOffsetX="0" width="52.04" anchorOffsetY="0" height="49"/>
+		<e:Image id="active_3" source="active_3_png" x="281.89" y="305.67" anchorOffsetX="0" width="57.7" anchorOffsetY="0" height="54.33"/>
+		<e:Label text="等级:" x="175.5" y="395.67" size="20" fontFamily="yt" textColor="0xdbd0d0"/>
+		<e:Label id="levelLab" text="1" x="232.5" y="395.67" size="20" fontFamily="yt" textColor="0xdbd0d0"/>
+		<e:Image source="skill_name_bg_png" x="106.88" y="430.61"/>
+		<e:Label id="nameLab" text="Label" x="123.38" y="440.61" size="20" fontFamily="yt" anchorOffsetX="0" width="164.67" textAlign="center" verticalAlign="middle" textColor="0xdbd0d0"/>
+		<e:Label id="descLab" text="这是一个技能的描述" x="70.5" y="487" anchorOffsetX="0" width="271.33" anchorOffsetY="0" height="70" size="20" fontFamily="yt" textAlign="center" verticalAlign="middle" textColor="0xdbd0d0"/>
+		<e:Image source="item_bg_png" x="431.5" y="70"/>
+		<e:Image source="item_bg_png" x="643.5" y="70"/>
+		<e:Image source="item_bg_png" x="851.95" y="70"/>
+		<e:Image id="upgrade_1" source="upgrade_png" x="452" y="440.61"/>
+		<e:Image id="upgrade_2" source="upgrade_png" x="664" y="440"/>
+		<e:Image id="upgrade_3" source="upgrade_png" x="872.45" y="440"/>
+		<e:Image id="icon1" source="active_1_png" x="452" y="153.74"/>
+		<e:Image id="icon2" source="active_2_png" x="675" y="153.74"/>
+		<e:Image id="icon3" source="active_3_png" x="881.45" y="153.74"/>
+		<e:Label id="attr_1" text="Label" x="455" y="278.67" anchorOffsetX="0" width="119" verticalAlign="middle" textAlign="center" size="20" fontFamily="yt" anchorOffsetY="0" height="70.66" textColor="0xdbd0d0"/>
+		<e:Label id="attr_2" text="Label" x="668" y="279.73" anchorOffsetX="0" width="119" verticalAlign="middle" textAlign="center" size="20" fontFamily="yt" anchorOffsetY="0" height="71" textColor="0xdbd0d0"/>
+		<e:Label id="attr_3" text="生命+888" x="876.45" y="282" anchorOffsetX="0" width="119" verticalAlign="middle" textAlign="center" size="20" fontFamily="yt" height="71" textColor="0xdbd0d0"/>
+		<e:Image source="font_bottom_png" x="447.83" y="367.67" anchorOffsetX="0" width="132.34"/>
+		<e:Image source="font_bottom_png" x="659.33" y="367.67" anchorOffsetX="0" width="132.34"/>
+		<e:Image source="font_bottom_png" x="869.11" y="367.67" anchorOffsetX="0" width="132.34"/>
+		<e:Image source="gold_icon2_png" x="455" y="367.67"/>
+		<e:Image source="gold_icon2_png" x="668" y="367.67"/>
+		<e:Image source="gold_icon2_png" x="881.45" y="368.17"/>
+		<e:Label id="cost_1" text="Label" x="481" y="368.17" size="20" fontFamily="yt" anchorOffsetX="0" width="94" textAlign="center" verticalAlign="middle" textColor="0xbf9d54"/>
+		<e:Label id="cost_2" text="Label" x="697.67" y="369.17" size="20" fontFamily="yt" anchorOffsetX="0" width="94" textAlign="center" verticalAlign="middle" textColor="0xbf9d54"/>
+		<e:Label id="cost_3" text="Label" x="910.49" y="367.67" size="20" fontFamily="yt" anchorOffsetX="0" width="94" textAlign="center" verticalAlign="middle" textColor="0xbf9d54"/>
+	</e:Group>
+</e:Skin>

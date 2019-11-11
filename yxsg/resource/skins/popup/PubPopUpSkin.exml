@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PubPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Image source="tipsBg_png" x="743.58" y="232.54" anchorOffsetX="0" width="244.56" anchorOffsetY="0" height="220.67" scale9Grid="50,11,307,68" visible="false"/>
+	<e:Label id="nameLab" text="关羽" x="807" y="194.54" visible="false"/>
+	<e:Label text="消耗:" x="796.86" y="494.4" visible="false"/>
+	<e:Label id="costLab" text="000" x="852.06" y="494.4" anchorOffsetX="0" width="161" visible="false"/>
+	<!--<e:Image id="getBtn" source="button_collect_png" x="543.8" y="462.4" visible="false"/>-->
+	<e:Label id="attrLab" text="生命:1000\n\n武力:800\n\n智力:600\n\n体力:900 " x="753" y="255.74" anchorOffsetX="0" width="192.33" size="20" anchorOffsetY="0" height="163.31" textAlign="center" visible="false"/>
+	<e:Rect id="general_1" width="95" height="90" x="988.14" y="164.54" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="true" visible="false"/>
+	<e:Rect id="general_2" width="95" height="90" x="988.14" y="271.61" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="true" visible="false"/>
+	<e:Rect id="general_3" width="95" height="90" x="988.14" y="379.2" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="true" visible="false"/>
+	<e:Group id="content" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="-600" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image y="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="166,18,1002,108" scaleX="1" scaleY="1" x="0" source="pubBg_png"/>
+		<e:Image id="returnBtn" source="close_btn_png" x="1050.1" y="18" width="41" height="41"/>
+		<e:Scroller id="scroller" width="1016" height="516" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="63">
+			<e:List id="list">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="top" gap="15"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

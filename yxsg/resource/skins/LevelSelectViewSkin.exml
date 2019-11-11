@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelSelectViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" horizontalCenter="0" verticalCenter="-600" touchChildren="true" touchEnabled="false" touchThrough="true" scaleX="0.8" scaleY="0.8">
+		<e:Image anchorOffsetX="0" x="0" y="0" source="levelBg_png"/>
+		<e:Image id="returnBtn" x="1078" y="66.99" source="level_close_png"/>
+		<e:Image id="level_1" x="233.5" y="210.5" name="level_1" source="level_unlock_png"/>
+		<e:Image id="level_2" source="level_unlock_png" x="322.49" y="367.18" name="level_2"/>
+		<e:Image id="level_3" source="level_unlock_png" x="420.82" y="483.85" name="level_3"/>
+		<e:Image id="level_4" source="level_unlock_png" x="609.15" y="398.34" name="level_4"/>
+		<e:Image id="level_5" source="level_unlock_png" x="802.48" y="363.84" name="level_5"/>
+		<e:Image id="level_6" source="level_unlock_png" x="530.14" y="281.49" name="level_6"/>
+		<e:Image id="level_7" source="level_unlock_png" x="836.98" y="246.99" name="level_7"/>
+		<e:Image id="level_8" source="level_unlock_png" x="715.31" y="114.99" name="level_8"/>
+		<e:Image id="level_9" source="level_unlock_png" x="540.15" y="149.49" name="level_9"/>
+		<e:Label id="level_1_txt" text="洛阳" x="238.5" y="278.99" fontFamily="yt" textColor="0xefc009"/>
+		<e:Label id="level_2_txt" text="建业" x="326.99" y="442.34" fontFamily="yt" textColor="0xefc009"/>
+		<e:Label id="level_3_txt" text="汉中" x="427.82" y="555.35" fontFamily="yt" textColor="0x2d9bef"/>
+		<e:Label id="level_4_txt" text="武威" x="618.15" y="469.84" fontFamily="yt" textColor="0xefc009"/>
+		<e:Label id="level_5_txt" text="会稽" x="811.48" y="437.34" fontFamily="yt" textColor="0xefc009"/>
+		<e:Label id="level_6_txt" text="零陵" x="537.14" y="351.34" fontFamily="yt" textColor="0xefc009"/>
+		<e:Label id="level_9_txt" text="西平" x="546.65" y="218.49" fontFamily="yt" textColor="0xcbcec8"/>
+		<e:Label id="level_7_txt" text="下邳" x="845.98" y="320.49" fontFamily="yt" textColor="0xcbcec8"/>
+		<e:Label id="level_8_txt" text="新野" x="724.31" y="188.49" fontFamily="yt" textColor="0xCBCEC8"/>
+	</e:Group>
+</e:Skin>

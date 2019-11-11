@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeroCardItemSkin" width="246" height="438" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="22" bottom="10" touchChildren="false" touchEnabled="true" touchThrough="false">
+		<e:Image id="heroImg" source="general_0_png" left="0" top="0"/>
+		<e:Image id="typeIcon" source="type_0_png" x="177" y="24"/>
+		<e:Image source="name_bg_png" x="41" y="22"/>
+		<e:Label id="nameLab" text="黄忠" x="44" y="25.4" anchorOffsetX="0" width="21.4" size="14" anchorOffsetY="0" height="58.8" textAlign="center" verticalAlign="middle" fontFamily="yt"/>
+		<e:Group id="focusGroup" x="-12" y="-17.35">
+			<e:Image source="select_focus_png" x="0" y="0"/>
+			<e:Image source="select_fire_png" x="42.5" y="31.35" anchorOffsetY="0" height="367"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

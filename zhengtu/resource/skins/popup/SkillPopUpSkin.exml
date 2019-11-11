@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillPopUpSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="content" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" verticalCenter="-600">
+		<e:Image source="skillBg_png" x="0" y="0"/>
+		<e:Scroller id="scroller" width="789" height="428" x="15.5" y="46" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="list">
+			<e:layout>
+				<e:TileLayout orientation="rows" requestedColumnCount="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image id="returnBtn" source="close_btn_png" x="771.5" y="5" anchorOffsetX="0" width="41" anchorOffsetY="0" height="39.68"/>
+	</e:Group>
+</e:Skin>

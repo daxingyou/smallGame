@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleViewSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" anchorOffsetX="480" source="battle_bg_1_png" width="960" height="640" anchorOffsetY="320" x="480" y="320"/>
+	<e:Group horizontalCenter="0" top="0">
+		<e:Image source="battle_title_png" x="0" y="0"/>
+		<e:Image id="powerTitle" source="font_1_png" anchorOffsetX="170" right="723" top="33"/>
+		<e:Image source="font_2_png" left="662" top="35"/>
+		<e:Label id="myPower" text="000" size="20" anchorOffsetY="-0.67" height="41" anchorOffsetX="30" textAlign="right" verticalAlign="middle" textColor="0xefad5b" fontFamily="yt" stroke="1" right="672" top="31"/>
+		<e:Label id="enemyPower" text="000" size="20" anchorOffsetY="0" height="41" anchorOffsetX="0" width="157.33" textAlign="left" verticalAlign="middle" textColor="0xEFAD5B" fontFamily="yt" stroke="1" left="856" top="33"/>
+	</e:Group>
+	<e:Image id="shopBtn" x="26.5" y="548" source="shopBtn_png" visible="false"/>
+	<e:Image id="bagBtn" x="113.79" y="548" source="main_pack_png" visible="false"/>
+	<e:Image source="skill_icon_bg2_png" horizontalCenter="0" bottom="0"/>
+	<e:Group id="skillGroup" width="266" height="118" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" bottom="20" touchChildren="true" touchEnabled="false" touchThrough="true"/>
+	<e:Image id="returnBtn" anchorOffsetX="0" anchorOffsetY="0" right="14" bottom="34" source="return_png" scaleX="0.6" scaleY="0.6"/>
+</e:Skin>
