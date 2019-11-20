@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CollectSoldierPopSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="collectGroup" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="collect_bg_png" x="0" y="0"/>
+		<e:Image source="collect_point_png" x="768" y="195"/>
+		<e:Label text="兵种选择" x="797" y="190" size="20" textColor="0xb7ae9f"/>
+		<e:Image source="collect_point_png" x="770" y="282.33"/>
+		<e:Label text="范围选择" x="799" y="277.33" size="20" textColor="0xB7AE9F"/>
+		<e:CheckBox id="type_1" label="CheckBox" x="766" y="227" anchorOffsetX="0" width="30" selected="false" name="type_1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="dis_1" label="CheckBox" x="767.5" y="308" anchorOffsetX="0" width="30" selected="false" name="dis_1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="弓兵" x="797" y="233.5" size="20" textColor="0xa8a6a6"/>
+		<e:Label text="100里/1分钟" x="799" y="315.5" size="20" textColor="0xA8A6A6"/>
+		<e:CheckBox id="dis_3" label="CheckBox" x="767.5" y="352" anchorOffsetX="0" width="30" selected="false" name="dis_3">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="300里/5分钟" x="799" y="359.5" size="20" textColor="0xA8A6A6"/>
+		<e:CheckBox id="dis_8" label="CheckBox" x="768.5" y="395" anchorOffsetX="0" width="30" selected="false" name="dis_8">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="800里/10分钟" x="800" y="402.5" size="20" textColor="0xa8a6a6"/>
+		<e:CheckBox id="type_2" label="CheckBox" x="885" y="228" anchorOffsetX="0" width="30" selected="false" name="type_2">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="步兵" x="916" y="234.5" size="20" textColor="0xA8A6A6"/>
+		<e:CheckBox id="type_3" label="CheckBox" x="1004" y="227.5" anchorOffsetX="0" width="30" selected="false" name="type_3">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="骑兵" x="1035" y="234" size="20" textColor="0xA8A6A6"/>
+		<e:Label text="消耗：" x="809" y="481.15" size="20" textColor="0xa8a6a6"/>
+		<e:Image source="collect_font_bg_png" x="869" y="475.07"/>
+		<e:Image source="tax_goods_png" x="867.52" y="477.08"/>
+		<e:Label id="costLab" text="000" x="916" y="475.99" size="20" anchorOffsetY="0" height="27.33" anchorOffsetX="0" width="118.67" textAlign="center" verticalAlign="middle"/>
+		<e:Image id="collectBtn" source="collect_btn_png" x="855.52" y="551.82"/>
+		<e:Image id="getBtn" source="collect_get_btn_png" x="856" y="550.66"/>
+		<e:Image id="returnBtn" source="common_close_png" x="1076.52" y="39.36" anchorOffsetX="0" width="51.61" anchorOffsetY="0" height="51.61"/>
+		<e:Label id="timeLab" text="00:00" size="20" textColor="0x00ff00" x="811.02" y="523" anchorOffsetX="0" width="228.5" textAlign="center"/>
+		<e:Rect id="rect_1" width="107.88" height="47.28" x="747.94" y="220.93" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="rect_1"/>
+		<e:Rect id="rect_4" width="156.36" height="42.73" x="763.06" y="296.82" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="dis_1"/>
+		<e:Rect id="rect_5" width="156.36" height="42.73" x="763.94" y="347.44" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="dis_3"/>
+		<e:Rect id="rect_6" width="156.36" height="42.73" x="763.86" y="397.04" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="dis_8"/>
+		<e:Rect id="rect_2" width="107.88" height="47.28" x="869.4" y="220.92" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="rect_2"/>
+		<e:Rect id="rect_3" width="107.88" height="47.28" x="990.42" y="220.92" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="rect_3"/>
+	</e:Group>
+</e:Skin>

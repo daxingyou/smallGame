@@ -1,0 +1,10 @@
+<e:Skin class="NeiWuStoryItemSkin" width="619" currentState="left" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="left,right,center"  height.left="218" height.right="218" height.center="218">
+	<e:Image source="neiwu_talk_bg_png" x="0" y="0" y.center="64" y.left="64" bottom.right="0"/>
+	<e:Image id="head" x="7.5" y="-18" source="neiwu_head_2_png" x.right="380.5" y.right="-17.5"/>
+	<e:Label id="storyLab" text="Label" x="309.5" y="77" anchorOffsetX="0" width="294" anchorOffsetY="0" height="125" size="20" textAlign="left" verticalAlign="middle" textColor="0x474343" x.right="28.5" y.right="128.5" x.center="230.5" y.center="78.5" textAlign.center="center" height.center="70" width.center="342" text.center="Label" includeIn="left,right" textColor.right="0x474343" x.left="256.46" width.left="321.27" height.left="64.39" y.left="133.06" verticalAlign.left="top" height.right="67.42" verticalAlign.right="top" lineSpacing.right="10" lineSpacing.left="10" size.left="22" size.right="22"/>
+	<e:Label id="nameLab2" text="Label" includeIn="right" size="25" textColor="0x5e5353" right="238" top="91"/>
+	<e:Label id="nameLab" text="Label" includeIn="left" x="182.46" y="94" size="25" textColor="0x5e5353"/>
+	<e:Image id="sureBtn" source="neiwu_sure_png" includeIn="center" x="267.5" y="157"/>
+	<e:Image id="cancleBtn" source="neiwu_cancle_png" includeIn="center" x="451" y="157"/>
+	<e:Label id="label" text="Label" includeIn="center" x="242" y="87" anchorOffsetX="0" width="321" anchorOffsetY="0" height="62" size="22" textColor="0x474343" textAlign="center" verticalAlign="middle" lineSpacing="10"/>
+</e:Skin>

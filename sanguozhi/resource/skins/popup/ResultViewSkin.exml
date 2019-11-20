@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultViewSkin" width="1334" height="750" currentState="win" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="win,fail" >
+	<e:Rect includeIn="fail" alpha="0.3" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="failGroup" includeIn="fail" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="result_bg_png" includeIn="fail" x="0" y="0"/>
+		<e:Image source="fail_font_png" includeIn="fail" x="288.5" y="21.5"/>
+		<e:Image id="sureBtn" source="pub_sure_png" includeIn="fail" x="497" y="299.65" anchorOffsetX="0" width="138.57" anchorOffsetY="0" height="44.09"/>
+	</e:Group>
+	<e:Rect alpha="0.5" left="0" top="0" right="0" bottom="0" includeIn="win"/>
+	<e:Group id="winGroup" includeIn="win" touchChildren="false" touchEnabled="true" touchThrough="false" anchorOffsetY="0" height="495" x="115" y="73">
+		<e:Image source="result_bg_png" horizontalCenter="0" verticalCenter="52" x.win="0" y.win="92"/>
+		<e:Image id="titleImg" source="title_1_png" includeIn="win" x="695" y="185.5" anchorOffsetX="232" anchorOffsetY="70"/>
+		<e:Group id="group1" x="595" y="363.65" anchorOffsetX="108" anchorOffsetY="21">
+			<e:Image source="goods_font_bg_png" includeIn="win" x="108" y="22.67" anchorOffsetX="108" anchorOffsetY="22.67"/>
+			<e:Label id="goodsLab" text="Label" includeIn="win" x="65" y="10.32" size="20" textColor="0xbcb3b3" anchorOffsetX="0" width="126.33"/>
+		</e:Group>
+		<e:Group id="group2" x="834" y="363.13" anchorOffsetX="93" anchorOffsetY="17">
+			<e:Image source="medal_font_bg_png" includeIn="win" x="92" y="18.67" anchorOffsetX="92" anchorOffsetY="18.67"/>
+			<e:Label id="medalLab" text="Label" includeIn="win" x="36" y="4.84" size="20" textColor="0xBCB3B3" anchorOffsetX="0" width="126.33"/>
+		</e:Group>
+		<e:Group id="group3" x="726.23" y="284.54" anchorOffsetX="96.33" anchorOffsetY="19.67">
+			<e:Image includeIn="win" x="0" y="3.99" source="main_gold_png"/>
+			<e:Label id="soldierLab" text="Label" includeIn="win" x="63" y="11" size="20" textColor="0xBCB3B3" anchorOffsetX="0" width="126.33"/>
+		</e:Group>
+		<e:Image id="tipFont" source="result_tip_png" includeIn="win" x="615" y="419.78"/>
+		<e:Group id="generalGroup" x="283" y="251.67" anchorOffsetX="230" anchorOffsetY="240">
+			<e:Image source="card_reward_bg_png" includeIn="win" x="0" y="0"/>
+			<e:Group id="cardGroup" width="368.67" height="263.34" x="43.35" y="108.66" anchorOffsetX="0" anchorOffsetY="0">
+				<ns1:ShopItem id="card3" x="261.18" y="20.29" skinName="ShopItemSkin" rotation="20"/>
+				<ns1:ShopItem id="card2" x="-20.96" y="73.53" skinName="ShopItemSkin" rotation="-20"/>
+				<ns1:ShopItem id="card1" x="116.81" y="19.34" skinName="ShopItemSkin"/>
+			</e:Group>
+		</e:Group>
+		<e:Rect id="groupMask" width="492" height="460" x="277" y="251.5" anchorOffsetX="246" anchorOffsetY="230" ellipseWidth="100" ellipseHeight="100" scaleX="0" scaleY="0" alpha="0.3"/>
+	</e:Group>
+</e:Skin>

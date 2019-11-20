@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartCityItemSkin" width="134" height="91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon_img" x="67" y="46.5" source="start_city_0_png" anchorOffsetX="67" anchorOffsetY="46.5"/>
+	<e:Group x="-6" y="-4">
+		<e:Image source="main_city_name_bg_png" x="0" y="0"/>
+		<e:Label id="name_label" text="益州" x="2" y="2.25" anchorOffsetX="0" width="14" anchorOffsetY="0" height="41" verticalAlign="middle" textAlign="center" size="14" textColor="0x593000"/>
+	</e:Group>
+</e:Skin>

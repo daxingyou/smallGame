@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" alpha="0.3"/>
+	<e:Group id="shopGroup" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="shop_bg_png" x="0" y="0"/>
+		<e:Scroller id="scroller" width="1088.24" height="524.25" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-18.5" top="156" scrollPolicyH="off">
+			<e:List id="list" width="1060.24" height="530.31" x="-26" y="0" anchorOffsetX="0">
+			<e:layout>
+				<e:TileLayout horizontalAlign="center" verticalAlign="top" columnAlign="left" requestedColumnCount="7"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Button id="return_btn" label="Button" x="1176.38" y="74.74" anchorOffsetX="0" width="49.57" anchorOffsetY="0" height="47.26">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_png" source.down="common_close_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible.up="false" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

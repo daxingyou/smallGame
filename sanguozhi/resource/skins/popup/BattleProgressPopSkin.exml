@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleProgressPopSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect alpha="0.3" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="levelGroup" touchChildren="true" touchEnabled="false" touchThrough="true" x="663.58" y="373.15" anchorOffsetX="411" anchorOffsetY="167">
+		<e:Image source="level_p_bg_png" x="0" y="7"/>
+		<e:Image id="returnBtn" source="common_close_png" x="771" y="0"/>
+		<e:Group id="level_1" x="96" y="115">
+			<e:Image source="level_p_goods_png" x="0" y="0"/>
+			<e:Label text="100" x="31" y="45" size="20"/>
+			<e:Label text="第一关" x="8" y="74" size="18" textColor="0x4c3f39"/>
+			<e:Image source="level_p_dialog_png" x="14.5" y="15" name="dialog" visible="false"/>
+		</e:Group>
+		<e:Group id="level_2" x="296" y="115">
+			<e:Image source="level_p_goods_png" x="0" y="0"/>
+			<e:Label text="200" x="32" y="45" size="20"/>
+			<e:Label text="第二关" x="8" y="74" size="18" textColor="0x4C3F39"/>
+			<e:Image source="level_p_dialog_png" x="16" y="13" name="dialog" visible="false"/>
+		</e:Group>
+		<e:Group id="level_3" x="492" y="115">
+			<e:Image source="level_p_goods_png" x="0" y="0"/>
+			<e:Label text="300" x="30" y="45.5" size="20"/>
+			<e:Label text="第三关" x="8" y="74" size="18" textColor="0x4C3F39"/>
+			<e:Image source="level_p_dialog_png" x="14.5" y="15.5" name="dialog" visible="false"/>
+		</e:Group>
+		<e:Group id="level_4" x="687" y="115">
+			<e:Image source="level_p_medal_png" x="0" y="0"/>
+			<e:Label text="5" x="50" y="45" size="20"/>
+			<e:Label text="第四关" x="8" y="74" size="18" textColor="0x4C3F39"/>
+			<e:Image source="level_p_dialog_png" x="14.5" y="15.5" name="dialog" visible="false"/>
+		</e:Group>
+		<e:Image id="enterBtn" source="level_p_enter_png" x="345.5" y="255"/>
+	</e:Group>
+</e:Skin>

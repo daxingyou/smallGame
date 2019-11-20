@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NeiWuPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Group id="neiwuGroup" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="neiwu_bg_png" x="0" y="0"/>
+		<e:Label text="点击继续对话" size="20" textColor="0x847d7d" horizontalCenter="0" bottom="40"/>
+		<e:Image id="returnBtn" source="common_close_png" x="1078.04" y="29.48" anchorOffsetX="0" width="51.61" anchorOffsetY="0" height="51.61"/>
+		<e:Group id="storyGroup" width="1042.8" height="521.97" x="58" y="91" anchorOffsetX="0" anchorOffsetY="0" locked="true">
+		</e:Group>
+		<e:Group id="noneGroup" x="447.5" y="261.14">
+			<e:Label text="暂无内务" x="50" y="0" textColor="0xa59f9f"/>
+			<e:Label id="timeLab" text="00:00" x="73.9" y="56.01" textColor="0xa59f9f"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

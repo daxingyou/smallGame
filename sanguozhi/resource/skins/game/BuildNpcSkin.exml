@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BuildNpcSkin" width="62.5" height="66" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="ta_img" x="0.25" y="-1" source="ta_npc_png" anchorOffsetX="31" anchorOffsetY="31"/>
+</e:Skin>

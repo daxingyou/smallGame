@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargeItemSkin" width="261" height="257" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon" source="gold_68_png" x="0" y="0"/>
+	<e:Label id="descLab" text="Label" x="50" y="167" anchorOffsetX="0" width="158" textAlign="center" verticalAlign="middle" size="20" textColor="0xed8b2d"/>
+	<e:Group id="buyBtn" x="65" y="203" touchChildren="false" touchEnabled="true" touchThrough="false">
+		<e:Image source="recharge_btn_png" x="0" y="0"/>
+		<e:Label id="costLab" text="Label" x="2" y="4" anchorOffsetX="0" width="123" size="20" anchorOffsetY="0" height="30" textAlign="center" verticalAlign="middle" textColor="0x423e3e"/>
+	</e:Group>
+</e:Skin>
