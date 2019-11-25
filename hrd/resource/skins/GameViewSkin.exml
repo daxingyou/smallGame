@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameViewSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" fillColor="0xf7f7f7" alpha="0.5"/>
+	<e:Group id="cardGroup" anchorOffsetX="0" anchorOffsetY="0" width="434" height="434" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="winLab" text="Congratulations! Game victory" horizontalCenter="0" verticalCenter="257" visible="false"/>
+</e:Skin>
