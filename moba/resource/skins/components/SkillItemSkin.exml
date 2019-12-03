@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillItemSkin" width="118" height="220" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image id="upBtn" source="skill_up_btn_png" x="29" y="0"/>
+		<e:Group id="skillGroup" x="60" y="160" touchChildren="false" touchEnabled="true" touchThrough="false" anchorOffsetX="60" anchorOffsetY="57">
+			<e:Image source="skill_bg_png" x="0" y="0"/>
+			<e:Image id="skillImg" source="skill_101_png" x="14" y="13.5"/>
+			<e:Label id="skillLevel" text="Lv.2" size="20" right="18" bottom="16"/>
+			<e:Label id="numLab" text="0" right="15" top="14"/>
+			<e:Group id="cdGroup" x="14" y="13.5">
+				<e:Rect width="90" height="90" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" alpha="0.5" fillColor="0x050404" ellipseWidth="10" ellipseHeight="10"/>
+				<e:Label id="cdTime" text="10" textColor="0xe5e5e5" horizontalCenter="-1" verticalCenter="-4"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

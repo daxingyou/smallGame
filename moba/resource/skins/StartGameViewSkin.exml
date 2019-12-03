@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartGameViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_png" left="0" top="0" right="0" bottom="0"/>
+	<e:Group id="group" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" top="109">
+		<e:Group id="contentGroup" horizontalCenter="0" top="56">
+			<e:Image source="info_bg_png" scale9Grid="334,318,75,73" y="0" x="0"/>
+			<e:Image source="info_title_png" y="106" x="27"/>
+			<e:Label text="介绍:" x="120" y="133" textColor="0x680505"/>
+			<e:Label text="此时的你正孤独守城,而最为不幸的是被敌军发现了,他们将发起进攻,这一站无法避免!" x="207" y="133" anchorOffsetY="0" height="96" anchorOffsetX="0" width="384" textColor="0x353030" lineSpacing="10" size="22"/>
+			<e:Label text="任务:" x="120" y="243" textColor="0x680505"/>
+			<e:Label text="守卫主城,并打掉敌人的前方兵营。" x="207" y="243" anchorOffsetY="0" height="96" anchorOffsetX="0" width="384" textColor="0x353030" lineSpacing="10" size="22"/>
+			<e:Label text="提示:" x="120" y="354" textColor="0x680505"/>
+			<e:Label text="每隔一段时间,敌军会从两条路发起一波进攻,你需要依塔而守抗击敌军,并选择在恰当的时机,打掉敌人的两个前方兵营" x="207" y="354" anchorOffsetY="0" height="96" anchorOffsetX="0" width="384" textColor="0x353030" lineSpacing="10" size="22"/>
+		</e:Group>
+		<e:Rect id="contentMask" width="609" height="568" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="56"/>
+		<e:Image id="leftImg" source="info_left_png" y="-9" x="295"/>
+		<e:Image id="rightImg" source="info_right_png" y="-9" x="295"/>
+		<e:Group id="levelGroup" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="18" top="691">
+			<e:Image id="level_1" source="level_1_png" x="0" y="0" name="1"/>
+			<e:Image id="level_2" source="level_2_png" x="222" y="0" name="2"/>
+			<e:Image id="level_3" source="level_3_png" x="456.27" y="0" name="3"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

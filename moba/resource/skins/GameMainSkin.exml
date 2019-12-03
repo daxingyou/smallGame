@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="main_top_png" left="0" right="0" top="0"/>
+	<e:Group x="16.3" y="12.87" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="font_bg_png" x="0" y="1.05"/>
+		<e:Image source="main_gold_png" x="4.56" y="4.55"/>
+		<e:Label id="goldLab" text="000" x="42.56" y="3" size="22" anchorOffsetY="0" height="25" anchorOffsetX="0" width="111" textAlign="center" verticalAlign="middle" textColor="0xdbab5c"/>
+		<e:Image id="addBtn" source="main_add_png" x="162" y="0"/>
+	</e:Group>
+	<e:Group id="mapGroup" touchChildren="true" touchEnabled="false" touchThrough="true" right="0" top="0">
+		<e:Image id="mapImage" source="small_map_png" x="0" y="0"/>
+		<e:Group id="gridGroup" width="280" height="154" x="6.33" y="10.33" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Image id="roleHead" source="rolehead_png" x="35.67" y="73.33" anchorOffsetX="16" anchorOffsetY="16" scaleX="1" scaleY="1" name="head"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="mapBtn" source="downbtn_png" anchorOffsetX="32" anchorOffsetY="15" scaleY="-1" right="15" top="14" visible="false"/>
+	<e:Group id="skillGroup" touchChildren="true" touchEnabled="false" touchThrough="true" horizontalCenter="0" bottom="0">
+		<e:Image source="main_bottom_png" width="750" y="53" x="0"/>
+		<ns1:SkillItem id="skill101" x="124.44" y="0" skinName="SkillItemSkin"/>
+		<ns1:SkillItem id="skill102" x="252.44" y="0" skinName="SkillItemSkin"/>
+		<ns1:SkillItem id="skill103" x="382.04" y="0" skinName="SkillItemSkin"/>
+		<ns1:SkillItem id="skill104" x="513.44" y="0" skinName="SkillItemSkin"/>
+	</e:Group>
+	<e:Group id="slashGroup" touchChildren="false" touchEnabled="false" touchThrough="false" top="346" right="0" anchorOffsetX="144" anchorOffsetY="52" visible="false">
+		<e:BitmapLabel x="0" y="0" font="lianzhan_fnt" text="d"/>
+		<e:BitmapLabel id="slashTxt" x="153.5" y="3" font="lianzhan_fnt" text="123"/>
+	</e:Group>
+	<e:Group id="descGroup" touchChildren="false" touchEnabled="false" touchThrough="false" horizontalCenter="0.5" bottom="154" visible="false">
+		<e:Image source="skill_info_bg_png" x="0" y="0"/>
+		<e:Label id="skillName" text="技能名称" x="19.4" y="14.48" size="24" textColor="0xd6d1d1"/>
+		<e:Label id="skillDesc" text="这是一个技能描述" x="20.28" y="45.69" size="20" textColor="0xD6D1D1" anchorOffsetY="0" height="84.62" anchorOffsetX="0" width="323.27" textAlign="left" verticalAlign="middle" lineSpacing="10"/>
+		<e:Label id="skillCd" text="CD:11秒" x="143.59" y="15.92" size="24" textColor="0x4b97f4"/>
+	</e:Group>
+	<e:Group id="attrGroup" left="0" top="65" right="294">
+		<e:Image source="attr_bottom_png" left="0" top="0" right="0" bottom="0"/>
+		<e:Group left="29" top="23">
+			<e:Image source="icon_atk_png" x="0" y="0"/>
+			<e:Label id="atkLab" text="攻击:2000" size="20" textColor="0xe8d9a7" x="28" y="0"/>
+		</e:Group>
+		<e:Group top="24" left="266">
+			<e:Image source="icon_pro_png" left="0" top="0"/>
+			<e:Label id="defLab" text="攻击:2000" size="20" textColor="0xE8D9A7" left="30" top="0"/>
+		</e:Group>
+		<e:Group top="63" left="260">
+			<e:Image source="icon_crit_png" left="0" top="1"/>
+			<e:Label id="critLab" text="攻击:2000" size="20" textColor="0xE8D9A7" top="0" left="29"/>
+		</e:Group>
+		<e:Group left="31" top="63">
+			<e:Image source="icon_hp_png" x="0" y="1"/>
+			<e:Label id="hpLab" text="攻击:2000" size="20" textColor="0xe8d9a7" x="26" y="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="bloodGroup" left="0" right="0" top="0" bottom="0" touchChildren="false" touchEnabled="false" touchThrough="false" visible="false">
+		<e:Image id="blood0" source="blood_png" touchEnabled="false" anchorOffsetY="0" rotation="89.99" width="1333.9621062480335" top="3" bottom="-3" right="-73"/>
+		<e:Image id="blood1" source="blood_png" touchEnabled="false" anchorOffsetY="0" rotation="270.2" width="1333.9621062480335" scaleX="1" top="0" bottom="-1" left="-127"/>
+		<e:Image id="blood2" source="blood_png" touchEnabled="false" anchorOffsetY="0" height="229.36" left="-10" right="10" top="-82"/>
+	</e:Group>
+	<e:Label id="countDownLab" text="战场倒计时:00:00" size="24" fontFamily="Microsoft YaHei" right="113" top="187" textColor="0xf2e8e8"/>
+	<e:Label id="levelLab" text="等级:Lv.1" size="22" textColor="0xfcefef" left="223" top="19"/>
+	<e:Label id="expLab" text="经验:Lv.1" size="22" textColor="0xFCEFEF" left="337" top="19"/>
+</e:Skin>

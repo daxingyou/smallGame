@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItemSkin" width="218" height="374.34" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cardGroup" x="0" y="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image source="shop_json.shop_item_png" x="0" y="0"/>
+		<e:Image id="icon" source="shop_json.item_1_png" x="4.56" y="51.03"/>
+		<e:Label id="nameLab" text="Label" x="15.02" y="21.03" anchorOffsetX="0" width="190.5" anchorOffsetY="0" height="33.5" textAlign="center" verticalAlign="middle" size="24" textColor="0xefeaea"/>
+		<e:Group id="buyGroup" x="15.02" y="305.06" touchEnabled="true" touchChildren="false" touchThrough="false">
+			<e:Image source="shop_json.shop_btn_bg_png" x="0" y="0"/>
+			<e:Label id="cost" text="Label" x="65.17" y="13.5" textColor="0x474545" anchorOffsetX="0" width="105.33" textAlign="center" verticalAlign="middle"/>
+			<e:Image id="goldIcon" source="main_gold_png" x="32.5" y="18.5"/>
+		</e:Group>
+		<e:Label id="descLab" text="" x="15" y="241" anchorOffsetX="0" width="188.67" anchorOffsetY="0" height="38.29" textAlign="center" verticalAlign="middle" textColor="0x4c4742" size="24"/>
+	</e:Group>
+</e:Skin>

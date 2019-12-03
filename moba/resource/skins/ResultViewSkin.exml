@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultViewSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" alpha="0.5"/>
+	<e:Group id="resultGroup" horizontalCenter="0" top="176" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image id="resultImg" x="36" y="0" source="win_panel_png"/>
+		<e:Label text="介绍:" x="138" y="167.38" textColor="0xefdede" size="22"/>
+		<e:Label text="此时的你正孤独守城,而最为不幸的是被敌军发现了,他们将发起进攻,这一站无法避免!" x="200.88" y="168.68" anchorOffsetY="0" height="69.64" anchorOffsetX="0" width="274.79" lineSpacing="10" textColor="0xddd0d0" size="18"/>
+		<e:Label text="任务:" x="138" y="257" size="22" textColor="0xefdede"/>
+		<e:Label text="守卫主城,并打掉敌人的前方兵营。" x="199" y="261" anchorOffsetY="0" height="25.21" anchorOffsetX="0" width="273.15" lineSpacing="10" size="18" textColor="0xddd0d0"/>
+		<e:Label text="提示:" x="138" y="302.4" textColor="0xefdede" size="22"/>
+		<e:Label text="每隔一段时间,敌军会从两条路发起一波进攻,你需要依塔而守抗击敌军,打掉敌人的两个前方兵营" x="198.88" y="304.74" anchorOffsetY="0" height="79.7" anchorOffsetX="0" width="292.73" lineSpacing="10" size="18" textColor="0xddd0d0"/>
+		<e:Image id="level_1" source="level_1_png" x="0" y="598"/>
+		<e:Image id="level_2" source="level_2_png" x="218" y="598"/>
+		<e:Image id="level_3" source="level_3_png" x="440" y="598"/>
+		<e:Image source="main_gold_png" x="249" y="438"/>
+		<e:Label id="goldLab" text="200" x="306" y="438" textColor="0xe0a16d" size="24"/>
+	</e:Group>
+</e:Skin>
