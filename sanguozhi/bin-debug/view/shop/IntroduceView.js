@@ -14,21 +14,34 @@ var IntroduceView = (function (_super) {
         return _super.call(this) || this;
     }
     IntroduceView.prototype.initData = function (data, isshow) {
+        // if(data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.prop){
         if (isshow === void 0) { isshow = true; }
-        if (data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.prop) {
-            this.quality.visible = true;
-            this.quality.source = "quality_" + data.quality + "_png";
-        }
-        else {
-            this.quality.visible = false;
-        }
+        // }else{
+        //     this.quality.visible = false;
+        // }
+        this.quality.visible = true;
+        this.quality.source = "quality_" + data.quality + "_png";
     };
     IntroduceView.prototype.setData = function () {
-        if (this.data["hp"] == 0 || this.data["atk"] == 0) {
+        if (this.data["type"] == CardType.general) {
+            this.jieshao_group.y = 144.5;
+            this.buffDesc_label.text = this.data["buffDesc"];
+            this.buffDesc_group.visible = true;
+        }
+        else {
+            this.jieshao_group.y = 110.5;
+            this.buffDesc_group.visible = false;
+        }
+        if (this.data["hp"] == 0 || this.data["atk"] == 0 || this.data["type"] == CardType.skill || this.data["type"] == CardType.special_skill || this.data["type"] == CardType.prop ||
+            this.data["type"] == CardType.build) {
             this.hp_label.text = "无";
             this.atk_label.text = "无";
         }
         else {
+            this.hp_label.text = this.data["hp"];
+            this.atk_label.text = this.data["atk"];
+        }
+        if (this.data["insId"] == 100105 || this.data["insId"] == 100106 || this.data["insId"] == 100107) {
             this.hp_label.text = this.data["hp"];
             this.atk_label.text = this.data["atk"];
         }
@@ -44,6 +57,7 @@ var IntroduceView = (function (_super) {
         for (var _i = 0; _i < arguments.length; _i++) {
             param[_i] = arguments[_i];
         }
+        this.infoGroup["autoSize"]();
         this.data = param[0];
         this.setData();
         this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.touchTapHandler, this);

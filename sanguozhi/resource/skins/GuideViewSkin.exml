@@ -5,5 +5,8 @@
 	<e:Rect id="bg_top" width="680" height="244" anchorOffsetX="0" anchorOffsetY="0" alpha="0" right="0" top="0"/>
 	<e:Rect id="bg_right" width="605" height="396" anchorOffsetX="0" anchorOffsetY="0" alpha="0" right="0" bottom="0"/>
 	<e:Image id="rect" source="common_xuanzhong_png" x="454.75" y="246" scale9Grid="9,9,57,56" touchEnabled="true" pixelHitTest="false" alpha="0"/>
-	<e:Label id="tipLab" text="这是一段提示" x="432.25" y="206.67" size="22" textColor="0xffffff"/>
+	<e:Group id="tipGroup" x="422" y="198">
+		<e:Image id="tipPic" source="tipsBg_png" anchorOffsetY="0" width="152.5" height="40" scale9Grid="152,28,78,20" anchorOffsetX="0" x="0" y="0"/>
+		<e:Label id="tipLab" text="这是一段提示" x="22.5" y="11" size="18" textColor="0xffffff"/>
+	</e:Group>
 </e:Skin>

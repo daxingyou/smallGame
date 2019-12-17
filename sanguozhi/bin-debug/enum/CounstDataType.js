@@ -37,15 +37,11 @@ var DirectionEnum;
 })(DirectionEnum || (DirectionEnum = {}));
 var SoldierType;
 (function (SoldierType) {
-    /**枪兵 */
-    SoldierType[SoldierType["SOLDIER_QIANG"] = 0] = "SOLDIER_QIANG";
-    /**刀兵 */
-    SoldierType[SoldierType["SOLDIER_DAO"] = 1] = "SOLDIER_DAO";
-    /**骑兵 */
-    SoldierType[SoldierType["SOLDIER_QI"] = 2] = "SOLDIER_QI";
     /**弓箭手 */
-    SoldierType[SoldierType["SOLDIER_GONG"] = 3] = "SOLDIER_GONG";
-    /**投石车 */
-    SoldierType[SoldierType["SOLDIER_TOUSHICHE"] = 4] = "SOLDIER_TOUSHICHE";
+    SoldierType[SoldierType["SOLDIER_GONG"] = 1] = "SOLDIER_GONG";
+    /**步兵 */
+    SoldierType[SoldierType["SOLDIER_BU"] = 2] = "SOLDIER_BU";
+    /**骑兵 */
+    SoldierType[SoldierType["SOLDIER_QI"] = 3] = "SOLDIER_QI";
 })(SoldierType || (SoldierType = {}));
 //# sourceMappingURL=CounstDataType.js.map

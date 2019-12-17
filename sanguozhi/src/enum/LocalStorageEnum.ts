@@ -1,11 +1,15 @@
 class LocalStorageEnum {
+	/**商城购买人物时的id */
+	public static GENERALId:string = "999996"
+	/**人物经验 */
+	public static EXP:string = "999997"
 	/**当前税收的数量 */
 	public static TAX_NUM:string = "999998";
 	/**第一次进入 */
 	public static ENTER_FIRST:string = "999999";
 	/**人物元宝 */
 	public static ROLE_GOLD:string = "1000000";
-	/**人物勋章 */
+	/**人物功勋 */
 	public static ROLE_MEDAL:string = "1000001";
 	/**人物粮草 */
 	public static ROLE_GOODS:string = "1000002";
@@ -79,4 +83,18 @@ class LocalStorageEnum {
 	public static CHAPTERID:string = "100000018";
 	/** 关卡id*/
 	public static LEVELID:string  = "100000019"
+
+	public static CREATE_SOLDIERS:string = "CREATE_SOLDIERS";
+
+	public static DOUBTFUL_MOVE_ROLE:string = "DOUBTFUL_MOVE_ROLE";
+	public static DOUBTFUL_MOVE_SOLDIER:string =  "DOUBTFUL_MOVE_SOLDIER";
+	public static BEGIN_MOVE_CARD:string="100000020";
+	public static SEND_BATTLE_POS:string="100000021";
+	public static QINGBAO:string = "QINGBAO";
+	public static CLOSE_CARDINFO:string = "CLOSE_CARDINFO";
+}
+class PointObj
+{
+	public x:number;
+	public y:number;
 }

@@ -6,6 +6,10 @@ class MainCityItem extends BaseView {
     private _id: number = 0;
     private qimc:MovieClip;
     private battleIcon:eui.Image;
+
+    private enemyGroup:eui.Group;
+    private enemyIcon:eui.Image;
+    private _ifhasEnemy:boolean;
     public constructor( id: number ) {
         super();
         this.touchChildren = false;
@@ -13,8 +17,19 @@ class MainCityItem extends BaseView {
         this.skinName = `MainCityItemSkin`;
         this._id = id;
         this.addEventListener( egret.Event.ADDED_TO_STAGE , this.add_view_handler , this );
-    }
 
+        this.hideEnemyGroup();
+    }
+    public showEnemyGroup():void{
+        this._ifhasEnemy = true;
+        this.enemyGroup.visible = true;
+        egret.Tween.get(this.enemyIcon,{loop:true}).to({y:this.enemyIcon.y - 10},1500).to({y:this.enemyIcon.y},1500);
+    }
+    public hideEnemyGroup():void{
+        this._ifhasEnemy = false;
+        this.enemyGroup.visible = false;
+        egret.Tween.removeTweens(this.enemyIcon);
+    }
     private add_view_handler():void {
         this.init();
         this.removeEventListener( egret.Event.ADDED_TO_STAGE , this.add_view_handler , this );
@@ -35,7 +50,7 @@ class MainCityItem extends BaseView {
         this.qimc.x = 92;
         this.qimc.y = 86;
         this.name_label.text = `${NameList.inst().city_name[ this._id ]}`;
-        this.icon_img.texture = RES.getRes( `main_city_${this._id}_png` );
+        this.icon_img.source = `main_city_${this._id}_png`;
         this.anchorOffsetX = this.width/2;
         this.anchorOffsetY = this.icon_img.y + this.icon_img.height/2;
         let cityInfo:CityInfo = GlobalFun.getCityInfo( this._id + 1 );
@@ -57,6 +72,9 @@ class MainCityItem extends BaseView {
     }
     public get cityId():number{
         return this._id+1;
+    }
+    public get ifHasEnemy():boolean{
+        return this._ifhasEnemy;
     }
     public hideBattleIcon():void{
         this.battleIcon.visible = false;

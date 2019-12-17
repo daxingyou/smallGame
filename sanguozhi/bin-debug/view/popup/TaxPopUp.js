@@ -16,6 +16,7 @@ var TaxPopUp = (function (_super) {
         //每秒产值
         _this.singleCost = 5;
         _this.count = 0;
+        _this.goodsNum = 0;
         return _this;
     }
     TaxPopUp.prototype.open = function () {
@@ -25,11 +26,12 @@ var TaxPopUp = (function (_super) {
             param[_i] = arguments[_i];
         }
         this.taxGroup["autoSize"]();
-        this.taxGroup.verticalCenter = -600;
+        this.taxGroup.verticalCenter = -700;
         egret.Tween.get(this.taxGroup).to({ verticalCenter: 0 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.taxGroup);
         }, this);
-        this.goodsLab.text = "0";
+        this.goodsNum = 0;
+        this.goodsLab.text = "x0";
         this.addTouchEvent(this.collectBtn, this.onCollect, true);
         this.addTouchEvent(this.getBtn, this.onGet, true);
         this.addTouchEvent(this.returnBtn, this.onReturn, true);
@@ -42,13 +44,15 @@ var TaxPopUp = (function (_super) {
             var timestr = DateUtils.getFormatBySecond(offValue / 1000, DateUtils.TIME_FORMAT_3);
             //显示到文本上
             this.timeLab.text = timestr;
-            this.goodsLab.text = (600 - ((Math.ceil(offValue / 60000)) * 20)).toString();
+            this.goodsNum = (600 - ((Math.ceil(offValue / 60000)) * 20));
+            this.goodsLab.text = "x" + this.goodsNum;
             this.timer.start();
             this.showTaxCd();
         }
         else {
             if (cdTime) {
-                this.goodsLab.text = (600).toString();
+                this.goodsNum = 600;
+                this.goodsLab.text = "x" + (600).toString();
                 this.showGetPage();
             }
             else {
@@ -64,17 +68,17 @@ var TaxPopUp = (function (_super) {
         this.startTax();
     };
     TaxPopUp.prototype.onGet = function () {
-        var num = parseInt(this.goodsLab.text);
-        if (!num) {
+        if (!this.goodsNum) {
             UserTips.inst().showTips("当前未征收到粮草");
             return;
         }
-        this.goodsLab.text = "0";
         // this.stopTax();
         egret.localStorage.setItem(LocalStorageEnum.TAX_CD_TIME, "");
         this.showNormalPage();
-        UserTips.inst().showTips("征收到粮草x" + num);
-        GameApp.goods += num;
+        UserTips.inst().showTips("征收到粮草x" + this.goodsNum);
+        GameApp.goods += this.goodsNum;
+        this.goodsNum = 0;
+        this.goodsLab.text = "x0";
     };
     /**显示收集 */
     TaxPopUp.prototype.showTaxCd = function () {
@@ -118,17 +122,19 @@ var TaxPopUp = (function (_super) {
             var timestr = DateUtils.getFormatBySecond(offValue / 1000, DateUtils.TIME_FORMAT_3);
             //显示到文本上
             this.timeLab.text = timestr;
-            this.goodsLab.text = (600 - ((Math.ceil(offValue / 60000)) * 20)).toString();
+            this.goodsNum = (600 - ((Math.ceil(offValue / 60000)) * 20));
+            this.goodsLab.text = "x" + this.goodsNum;
         }
         else {
-            this.goodsLab.text = (600).toString();
+            this.goodsNum = 600;
+            this.goodsLab.text = "x" + (600).toString();
             this.stopTax();
             this.showGetPage();
         }
     };
     TaxPopUp.prototype.onReturn = function () {
         var _this = this;
-        egret.Tween.get(this.taxGroup).to({ verticalCenter: -600 }, 600, egret.Ease.circOut).call(function () {
+        egret.Tween.get(this.taxGroup).to({ verticalCenter: -700 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.taxGroup);
             ViewManager.inst().close(TaxPopUp);
         }, this);

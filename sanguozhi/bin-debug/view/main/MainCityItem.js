@@ -18,8 +18,19 @@ var MainCityItem = (function (_super) {
         _this.skinName = "MainCityItemSkin";
         _this._id = id;
         _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.add_view_handler, _this);
+        _this.hideEnemyGroup();
         return _this;
     }
+    MainCityItem.prototype.showEnemyGroup = function () {
+        this._ifhasEnemy = true;
+        this.enemyGroup.visible = true;
+        egret.Tween.get(this.enemyIcon, { loop: true }).to({ y: this.enemyIcon.y - 10 }, 1500).to({ y: this.enemyIcon.y }, 1500);
+    };
+    MainCityItem.prototype.hideEnemyGroup = function () {
+        this._ifhasEnemy = false;
+        this.enemyGroup.visible = false;
+        egret.Tween.removeTweens(this.enemyIcon);
+    };
     MainCityItem.prototype.add_view_handler = function () {
         this.init();
         this.removeEventListener(egret.Event.ADDED_TO_STAGE, this.add_view_handler, this);
@@ -39,7 +50,7 @@ var MainCityItem = (function (_super) {
         this.qimc.x = 92;
         this.qimc.y = 86;
         this.name_label.text = "" + NameList.inst().city_name[this._id];
-        this.icon_img.texture = RES.getRes("main_city_" + this._id + "_png");
+        this.icon_img.source = "main_city_" + this._id + "_png";
         this.anchorOffsetX = this.width / 2;
         this.anchorOffsetY = this.icon_img.y + this.icon_img.height / 2;
         var cityInfo = GlobalFun.getCityInfo(this._id + 1);
@@ -60,6 +71,13 @@ var MainCityItem = (function (_super) {
     Object.defineProperty(MainCityItem.prototype, "cityId", {
         get: function () {
             return this._id + 1;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(MainCityItem.prototype, "ifHasEnemy", {
+        get: function () {
+            return this._ifhasEnemy;
         },
         enumerable: true,
         configurable: true

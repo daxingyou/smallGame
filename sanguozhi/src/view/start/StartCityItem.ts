@@ -3,7 +3,7 @@ class StartCityItem extends BaseView {
     private icon_img: eui.Image;
 
     private _id: number = 0;
-
+    
     public constructor( id: number ){
         super();
         this.skinName = `StartCityItemSkin`;
@@ -13,6 +13,7 @@ class StartCityItem extends BaseView {
 
     private add_view_handler():void {
         this.init();
+        
         this.removeEventListener( egret.Event.ADDED_TO_STAGE , this.add_view_handler , this );
         this.addEventListener( egret.Event.REMOVED_FROM_STAGE , this.remove_view_handler , this );
         this.addEventListener( egret.TouchEvent.TOUCH_TAP , this.touchTapHandler , this );
@@ -24,23 +25,34 @@ class StartCityItem extends BaseView {
         this.removeEventListener( egret.TouchEvent.TOUCH_TAP , this.touchTapHandler , this );
         MessageManager.inst().removeListener( CustomEvt.SELECT_MAIN_CITY , this.selectCityHandler , this );
     }
-
+    private qimc:MovieClip;
     private init():void {
         this.name_label.text = `${NameList.inst().city_name[ this._id ]}`;
-        this.icon_img.texture = RES.getRes( `start_city_${this._id}_png` );
+        this.icon_img.source = `main_city_${this._id}_png`
         this.anchorOffsetX = this.width/2;
         this.anchorOffsetY = this.height/2;
+
+        this.qimc = new MovieClip();
+        this.addChild(this.qimc);
+        this.qimc.playFile(`${EFFECT}flag`,-1);
+        this.qimc.scaleX = this.qimc.scaleY = 0.6;
+        this.qimc.visible = false;
+        this.qimc.x = 92;
+        this.qimc.y = 86;
     }
 
     private touchTapHandler():void {
+        SoundManager.inst().playEffect(`${MUSIC}collect.mp3`)
         MessageManager.inst().dispatch( CustomEvt.SELECT_MAIN_CITY , this._id );
     }
 
     private selectCityHandler( e:CustomEvt ):void {
         if( this._id == e.data ) {
             this.icon_img.scaleX = this.icon_img.scaleY = 1.2;
+            this.qimc.visible = true;
         } else {
             this.icon_img.scaleX = this.icon_img.scaleY = 1;
+            this.qimc.visible =false;
         }
     }
 }

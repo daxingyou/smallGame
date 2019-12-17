@@ -126,7 +126,7 @@ class NeiwuCfg {
 			word2:["哦？ 爱卿有何良计？"],
 			tip:"是否前去招纳",
 			option:{
-				1:{general:1},
+				1:{medal:1},
 				2:0
 			}
 		},

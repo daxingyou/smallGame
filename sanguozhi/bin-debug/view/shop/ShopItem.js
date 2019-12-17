@@ -55,13 +55,12 @@ var ShopItem = (function (_super) {
             this.cityIcon.visible = false;
         }
         this.bg.source = data.cardModel;
-        if (data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.prop) {
-            this.quality.visible = true;
-            this.quality.source = "quality_" + data.quality + "_png";
-        }
-        else {
-            this.quality.visible = false;
-        }
+        // if(data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.prop){
+        // }else{
+        //     this.quality.visible = false;
+        // }
+        this.quality.visible = true;
+        this.quality.source = "quality_" + data.quality + "_png";
         if (!isshow) {
             var eff = new MovieClip();
             this.addChild(eff);
@@ -73,7 +72,7 @@ var ShopItem = (function (_super) {
             eff2.playFile(EFFECT + "star", -1);
             eff2.scaleX = eff2.scaleY = 0.5;
             eff2.y = 70;
-            if (data.type == CardType.general) {
+            if (data.type == CardType.general || data.type == CardType.soldier) {
                 this.attrLab.visible = this.hpLab.visible = this.atkLab.visible = true;
                 this.hpLab.text = "生命:" + data.hp;
                 this.atkLab.text = "攻击:" + data.atk;
@@ -83,7 +82,34 @@ var ShopItem = (function (_super) {
                 this.descLab.visible = true;
                 this.descLab.text = data.name;
             }
-            this.attrLab.text = "等级:" + data.level + " 碎片:" + data.ownNum;
+            if (data.insId != 10003 && data.insId != 10008) {
+                this.attrLab.text = "等级:" + data.level;
+            }
+            if (data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.soldier) {
+                this.attrLab.horizontalCenter = 0;
+                if (GameCfg.resultBool)
+                    this.attrLab.text = "数量：" + 1;
+                else
+                    this.attrLab.text = "数量：" + data.ownNum;
+            }
+            if (data.insId == 10008 || data.insId == 10003) {
+                this.attrLab.horizontalCenter = 0;
+                if (GameCfg.resultBool)
+                    this.attrLab.text = "数量：" + 1;
+                else
+                    this.attrLab.text = "数量：" + data.ownNum;
+            }
+            if (GameCfg.resultBool) {
+                if (data.type == CardType.soldier) {
+                    this.attrLab.horizontalCenter = 0;
+                    if (data.soldierType == 1 || data.soldierType == 2) {
+                        this.attrLab.text = "数量：" + 36;
+                    }
+                    else if (data.soldierType == 3) {
+                        this.attrLab.text = "数量：" + 24;
+                    }
+                }
+            }
         }
         this.goldImg.visible = isshow;
         this.buy_btn.visible = isshow;
@@ -94,25 +120,37 @@ var ShopItem = (function (_super) {
         if (GameApp.gold >= this.data.cost) {
             GameApp.gold -= this.data.cost;
             var index = -1;
-            if (this.data.insId == 100108) {
+            if (this.data.type == CardType.soldier) {
+                index = 2;
+                UserTips.inst().showTips("\u83B7\u5F97" + this.data.name + "x36");
+                var card = GlobalFun.getCardDataFromId(this.data.insId);
+                card.ownNum += 36;
+                GlobalFun.refreshCardData(this.data.insId, { ownNum: card.ownNum });
+            }
+            else if (this.data.insId == 100108) {
                 UserTips.inst().showTips("\u83B7\u5F97" + this.data.name + "x" + this.data.atk);
                 GameApp.goods += this.data.atk;
                 index = -1;
             }
-            else if (this.data.insId == 100107) {
-                UserTips.inst().showTips("\u83B7\u5F97" + this.data.name + "x10");
-                GameApp.soldier2Num += 10;
-                index = 2;
-            }
-            else if (this.data.insId == 100106) {
-                UserTips.inst().showTips("\u83B7\u5F97" + this.data.name + "x10");
-                GameApp.soldier3Num += 10;
-                index = 3;
-            }
-            else if (this.data.insId == 100105) {
-                UserTips.inst().showTips("\u83B7\u5F97" + this.data.name + "x10");
+            else if (this.data.insId == 100301) {
+                UserTips.inst().showTips("\u83B7\u5F97\u7ECF\u9A8Cx100");
                 index = 1;
-                GameApp.soldier1Num += 10;
+                GameApp.exp += 100;
+            }
+            else if (this.data.insId == 100302) {
+                UserTips.inst().showTips("\u83B7\u5F97\u7ECF\u9A8Cx200");
+                index = 1;
+                GameApp.exp += 200;
+            }
+            else if (this.data.insId == 100303) {
+                UserTips.inst().showTips("\u83B7\u5F97\u7ECF\u9A8Cx400");
+                index = 1;
+                GameApp.exp += 400;
+            }
+            else if (this.data.insId == 10003) {
+                UserTips.inst().showTips("\u83B7\u5F97\u60C5\u62A5\u70B9x1");
+                index = 1;
+                GameApp.intelligence += 1;
             }
             else {
                 var ownNum = GlobalFun.getCardDataFromId(this.data.insId, ["ownNum"]).ownNum;
@@ -120,11 +158,88 @@ var ShopItem = (function (_super) {
                 index = 4;
                 GlobalFun.refreshCardData(this.data.insId, { ownNum: ownNum });
                 UserTips.inst().showTips("\u83B7\u5F97" + this.data.name + "x1");
+                if (this.data.type == CardType.general) {
+                    for (var i = 0; i < ShopCfg.cfgs.length; i++) {
+                        if (this.data.name == ShopCfg.cfgs[i].name) {
+                            var generalstr = egret.localStorage.getItem(LocalStorageEnum.GENERALId);
+                            var arr = [];
+                            if (generalstr) {
+                                arr = JSON.parse(generalstr);
+                                arr.push(ShopCfg.cfgs[i].insId);
+                            }
+                            else {
+                                arr = [ShopCfg.cfgs[i].insId];
+                            }
+                            egret.localStorage.setItem(LocalStorageEnum.GENERALId, JSON.stringify(arr));
+                            ShopCfg.cfgs.splice(i, 1);
+                        }
+                    }
+                    MessageManager.inst().dispatch(CustomEvt.UPDATE_SHOP);
+                }
             }
             MessageManager.inst().dispatch(CustomEvt.CARD_REFRESH, { index: index });
+            if (this.data.type == CardType.general || this.data.type == CardType.special_skill) {
+                var rect_1 = new eui.Rect(StageUtils.inst().getWidth(), StageUtils.inst().getHeight(), 0x000000);
+                LayerManager.TIPS_LAYER.addChild(rect_1);
+                rect_1.alpha = 0.8;
+                rect_1.left = 0;
+                rect_1.right = 0;
+                rect_1.top = 0;
+                rect_1.bottom = 0;
+                var lightMc = new MovieClip();
+                LayerManager.TIPS_LAYER.addChild(lightMc);
+                lightMc.x = StageUtils.inst().getWidth() >> 1;
+                lightMc.y = StageUtils.inst().getHeight() >> 1;
+                lightMc.scaleX = lightMc.scaleY = 2;
+                lightMc.playFile(EFFECT + "lighting", 1, null, true);
+                var lightpng_1 = new eui.Image();
+                lightpng_1.source = "light_png";
+                LayerManager.TIPS_LAYER.addChild(lightpng_1);
+                lightpng_1.alpha = 0;
+                lightpng_1.anchorOffsetX = lightpng_1.width >> 1;
+                lightpng_1.anchorOffsetY = lightpng_1.height >> 1;
+                lightpng_1.verticalCenter = 0;
+                lightpng_1.horizontalCenter = 0;
+                lightpng_1.scaleX = lightpng_1.scaleY = 7;
+                var item_1 = new ShopItem();
+                item_1.alpha = 0;
+                item_1.anchorOffsetX = item_1.width >> 1;
+                item_1.anchorOffsetY = item_1.height >> 1;
+                item_1.touchEnabled = false;
+                item_1.touchChildren = false;
+                LayerManager.TIPS_LAYER.addChild(item_1);
+                item_1.x = StageUtils.inst().getWidth() >> 1;
+                item_1.y = StageUtils.inst().getHeight() >> 1;
+                item_1.scaleX = item_1.scaleY = 2;
+                item_1.initData(GlobalFun.getCardDataFromId(this.data.insId), false);
+                var qualityIndex = this.data.type == CardType.general ? 4 : this.data.quality;
+                GlobalFun.lighting(item_1, GameApp.qualityColor[qualityIndex]);
+                var localpos = LayerManager.TIPS_LAYER.globalToLocal(GameApp.cardStaticX, GameApp.cardStaticY);
+                var timeout_1 = setTimeout(function () {
+                    lightpng_1.alpha = 1;
+                    clearTimeout(timeout_1);
+                    egret.Tween.get(lightpng_1).to({ rotation: 360 }, 2000).call(function () {
+                        egret.Tween.removeTweens(lightpng_1);
+                    }, this);
+                }, 300);
+                egret.Tween.get(item_1).wait(300).to({ alpha: 1 }, 100).wait(1000).to({ alpha: 0 }, 100).call(function () {
+                    egret.Tween.removeTweens(item_1);
+                    if (item_1 && item_1.parent) {
+                        item_1.parent.removeChild(item_1);
+                    }
+                    if (rect_1 && rect_1.parent) {
+                        rect_1.parent.removeChild(rect_1);
+                    }
+                    egret.Tween.removeTweens(lightpng_1);
+                    if (lightpng_1 && lightpng_1.parent) {
+                        lightpng_1.parent.removeChild(lightpng_1);
+                    }
+                }, this);
+            }
         }
         else {
-            UserTips.inst().showTips("元宝不足");
+            // UserTips.inst().showTips("元宝不足");
+            ViewManager.inst().open(RechargeTipPop);
         }
     };
     return ShopItem;

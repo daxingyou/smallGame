@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="CardViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect id="bg" top="0" left="0" right="0" bottom="0" fillColor="0x000000" fillAlpha="0.7"/>
-	<e:Group id="view_group" width="1136" height="634" horizontalCenter="0" y="58" locked="true">
+	<e:Rect id="bg" top="0" left="0" right="0" bottom="0" fillColor="0x000000" fillAlpha="0.7" alpha="0.8"/>
+	<e:Group id="view_group" width="1136" height="634" horizontalCenter="0" y="58">
 		<e:Image source="card_show_bg_png" x="0" y="0"/>
 		<e:Scroller id="wujiang_scroller" width="1044" height="487" x="60" y="124" anchorOffsetY="0" anchorOffsetX="0">
-			<e:Group id="wujiang_group"/>
+			<e:Group id="wujiang_group">
+				<e:layout>
+					<e:TileLayout horizontalGap="20" paddingLeft="20" paddingTop="20" requestedColumnCount="6"/>
+				</e:layout>
+			</e:Group>
 		</e:Scroller>
 		<e:Scroller id="miaoji_scroller" width="1044" height="487" x="60" y="124">
-			<e:Group id="miaoji_group"/>
+			<e:Group id="miaoji_group">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="6" paddingLeft="20" horizontalGap="20" paddingTop="20"/>
+				</e:layout>
+			</e:Group>
 		</e:Scroller>
 		<e:Scroller id="qixie_scroller" width="1044" height="487" x="60" y="124">
 			<e:Group id="qixie_group">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="6" paddingLeft="20" paddingTop="20" horizontalGap="20"/>
+				</e:layout>
 			</e:Group>
 		</e:Scroller>
 		<e:Button id="back_btn" label="" x="1083.5" y="35" anchorOffsetX="0">
@@ -26,17 +37,20 @@
 				<e:Image id="wujiang_bg" source="card_btn_on_png" x="0" y="0"/>
 				<e:Image id="wujiang_txt" source="card_select_txt_0_0_png" x="28" y="7"/>
 			</e:Group>
-			<e:Group id="miaoji_btn" x="110" y="9">
+			<e:Group id="miaoji_btn" x="204" y="9">
 				<e:Image id="miaoji_bg" source="card_btn_off_png" x="0" y="0"/>
 				<e:Image id="miaoji_txt" source="card_select_txt_1_1_png" x="28.5" y="7"/>
 			</e:Group>
-			<e:Group id="qixie_btn" x="204" y="9">
+			<e:Group id="qixie_btn" x="110" y="9">
 				<e:Image id="qixie_bg" source="card_btn_off_png" x="0" y="0"/>
 				<e:Image id="qixie_txt" source="card_select_txt_2_1_png" x="28.5" y="7"/>
 			</e:Group>
 		</e:Group>
-		<e:Label id="soldier_0" text="Label" x="614.33" y="85" anchorOffsetX="0" width="146" anchorOffsetY="0" height="32.67" size="22" verticalAlign="middle" textColor="0xa88d74"/>
-		<e:Label id="soldier_1" text="Label" x="783" y="85" anchorOffsetX="0" width="146" anchorOffsetY="0" height="32.67" size="22" verticalAlign="middle" textColor="0xA88D74"/>
-		<e:Label id="soldier_2" text="Label" x="951.33" y="85" anchorOffsetX="0" width="146" anchorOffsetY="0" height="32.67" size="22" verticalAlign="middle" textColor="0xA88D74"/>
+		<e:Label id="soldier_0" text="Label" x="614.33" y="85" anchorOffsetX="0" width="146" anchorOffsetY="0" height="32.67" size="22" verticalAlign="middle" textColor="0xa88d74" visible="false"/>
+		<e:Label id="soldier_1" text="Label" x="783" y="85" anchorOffsetX="0" width="146" anchorOffsetY="0" height="32.67" size="22" verticalAlign="middle" textColor="0xA88D74" visible="false"/>
+		<e:Label id="soldier_2" text="Label" x="951.33" y="85" anchorOffsetX="0" width="146" anchorOffsetY="0" height="32.67" size="22" verticalAlign="middle" textColor="0xA88D74" visible="false"/>
+		<e:Label id="generalLab" text="武将：123456" x="602.92" y="90" size="20"/>
+		<e:Label id="soldierLab" text="兵团：123456" x="764.43" y="90" size="20"/>
+		<e:Label id="skillLab" text="妙计：123456" x="924.66" y="90" size="20"/>
 	</e:Group>
 </e:Skin>

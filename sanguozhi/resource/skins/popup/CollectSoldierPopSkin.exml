@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="CollectSoldierPopSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.3"/>
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.8"/>
 	<e:Group id="collectGroup" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
 		<e:Image source="collect_bg_png" x="0" y="0"/>
 		<e:Image source="collect_point_png" x="768" y="195"/>
@@ -36,7 +36,7 @@
 			</e:Skin>
 			</e:skinName>
 		</e:CheckBox>
-		<e:Label text="300里/5分钟" x="799" y="359.5" size="20" textColor="0xA8A6A6"/>
+		<e:Label text="300里/3分钟" x="799" y="359.5" size="20" textColor="0xA8A6A6"/>
 		<e:CheckBox id="dis_8" label="CheckBox" x="768.5" y="395" anchorOffsetX="0" width="30" selected="false" name="dis_8">
 			<e:skinName>
 			<e:Skin states="up,down,disabled">
@@ -46,7 +46,7 @@
 			</e:Skin>
 			</e:skinName>
 		</e:CheckBox>
-		<e:Label text="800里/10分钟" x="800" y="402.5" size="20" textColor="0xa8a6a6"/>
+		<e:Label text="800里/8分钟" x="800" y="402.5" size="20" textColor="0xa8a6a6"/>
 		<e:CheckBox id="type_2" label="CheckBox" x="885" y="228" anchorOffsetX="0" width="30" selected="false" name="type_2">
 			<e:skinName>
 			<e:Skin states="up,down,disabled">
@@ -69,7 +69,7 @@
 		<e:Label text="骑兵" x="1035" y="234" size="20" textColor="0xA8A6A6"/>
 		<e:Label text="消耗：" x="809" y="481.15" size="20" textColor="0xa8a6a6"/>
 		<e:Image source="collect_font_bg_png" x="869" y="475.07"/>
-		<e:Image source="tax_goods_png" x="867.52" y="477.08"/>
+		<e:Image source="tax_goods_png" x="877" y="481.95" scaleX="0.2" scaleY="0.2"/>
 		<e:Label id="costLab" text="000" x="916" y="475.99" size="20" anchorOffsetY="0" height="27.33" anchorOffsetX="0" width="118.67" textAlign="center" verticalAlign="middle"/>
 		<e:Image id="collectBtn" source="collect_btn_png" x="855.52" y="551.82"/>
 		<e:Image id="getBtn" source="collect_get_btn_png" x="856" y="550.66"/>

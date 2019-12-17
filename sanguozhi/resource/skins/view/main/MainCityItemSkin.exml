@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="MainCityItemSkin" width="122" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image id="icon_img" source="main_city_0_png" x="0" y="38"/>
-	<e:Image source="main_city_name_bg_png" x="0" y="21.67" anchorOffsetX="0" width="20.48" anchorOffsetY="0" height="52.33"/>
-	<e:Label id="name_label" text="益州" x="3.3" y="27.8" anchorOffsetX="0" width="14" anchorOffsetY="0" height="40.6" verticalAlign="middle" textAlign="center" size="16" textColor="0x493425" fontFamily="yt"/>
+	<e:Image source="main_city_name_bg_png" x="3.35" y="29.69" anchorOffsetX="0" width="24.48" anchorOffsetY="0" height="58.33"/>
+	<e:Label id="name_label" text="益州" x="6.65" y="33.14" anchorOffsetX="0" width="18" anchorOffsetY="0" height="53.27" verticalAlign="middle" textAlign="center" size="18" textColor="0x493425" fontFamily="yt"/>
 	<e:Image id="qi_img" source="main_item_qi_png" x="87" y="-0.1" visible="false"/>
 	<e:Image id="battleIcon" source="battle_icon_png" x="53.71" y="16.25" anchorOffsetX="28.71" anchorOffsetY="26.75" width="57.41" height="53.5" visible="false"/>
+	<e:Group id="enemyGroup" x="69.41" y="-2.33" name="enemy">
+		<e:Image source="role_img_png" x="0" y="8.33" scaleX="0.4" scaleY="0.4"/>
+		<e:Image source="role_img_png" x="0.59" y="26.43" scaleX="0.4" scaleY="0.4"/>
+		<e:Image source="role_img_png" x="18.59" y="8.33" scaleX="0.4" scaleY="0.4"/>
+		<e:Image source="role_img_png" x="18.59" y="25.83" scaleX="0.4" scaleY="0.4"/>
+		<e:Image id="enemyIcon" source="main_battle_icon_png" x="52.09" y="0"/>
+	</e:Group>
 </e:Skin>

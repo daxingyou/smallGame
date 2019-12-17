@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayerInfoViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.5" left="0" top="0" bottom="0" right="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0.5">
+		<e:Image source="info_bg_png" x="0" y="0"/>
+		<e:Label text="战力:" x="240.94" y="84.54" fontFamily="yt" size="20" anchorOffsetX="0" width="46.5" stroke="0" strokeColor="0xD85536" textColor="0xFCCA71"/>
+		<e:BitmapLabel id="fighting_p" width="118.43" height="20.79" x="287.46" y="83.75" text="2000" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" font="doubtful_font_fnt"/>
+		<e:Image id="icon_img" x="148" y="41.75" anchorOffsetX="0" anchorOffsetY="0" source="start_icon_png" scaleX="1" scaleY="1"/>
+		<e:Image source="info_tiao4_png" x="236.99" y="47.75"/>
+		<e:Label id="name_label" text="Label" x="234.49" y="47.75" size="20" anchorOffsetX="0" width="144" anchorOffsetY="0" height="24" textAlign="center" verticalAlign="middle" fontFamily="yt"/>
+		<e:Image source="info_tiao0_png" x="55" y="177.68"/>
+		<e:Image source="info_tiao1_png" x="268" y="141.68"/>
+		<e:Image source="info_tiao2_png" x="268" y="176.68"/>
+		<e:Image source="info_tiao3_png" x="55" y="142.68"/>
+		<e:Label id="gold_label" text="" y="150.68" anchorOffsetX="0" width="159" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="310.49" textAlign="center" textColor="0xe8d3ae" fontFamily="fzbwksjw"/>
+		<e:Label id="medal_label" text="" y="150.68" anchorOffsetX="0" width="159" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="100.5" textAlign="center" textColor="0xe8d3ae" fontFamily="fzbwksjw"/>
+		<e:Label id="goods_label" text="" y="186.68" anchorOffsetX="0" width="159" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="100.5" textAlign="center" textColor="0xe8d3ae" fontFamily="fzbwksjw"/>
+		<e:Label id="soldier_label" text="" y="185.68" anchorOffsetX="0" width="159" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="310.49" textAlign="center" textColor="0xe8d3ae" fontFamily="fzbwksjw"/>
+		<e:Image id="close_btn" source="common_close_png" x="469.49" y="6.75"/>
+		<e:Label id="city_name" text="" x="55" y="268.33" anchorOffsetX="0" width="423.33" anchorOffsetY="0" height="59.34" size="20" textAlign="center" verticalAlign="middle" textColor="0xe8d3ae" fontFamily="fzbwksjw"/>
+		<e:Scroller width="92" height="136" x="81" y="425" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="role_list"/>
+		</e:Scroller>
+		<e:Scroller width="232" height="137" x="220.66" y="425" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="legion_list" anchorOffsetX="0" width="98" anchorOffsetY="0" height="138"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

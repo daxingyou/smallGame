@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LegionInfoSkin" width="232" height="26.4" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="info_jian_png" x="90" y="8.6"/>
+	<e:Image source="info_jian_png" x="126.4" y="8.6"/>
+	<e:Label id="name_lable" text="" x="4" y="1" size="20" textColor="0xefc78b" fontFamily="fzbwksjw"/>
+	<e:Label id="num_label" text="" x="177.2" y="0.6" size="20" textColor="0xefc78b" fontFamily="fzbwksjw"/>
+</e:Skin>

@@ -1,0 +1,64 @@
+{"mc":{
+	"buff_atk":{
+		"frameRate":12,
+		"labels":[
+			{"name":"action","frame":1,"end":8}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"dseeq1.png_png",
+			"x":-8,
+			"y":-38
+			},
+			{
+			"res":"dseeq2.png_png",
+			"x":-12,
+			"y":-38
+			},
+			{
+			"res":"dseeq3.png_png",
+			"x":-9,
+			"y":-36
+			},
+			{
+			"res":"dseeq4.png_png",
+			"x":-12,
+			"y":-35
+			},
+			{
+			"res":"dseeq5.png_png",
+			"x":-9,
+			"y":-35
+			},
+			{
+			"res":"dseeq6.png_png",
+			"x":-12,
+			"y":-35
+			},
+			{
+			"res":"dseeq7.png_png",
+			"x":-9,
+			"y":-33
+			},
+			{
+			"res":"dseeq8.png_png",
+			"x":-12,
+			"y":-31
+			}
+			]
+}},
+	"res":{
+		"dseeq3.png_png":{"x":100,"y":1,"w":44,"h":71},
+		"dseeq8.png_png":{"x":52,"y":80,"w":47,"h":67},
+		"dseeq6.png_png":{"x":1,"y":81,"w":47,"h":73},
+		"dseeq1.png_png":{"x":100,"y":151,"w":43,"h":69},
+		"dseeq7.png_png":{"x":52,"y":151,"w":44,"h":68},
+		"dseeq4.png_png":{"x":1,"y":1,"w":47,"h":76},
+		"dseeq2.png_png":{"x":1,"y":158,"w":47,"h":71},
+		"dseeq5.png_png":{"x":52,"y":1,"w":44,"h":75}
+	}}

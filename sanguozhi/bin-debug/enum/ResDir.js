@@ -8,4 +8,5 @@ var SKILL_EFF = EFFECT + "skill/";
 var EFFROLESHOW = EFFECT + "show/";
 var SOLDIER = EFFECT + "soldier/";
 var DEFAULT_FONT = RES_RESOURCE + "res/font/yt.ttf";
+var MUSIC = "resource/res/sound/";
 //# sourceMappingURL=ResDir.js.map

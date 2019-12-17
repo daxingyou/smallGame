@@ -19,7 +19,9 @@ var RechargeItem = (function (_super) {
         this.buyBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchTap, this);
     };
     RechargeItem.prototype.onTouchTap = function () {
-        GlobalFun.sendToNativePhurse({ goodid: 0, goodnum: this.data.goldNum, goodtype: 0, price: this.data.costNum });
+        recharge.sendToNativePhurse({ Key1: this.data.costNum }, function (goldNum) {
+            GameApp.gold += goldNum;
+        }, this);
     };
     RechargeItem.prototype.dataChanged = function () {
         this.icon.source = this.data.icon;

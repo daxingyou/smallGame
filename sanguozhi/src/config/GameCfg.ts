@@ -6,15 +6,75 @@ class GameCfg
 	public static gameStart:boolean = false;
 	public static playerPH:number = 0;
 	public static playerPH_max:number = 0;
+	public static playerAttack:number = 0;
+	public static npcAttack:number = 0;
 	public static npcPH:number = 0;
 	public static npcPH_max:number = 0;
 	public static pp:PlayerPhalanx[] = [];
 	public static np:NpcPhalanx[] = [];
+	public static resultBool:boolean = false;
 	public static bingDate:any = {
-		1:{hp:120, attack:30},
-		2:{hp:80, attack:40},
-		3:{hp:100, attack:20}
+		1:{hp:80, attack:40},
+		2:{hp:100, attack:20},
+		3:{hp:120, attack:30}
 	};
+	public static levelCfg:SoldierRect[][][] = [
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		],
+		[
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100105, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100113, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:1, soldierID:100109, generalId:0},{genrealRes:"role_10002",soldierType:1, soldierID:100110, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100111, generalId:0}],
+			[{genrealRes:"role_10002",soldierType:3, soldierID:100112, generalId:0},{genrealRes:"role_10002",soldierType:3, soldierID:100106, generalId:0},{genrealRes:"role_10002",soldierType:2, soldierID:100107, generalId:0}]
+		]
+	]
+
 	public static checkpoint:any[] = 
 	[
 		[

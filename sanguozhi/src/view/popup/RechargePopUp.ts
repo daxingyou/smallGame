@@ -10,7 +10,7 @@ class RechargePopUp extends BaseEuiView{
 	}
 	public open(...param):void{
 		this.shopGroup["autoSize"]();
-		this.shopGroup.verticalCenter = -600
+		this.shopGroup.verticalCenter = -700
 		this.arrayCollect = new eui.ArrayCollection();
 		this.list.itemRenderer = RechargeItem;
 		this.list.dataProvider = this.arrayCollect;
@@ -24,7 +24,7 @@ class RechargePopUp extends BaseEuiView{
 		this.addTouchEvent(this.returnBtn,this.onReturn,true);
 	}
 	private onReturn():void{
-		egret.Tween.get(this.shopGroup).to({verticalCenter:-600},600,egret.Ease.circOut).call(()=>{
+		egret.Tween.get(this.shopGroup).to({verticalCenter:-700},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.shopGroup);
 			ViewManager.inst().close(RechargePopUp);
 		},this)

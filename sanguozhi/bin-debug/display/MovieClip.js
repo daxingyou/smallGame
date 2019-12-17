@@ -19,6 +19,7 @@ var MovieClip = (function (_super) {
         /**倍率 ,越大越快*/
         _this.rate = 1;
         _this.pixelHitTest = false;
+        _this.wj = false;
         _this._mcFactory = new egret.MovieClipDataFactory();
         MessageManager.inst().addListener(LocalStorageEnum.GAME_START, _this.gameStart, _this);
         MessageManager.inst().addListener(LocalStorageEnum.GAME_PAUSE, _this.gamePause, _this);
@@ -46,13 +47,12 @@ var MovieClip = (function (_super) {
         this.playCount = playCount;
         this.remove = remove;
         TimerManager.inst().remove(this.playComp, this);
-        if (this.texture && this.texture.bitmapData == null) {
-            //资源已经被释放掉
-        }
-        else if (this.name == name) {
-            this.createBody(framesLabel, frameRate);
-            return;
-        }
+        // if (this.texture && this.texture.bitmapData == null) {
+        // 	//资源已经被释放掉
+        // } else if (this.name == name) {
+        // 	this.createBody(framesLabel,frameRate);
+        // 	return;
+        // }
         this.name = name;
         if (this.texture) {
             MovieClip.removeDisplayObject(this, this.texture.bitmapData);

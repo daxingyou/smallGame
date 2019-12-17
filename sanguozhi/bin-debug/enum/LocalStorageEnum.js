@@ -4,13 +4,17 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 var LocalStorageEnum = (function () {
     function LocalStorageEnum() {
     }
+    /**商城购买人物时的id */
+    LocalStorageEnum.GENERALId = "999996";
+    /**人物经验 */
+    LocalStorageEnum.EXP = "999997";
     /**当前税收的数量 */
     LocalStorageEnum.TAX_NUM = "999998";
     /**第一次进入 */
     LocalStorageEnum.ENTER_FIRST = "999999";
     /**人物元宝 */
     LocalStorageEnum.ROLE_GOLD = "1000000";
-    /**人物勋章 */
+    /**人物功勋 */
     LocalStorageEnum.ROLE_MEDAL = "1000001";
     /**人物粮草 */
     LocalStorageEnum.ROLE_GOODS = "1000002";
@@ -79,7 +83,20 @@ var LocalStorageEnum = (function () {
     LocalStorageEnum.CHAPTERID = "100000018";
     /** 关卡id*/
     LocalStorageEnum.LEVELID = "100000019";
+    LocalStorageEnum.CREATE_SOLDIERS = "CREATE_SOLDIERS";
+    LocalStorageEnum.DOUBTFUL_MOVE_ROLE = "DOUBTFUL_MOVE_ROLE";
+    LocalStorageEnum.DOUBTFUL_MOVE_SOLDIER = "DOUBTFUL_MOVE_SOLDIER";
+    LocalStorageEnum.BEGIN_MOVE_CARD = "100000020";
+    LocalStorageEnum.SEND_BATTLE_POS = "100000021";
+    LocalStorageEnum.QINGBAO = "QINGBAO";
+    LocalStorageEnum.CLOSE_CARDINFO = "CLOSE_CARDINFO";
     return LocalStorageEnum;
 }());
 __reflect(LocalStorageEnum.prototype, "LocalStorageEnum");
+var PointObj = (function () {
+    function PointObj() {
+    }
+    return PointObj;
+}());
+__reflect(PointObj.prototype, "PointObj");
 //# sourceMappingURL=LocalStorageEnum.js.map

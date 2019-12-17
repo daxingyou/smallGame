@@ -36,7 +36,8 @@ var TipsView = (function (_super) {
     TipsView.prototype.showTips = function (str) {
         var tips = ObjectPool.pop("TipsItem");
         tips.horizontalCenter = 0;
-        var bottomNum = (StageUtils.inst().getHeight() >> 1);
+        // let bottomNum:number = (StageUtils.inst().getHeight()>>1);
+        var bottomNum = (StageUtils.inst().getHeight() - 200);
         tips.bottom = bottomNum;
         this.addChild(tips);
         tips.labelText = str;

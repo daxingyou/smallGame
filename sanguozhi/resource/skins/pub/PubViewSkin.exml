@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="PubViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect top="0" bottom="0" height="750" left="0" right="0" alpha="0.3"/>
+	<e:Rect top="0" bottom="0" height="750" left="0" right="0" alpha="0.8"/>
 	<e:Label id="txt_top" text="回答正确6道题，才能获得高级武将的青睐！" anchorOffsetX="0" width="627.03" anchorOffsetY="0" height="75.45" verticalAlign="middle" textAlign="left" left="185" top="25" visible="false"/>
 	<e:Group id="pubGroup" horizontalCenter="0" verticalCenter="0">
 		<e:Image source="pub_bg_png" x="0" y="0"/>
@@ -37,7 +37,7 @@
 			</e:Skin>
 			</e:skinName>
 		</e:Button>
-		<e:Group id="group1" width="694.55" height="238" x="396.42" y="106.84" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group id="group1" width="694.55" height="238" x="396.42" y="106.84" anchorOffsetX="0" anchorOffsetY="0" visible="false">
 			<e:Label id="title" text="司马懿仿造孔明半月内也造了多少余只“木牛流马”？" x="27.3" y="48.34" anchorOffsetX="0" width="662.55" anchorOffsetY="0" height="71.09" size="20" textColor="0xe5d7d7"/>
 			<e:Label id="select1" text="A.五百" x="75" y="137" anchorOffsetX="0" width="107.39" anchorOffsetY="0" height="20.92" size="20" name="select1" textColor="0xd6d1d1"/>
 			<e:Label id="select2" text="B.一千" x="226.26" y="137" anchorOffsetX="0" width="118.24" anchorOffsetY="0" height="23.94" size="20" name="select2" textColor="0xd6d1d1"/>
@@ -95,18 +95,20 @@
 			<e:Rect id="rect4" width="129.09" height="66.97" x="513.56" y="109.41" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
 		</e:Group>
 		<e:Image id="select" source="pub_select_png" x="473" y="370" touchEnabled="false"/>
-		<e:Group id="group2" width="703.04" height="212.13" x="388.6" y="133.97" anchorOffsetX="0" anchorOffsetY="0" locked="true" visible="false">
-			<e:Image source="pub_font_png" x="123.12" y="24.51"/>
-			<e:Label id="money_label" text="200" x="337.29" y="112.04" verticalAlign="middle" anchorOffsetX="0" width="103.21" anchorOffsetY="0" height="28.48" textAlign="left" size="20" textColor="0xb8db3d"/>
-			<e:Button id="zhaomu_btn" label="招募" x="294.68" y="142.04">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%" source="pub_get_png" source.down="pub_get_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
-				</e:Skin>
-			</e:skinName>
-			</e:Button>
-			<e:Image source="shop_gold_png" x="313.93" y="121.8"/>
+		<e:Group id="group2" width="703.04" height="212.13" x="388.6" y="133.97" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image source="pub_font_png" x="123.12" y="63.91"/>
+			<e:Group id="zm_group" x="550.48" y="137.05">
+				<e:Label id="money_label" text="200" x="42.61" y="0" verticalAlign="middle" anchorOffsetX="0" width="103.21" anchorOffsetY="0" height="28.48" textAlign="left" size="20" textColor="0xb8db3d"/>
+				<e:Button id="zhaomu_btn" label="招募" x="0" y="30">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="pub_get_png" source.down="pub_get_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image source="shop_gold_png" x="19.25" y="9.76"/>
+			</e:Group>
 		</e:Group>
 	</e:Group>
 </e:Skin>

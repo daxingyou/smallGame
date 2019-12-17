@@ -14,8 +14,12 @@ class GameApp extends BaseClass {
 	public static goods:number = 0;
 	/**元宝 */
 	public static gold:number = 0;
-	/**勋章值 */
+	/**经验 */
+	public static exp: number = 0;
+	/**功勋值 */
 	public static medal:number = 0;
+	/**战斗力 */
+	public static combat: number = 23124;
 
 
 	/** 弓兵数量*/
@@ -44,8 +48,13 @@ class GameApp extends BaseClass {
 
 	public static guideView:GuideView;
 
-	public static standW:number = 1334;
-	public static standH:number = 750;
+	public static cardStaticX:number = 0;
+	public static cardStaticY:number = 0;
+	public static soldiersNum:number = 0;
+
+	public static intelligence:number = 1;
+
+	public static ownSolderis:SoldierRect[] = [];
 	public constructor() {
 		super();
 	}
@@ -83,7 +92,7 @@ class GameApp extends BaseClass {
 			GameApp.goods = parseInt(goodsstr);
 		}
 		eui.Binding.bindHandler(GameApp,["goods"],()=>{egret.localStorage.setItem(LocalStorageEnum.ROLE_GOODS,GameApp.goods.toString())},this);
-		//-------勋章-------
+		//-------功勋-------
 		
 		let medalstr:string = egret.localStorage.getItem(LocalStorageEnum.ROLE_MEDAL);
 		if(!medalstr){
@@ -129,12 +138,20 @@ class GameApp extends BaseClass {
 			GameApp.year = parseInt(yearstr);
 		}
 		eui.Binding.bindHandler(GameApp,["year"],()=>{egret.localStorage.setItem(LocalStorageEnum.YEAR,GameApp.year.toString())},this);
+		//----------情报值---------
+		let qingbao:string = egret.localStorage.getItem(LocalStorageEnum.QINGBAO);
+		if(!qingbao){
+			GameApp.intelligence = 1;
+		}else{
+			GameApp.intelligence = parseInt(qingbao);
+		}
+		eui.Binding.bindHandler(GameApp,["qingbao"],()=>{egret.localStorage.setItem(LocalStorageEnum.QINGBAO,GameApp.intelligence.toString())},this);
 		//----------人物信息-------
 		let roleInfo:string = egret.localStorage.getItem(LocalStorageEnum.ROLEINFO);
 		if(!roleInfo){
 			let cityArr:CityInfo[] = [];
 			for(let i:number = 0;i<GameApp.tolevel;i++){
-				let cityInfo:CityInfo = {isOnly:false,cityId:(i+1),isOwn:false,isMain:false,timespan:0,passLevel:0,goodProduce:((Math.random()*200)>>0),isOpen:false,name:"城市名字"}
+				let cityInfo:CityInfo = {isOnly:false,cityId:(i+1),isOwn:false,isMain:false,timespan:0,passLevel:0,goodProduce:((Math.random()*200)>>0),isOpen:false,name:NameList.inst().city_name[i],isEnemy:false}
 				cityArr.push(cityInfo);
 			}
 			let obj:RoleInfoVo = {name:"名字",citys:cityArr};
@@ -150,21 +167,27 @@ class GameApp extends BaseClass {
 		}else{
 			GameApp.cardInfo = JSON.parse(cardInfo);
 		}
-
-		
+		//--------经验值-----------
+		let expstr:string = egret.localStorage.getItem(LocalStorageEnum.EXP);
+		if(!expstr){
+			GameApp.exp = 300;
+		}else{
+			GameApp.exp = parseInt(expstr);
+		}
+		eui.Binding.bindHandler(GameApp,["exp"],()=>{egret.localStorage.setItem(LocalStorageEnum.EXP,GameApp.exp.toString())},this);
 		// for(let i = 0; i < CardCfg.cfgs.length; i++)
 		// {
 		// 	GlobalFun.refreshCardData(CardCfg.cfgs[i].insId, CardCfg.cfgs[i]);
 		// }
-		GlobalFun.sendToNativeLoadEnd();
-		// ViewManager.inst().open(GameView);
+		recharge.sendToNativeLoadEnd();
 		let enterFirststr:string = egret.localStorage.getItem(LocalStorageEnum.ENTER_FIRST);
+		GameApp.ownSolderis = [{genrealRes:"",soldierType:0, soldierID:0, generalId:0},{genrealRes:"",soldierType:0, soldierID:0, generalId:0},{genrealRes:"",soldierType:0, soldierID:0, generalId:0}]
 		if(!enterFirststr){
 			ViewManager.inst().open(StartGameView);
 		}else{
 			ViewManager.inst().open(GameMainView);
 		}
-		
+		// ViewManager.inst().open(BattleView);
 		
 	}
 	private deepCopy():CardAttrVo[]{
@@ -194,4 +217,13 @@ class GameApp extends BaseClass {
 	public postPerLoadProgress(itemsLoaded: number, itemsTotal: number): number[] {
 		return [itemsLoaded, itemsTotal];
 	}
+}
+interface SoldierRect{
+	genrealRes:string;
+	/**兵种类型  123 弓 步 骑 */
+	soldierType:number;
+	/**兵种ID */
+	soldierID:number;
+	/**将领id */
+	generalId:number;
 }

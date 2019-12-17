@@ -2,6 +2,8 @@ class Bullet extends egret.Sprite {
     private img: egret.Bitmap;
     private _id:number = 0;
     private _img:string;
+    private cb:()=>void;
+    private arg:any;
     private pos = {
         x:0,
         y:0
@@ -12,7 +14,7 @@ class Bullet extends egret.Sprite {
         y:0
     }
 
-    public constructor( my_x:number, my_y:number , x:number , y:number , id:number , _img:string) {
+    public constructor( my_x:number, my_y:number , x:number , y:number , id:number , _img:string,cb?:()=>void,arg?:any) {
         super();
         this.pos.x = x;
         this.pos.y = y;
@@ -22,6 +24,8 @@ class Bullet extends egret.Sprite {
         this.lastPos.y = my_y;
         this._id = id;
         this._img = _img;
+        this.cb = cb;
+        this.arg = arg;
         this.init();
         this.addEventListener( egret.Event.ENTER_FRAME , this.update , this );
         MessageManager.inst().addListener(LocalStorageEnum.GAME_START, this.gameStart, this);
@@ -81,7 +85,11 @@ class Bullet extends egret.Sprite {
     private removeMyself():void {
         // Message.instance.send( MsgCMD.EXPLODE , this );
         if( this.parent && this.parent.contains( this ) ){
+            if(this.cb && this.arg){
+                this.cb.call(this.arg);
+            }
             this.parent.removeChild( this );
+            
         }
     }
 }

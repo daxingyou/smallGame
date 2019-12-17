@@ -113,4 +113,5 @@ class StageUtils extends BaseClass {
 		StageUtils.inst().getStage().scaleMode = scaleMode;
 	}
 	
+	
 }

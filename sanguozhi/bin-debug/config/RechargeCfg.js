@@ -11,40 +11,40 @@ var RechargeCfg = (function () {
         {
             icon: "gold_6_png",
             goldNum: 60,
-            cost: "￥6",
-            desc: "60元宝",
+            cost: "花费6元可购得60枚元宝",
+            desc: "60枚元宝",
             costNum: 6,
             goodid: 0
         },
         {
             icon: "gold_68_png",
             goldNum: 680,
-            cost: "￥68",
-            desc: "680元宝",
+            cost: "花费68元可购得680枚元宝",
+            desc: "680枚元宝",
             costNum: 68,
             goodid: 1
         },
         {
             icon: "gold_128_png",
             goldNum: 1280,
-            cost: "￥128",
-            desc: "1280元宝",
+            cost: "花费128元可购得1280枚元宝",
+            desc: "1280枚元宝",
             costNum: 128,
             goodid: 2
         },
         {
             icon: "gold_328_png",
             goldNum: 328,
-            cost: "￥328",
-            desc: "3280元宝",
+            cost: "花费328元可购得3280枚元宝",
+            desc: "3280枚元宝",
             costNum: 328,
             goodid: 3
         },
         {
             icon: "gold_648_png",
             goldNum: 648,
-            cost: "￥648",
-            desc: "6480元宝",
+            cost: "花费6488元可购得6480枚元宝",
+            desc: "6480枚元宝",
             costNum: 648,
             goodid: 3
         }

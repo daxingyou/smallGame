@@ -10,15 +10,74 @@ var GameCfg = (function () {
     GameCfg.gameStart = false;
     GameCfg.playerPH = 0;
     GameCfg.playerPH_max = 0;
+    GameCfg.playerAttack = 0;
+    GameCfg.npcAttack = 0;
     GameCfg.npcPH = 0;
     GameCfg.npcPH_max = 0;
     GameCfg.pp = [];
     GameCfg.np = [];
+    GameCfg.resultBool = false;
     GameCfg.bingDate = {
-        1: { hp: 120, attack: 30 },
-        2: { hp: 80, attack: 40 },
-        3: { hp: 100, attack: 20 }
+        1: { hp: 80, attack: 40 },
+        2: { hp: 100, attack: 20 },
+        3: { hp: 120, attack: 30 }
     };
+    GameCfg.levelCfg = [
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ],
+        [
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100105, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100113, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 1, soldierID: 100109, generalId: 0 }, { genrealRes: "role_10002", soldierType: 1, soldierID: 100110, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100111, generalId: 0 }],
+            [{ genrealRes: "role_10002", soldierType: 3, soldierID: 100112, generalId: 0 }, { genrealRes: "role_10002", soldierType: 3, soldierID: 100106, generalId: 0 }, { genrealRes: "role_10002", soldierType: 2, soldierID: 100107, generalId: 0 }]
+        ]
+    ];
     GameCfg.checkpoint = [
         [
             { wj: [10000, 0, 0], bing: [{ qian: 3, hou: 1 }, { qian: 0, hou: 0 }, { qian: 0, hou: 0 }], ta: [{ qian: 0, hou: 0 }, { qian: 0, hou: 0 }, { qian: 0, hou: 0 }] },

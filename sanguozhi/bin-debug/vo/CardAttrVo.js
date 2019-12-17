@@ -10,5 +10,9 @@ var CardType;
     CardType[CardType["build"] = 3] = "build";
     /**道具卡 */
     CardType[CardType["prop"] = 4] = "prop";
+    /**士兵 */
+    CardType[CardType["soldier"] = 5] = "soldier";
+    /**经验 */
+    CardType[CardType["exp"] = 6] = "exp";
 })(CardType || (CardType = {}));
 //# sourceMappingURL=CardAttrVo.js.map

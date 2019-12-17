@@ -68,6 +68,12 @@ var PubView = (function (_super) {
             this.group1.visible = false;
             this.group2.visible = true;
             // this.txt_top.visible=false;
+            if (person["buy"] == 0) {
+                this.zm_group.visible = true;
+            }
+            else if (person["buy"] == 1) {
+                this.zm_group.visible = false;
+            }
             this.money_label.text = "" + this.wupin_money[this.person_num - 1];
         }
         else {
@@ -178,6 +184,7 @@ var PubView = (function (_super) {
             obj["person1"]["time"] = 0;
             obj["person1"]["state"] = 0;
             obj["person1"]["ti_Array"] = [];
+            obj["person1"]["buy"] = 0;
             /**
              * 第二人数据
              * @param time 禁止答题的时间
@@ -188,6 +195,7 @@ var PubView = (function (_super) {
             obj["person2"]["time"] = 0;
             obj["person2"]["state"] = 0;
             obj["person2"]["ti_Array"] = [];
+            obj["person2"]["buy"] = 0;
             /**
              * 第三人数据
              * @param time 禁止答题的时间
@@ -198,10 +206,11 @@ var PubView = (function (_super) {
             obj["person3"]["time"] = 0;
             obj["person3"]["state"] = 0;
             obj["person3"]["ti_Array"] = [];
+            obj["person3"]["buy"] = 0;
             GlobalFun.savelocalStorage(obj);
         }
         this.pubGroup["autoSize"]();
-        this.pubGroup.verticalCenter = -600;
+        this.pubGroup.verticalCenter = -700;
         egret.Tween.get(this.pubGroup).to({ verticalCenter: 0 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.pubGroup);
         }, this);
@@ -290,25 +299,25 @@ var PubView = (function (_super) {
                             this.setWhhite();
                             if (GlobalFun.judgelocalStorage()) {
                                 UserTips.inst().showTips("回答正确");
-                                var obj = GlobalFun.getlocalStorage();
-                                obj["person" + this.person_num]["state"] = 0;
-                                obj["person" + this.person_num]["ti_Array"].push(this.question_id);
-                                GlobalFun.savelocalStorage(obj);
+                                var obj_1 = GlobalFun.getlocalStorage();
+                                obj_1["person" + this.person_num]["state"] = 0;
+                                obj_1["person" + this.person_num]["ti_Array"].push(this.question_id);
+                                GlobalFun.savelocalStorage(obj_1);
                                 this.setData(this.person_num);
                             }
                         }
                         else {
                             if (GlobalFun.judgelocalStorage()) {
-                                var obj = GlobalFun.getlocalStorage();
-                                var state = obj["person" + this.person_num]["state"];
+                                var obj_2 = GlobalFun.getlocalStorage();
+                                var state = obj_2["person" + this.person_num]["state"];
                                 state++;
                                 if (state >= 2) {
                                     /**
                                      * 第二次机会
                                      * */
-                                    obj["person" + this.person_num]["state"] = 2;
-                                    obj["person" + this.person_num]["time"] = this.getTime();
-                                    GlobalFun.savelocalStorage(obj);
+                                    obj_2["person" + this.person_num]["state"] = 2;
+                                    obj_2["person" + this.person_num]["time"] = this.getTime();
+                                    GlobalFun.savelocalStorage(obj_2);
                                     this.setData(this.person_num);
                                 }
                                 else {
@@ -317,8 +326,8 @@ var PubView = (function (_super) {
                                      * */
                                     UserTips.inst().showTips("打错题，请再答");
                                     this.setWhhite();
-                                    obj["person" + this.person_num]["state"] = 1;
-                                    GlobalFun.savelocalStorage(obj);
+                                    obj_2["person" + this.person_num]["state"] = 1;
+                                    GlobalFun.savelocalStorage(obj_2);
                                 }
                             }
                         }
@@ -326,12 +335,31 @@ var PubView = (function (_super) {
                 }
                 break;
             case this.zhaomu_btn:
+                var obj = GlobalFun.getlocalStorage();
                 if (GameApp.gold >= this.wupin_money[this.person_num - 1]) {
-                    UserTips.inst().showTips("\u8D2D\u4E70" + this.person_num);
+                    GameApp.gold -= this.wupin_money[this.person_num - 1];
+                    UserTips.inst().showTips("\u6210\u529F\u62DB\u52DF");
+                    obj["person" + this.person_num]["buy"] = 1;
+                    this.zm_group.visible = false;
+                    var role_id = void 0;
+                    if (this.person_num == 1) {
+                        role_id = 10000;
+                    }
+                    else if (this.person_num == 2) {
+                        role_id = 10001;
+                    }
+                    else if (this.person_num == 3) {
+                        role_id = 10002;
+                    }
+                    var card = GlobalFun.getCardDataFromId(role_id);
+                    card.ownNum = 1;
+                    GlobalFun.refreshCardData(role_id, { ownNum: card.ownNum });
                 }
                 else {
-                    UserTips.inst().showTips("金币不够");
+                    UserTips.inst().showTips("元宝不足");
+                    obj["person" + this.person_num]["buy"] = 0;
                 }
+                GlobalFun.savelocalStorage(obj);
                 break;
             case this.rect1:
                 this.setColor(1);
@@ -346,7 +374,7 @@ var PubView = (function (_super) {
                 this.setColor(4);
                 break;
             case this.return_btn:
-                egret.Tween.get(this.pubGroup).to({ verticalCenter: -600 }, 600, egret.Ease.circOut).call(function () {
+                egret.Tween.get(this.pubGroup).to({ verticalCenter: -700 }, 600, egret.Ease.circOut).call(function () {
                     egret.Tween.removeTweens(_this.pubGroup);
                     ViewManager.inst().close(PubView);
                 }, this);

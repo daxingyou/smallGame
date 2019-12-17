@@ -1,0 +1,46 @@
+{"mc":{
+	"role_100011_stand":{
+		"frameRate":10,
+		"labels":[
+			{"name":"","frame":1,"end":5}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"stand01.png",
+			"x":-40,
+			"y":-67
+			},
+			{
+			"res":"stand03.png",
+			"x":-40,
+			"y":-67
+			},
+			{
+			"res":"stand05.png",
+			"x":-40,
+			"y":-67
+			},
+			{
+			"res":"stand07.png",
+			"x":-40,
+			"y":-67
+			},
+			{
+			"res":"stand09.png",
+			"x":-40,
+			"y":-67
+			}
+			]
+}},
+	"res":{
+		"stand09.png":{"x":0,"y":0,"w":77,"h":72},
+		"stand03.png":{"x":77,"y":72,"w":77,"h":72},
+		"stand07.png":{"x":0,"y":144,"w":77,"h":72},
+		"stand05.png":{"x":0,"y":72,"w":77,"h":72},
+		"stand01.png":{"x":77,"y":0,"w":77,"h":72}
+	}}

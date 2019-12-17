@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="ShopViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Rect left="0" right="0" top="0" bottom="0" alpha="0.3"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" alpha="0.8"/>
 	<e:Group id="shopGroup" horizontalCenter="0" verticalCenter="0">
 		<e:Image source="shop_bg_png" x="0" y="0"/>
 		<e:Scroller id="scroller" width="1088.24" height="524.25" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-18.5" top="156" scrollPolicyH="off">

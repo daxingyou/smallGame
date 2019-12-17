@@ -57,14 +57,11 @@ enum  DirectionEnum{
 	BOTTOM
 }
 enum SoldierType{
-	/**枪兵 */
-	SOLDIER_QIANG = 0,
-	/**刀兵 */
-	SOLDIER_DAO,
+	/**弓箭手 */
+	SOLDIER_GONG = 1,
+	/**步兵 */
+	SOLDIER_BU,
 	/**骑兵 */
 	SOLDIER_QI,
-	/**弓箭手 */
-	SOLDIER_GONG,
-	/**投石车 */
-	SOLDIER_TOUSHICHE,
+	
 }

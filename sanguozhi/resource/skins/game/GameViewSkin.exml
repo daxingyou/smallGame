@@ -18,7 +18,7 @@
 		</e:Scroller>
 	</e:Group>
 	<e:Group id="up_group" right="18" left="26" y="0">
-		<e:Group horizontalCenter="-4" top="0">
+		<e:Group horizontalCenter="0.5" top="2" anchorOffsetX="0" width="1036.67">
 			<e:Image source="game_ding_png" x="0" y="0"/>
 			<e:Image source="game_vs_png" x="446" y="5"/>
 			<e:Image source="icon_kuang_png" x="569.18" y="20"/>
@@ -45,16 +45,24 @@
 			<e:Label id="npc_lc" text="粮草：" x="677.31" y="42.77" size="18" fontFamily="yt" textColor="0xef952d"/>
 			<e:Label id="npc_bl" text="兵力：" x="677.31" y="62.6" size="18" fontFamily="yt" textColor="0xef952d"/>
 			<e:Label id="npc_cc" text="城池：" x="677.31" y="81.6" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Group anchorOffsetX="0" width="184.5" x="255.5" y="102.67" scaleX="1" scaleY="1">
+				<e:Label text="战力：" x="0" y="0" fontFamily="yt" size="26" anchorOffsetX="0" width="107.5" textColor="0xe80909" stroke="0.5"/>
+				<e:BitmapLabel id="fighting_p" width="127" height="36.5" x="63.05" y="1.55" font="number_fnt" text="" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.7" scaleY="0.7"/>
+			</e:Group>
+			<e:Group anchorOffsetX="0" width="184.5" left="585" top="102" x="927" y="23" scaleX="1" scaleY="1">
+				<e:Label text="战力：" x="0" y="0" fontFamily="yt" size="26" anchorOffsetX="0" width="107.5" textColor="0xE80909" stroke="0.5"/>
+				<e:BitmapLabel id="fighting_n" width="127" height="36.5" x="62.98" y="1.89" font="number_fnt" text="" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.7" scaleY="0.7"/>
+			</e:Group>
 		</e:Group>
 		<e:Image id="shop_btn" source="game_shop_png" height="86" left="0" top="13"/>
 		<e:Image id="back_btn" source="game_back_png" height="56" right="0" top="33"/>
 	</e:Group>
-	<e:Image id="fight_btn" source="game_start_png" horizontalCenter="1" verticalCenter="-26.5" anchorOffsetX="62.67" anchorOffsetY="61.34"/>
-	<e:Group id="tip_group" x="417.39" anchorOffsetY="154.42" height="153.52" anchorOffsetX="289.39" width="358.94" alpha="1" top="113" touchEnabled="false">
+	<e:Image id="fight_btn" source="game_start_png" horizontalCenter="0.5" verticalCenter="0.5" anchorOffsetX="62.67" anchorOffsetY="61.34"/>
+	<e:Group id="tip_group" x="417.39" anchorOffsetY="154.42" height="153.52" anchorOffsetX="289.39" width="358.94" alpha="1" top="149" touchEnabled="false">
 		<e:Image source="game_tip_png" x="0" y="0"/>
 		<e:Label text="拖动卡牌进行布阵" x="72.5" y="24" anchorOffsetX="0" width="230.33" anchorOffsetY="0" height="44" verticalAlign="middle" textAlign="center" size="22" textColor="0xffc23f" fontFamily="yt"/>
 		<e:Image id="jiantou" source="game_jian_png" x="289.5" y="153.52" anchorOffsetX="20" anchorOffsetY="67" scaleX="1" scaleY="1"/>
 	</e:Group>
 	<e:Label id="df_label" text="敌方阵营" anchorOffsetX="0" width="55.81" anchorOffsetY="0" height="293.64" size="45" verticalAlign="middle" textAlign="center" fontFamily="yt" right="232" verticalCenter="14" textColor="0xf41400"/>
-	<e:Rect id="posrect" width="20" height="20" x="64" y="256" alpha="0"/>
+	<e:Rect id="posrect" width="20" height="20" alpha="0" horizontalCenter="-593" top="235"/>
 </e:Skin>

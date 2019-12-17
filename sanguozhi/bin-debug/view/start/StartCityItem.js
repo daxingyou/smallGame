@@ -32,19 +32,29 @@ var StartCityItem = (function (_super) {
     };
     StartCityItem.prototype.init = function () {
         this.name_label.text = "" + NameList.inst().city_name[this._id];
-        this.icon_img.texture = RES.getRes("start_city_" + this._id + "_png");
+        this.icon_img.source = "main_city_" + this._id + "_png";
         this.anchorOffsetX = this.width / 2;
         this.anchorOffsetY = this.height / 2;
+        this.qimc = new MovieClip();
+        this.addChild(this.qimc);
+        this.qimc.playFile(EFFECT + "flag", -1);
+        this.qimc.scaleX = this.qimc.scaleY = 0.6;
+        this.qimc.visible = false;
+        this.qimc.x = 92;
+        this.qimc.y = 86;
     };
     StartCityItem.prototype.touchTapHandler = function () {
+        SoundManager.inst().playEffect(MUSIC + "collect.mp3");
         MessageManager.inst().dispatch(CustomEvt.SELECT_MAIN_CITY, this._id);
     };
     StartCityItem.prototype.selectCityHandler = function (e) {
         if (this._id == e.data) {
             this.icon_img.scaleX = this.icon_img.scaleY = 1.2;
+            this.qimc.visible = true;
         }
         else {
             this.icon_img.scaleX = this.icon_img.scaleY = 1;
+            this.qimc.visible = false;
         }
     };
     return StartCityItem;

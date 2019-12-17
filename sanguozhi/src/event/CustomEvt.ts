@@ -24,6 +24,9 @@ class CustomEvt extends egret.Event{
 	public static TOUCH_CARD: string = "touch_card";
 	/**卡牌购买通知 */
 	public static CARD_REFRESH:string = "card_refresh";
+	/** 刷新商城 */
+	public static UPDATE_SHOP: string = `update_shop`;
+	
 	private _data:any;
 	public constructor(type: string,data:any = null, bubbles: boolean = false, cancelable: boolean = false) {
 		super(type, bubbles, cancelable);

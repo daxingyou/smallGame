@@ -65,8 +65,10 @@ class GlobalFun {
 		let self = this;
     }
     public static stopAnimateleaf():void{
-        this.showstate = false;
-       this.leaf["stop"]();
+       this.showstate = false;
+       if(this.leaf){
+           this.leaf["stop"]();
+       }
     }
 	private static shaking(): void {
         egret.Tween.removeTweens(this.target);
@@ -168,78 +170,6 @@ class GlobalFun {
     public static payCallBack(_cb):void{
         GameApp.pay_cbDdata = _cb;
     }
-    /**
-     * 创建全舞台技能特效显示
-     * @param id 技能id
-     * @param parent 父级容器
-     * @param loopCount 循环次数
-     * @param pos 位置
-     * */
-    public static createSkillEff(camp:number,id:number,parent:egret.DisplayObjectContainer,loopCount:number,pos:XY):void{
-        // let skillCfg:any = SkillCfg.skillCfg[camp];
-        let skillCfg:any
-        let curUseSkill:any;
-        let loop:boolean = true;
-
-        // if(id == 100001 || id == 100002 || id == 100003 || id == 100004){
-        //     loop = true;
-        // }
-        for(let key in skillCfg){
-            if(skillCfg[key].skillId == id){
-                curUseSkill = skillCfg[key];
-                break;
-            }
-        }
-
-        let textInfo:eui.Label =new eui.Label();
-        textInfo.size = 20;
-		textInfo.scaleX = textInfo.scaleY = 1.5;
-		textInfo.textColor = 0xffffff
-		parent.addChild(textInfo);
-        textInfo.x = pos.x - 70;
-        textInfo.y = pos.y - 150;
-        textInfo.text = curUseSkill.skillName;
-        egret.Tween.get(textInfo).to({scaleX:1,scaleY:1},600,egret.Ease.circOut).wait(500).call(()=>{
-			egret.Tween.removeTweens(textInfo);
-			if(textInfo && textInfo.parent){
-				textInfo.parent.removeChild(textInfo);
-			}
-			textInfo = null;
-		},this)
-
-        if(loop){
-            let count = 1;
-            let minx:number = 100;
-            let maxx:number = StageUtils.inst().getWidth() - 100;
-            let miny:number = 100;
-            let maxy:number = StageUtils.inst().getHeight() - 100;;
-            let mc:MovieClip = new MovieClip();
-            mc.scaleX = mc.scaleY = 1;
-            parent.addChild(mc);
-            mc.playFile(`${SKILL_EFF}${curUseSkill.roleSkill}`,loopCount,null,true);
-            mc.x = (Math.random()*(maxx - minx)+minx)>>0;
-            mc.y = (Math.random()*(maxy - miny)+miny)>>0;
-            let interVal = setInterval(()=>{
-                count += 1;
-                let mc:MovieClip = new MovieClip();
-                mc.scaleX = mc.scaleY = 0.7;
-                parent.addChild(mc);
-                mc.playFile(`${SKILL_EFF}${curUseSkill.roleSkill}`,loopCount,null,true);
-                mc.x = (Math.random()*(maxx - minx)+minx)>>0;
-                mc.y = (Math.random()*(maxy - miny)+miny)>>0;
-                if(count >= 15){
-                    clearInterval(interVal);
-                }
-            },100)
-        }else{
-            let mc:MovieClip = new MovieClip();
-            mc.scaleX = mc.scaleY = 1;
-            parent.addChild(mc);
-            mc.playFile(`${SKILL_EFF}${curUseSkill.roleSkill}`,loopCount,null,true);
-            mc.x = pos.x;
-            mc.y = pos.y;
-        }
-    }
     /**创建了角色信息后调用 */
     public static changeName(name:string){
         GameApp.roleInfo.name = name;
@@ -303,6 +233,272 @@ class GlobalFun {
             }
             return cardVo;
         }
+    }
+    /**获取阵型 
+     * ownSolderis 数据
+     * state 0玩家 1npc
+    */
+    public static getFormation(ownSolderis:SoldierRect[], state:number,entitys:SoldierEntity[])
+    {
+        let group:eui.Group = new eui.Group();
+        let group0:eui.Group = new eui.Group();
+        let group1:eui.Group = new eui.Group();
+        let group2:eui.Group = new eui.Group();
+        group.addChild(group0);
+        group.addChild(group1);
+        group.addChild(group2);
+        let formation:number = 0; /**方阵数 */
+        let lie:number = 0;
+        let pos:any[] = [{x1:-3, x2:10, x3:-13.53, x4:198.3},{x1:0, x2:12, x3:-29.59, x4:198.3},{x1:7, x2:14, x3:-50.59, x4:200.3}];
+        group.width = 692;
+        group.height = 471;
+        group0.width = 150;
+        group0.height = 471;
+        group1.width = 150;
+        group1.height = 471;
+        group2.width = 150;
+        group2.height = 471;
+        
+        switch(state)
+        {
+            case 0:
+                group0.x = 431.12;
+                group0.y = 41.83;
+                group1.x = 313.15;
+                group1.y = 41.83;
+                group2.x = 198.82;
+                group2.y = 39.83;
+                for(let i = 0; i < 3; i++)
+                {
+                    let _group = group.getChildAt(i) as eui.Group;
+                    if(ownSolderis[i].generalId != 0)
+                    {
+                        formation = 6;
+                    }else
+                    {
+                        formation = 4;
+                    }
+                    switch(ownSolderis[i].soldierID)
+                    {
+                        case 100105:
+                        case 100107:
+                        case 100109:
+                        case 100110:
+                        case 100113:
+                            lie = 3;
+                            for(let k = 0; k < lie; k++)
+                            {
+                                for(let j = 0; j < 12; j++)
+                                {
+                                    let ani:SoldierEntity = new SoldierEntity();
+                                    let vo:RoleVo = {level:1,atk:100,hp:100,type:ownSolderis[i].soldierType}
+                                    ani.parentGroupIndex = i;
+                                    ani.soldierAttr = vo;
+                                    ani.setSoldierData(state==0?1:-1,`${EFFECT}role_${ownSolderis[i].soldierID}`);
+                                    entitys.push(ani)
+                                    // ani.playFile(`${EFFECT}role_${ownSolderis[i].soldierType}_stand`, -1);
+                                    _group.addChild(ani);
+                                    if(formation == 4)
+                                    {
+                                        ani.x = 6 + k * 30 - Math.floor(j/4) * pos[i].x1 - j * pos[i].x2;
+                                        ani.y = 18 + j * 28 + Math.floor(j/4) * 28;
+                                    }else if(formation == 6)
+                                    {
+                                        // ani.x = 6 + k * 30 - Math.floor(j/6) * pos[i].x1 - j * pos[i].x2;
+								        // ani.y = 18 + j * 30 + Math.floor(j/6) * 30;
+                                        ani.x = 6 + k * 30 - Math.floor(j/6) * (pos[i].x1 + 20 + i * 2) * ani.scaleX - j * (pos[i].x2 - 2);
+								        ani.y = 10 + j * 27 + Math.floor(j/6) * 70;
+                                    }
+                                }
+                            }
+                            break;
+                        case 100106:
+                        case 100111:
+                        case 100112:
+                            lie = 2;
+                            for(let k = 0; k < lie; k++)
+                            {
+                                for(let j = 0; j < 12; j++)
+                                {
+                                    let ani:SoldierEntity = new SoldierEntity();
+                                    let vo:RoleVo = {level:1,atk:100,hp:100,type:ownSolderis[i].soldierType}
+                                    ani.parentGroupIndex = i;
+                                    ani.soldierAttr = vo;
+                                    ani.scaleX = ani.scaleY = 0.5;
+                                    ani.setSoldierData(state==0?1:-1,`${EFFECT}role_${ownSolderis[i].soldierID}`)
+                                    entitys.push(ani)
+                                    _group.addChild(ani);
+                                    if(formation == 4)
+                                    {
+                                        ani.x = 8 + k * 52 - Math.floor(j/4) * pos[i].x1 * ani.scaleX - j * pos[i].x2;
+								        ani.y = 18 + j * 28 + Math.floor(j/4) * 28;
+                                    }else if(formation == 6)
+                                    {
+                                        // ani.x = 8 + k * 52 - Math.floor(j/6) * pos[i].x1 * ani.scaleX - j * pos[i].x2;
+								        // ani.y = 18 + j * 30 + Math.floor(j/6) * 30;
+
+                                        ani.x = 8 + k * 52 - Math.floor(j/6) * (pos[i].x1 + 20 + i * 8) * ani.scaleX - j * (pos[i].x2 - 2);
+								        ani.y = 8 + j * 27 + Math.floor(j/6) * 76;
+                                    }
+                                }
+                            }
+                            break;
+                    }
+                    if(formation == 6)
+                    {
+                        let bool:boolean = false;
+                        if(!bool)
+                        {
+                            bool = true;
+                            let ani_1:SoldierEntity = new SoldierEntity();
+                            let vo:RoleVo = {level:1,atk:200,hp:500,type:3}
+                            ani_1.soldierAttr = vo;
+                            ani_1.general = true;
+                            ani_1.generalId = ownSolderis[i].generalId;
+                            ani_1.parentGroupIndex = i;
+                            entitys.push(ani_1)
+                            ani_1.setSoldierData(state==0?1:-1,`${EFFECT}role_${ownSolderis[i].generalId}`);
+                            // ani_1.playFile(`${EFFECT}role_${ownSolderis[i].generalId}_stand`, -1);
+                            ani_1.x = pos[i].x3;
+                            ani_1.y = pos[i].x4;
+                            _group.addChildAt(ani_1, 9999999);
+                        }
+                    }
+                }
+                break;
+            case 1:
+                group2.x = 431.12;
+                group2.y = 41.83;
+                group1.x = 313.15;
+                group1.y = 41.83;
+                group0.x = 198.82;
+                group0.y = 39.83;
+                 for(let i = 0; i < 3; i++)
+                {
+                    let _group = group.getChildAt(i) as eui.Group;
+                    if(ownSolderis[i].generalId != 0)
+                    {
+                        formation = 6;
+                    }else
+                    {
+                        formation = 4;
+                    }
+                    switch(ownSolderis[i].soldierID)
+                    {
+                        case 100105:
+                        case 100107:
+                        case 100109:
+                        case 100110:
+                        case 100113:
+                            lie = 3;
+                            for(let k = 0; k < lie; k++)
+                            {
+                                for(let j = 0; j < 12; j++)
+                                {
+
+                                    let ani:SoldierEntity = new SoldierEntity();
+                                    let vo:RoleVo = {level:1,atk:100,hp:100,type:ownSolderis[i].soldierType}
+                                    ani.parentGroupIndex = i;
+                                    ani.soldierAttr = vo;
+                                    ani.setSoldierData(state == 1?-1:0,`${EFFECT}role_${ownSolderis[i].soldierID}`)
+                                    entitys.push(ani)
+                                    // let ani:MovieClip = new MovieClip();
+                                    // ani.playFile(`${EFFECT}role_${ownSolderis[i].soldierType}_stand`, -1);
+                                    ani.scaleX = -1;
+                                    _group.addChild(ani);
+                                    if(formation == 4)
+                                    {
+                                        ani.x = 6 + k * 30 + Math.floor(j/4) * pos[i].x1 + j * pos[i].x2;
+                                        ani.y = 18 + j * 28 + Math.floor(j/4) * 28;
+                                    }else if(formation == 6)
+                                    {
+                                        ani.x = 6 + k * 30 + Math.floor(j/6) * pos[i].x1 + j * pos[i].x2;
+								        ani.y = 18 + j * 30 + Math.floor(j/6) * 30;
+                                    }
+                                }
+                            }
+                            if(formation == 6)
+                            {
+                                let bool:boolean = false;
+                                if(!bool)
+                                {
+                                    bool = true;
+
+                                    let ani_1:SoldierEntity = new SoldierEntity();
+                                    let vo:RoleVo = {level:1,atk:200,hp:500,type:3}
+                                    ani_1.soldierAttr = vo;
+                                    ani_1.general = true;
+                                    ani_1.generalId = ownSolderis[i].generalId;
+                                    ani_1.parentGroupIndex = i;
+                                    ani_1.setSoldierData(state==1?-1:1,`${EFFECT}role_${ownSolderis[i].generalId}`);
+                                    entitys.push(ani_1)
+                                    // let ani_1:MovieClip = new MovieClip();
+                                    // ani_1.playFile(`${EFFECT}role_${ownSolderis[i].generalId}_stand`, -1);
+                                    ani_1.x = -pos[i].x3;
+                                    ani_1.y = pos[i].x4;
+                                    ani_1.scaleX = -1;
+                                    _group.addChildAt(ani_1, 9999999);
+                                }
+                            }
+                            break;
+                        case 100106:
+                        case 100111:
+                        case 100112:
+                            lie = 2;
+                            for(let k = 0; k < lie; k++)
+                            {
+                                for(let j = 0; j < 12; j++)
+                                {
+                                    let ani:SoldierEntity = new SoldierEntity();
+                                    let vo:RoleVo = {level:1,atk:100,hp:100,type:ownSolderis[i].soldierType}
+                                    ani.parentGroupIndex = i;
+                                    ani.soldierAttr = vo;
+                                    ani.scaleX = ani.scaleY = 0.5;
+                                    ani.setSoldierData(state == 1?-1:0,`${EFFECT}role_${ownSolderis[i].soldierID}`)
+                                    entitys.push(ani)
+                                    // let ani:MovieClip = new MovieClip();
+                                    // ani.playFile(`${EFFECT}role_${ownSolderis[i].soldierType}_stand`, -1);
+                                    ani.scaleX = -1;
+                                    _group.addChild(ani);
+                                    if(formation == 4)
+                                    {
+                                        ani.x = 8 + k * 52 + Math.floor(j/4) * pos[i].x1 * ani.scaleX + j * pos[i].x2;
+								        ani.y = 18 + j * 28 + Math.floor(j/4) * 28;
+                                    }else if(formation == 6)
+                                    {
+                                        ani.x = 8 + k * 52 + Math.floor(j/6) * pos[i].x1 * ani.scaleX + j * pos[i].x2;
+								        ani.y = 18 + j * 30 + Math.floor(j/6) * 30;
+                                    }
+                                }
+                            }
+                            if(formation == 6)
+                            {
+                                let bool:boolean = false;
+                                if(!bool)
+                                {
+                                    bool = true;
+                                    let ani_1:SoldierEntity = new SoldierEntity();
+                                    let vo:RoleVo = {level:1,atk:200,hp:500,type:3}
+                                    ani_1.soldierAttr = vo;
+                                    ani_1.general = true;
+                                    ani_1.generalId = ownSolderis[i].generalId;
+                                    ani_1.parentGroupIndex = i;
+                                    ani_1.setSoldierData(state==1?-1:1,`${EFFECT}role_${ownSolderis[i].generalId}`);
+                                    entitys.push(ani_1)
+                                    // let ani_1:MovieClip = new MovieClip();
+                                    // ani_1.playFile(`${EFFECT}role_${ownSolderis[i].generalId}_stand`, -1);
+                                    ani_1.x = -pos[i].x3;
+                                    ani_1.y = pos[i].x4;
+                                    ani_1.scaleX = -1;
+                                    _group.addChildAt(ani_1, 9999999);
+                                }
+                            }
+                            break;
+                    }
+                }
+                break;
+        }
+        return {group:group, group0:group0, group1:group1, group2:group2};
     }
     /**
      * 更新卡牌数据 
@@ -416,5 +612,41 @@ class GlobalFun {
 	{
 		egret.localStorage.setItem("sanguozhi_shop",JSON.stringify(obj));
 	}
-    
+    private static cloudInit:boolean = false;
+    /**显示云彩 */
+    public static showCloudAni(time:number,cb:()=>void,arg:any):void{
+        let cloud:any = document.getElementsByClassName( 'cloud' )[0];
+        if(!GlobalFun.cloudInit){
+            GlobalFun.cloudInit = true;
+            window["showCloud"]();
+        }else{
+            window["playCloud"]();
+        }
+        if(cloud){
+            cloud.style.transition = `opacity ${time}s`
+            cloud.style.visibility = "visible";
+            cloud.style.opacity = 1;
+            // cloud.style.left = "0px";
+        }
+        let timeout = setTimeout(function() {
+            clearTimeout(timeout);
+            GlobalFun.hideCloudAni(2);
+            if(cb&& arg){cb.call(arg)}
+        }, time*1000);
+    }
+    /**隐藏云彩 */
+    public static hideCloudAni(time):void{
+        let cloud:any = document.getElementsByClassName( 'cloud' )[0];
+        if(cloud){
+            
+            cloud.style.opacity = 0;
+            let timeout = setTimeout(function() {
+                cloud.style.transition = 'none';
+                clearTimeout(timeout);
+                cloud.style.display = "hidden";
+                window["stopAni"]();
+            }, time*1000);
+            // cloud.style.left = "-9999px";
+        }
+    }
 }

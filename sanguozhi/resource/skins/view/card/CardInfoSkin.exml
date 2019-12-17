@@ -1,30 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="CardInfoSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16f0e09a1f2"/>
 	<e:Rect id="bg" top="0" left="0" right="0" bottom="0" fillColor="0x000000" fillAlpha="0.7"/>
-	<e:Group horizontalCenter="0" verticalCenter="0" width="514.33" anchorOffsetX="0" scaleX="1.3" scaleY="1.3">
-		<e:Image source="card_info_show_png" x="0" y="0" scale9Grid="34,46,458,311" anchorOffsetY="0" height="320"/>
-		<e:Image id="close_img" x="473.33" y="0" anchorOffsetX="0" anchorOffsetY="0" source="common_close_png"/>
+	<e:Group id="infoGroup" horizontalCenter="0" verticalCenter="0" width="567" anchorOffsetX="0" scaleX="1.3" scaleY="1.3">
+		<e:Image source="card_info_show_png" y="0" scale9Grid="34,46,458,311" anchorOffsetY="0" height="320" x="0"/>
+		<e:Label text="详情" y="7.33" anchorOffsetX="0" width="244.33" anchorOffsetY="0" height="26.34" size="22" verticalAlign="middle" textAlign="center" textColor="0xc1ad85" fontFamily="yt" x="161"/>
 		<e:Group id="card_group" width="150" height="225" x="13" y="57"/>
-		<e:Group x="174" y="51.5" anchorOffsetX="0" width="335" anchorOffsetY="0" height="50">
-			<e:Label id="hp_label" text="1" x="71" y="3.03" anchorOffsetX="0" width="138" anchorOffsetY="0" height="22" textColor="0x9E9087" size="20" verticalAlign="middle" fontFamily="yt" rotation="360"/>
-			<e:Label id="atk_label" text="1" x="71" y="29.01" anchorOffsetX="0" width="138" anchorOffsetY="0" height="22" textColor="0x9E9087" size="20" verticalAlign="middle" fontFamily="yt"/>
-			<e:Label text="生命：" x="17" y="3.5" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="20" textColor="0x9e9087" fontFamily="yt"/>
-			<e:Label text="攻击：" x="17" y="30.5" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="20" textColor="0x9E9087" fontFamily="yt"/>
-			<e:Image source="card_info_icon_png" x="0" y="3.5"/>
-			<e:Image source="card_info_icon_png" x="0" y="31.49"/>
+		<e:Group id="hp_group" x="174" y="107.18" anchorOffsetX="0" width="384.23" anchorOffsetY="0" height="28.46">
+			<e:Label id="hp_label" text="1" x="56.58" y="0.97" anchorOffsetX="0" width="88.77" anchorOffsetY="0" height="23.03" textColor="0x9E9087" size="16" verticalAlign="middle" fontFamily="yt" rotation="360"/>
+			<e:Label id="atk_label" text="1" x="232.51" y="2.47" anchorOffsetX="0" width="88.77" anchorOffsetY="0" height="23.03" textColor="0x9E9087" size="16" verticalAlign="middle" fontFamily="yt"/>
+			<e:Label text="生命：" x="13.91" y="4.53" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" textColor="0x9e9087" fontFamily="yt"/>
+			<e:Label text="攻击：" x="191.9" y="6.02" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" textColor="0x9E9087" fontFamily="yt"/>
+			<e:Image source="card_info_icon_png" x="1.03" y="5.56"/>
+			<e:Image source="card_info_icon_png" x="174.9" y="8.04"/>
 		</e:Group>
-		<e:Group x="174" y="110.5" anchorOffsetY="0" height="125.67" anchorOffsetX="0" width="335.33">
-			<e:Label id="jieshao_label" text="asdfasdfasdfasfdasf" x="73.08" y="0" anchorOffsetX="0" width="261.59" anchorOffsetY="0" height="121.33" textColor="0x9e9087" size="20" fontFamily="yt"/>
-			<e:Label text="详情：" x="17" y="0.5" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="20" textColor="0x9E9087" fontFamily="yt"/>
+		<e:Group id="xiangqing_group" x="174" y="147.98" anchorOffsetY="0" height="125.67" anchorOffsetX="0" width="384.56">
+			<e:Label id="jieshao_label" text="asdfasdfasdfasfdasf" x="56.67" y="0" anchorOffsetX="0" width="278" anchorOffsetY="0" height="121.33" textColor="0x9e9087" size="16" fontFamily="yt"/>
+			<e:Label text="详情：" x="12.88" y="0.5" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" textColor="0x9E9087" fontFamily="yt"/>
 			<e:Image source="card_info_icon_png" x="0" y="2.5"/>
 		</e:Group>
-		<e:Label text="卡牌详情" x="135" y="7.33" anchorOffsetX="0" width="244.33" anchorOffsetY="0" height="26.34" size="22" verticalAlign="middle" textAlign="center" textColor="0xc1ad85" fontFamily="yt"/>
-		<e:Group id="upgrade_group" x="202" bottom="11">
+		<e:Group id="tianfu_group" x="173.12" y="141.71" anchorOffsetX="0" width="385.82" anchorOffsetY="0" height="42.59" visible="false">
+			<e:Label id="talent_label" text="阿斯顿发送到发送发送" x="58.89" y="2.06" anchorOffsetX="0" width="270.74" anchorOffsetY="0" height="39.88" size="16" textColor="0x9E9087" fontFamily="yt"/>
+			<e:Image source="card_info_icon_png" x="1.03" y="2.88"/>
+			<e:Label text="天赋：" x="15.15" y="0.97" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" textColor="0x9E9087" fontFamily="yt"/>
+		</e:Group>
+		<e:Group id="dengji_group" x="175" y="50.06">
+			<e:Label id="level_label" text="等级：" x="15.88" y="0" anchorOffsetX="0" width="156.33" anchorOffsetY="0" height="18.34" size="16" textColor="0x9E9087" fontFamily="yt"/>
+			<e:Group x="106" y="31.94">
+				<e:Image source="card_progress_bg_png" x="0" y="0"/>
+				<e:Image id="progress_img" source="card_progress_png" x="0" y="0"/>
+				<e:Image id="progress_mask" source="card_progress_png" x="0" y="0"/>
+				<e:Label id="level_have_label" text="0/200" x="55.59" y="0.03" anchorOffsetX="0" width="169.39" anchorOffsetY="0" height="16.67" size="14" verticalAlign="middle" textAlign="center" textColor="0x262222"/>
+			</e:Group>
+			<e:Label text="升级经验：" x="15.88" y="31.03" anchorOffsetX="0" width="82.54" anchorOffsetY="0" height="18.34" size="16" textColor="0x9E9087" fontFamily="yt"/>
+			<e:Image source="card_info_icon_png" x="0" y="31"/>
+			<e:Image source="card_info_icon_png" x="0" y="0.09"/>
+		</e:Group>
+		<e:Group id="upgrade_group" x="457.45" y="24" scaleX="0.8" scaleY="0.8">
 			<e:Image id="upgrade_img" x="0" y="29" anchorOffsetX="0" anchorOffsetY="0" source="card_upgrade_png"/>
-			<e:Group x="6.83" y="0">
-				<e:Label id="gold_cost" text="50" x="26.17" y="0" size="20" anchorOffsetX="0" width="61" anchorOffsetY="0" height="23" verticalAlign="middle" textAlign="center"/>
-				<e:Image source="card_gold_png" x="0" y="3"/>
+			<e:Group id="cost_group" x="6.83" y="0" visible="false">
+			<e:Label id="gold_cost" text="50" x="26.17" y="0" size="20" anchorOffsetX="0" width="61" anchorOffsetY="0" height="23" verticalAlign="middle" textAlign="center"/>
+			<e:Image source="card_gold_png" x="0" y="3"/>
 			</e:Group>
 		</e:Group>
+		<e:Image id="close_img" x="520.33" y="0" anchorOffsetX="0" anchorOffsetY="0" source="common_close_png"/>
 	</e:Group>
 </e:Skin>

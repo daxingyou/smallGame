@@ -26,9 +26,25 @@ type CardAttrVo = {
 	/**国籍 魏蜀吴 123*/
 	city:number;
 	/**buff持续时间 */
-	buffTime:number,
+	buffTime:number;
 	/**介绍 */
-	jieshao:string
+	jieshao:string;
+	/**士兵类型 */
+	soldierType?:number;
+	/**技能图标 */
+	skillIcon?:number;
+	/**天赋技能 */
+	buffSkillRes?:string;
+	/**天赋buff持续时间 */
+	buffSkillTime?:number;
+	/**天赋描述 */
+	buffDesc?:string;
+	/**天赋buff提升 */
+	buffPrompt?:number;
+	/**天赋buff条件 针对弓骑步*/
+	buffCondition?:number;
+	/**天赋buff提升的属性 */
+	buffAttr?:string;
 }
 enum CardType{
 	/**武将 */
@@ -40,5 +56,9 @@ enum CardType{
 	/**建筑 */
 	build,
 	/**道具卡 */
-	prop
+	prop,
+	/**士兵 */
+	soldier,
+	/**经验 */
+	exp
 }

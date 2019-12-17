@@ -79,14 +79,30 @@ var Main = (function (_super) {
     Main.prototype.createChildren = function () {
         _super.prototype.createChildren.call(this);
         StageUtils.init();
+        if (Main.DUBUGGER) {
+            var txt = new eui.Label();
+            txt.touchEnabled = false;
+            txt.size = 30;
+            Main.txt = txt;
+            StageUtils.inst().getStage().addChildAt(txt, 9999);
+            txt.width = StageUtils.inst().getWidth();
+            txt.height = StageUtils.inst().getHeight();
+        }
+        var self = this;
         egret.lifecycle.addLifecycleListener(function (context) {
             // custom lifecycle plugin
         });
         egret.lifecycle.onPause = function () {
+            // if(self.DUBUGGER){
+            //     txt.text = "游戏进入后台";
+            // }
             // egret.ticker.pause();
         };
         egret.lifecycle.onResume = function () {
-            egret.ticker.resume();
+            // if(self.DUBUGGER){
+            //     txt.text = "游戏重新唤醒" + Math.random()
+            // }
+            // egret.ticker.resume();
         };
         //inject the custom material parser
         //注入自定义的素材解析器
@@ -97,6 +113,9 @@ var Main = (function (_super) {
             egret.TextField.default_fontFamily = "" + DEFAULT_FONT;
         }
         this.runGame().catch(function (e) {
+            if (Main.DUBUGGER) {
+                Main.txt.text = e;
+            }
             console.error(e);
         });
         window["payCallBack"] = GlobalFun.payCallBack;
@@ -179,24 +198,32 @@ var Main = (function (_super) {
         // }
         // this.judgeRotation();
         //开发功能测试
+        // RES.getResByUrl("resource⁩/res⁩/view⁩/music.mp3",(data)=>{
+        // },this);
+        SoundManager.inst().playBg(MUSIC + "home.mp3");
+        SoundManager.inst().touchBg();
         // egret.localStorage.clear();
-        eui.Button.prototype["autoSize"] = eui.Group.prototype["autoSize"] = eui.Rect.prototype["autoSize"] = function () {
+        eui.Image.prototype["autoSize"] = eui.Button.prototype["autoSize"] = eui.Group.prototype["autoSize"] = eui.Rect.prototype["autoSize"] = function () {
             var precentw = StageUtils.inst().getWidth() / 1334;
+            var precenth = StageUtils.inst().getHeight() / 750;
             this.scaleX = this.scaleY = precentw;
             this.x *= precentw;
-            this.y *= precentw;
+            this.y *= precenth;
         };
         PlayerPhalanx.prototype["phalanxSize"] = NpcPhalanx.prototype["phalanxSize"] = function () {
             var precentw = StageUtils.inst().getWidth() / 1334;
             var precenth = StageUtils.inst().getHeight() / 750;
-            this.scaleX = this.scaleY = precentw;
-            // this.scaleY = precenth;
-            // this.x *= precentw;
-            // this.y *= precentw;
+            this.scaleX = precentw;
+            this.scaleY = precenth;
+            this.x *= precentw;
+            this.y *= precenth;
         };
         //
         LayerManager.inst().iniaizlize(this);
+        ViewManager.inst().curView = "Main_initialize";
         GameApp.inst().load();
+        this.addEventListener(egret.TouchEvent.TOUCH_TAP, function (evt) {
+        }, this);
         // let data = RES.getRes("config_zip");
         // JSZip.loadAsync(data).then((zipdata) => {
         //     return zipdata.file('config.json').async('text');
@@ -238,6 +265,7 @@ var Main = (function (_super) {
      */
     Main.prototype.startAnimation = function (result) {
     };
+    Main.DUBUGGER = false;
     return Main;
 }(eui.UILayer));
 __reflect(Main.prototype, "Main");

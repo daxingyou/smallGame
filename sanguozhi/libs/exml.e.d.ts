@@ -50,9 +50,15 @@ declare module skins{
 	class VSliderSkin extends eui.Skin{
 	}
 }
+declare class BattleViewSkin extends eui.Skin{
+}
+declare class HpComSkin extends eui.Skin{
+}
 declare class NeiWuStoryItemSkin extends eui.Skin{
 }
 declare class RechargeItemSkin extends eui.Skin{
+}
+declare class SkillItemSkin extends eui.Skin{
 }
 declare class VirtualJoystickSkin extends eui.Skin{
 }
@@ -86,6 +92,8 @@ declare class NeiWuPopUpSkin extends eui.Skin{
 }
 declare class RechargePopUpSkin extends eui.Skin{
 }
+declare class RechargeTipPopSkin extends eui.Skin{
+}
 declare class ResultViewSkin extends eui.Skin{
 }
 declare class TaxPopUpSkin extends eui.Skin{
@@ -106,11 +114,21 @@ declare class CardItemSkin extends eui.Skin{
 }
 declare class CardViewSkin extends eui.Skin{
 }
+declare class DoubtfulViewSkin extends eui.Skin{
+}
+declare class InterludeSkin extends eui.Skin{
+}
 declare class LoadingViewSkin extends eui.Skin{
 }
 declare class GameMainViewSkin extends eui.Skin{
 }
 declare class MainCityItemSkin extends eui.Skin{
+}
+declare class LegionInfoSkin extends eui.Skin{
+}
+declare class PlayerInfoViewSkin extends eui.Skin{
+}
+declare class RoleNameSkin extends eui.Skin{
 }
 declare class StartCityItemSkin extends eui.Skin{
 }

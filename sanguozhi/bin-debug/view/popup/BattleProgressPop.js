@@ -32,9 +32,13 @@ var BattleProgressPop = (function (_super) {
         var scaleX = this.levelGroup.scaleX;
         var scaleY = this.levelGroup.scaleY;
         this.levelGroup.scaleX = this.levelGroup.scaleY = 0;
+        this.touchEnabled = false;
+        this.touchChildren = false;
         this.levelGroup.alpha = 0;
         egret.Tween.get(this.levelGroup).to({ scaleX: scaleX, scaleY: scaleY, alpha: 1 }, 600, egret.Ease.backOut).call(function () {
             egret.Tween.removeTweens(_this.levelGroup);
+            _this.touchEnabled = true;
+            _this.touchChildren = true;
             if (GameApp.guideView) {
                 GameApp.guideView.nextStep({ id: "1_2", comObj: _this.enterBtn, width: _this.enterBtn.width, height: _this.enterBtn.height });
             }
@@ -65,6 +69,8 @@ var BattleProgressPop = (function (_super) {
         for (var i = 1; i <= 4; i++) {
             var nextLevel = passlevel + 1;
             if (i == nextLevel) {
+                this.xuan_img.x = this["level_" + i].x - 5;
+                this.xuan_img.y = this["level_" + i].y - 4;
                 continue;
             }
             if (passlevel < i) {
@@ -83,20 +89,26 @@ var BattleProgressPop = (function (_super) {
         var passlevel = this.cityInfo.passLevel;
         var nextLevel = passlevel + 1;
         var levelId = this.cityInfo.cityId + "_" + nextLevel;
+        var str = "";
+        var num = 0;
         if (nextLevel < 4) {
             var costGoods = this.cost[nextLevel - 1];
             if (costGoods > GameApp.goods) {
                 UserTips.inst().showTips("粮草不足");
                 return;
             }
-            GameApp.goods -= costGoods;
+            str = "goods";
+            num = costGoods;
+            // GameApp.goods -= costGoods;
         }
         else if (nextLevel == 4) {
             if (this.costMedal > GameApp.medal) {
-                UserTips.inst().showTips("勋章不足");
+                UserTips.inst().showTips("功勋不足");
                 return;
             }
-            GameApp.medal -= this.costMedal;
+            str = "medal";
+            num = this.costMedal;
+            // GameApp.medal -= this.costMedal;
         }
         GameApp.battleMark = levelId;
         // GameApp.year += 1;
@@ -105,7 +117,7 @@ var BattleProgressPop = (function (_super) {
         GameCfg.chapter = GameApp.chapterid;
         GameCfg.level = GameApp.levelid;
         ViewManager.inst().close(GameMainView);
-        ViewManager.inst().open(GameView);
+        ViewManager.inst().open(DoubtfulView, [{ key: str, num: num }]);
     };
     BattleProgressPop.prototype.close = function () {
         this.removeTouchEvent(this.returnBtn, this.onReturn);

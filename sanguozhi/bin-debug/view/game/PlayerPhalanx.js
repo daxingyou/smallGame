@@ -76,6 +76,10 @@ var PlayerPhalanx = (function (_super) {
                     GlobalFun.refreshCardData(card.insId, { ownNum: card.ownNum });
                     MessageManager.inst().dispatch(LocalStorageEnum.UPDATE_GAME_CARD, this);
                 }
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = this.soldierQian[i].attack;
+                    GameCfg.playerAttack -= attack;
+                }
             }
             for (var i = 0; i < this.soldierQian.length; i++) {
                 this.removeChild(this.soldierQian[i]);
@@ -137,6 +141,33 @@ var PlayerPhalanx = (function (_super) {
                 this.addChild(role1);
                 this.soldierQian.push(role1);
             }
+            if (this.soldierQian[0].id == 1 && this.id == 0) {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+                    this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+                    GameCfg.playerAttack += attack;
+                }
+            }
+            else if (this.soldierQian[0].id == 3 && this.id == 1) {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+                    this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+                    GameCfg.playerAttack += attack;
+                }
+            }
+            else if (this.soldierQian[0].id == 2 && this.id == 2) {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+                    this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+                    GameCfg.playerAttack += attack;
+                }
+            }
+            else {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = this.soldierQian[i].attack;
+                    GameCfg.playerAttack += attack;
+                }
+            }
             this.setlayer();
         }
     };
@@ -183,6 +214,10 @@ var PlayerPhalanx = (function (_super) {
                 GlobalFun.refreshCardData(card.insId, { ownNum: card.ownNum });
             }
             MessageManager.inst().dispatch(LocalStorageEnum.UPDATE_GAME_CARD, this);
+            for (var i = 0; i < this.soldierQian.length; i++) {
+                var attack = this.soldierQian[i].attack;
+                GameCfg.playerAttack -= attack;
+            }
             for (var i = 0; i < this.soldierQian.length; i++) {
                 this.removeChild(this.soldierQian[i]);
             }

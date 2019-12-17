@@ -13,6 +13,8 @@ class GameView extends BaseEuiView
 	private npc_bl:eui.Label;
 	private npc_cc:eui.Label;
 	private df_label:eui.Label;
+	private fighting_p:eui.BitmapLabel;
+	private fighting_n:eui.BitmapLabel;
 	private fight_btn:eui.Image;
 
 	private scroller:eui.Scroller;
@@ -36,12 +38,16 @@ class GameView extends BaseEuiView
 	private back_btn:eui.Image;
 	private jiantou:eui.Image;
 	private posrect:eui.Rect;
+	private _type:number;
 	public constructor() 
 	{
 		super();
 	}
 	public open(...param):void{
 		this.init();
+		if(param[0] && param[0].type){
+			this._type = param[0].type;
+		}
 		this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.touchBegin, this);
 		this.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.touchMove, this);
 		this.addEventListener(egret.TouchEvent.TOUCH_END, this.touchEnd, this);
@@ -145,12 +151,17 @@ class GameView extends BaseEuiView
 	private touchBack()
 	{
 		MessageManager.inst().dispatch(LocalStorageEnum.GAME_PAUSE, this);
-		ViewManager.inst().open(PauseView);
+		ViewManager.inst().open(PauseView,[{type:this._type}]);
 	}
 	private init()
 	{
+		this.card_group["autoSize"]();
+		this.up_group["autoSize"]();
+		this.tip_group["autoSize"]();
 		this.game_icon.source = "game_icon" + Math.floor(Math.random()*3) + "_png";
 		this.player_lc.text = "粮草：" + GameApp.goods;
+		this.fighting_p.text = "战斗力：" + GameCfg.playerAttack;
+		this.fighting_n.text = "战斗力：" + GameCfg.npcAttack;
 		let num = 0;
 		for(let i = 0; i < GameApp.roleInfo.citys.length; i++)
 		{
@@ -164,14 +175,14 @@ class GameView extends BaseEuiView
 		this.npc_bl.text = "兵员：" + Math.floor(Math.random()*5000 + 5000);
 		this.npc_cc.text = "城池：" + Math.floor(Math.random()*1 + 4);
 		this.npc_lc.text = "粮草：" + Math.floor(Math.random()*20000 + 30000);
-		this.posrect["autoSize"]();
+		// this.posrect["autoSize"]();
 		/**创建玩家场地 */
 		for(let i = 0; i < 3; i++)
 		{
 			this.pp[i] = new PlayerPhalanx(i);
 			this.pp[i].x = 367 - i * 183;
-			this.pp[i].y = this.posrect.y;
-			// this.pp[i]["phalanxSize"]();
+			this.pp[i].y = this.posrect.top - 20;
+			this.pp[i]["phalanxSize"]();
 			this.addChild(this.pp[i]);
 		}
 		/**创建敌军场地 */
@@ -179,12 +190,26 @@ class GameView extends BaseEuiView
 		{
 			this.np[i] = new NpcPhalanx(i);
 			this.np[i].x = 967 - (150 - i * 183);
-			this.np[i].y = this.posrect.y;
-			// this.np[i]["phalanxSize"]();
+			this.np[i].y = this.posrect.top - 20;
+			this.np[i]["phalanxSize"]();
 			this.addChild(this.np[i]);
 		}
 		let self = this;
 		window.onorientationchange = function(){
+			self.card_group["autoSize"]();
+			self.up_group["autoSize"]();
+			// self.tip_group["autoSize"]();
+			// self.posrect["autoSize"]();
+			for(let i = 0; i < 3; i++)
+			{
+				self.pp[i].x = 367 - i * 183;
+				self.pp[i].y = self.posrect.top - 20;
+				self.pp[i]["phalanxSize"]();
+
+				self.np[i].x = 967 - (150 - i * 183);
+				self.np[i].y = self.posrect.top - 20;
+				self.np[i]["phalanxSize"]();
+			}
 			// self.posrect["autoSize"]();
             // for(let i = 0; i < 3; i++)
 			// {
@@ -283,6 +308,8 @@ class GameView extends BaseEuiView
 		this.bb_num.text = GameApp.soldier3Num + "";
 		this.qb_num.text = GameApp.soldier1Num + "";
 		this.gb_num.text = GameApp.soldier2Num + "";
+		this.fighting_p.text = "战斗力：" + GameCfg.playerAttack;
+		this.fighting_n.text = "战斗力：" + GameCfg.npcAttack;
 
 		if(GameCfg.gameStart)
 		{
@@ -314,9 +341,12 @@ class GameView extends BaseEuiView
 		{
 			/**胜利 */
 			setTimeout(()=>{
-				ViewManager.inst().open(ResultView, [{state:"win",cb:()=>{
+				ViewManager.inst().open(ResultView, [{state:"win",type:this._type,cb:(type)=>{
 					ViewManager.inst().close(GameView);
-					ViewManager.inst().open(GameMainView);
+					if(type){
+						GlobalFun.changeCityInfo(type,{isEnemy:false})
+					}
+					ViewManager.inst().open(GameMainView,[{type:this._type}]);
 				},arg:this}]);
 			}, 1000);
 		}else
@@ -343,9 +373,12 @@ class GameView extends BaseEuiView
 		{
 			/**失败 */
 			setTimeout(()=>{
-				ViewManager.inst().open(ResultView, [{state:"fail",cb:()=>{
+				ViewManager.inst().open(ResultView, [{state:"fail",type:this._type,cb:(type)=>{
 					ViewManager.inst().close(GameView);
-					ViewManager.inst().open(GameMainView);
+					if(type){
+						GlobalFun.changeCityInfo(type,{isEnemy:false})
+					}
+					ViewManager.inst().open(GameMainView,[{type:this._type}]);
 				},arg:this}]);
 			}, 1000);
 		}else

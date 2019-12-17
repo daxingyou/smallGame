@@ -14,56 +14,48 @@ var GameCardItem = (function (_super) {
         var _this = _super.call(this) || this;
         _this.skinName = "GameCardItemSkin";
         _this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, _this.touchBegin, _this);
+        _this.addEventListener(egret.TouchEvent.TOUCH_TAP, _this.touchTap, _this);
         return _this;
     }
     GameCardItem.prototype.dataChanged = function () {
-        this.icon_img.source = "" + this.data.cardModel;
+        this.icon_img.source = "doubtful_" + this.data.insId + "_png";
         this.quality_img.source = "quality_" + this.data.quality + "_png";
-        switch (this.data.type) {
-            case CardType.general:
-                this.skill_group.visible = false;
-                this.info_group.visible = true;
-                this.level_label.text = "\u7B49\u7EA7\uFF1A" + this.data.level;
-                this.city_img.source = "city_" + this.data.city + "_png";
-                this.own_label.text = "\u788E\u7247\uFF1A" + this.data.ownNum + "/" + this.data.upgradeNum;
-                this.hp_label.text = "\u751F\u547D\uFF1A" + this.data.hp;
-                this.atk_label.text = "\u653B\u51FB\uFF1A" + this.data.atk;
-                break;
-            case CardType.special_skill:
-                this.skill_group.visible = true;
-                this.info_group.visible = false;
-                this.num_label.text = "\u6570\u91CF\uFF1A" + this.data.ownNum;
-                break;
-            case CardType.build:
-                this.skill_group.visible = false;
-                this.info_group.visible = true;
-                this.city_img.visible = false;
-                this.level_group.horizontalCenter = 0;
-                this.level_label.text = "\u7B49\u7EA7\uFF1A" + this.data.level;
-                this.own_label.text = "\u788E\u7247\uFF1A" + this.data.ownNum + "/" + this.data.upgradeNum;
-                this.hp_label.text = "\u751F\u547D\uFF1A" + this.data.hp;
-                this.atk_label.text = "\u653B\u51FB\uFF1A" + this.data.atk;
-                break;
+        if (this.data.type == CardType.soldier) {
+            this.num_label.text = this.data.ownNum;
+            this.num_label.visible = true;
         }
-        this.scaleX = this.scaleY = 0.7;
+        for (var i = 0; i < 3; i++) {
+            if (GameApp.ownSolderis[i].generalId == this.data.insId) {
+                this.shang.visible = true;
+            }
+        }
     };
     GameCardItem.prototype.touchBegin = function (evt) {
+        for (var i = 0; i < 3; i++) {
+            if (GameApp.ownSolderis[i].generalId == this.data.insId) {
+                UserTips.inst().showTips("不可重复上阵");
+                return;
+            }
+        }
         if (this.data.type == CardType.general) {
             if (GameCfg.gameStart) {
-                UserTips.inst().showTips("对战进行中无法选择武将");
+                UserTips.inst().showTips("对战进行中无法选择武将！");
                 return;
             }
-            MessageManager.inst().dispatch(LocalStorageEnum.CREATE_MOVE_ROLE, { card: this.data.insId, x: evt.stageX, y: evt.stageY });
+            MessageManager.inst().dispatch(LocalStorageEnum.DOUBTFUL_MOVE_ROLE, { card: this.data.insId, x: evt.stageX, y: evt.stageY });
         }
-        else if (this.data.type == CardType.build) {
-            if (GameCfg.gameStart) {
-                UserTips.inst().showTips("对战进行中无法选择");
-                return;
-            }
-            MessageManager.inst().dispatch(LocalStorageEnum.CREATE_MOVE_BUILD, { card: this.data.insId, x: evt.stageX, y: evt.stageY });
+        else if (this.data.type == CardType.soldier) {
+            // MessageManager.inst().dispatch(CustomEvt.SHOP_INTRODUCE,this.data);
+            // UserTips.inst().showTips("无法使用！");
+            MessageManager.inst().dispatch(LocalStorageEnum.DOUBTFUL_MOVE_SOLDIER, { data: this.data, evt: evt });
         }
-        else {
-            MessageManager.inst().dispatch(LocalStorageEnum.CREATE_MOVE_SKILL, { card: this.data, x: evt.stageX, y: evt.stageY });
+    };
+    GameCardItem.prototype.touchTap = function () {
+        if (this.data.type == CardType.build || this.data.type == CardType.prop || this.data.type == CardType.skill || this.data.type == CardType.special_skill) {
+            console.log(this.data);
+            var obj = [];
+            obj.push(this.data);
+            ViewManager.inst().open(IntroduceView, obj);
         }
     };
     return GameCardItem;

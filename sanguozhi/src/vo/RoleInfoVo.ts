@@ -23,4 +23,6 @@ type CityInfo = {
 	passLevel:number;
 	/**生产的单价粮草 */
 	goodProduce:number;
+	/**是否正在被入侵 */
+	isEnemy:boolean;
 }

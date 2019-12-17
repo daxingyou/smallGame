@@ -29,5 +29,6 @@
 			<e:Image source="level_p_dialog_png" x="14.5" y="15.5" name="dialog" visible="false"/>
 		</e:Group>
 		<e:Image id="enterBtn" source="level_p_enter_png" x="345.5" y="255"/>
+		<e:Image id="xuan_img" source="level_xuan_png" x="91" y="111" touchEnabled="false"/>
 	</e:Group>
 </e:Skin>

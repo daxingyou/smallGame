@@ -15,7 +15,7 @@ class NeiWuPopUp extends BaseEuiView{
 
 	public open(...param):void{
 		this.neiwuGroup["autoSize"]();
-		this.neiwuGroup.verticalCenter = -600;
+		this.neiwuGroup.verticalCenter = -700;
 		egret.Tween.get(this.neiwuGroup).to({verticalCenter:0},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.neiwuGroup);
 		},this)
@@ -43,7 +43,7 @@ class NeiWuPopUp extends BaseEuiView{
 		this.showItem();
 	}
 	private onReturn():void{
-		egret.Tween.get(this.neiwuGroup).to({verticalCenter:-600},600,egret.Ease.circOut).call(()=>{
+		egret.Tween.get(this.neiwuGroup).to({verticalCenter:-700},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.neiwuGroup);
 			ViewManager.inst().close(NeiWuPopUp);
 		},this)
@@ -91,7 +91,7 @@ class NeiWuPopUp extends BaseEuiView{
 					UserTips.inst().showTips("获得粮草x"+option.goods);
 				}else if(key == "medal"){
 					GameApp.medal += option.medal;
-					UserTips.inst().showTips("获得勋章x"+option.medal);
+					UserTips.inst().showTips("获得功勋x"+option.medal);
 				}else if(key == "general"){
 					let generalCards:CardAttrVo[] = GlobalFun.getCardsFromType(CardType.general,true);
 					for(let i:number = 0;i<generalCards.length;i++){

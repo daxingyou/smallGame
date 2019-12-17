@@ -83,6 +83,12 @@ class PlayerPhalanx extends BaseView
 					GlobalFun.refreshCardData(card.insId, {ownNum:card.ownNum});
 					MessageManager.inst().dispatch(LocalStorageEnum.UPDATE_GAME_CARD, this);
 				}
+
+				for(let i = 0; i < this.soldierQian.length; i++)
+				{
+					let attack = this.soldierQian[i].attack;
+					GameCfg.playerAttack -= attack;
+				}
 			}
 			for(let i = 0; i < this.soldierQian.length; i++)
 			{
@@ -156,6 +162,38 @@ class PlayerPhalanx extends BaseView
 				this.addChild(role1);
 				this.soldierQian.push(role1);
 			}
+			if(this.soldierQian[0].id == 1 && this.id == 0)
+			{
+				for(let i = 0; i < this.soldierQian.length; i++)
+				{
+					let attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+					this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+					GameCfg.playerAttack += attack;
+				}
+			}else if(this.soldierQian[0].id == 3 && this.id == 1)
+			{
+				for(let i = 0; i < this.soldierQian.length; i++)
+				{
+					let attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+					this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+					GameCfg.playerAttack += attack;
+				}
+			}else if(this.soldierQian[0].id == 2 && this.id == 2)
+			{
+				for(let i = 0; i < this.soldierQian.length; i++)
+				{
+					let attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+					this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+					GameCfg.playerAttack += attack;
+				}
+			}else 
+			{
+				for(let i = 0; i < this.soldierQian.length; i++)
+				{
+					let attack = this.soldierQian[i].attack;
+					GameCfg.playerAttack += attack;
+				}
+			}
 			this.setlayer();
 		}
 	}
@@ -212,6 +250,11 @@ class PlayerPhalanx extends BaseView
 				GlobalFun.refreshCardData(card.insId, {ownNum:card.ownNum});
 			}
 			MessageManager.inst().dispatch(LocalStorageEnum.UPDATE_GAME_CARD, this);
+			for(let i = 0; i < this.soldierQian.length; i++)
+			{
+				let attack = this.soldierQian[i].attack;
+				GameCfg.playerAttack -= attack;
+			}
 			for(let i = 0; i < this.soldierQian.length; i++)
 			{
 				this.removeChild(this.soldierQian[i]);

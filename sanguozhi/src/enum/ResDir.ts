@@ -17,3 +17,5 @@ let EFFROLESHOW = `${EFFECT}show/`;
 let SOLDIER = `${EFFECT}soldier/`
 
 let DEFAULT_FONT = `${RES_RESOURCE}res/font/yt.ttf`
+
+let MUSIC = `resource/res/sound/`

@@ -18,6 +18,10 @@ class CardItem extends BaseView {
 
     private _type: CardType;
     private _id: number;
+    private _insid:number;
+    private soldier_name = [
+        `弓兵` , `步兵` , `骑兵`
+    ]
 
     public constructor( type:CardType , id:number ) {
         super();
@@ -41,37 +45,54 @@ class CardItem extends BaseView {
 
     private init():void {
         let cfg = GlobalFun.getCardsFromType( this._type , false )[this._id];
-        this.icon_img.source = `${cfg.cardModel}`;
+        if(cfg){
+            this._insid = cfg.insId;
+        }
         switch( this._type ) {
             case CardType.general:
                 this.skill_group.visible = false;
                 this.level_label.text = `等级：${cfg.level}`;
                 this.city_img.source = `city_${cfg.city}_png`;
-                this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
+                // this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
                 this.hp_label.text = `生命：${cfg.hp}`;
                 this.atk_label.text = `攻击：${cfg.atk}`;
+                this.icon_img.source = `${cfg.cardModel}`;
                 break;
             case CardType.special_skill:
                 this.info_group.visible = false;
                 this.skill_group.visible = true;
                 this.num_label.text = `数量：${cfg.ownNum}`;
                 this.jieshao_label.text = `${cfg.name}`;
-                this.quality_img.texture = RES.getRes( `quality_${cfg.quality}_png` );
+                this.quality_img.source = `quality_${cfg.quality}_png`;
+                this.icon_img.source = `${cfg.cardModel}`;
                 break;
-            case CardType.build:
-                this.skill_group.visible = false;
-                this.city_img.visible = false;
-                this.level_group.horizontalCenter = 0;
-                this.level_label.text = `等级：${cfg.level}`;
-                this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
-                this.hp_label.text = `生命：${cfg.hp}`;
-                this.atk_label.text = `攻击：${cfg.atk}`;
+            case CardType.soldier:
+                this.info_group.visible = false;
+                this.skill_group.visible = true;
+                // this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
+                this.jieshao_label.text = `数量:${cfg.ownNum}`;
+                this.icon_img.source = `${cfg.cardModel}`;
+                this.num_label.visible = false;
                 break;
         }
         
     }
-
+    public get insId():number{
+        return this._insid
+    }
+    public refreshGeneralData(id:number):void{
+        if(this.insId == id){
+            let cfg = GlobalFun.getCardsFromType( CardType.general , false )[this._id];
+            this.skill_group.visible = false;
+            this.level_label.text = `等级：${cfg.level}`;
+            this.city_img.source = `city_${cfg.city}_png`;
+            // this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
+            this.hp_label.text = `生命：${cfg.hp}`;
+            this.atk_label.text = `攻击：${cfg.atk}`;
+            this.icon_img.source = `${cfg.cardModel}`;
+        }
+    }
     private touchTapHandler():void {
-        MessageManager.inst().dispatch( CustomEvt.TOUCH_CARD , { type:this._type , id:this._id } );
+        MessageManager.inst().dispatch( CustomEvt.TOUCH_CARD , { type:this._type , id:this._id , insid:this._insid} );
     }
 }

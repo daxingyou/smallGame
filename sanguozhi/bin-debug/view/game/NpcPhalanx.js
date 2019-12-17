@@ -90,6 +90,33 @@ var NpcPhalanx = (function (_super) {
                 this.addChild(bing1);
                 this.soldierQian.push(bing1);
             }
+            if (this.soldierQian[0].id == 1 && this.id == 0) {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+                    this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+                    GameCfg.npcAttack += attack;
+                }
+            }
+            else if (this.soldierQian[0].id == 3 && this.id == 1) {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+                    this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+                    GameCfg.npcAttack += attack;
+                }
+            }
+            else if (this.soldierQian[0].id == 2 && this.id == 2) {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = Math.floor(this.soldierQian[i].attack + this.soldierQian[i].attack * 0.5);
+                    this.soldierQian[i].setData(this.soldierQian[i].hp, attack);
+                    GameCfg.npcAttack += attack;
+                }
+            }
+            else {
+                for (var i = 0; i < this.soldierQian.length; i++) {
+                    var attack = this.soldierQian[i].attack;
+                    GameCfg.npcAttack += attack;
+                }
+            }
         }
         // if(GameCfg.checkpoint[GameCfg.chapter - 1][GameCfg.level - 1].bing[this.id].hou!=0)
         // {
@@ -501,6 +528,9 @@ var NpcPhalanx = (function (_super) {
         if (evt.data[0].x >= this.x && evt.data[0].x <= this.x + this.width && evt.data[0].y >= this.y && evt.data[0].y <= this.y + this.height) {
             switch (evt.data[0].id) {
                 case 100071:
+                case 100072:
+                case 100073:
+                case 100074:
                     /**擒贼擒王 */
                     if (GameCfg.gameStart) {
                         this.showEff(100071, function () {

@@ -21,7 +21,7 @@ var CollectSoldierPop = (function (_super) {
         //100里征兵所用单位时间
         _this.singleTime = 60;
         //下次可以刷新的时间
-        _this.nextTime = 30 * 60 * 1000;
+        _this.nextTime = 5 * 60 * 1000;
         _this.collectState = false;
         _this.cdstate = false;
         /**每次征兵的单位数量 */
@@ -36,7 +36,7 @@ var CollectSoldierPop = (function (_super) {
             param[_i] = arguments[_i];
         }
         this.collectGroup["autoSize"]();
-        this.collectGroup.verticalCenter = -600;
+        this.collectGroup.verticalCenter = -700;
         egret.Tween.get(this.collectGroup).to({ verticalCenter: 0 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.collectGroup);
         }, this);
@@ -125,7 +125,7 @@ var CollectSoldierPop = (function (_super) {
     };
     CollectSoldierPop.prototype.onReturn = function () {
         var _this = this;
-        egret.Tween.get(this.collectGroup).to({ verticalCenter: -600 }, 600, egret.Ease.circOut).call(function () {
+        egret.Tween.get(this.collectGroup).to({ verticalCenter: -700 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.collectGroup);
             ViewManager.inst().close(CollectSoldierPop);
         }, this);
@@ -181,6 +181,9 @@ var CollectSoldierPop = (function (_super) {
         this.dis_1.touchEnabled = false;
         this.dis_3.touchEnabled = false;
         this.dis_8.touchEnabled = false;
+        for (var i = 1; i <= 6; i++) {
+            this["rect_" + i].touchEnabled = false;
+        }
         this.timeLab.visible = true;
         this.collectBtn.visible = true;
         this.getBtn.visible = false;
@@ -196,6 +199,9 @@ var CollectSoldierPop = (function (_super) {
         this.dis_1.touchEnabled = false;
         this.dis_3.touchEnabled = false;
         this.dis_8.touchEnabled = false;
+        for (var i = 1; i <= 6; i++) {
+            this["rect_" + i].touchEnabled = false;
+        }
         this.timeLab.visible = false;
         this.collectBtn.visible = false;
         this.getBtn.visible = true;
@@ -208,6 +214,9 @@ var CollectSoldierPop = (function (_super) {
         this.dis_1.touchEnabled = true;
         this.dis_3.touchEnabled = true;
         this.dis_8.touchEnabled = true;
+        for (var i = 1; i <= 6; i++) {
+            this["rect_" + i].touchEnabled = true;
+        }
         this.timeLab.visible = false;
         this.collectBtn.visible = true;
         this.getBtn.visible = false;
@@ -223,6 +232,9 @@ var CollectSoldierPop = (function (_super) {
         this.dis_1.touchEnabled = false;
         this.dis_3.touchEnabled = false;
         this.dis_8.touchEnabled = false;
+        for (var i = 1; i <= 6; i++) {
+            this["rect_" + i].touchEnabled = false;
+        }
         this.timeLab.visible = true;
         this.collectBtn.visible = true;
         this.getBtn.visible = false;

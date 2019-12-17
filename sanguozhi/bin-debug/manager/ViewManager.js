@@ -82,6 +82,10 @@ var ViewManager = (function (_super) {
                     view_1.refreshPage.apply(view_1, param);
                 }
             }
+            var namestr = "" + egret.getQualifiedClassName(nameOrClass);
+            if (namestr != "TipsView") {
+                ViewManager.inst().curView = "" + egret.getQualifiedClassName(nameOrClass);
+            }
             if (startEffect) {
                 var curView_1 = this._views[index];
                 if (curView_1) {

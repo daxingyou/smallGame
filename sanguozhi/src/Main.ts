@@ -29,22 +29,41 @@
 
 class Main extends eui.UILayer {
 
-
+    public static DUBUGGER:boolean = false;
+    public static txt:eui.Label;
     protected createChildren(): void {
         super.createChildren();
         StageUtils.init();
+
+        if(Main.DUBUGGER){
+            let txt:eui.Label = new eui.Label();
+            txt.touchEnabled = false;
+            txt.size = 30;
+            Main.txt = txt;
+            StageUtils.inst().getStage().addChildAt(txt,9999)
+            txt.width = StageUtils.inst().getWidth();
+            txt.height = StageUtils.inst().getHeight();
+        }
+        let self = this;
+        
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
         })
 
         egret.lifecycle.onPause = () => {
+            // if(self.DUBUGGER){
+            //     txt.text = "游戏进入后台";
+            // }
             // egret.ticker.pause();
         }
 
         egret.lifecycle.onResume = () => {
-            egret.ticker.resume();
+            // if(self.DUBUGGER){
+            //     txt.text = "游戏重新唤醒" + Math.random()
+            // }
+            // egret.ticker.resume();
         }
-
+        
         //inject the custom material parser
         //注入自定义的素材解析器
         let assetAdapter = new AssetAdapter();
@@ -54,6 +73,9 @@ class Main extends eui.UILayer {
             egret.TextField.default_fontFamily = `${DEFAULT_FONT}`
         }
         this.runGame().catch(e => {
+            if(Main.DUBUGGER){
+                 Main.txt.text = e;
+            }
             console.error(e);
         })
         window["payCallBack"] = GlobalFun.payCallBack;
@@ -110,24 +132,37 @@ class Main extends eui.UILayer {
         // }
         // this.judgeRotation();
         //开发功能测试
-		// egret.localStorage.clear();
-        eui.Button.prototype["autoSize"] = eui.Group.prototype["autoSize"] = eui.Rect.prototype["autoSize"] = function(){
+        // RES.getResByUrl("resource⁩/res⁩/view⁩/music.mp3",(data)=>{
+           
+        // },this);
+        SoundManager.inst().playBg(`${MUSIC}home.mp3`);
+        SoundManager.inst().touchBg();
+		egret.localStorage.clear();
+        eui.Image.prototype["autoSize"] = eui.Button.prototype["autoSize"] = eui.Group.prototype["autoSize"] = eui.Rect.prototype["autoSize"] = function(){
             let precentw:number = StageUtils.inst().getWidth()/1334;
-            this.scaleX = this.scaleY = precentw
+            let precenth:number = StageUtils.inst().getHeight()/750;
+            this.scaleX = this.scaleY = precentw;
             this.x *= precentw;
-            this.y *= precentw;
+            this.y *= precenth;
         }
         PlayerPhalanx.prototype["phalanxSize"] = NpcPhalanx.prototype["phalanxSize"] = function(){
             let precentw:number = StageUtils.inst().getWidth()/1334;
             let precenth:number = StageUtils.inst().getHeight()/750;
-            this.scaleX = this.scaleY = precentw;
-            // this.scaleY = precenth;
-            // this.x *= precentw;
-            // this.y *= precentw;
+            this.scaleX = precentw;
+            this.scaleY = precenth;
+            this.x *= precentw;
+            this.y *= precenth;
         }
 		//
         LayerManager.inst().iniaizlize(this);
+        ViewManager.inst().curView = "Main_initialize";
         GameApp.inst().load();
+
+        this.addEventListener(egret.TouchEvent.TOUCH_TAP,(evt:egret.TouchEvent)=>{
+        },this);
+
+
+        
         // let data = RES.getRes("config_zip");
         // JSZip.loadAsync(data).then((zipdata) => {
         //     return zipdata.file('config.json').async('text');
@@ -135,6 +170,7 @@ class Main extends eui.UILayer {
         //     GlobalConfig.setData(JSON.parse(text));
         //     GameApp.inst().load();
         // })
+       
     }
     // private judgeRotation(){
     //     let player = document.getElementsByClassName("egret-player")[0];

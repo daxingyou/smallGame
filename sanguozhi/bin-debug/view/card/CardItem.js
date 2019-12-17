@@ -12,6 +12,9 @@ var CardItem = (function (_super) {
     __extends(CardItem, _super);
     function CardItem(type, id) {
         var _this = _super.call(this) || this;
+        _this.soldier_name = [
+            "\u5F13\u5175", "\u6B65\u5175", "\u9A91\u5175"
+        ];
         _this.skinName = "CardItemSkin";
         _this._type = type;
         _this._id = id;
@@ -30,36 +33,58 @@ var CardItem = (function (_super) {
     };
     CardItem.prototype.init = function () {
         var cfg = GlobalFun.getCardsFromType(this._type, false)[this._id];
-        this.icon_img.source = "" + cfg.cardModel;
+        if (cfg) {
+            this._insid = cfg.insId;
+        }
         switch (this._type) {
             case CardType.general:
                 this.skill_group.visible = false;
                 this.level_label.text = "\u7B49\u7EA7\uFF1A" + cfg.level;
                 this.city_img.source = "city_" + cfg.city + "_png";
-                this.own_label.text = "\u788E\u7247\uFF1A" + cfg.ownNum + "/" + cfg.upgradeNum;
+                // this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
                 this.hp_label.text = "\u751F\u547D\uFF1A" + cfg.hp;
                 this.atk_label.text = "\u653B\u51FB\uFF1A" + cfg.atk;
+                this.icon_img.source = "" + cfg.cardModel;
                 break;
             case CardType.special_skill:
                 this.info_group.visible = false;
                 this.skill_group.visible = true;
                 this.num_label.text = "\u6570\u91CF\uFF1A" + cfg.ownNum;
                 this.jieshao_label.text = "" + cfg.name;
-                this.quality_img.texture = RES.getRes("quality_" + cfg.quality + "_png");
+                this.quality_img.source = "quality_" + cfg.quality + "_png";
+                this.icon_img.source = "" + cfg.cardModel;
                 break;
-            case CardType.build:
-                this.skill_group.visible = false;
-                this.city_img.visible = false;
-                this.level_group.horizontalCenter = 0;
-                this.level_label.text = "\u7B49\u7EA7\uFF1A" + cfg.level;
-                this.own_label.text = "\u788E\u7247\uFF1A" + cfg.ownNum + "/" + cfg.upgradeNum;
-                this.hp_label.text = "\u751F\u547D\uFF1A" + cfg.hp;
-                this.atk_label.text = "\u653B\u51FB\uFF1A" + cfg.atk;
+            case CardType.soldier:
+                this.info_group.visible = false;
+                this.skill_group.visible = true;
+                // this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
+                this.jieshao_label.text = "\u6570\u91CF:" + cfg.ownNum;
+                this.icon_img.source = "" + cfg.cardModel;
+                this.num_label.visible = false;
                 break;
         }
     };
+    Object.defineProperty(CardItem.prototype, "insId", {
+        get: function () {
+            return this._insid;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    CardItem.prototype.refreshGeneralData = function (id) {
+        if (this.insId == id) {
+            var cfg = GlobalFun.getCardsFromType(CardType.general, false)[this._id];
+            this.skill_group.visible = false;
+            this.level_label.text = "\u7B49\u7EA7\uFF1A" + cfg.level;
+            this.city_img.source = "city_" + cfg.city + "_png";
+            // this.own_label.text = `碎片：${cfg.ownNum}/${cfg.upgradeNum}`;
+            this.hp_label.text = "\u751F\u547D\uFF1A" + cfg.hp;
+            this.atk_label.text = "\u653B\u51FB\uFF1A" + cfg.atk;
+            this.icon_img.source = "" + cfg.cardModel;
+        }
+    };
     CardItem.prototype.touchTapHandler = function () {
-        MessageManager.inst().dispatch(CustomEvt.TOUCH_CARD, { type: this._type, id: this._id });
+        MessageManager.inst().dispatch(CustomEvt.TOUCH_CARD, { type: this._type, id: this._id, insid: this._insid });
     };
     return CardItem;
 }(BaseView));

@@ -55,7 +55,7 @@ class LoadingUI extends eui.UILayer implements RES.PromiseTaskReporter {
     private textField: eui.Label;
 
     private createView(): void {
-
+        ViewManager.inst().curView = "LoadingUI";
         // this.progressPanel = new eui.Group();
         // this.addChild(this.progressPanel);
         // this._w = (StageUtils.inst().getWidth());

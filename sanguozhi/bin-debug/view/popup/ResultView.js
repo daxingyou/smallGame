@@ -19,6 +19,7 @@ var ResultView = (function (_super) {
         for (var _i = 0; _i < arguments.length; _i++) {
             param[_i] = arguments[_i];
         }
+        GameCfg.resultBool = true;
         this.winGroup["autoSize"]();
         this.failGroup["autoSize"]();
         this.skin.currentState = param[0].state;
@@ -28,21 +29,27 @@ var ResultView = (function (_super) {
         if (param[0].arg) {
             this._arg = param[0].arg;
         }
+        if (param[0].type) {
+            this._type = param[0].type;
+        }
         if (param[0].state == "win") {
-            var marks = GameApp.battleMark.split("_");
             var percent = StageUtils.inst().getWidth() / 1334;
             this.winGroup.x = (StageUtils.inst().getWidth() - this.winGroup.width * percent) >> 1;
             this.winGroup.y = (StageUtils.inst().getHeight() - this.winGroup.height * percent) >> 1;
-            var cityInfo = GlobalFun.getCityInfo(parseInt(marks[0]));
-            if (GameApp.levelid >= 4) {
-                GameApp.levelid = 1;
-                GameApp.chapterid += 1;
+            if (!this._type) {
+                var marks = GameApp.battleMark.split("_");
+                var cityInfo = GlobalFun.getCityInfo(parseInt(marks[0]));
+                if (GameApp.levelid >= 4) {
+                    GameApp.levelid = 1;
+                    GameApp.chapterid += 1;
+                }
+                else {
+                    GameApp.levelid += 1;
+                }
+                var timespan = parseInt(marks[1]) >= 4 ? new Date().getTime() : 0;
+                GlobalFun.changeCityInfo(cityInfo.cityId, { passLevel: parseInt(marks[1]), isMain: parseInt(marks[1]) >= 4, isOwn: parseInt(marks[1]) >= 3, timespan: timespan });
+                GameApp.battleMark = null;
             }
-            else {
-                GameApp.levelid += 1;
-            }
-            GlobalFun.changeCityInfo(cityInfo.cityId, { passLevel: parseInt(marks[1]), isMain: parseInt(marks[1]) >= 4, isOwn: parseInt(marks[1]) >= 3 });
-            GameApp.battleMark = null;
             this.battlestate = true;
             var winCount = egret.localStorage.getItem(LocalStorageEnum.WIN_COUNT);
             var count = winCount ? parseInt(winCount) + 1 : 1;
@@ -55,29 +62,34 @@ var ResultView = (function (_super) {
             }
             var goodsNum = 150 + ((Math.random() * 30) >> 0);
             var medalNum = 1;
-            var goldNum = 50;
-            this.goodsLab.text = goodsNum.toString();
-            this.medalLab.text = medalNum.toString();
-            this.soldierLab.text = goldNum.toString();
+            var expNum = 150 + ((Math.random() * 30) >> 0);
+            this.goodsLab.text = "粮草x" + goodsNum.toString();
+            this.medalLab.text = "功勋x" + medalNum.toString();
+            this.soldierLab.text = "经验x" + expNum.toString();
             GameApp.goods += goodsNum;
             GameApp.medal += medalNum;
             for (var i = 1; i <= 3; i++) {
                 this["card" + i].visible = false;
             }
-            GameApp.gold += goldNum;
+            GameApp.exp += expNum;
             // let index:number = ((Math.random()*3 + 1)>>0);
             // GameApp[`soldier${index}Num`] += soldierNum;
-            var generals = GlobalFun.getCardsFromType(CardType.general, false);
+            var generals = GameApp.cardInfo;
+            var cards = [];
             for (var i = 0; i < generals.length; i++) {
-                if (generals[i].insId == 10000 || generals[i].insId == 10001 || generals[i].insId == 10002) {
-                    generals.splice(i, 1);
-                    i -= 1;
+                if (generals[i].insId == 10000 || generals[i].insId == 10001 || generals[i].insId == 10002 || generals[i].insId == 100043 ||
+                    generals[i].insId == 100044 || generals[i].insId == 100053 || generals[i].insId == 100054 || generals[i].insId == 100063 ||
+                    generals[i].insId == 100064 || generals[i].insId == 100073 || generals[i].insId == 100074 || generals[i].insId == 100104 ||
+                    generals[i].insId == 100103 || generals[i].type == CardType.general) {
+                }
+                else {
+                    cards.push(this.deepObj(generals[i]));
                 }
             }
             var numIndex = ((Math.random() * 3 + 1) >> 0);
             for (var i = 0; i < numIndex; i++) {
-                var cardIndex = (Math.random() * generals.length) >> 0;
-                var cardAttr = generals[cardIndex];
+                var cardIndex = (Math.random() * cards.length) >> 0;
+                var cardAttr = cards[cardIndex];
                 if (numIndex == 1) {
                     this.card1.visible = true;
                     this.card1.initData(cardAttr, false);
@@ -90,8 +102,23 @@ var ResultView = (function (_super) {
                     this["card" + (i + 1)].visible = true;
                     this["card" + (i + 1)].initData(cardAttr, false);
                 }
-                var ownNum = GlobalFun.getCardDataFromId(cardAttr.insId, ["ownNum"]).ownNum;
-                GlobalFun.refreshCardData(cardAttr.insId, { ownNum: ownNum + 1 });
+                if (cardAttr.insId == 10003) {
+                    GameApp.intelligence += 1;
+                }
+                else if (cardAttr.type == CardType.soldier) {
+                    if (cardAttr.soldierType == 1 || cardAttr.soldierType == 2) {
+                        var ownNum = GlobalFun.getCardDataFromId(cardAttr.insId, ["ownNum"]).ownNum;
+                        GlobalFun.refreshCardData(cardAttr.insId, { ownNum: ownNum + 36 });
+                    }
+                    else {
+                        var ownNum = GlobalFun.getCardDataFromId(cardAttr.insId, ["ownNum"]).ownNum;
+                        GlobalFun.refreshCardData(cardAttr.insId, { ownNum: ownNum + 24 });
+                    }
+                }
+                else {
+                    var ownNum = GlobalFun.getCardDataFromId(cardAttr.insId, ["ownNum"]).ownNum;
+                    GlobalFun.refreshCardData(cardAttr.insId, { ownNum: ownNum + 1 });
+                }
             }
             // this.generalGroup.mask = this.groupMask;
             // let rotation:number = 0;
@@ -142,6 +169,13 @@ var ResultView = (function (_super) {
             }, this);
         }
     };
+    ResultView.prototype.deepObj = function (param) {
+        var obj = {};
+        for (var key in param) {
+            obj[key] = param[key];
+        }
+        return obj;
+    };
     ResultView.prototype.onReturn = function () {
         var _this = this;
         var group = this.battlestate ? this.winGroup : this.failGroup;
@@ -149,11 +183,12 @@ var ResultView = (function (_super) {
             egret.Tween.removeTweens(group);
             ViewManager.inst().close(ResultView);
             if (_this._cb && _this._arg) {
-                _this._cb.call(_this._arg);
+                _this._cb.call(_this._arg, _this._type);
             }
         }, this);
     };
     ResultView.prototype.close = function () {
+        GameCfg.resultBool = false;
         egret.Tween.removeTweens(this.tipFont);
         this.removeTouchEvent(this.sureBtn, this.onReturn);
         this.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onReturn, this);

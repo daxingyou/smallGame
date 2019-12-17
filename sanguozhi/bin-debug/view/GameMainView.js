@@ -26,6 +26,8 @@ var GameMainView = (function (_super) {
             { x: 890, y: 148 },
             { x: 872, y: 429 }
         ];
+        _this._initialize = false;
+        _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.onChildrenCreated, _this);
         return _this;
     }
     GameMainView.prototype.open = function () {
@@ -33,19 +35,56 @@ var GameMainView = (function (_super) {
         for (var _i = 0; _i < arguments.length; _i++) {
             param[_i] = arguments[_i];
         }
+    };
+    GameMainView.prototype.onChildrenCreated = function () {
+        if (Main.DUBUGGER) {
+            Main.txt.text += "initialize";
+        }
+        this._initialize = true;
+        this.adapter();
         MessageManager.inst().addListener(CustomEvt.COLLECT_START, this.onCollectStart, this);
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n messagemanager" + MessageManager.inst() ? "messagemanager" : 0;
+        }
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n messagemanager" + CustomEvt.COLLECT_START ? "CustomEvt.COLLECT_START" : 0;
+        }
         MessageManager.inst().addListener(CustomEvt.COLLECT_END, this.onCollectCD, this);
         MessageManager.inst().addListener(CustomEvt.TAX_START, this.onTaxStart, this);
         MessageManager.inst().addListener(CustomEvt.NEIWU_CD, this.onNeiwuCd, this);
         MessageManager.inst().addListener(CustomEvt.GUIDE_CLICK_CITY, this.onGuideClickCity, this);
+        this.addTouchEvent(this.icon_img, this.touchIcon);
         this.onTaxStart();
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n ready tax";
+        }
         this.onCollectStart();
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n ready collect";
+        }
         this.onCollectCD();
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n ready collect cd";
+        }
+        // if(Main.DUBUGGER){
+        // 	Main.txt.text += "\n ready sound"
+        // }
+        // SoundManager.inst().playBg(`${MUSIC}home.mp3`);
+        // if(Main.DUBUGGER){
+        // 	Main.txt.text += "\n bg sound ok"
+        // }
+        // SoundManager.inst().touchBg();
+        // if(Main.DUBUGGER){
+        // 	Main.txt.text += "\n soundfinish"
+        // }
         var firemc = new MovieClip();
         this.map_group.addChild(firemc);
         firemc.playFile(EFFECT + "fire", -1);
         firemc.x = this.firepos.x;
         firemc.y = this.firepos.y;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n firemc finish";
+        }
         for (var i = 0; i < this.btn_name.length; i++) {
             this.addTouchEvent(this[this.btn_name[i] + "_btn"], this.touchTapHandler, true);
         }
@@ -53,34 +92,50 @@ var GameMainView = (function (_super) {
         this.rechargeRect.addEventListener(egret.TouchEvent.TOUCH_TAP, this.recharge, this);
         // this.addEventListener( egret.TouchEvent.TOUCH_TAP , this.touchTapHandler , this );
         this.onNeiwuCd();
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n neuwu finish";
+        }
         this.watcher1 = eui.Binding.bindProperty(GameApp, ["gold"], this.gold_label, "text");
         this.watcher2 = eui.Binding.bindProperty(GameApp, ["goods"], this.goods_label, "text");
         this.watcher3 = eui.Binding.bindProperty(GameApp, ["medal"], this.medal_label, "text");
         this.watcher4 = eui.Binding.bindHandler(GameApp, ["soldier1Num"], this.onSolderChange, this);
         this.watcher5 = eui.Binding.bindHandler(GameApp, ["soldier2Num"], this.onSolderChange, this);
         this.watcher6 = eui.Binding.bindHandler(GameApp, ["soldier3Num"], this.onSolderChange, this);
+        this.watcher7 = eui.Binding.bindProperty(GameApp, ["exp"], this.exp_label, "text");
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n watcher finish";
+        }
         TimerManager.inst().doTimer(1000, 0, this.onGlobalTimer, this);
         this.yearLab.text = GlobalFun.getYearShow();
         this.yearLab.mask = this.yearMask;
         var firststr = egret.localStorage.getItem(LocalStorageEnum.ENTER_FIRST);
         if (!firststr) {
+            if (Main.DUBUGGER) {
+                Main.txt.text += "\n start guide";
+            }
             this.rewardCards = [];
             this.rewardGroup["autoSize"]();
             this.firstRect.visible = true;
             this.rewardGroup.visible = true;
             egret.localStorage.setItem(LocalStorageEnum.ENTER_FIRST, "1");
             var self_1 = this;
+            var cards_1 = GlobalFun.getOwnCards();
+            if (!cards_1) {
+                self_1.onStartGuide();
+                GlobalFun.showAnimateleaf();
+                self_1.firstRect.visible = false;
+                self_1.rewardGroup.visible = false;
+            }
             var timeout2_1 = setTimeout(function () {
                 clearTimeout(timeout2_1);
-                var cards = GlobalFun.getOwnCards();
                 var _loop_1 = function (i) {
                     var item = new ShopItem();
                     item.alpha = 0;
                     item.anchorOffsetX = item.width >> 1;
                     item.anchorOffsetY = item.height >> 1;
                     self_1.rewardGroup.addChild(item);
-                    item.initData(cards[i - 1], false);
-                    var qualityIndex = cards[i - 1].type == CardType.general ? 4 : cards[i - 1].quality;
+                    item.initData(cards_1[i - 1], false);
+                    var qualityIndex = cards_1[i - 1].type == CardType.general ? 4 : cards_1[i - 1].quality;
                     GlobalFun.lighting(item, GameApp.qualityColor[qualityIndex]);
                     if (i <= 5) {
                         item.x = (i - 1) * (item.width * 1.7 + 10) + 125;
@@ -94,11 +149,12 @@ var GameMainView = (function (_super) {
                     self_1.rewardCards.push(item);
                     var timeout = setTimeout(function (_item) {
                         clearTimeout(timeout);
+                        SoundManager.inst().playEffect(MUSIC + "reward.mp3");
                         egret.Tween.get(_item).to({ alpha: 1, scaleX: 1.7, scaleY: 1.7 }, 600, egret.Ease.backOut).call(function () {
                             egret.Tween.removeTweens(_item);
-                            if (i >= cards.length) {
+                            if (i >= cards_1.length) {
                                 var font = new eui.Label();
-                                font.text = "点击任何区域领取奖励";
+                                font.text = "点击领取登陆奖励";
                                 self_1.rewardGroup.addChild(font);
                                 font.horizontalCenter = 0;
                                 font.verticalCenter = 220;
@@ -109,15 +165,21 @@ var GameMainView = (function (_super) {
                         }, self_1);
                     }, 150 * (i - 1), item);
                 };
-                for (var i = 1; i <= cards.length; i++) {
+                for (var i = 1; i <= cards_1.length; i++) {
                     _loop_1(i);
                 }
             }, 700);
         }
         else {
+            if (Main.DUBUGGER) {
+                Main.txt.text += "\n init bth";
+            }
             this.init();
             GlobalFun.showAnimateleaf();
         }
+    };
+    GameMainView.prototype.touchIcon = function () {
+        ViewManager.inst().open(PlayerInfoView);
     };
     GameMainView.prototype.recharge = function () {
         ViewManager.inst().open(RechargePopUp);
@@ -134,6 +196,7 @@ var GameMainView = (function (_super) {
             var self_2 = this_1;
             var timeout = setTimeout(function (_item) {
                 clearTimeout(timeout);
+                SoundManager.inst().playEffect(MUSIC + "collect.mp3");
                 egret.Tween.get(_item).to({ scaleX: 0, scaleY: 0, alpha: 0, x: localXy.x, y: localXy.y }, 600, egret.Ease.circIn).call(function () {
                     egret.Tween.removeTweens(_item);
                     if (i >= self_2.rewardCards.length - 1) {
@@ -166,6 +229,7 @@ var GameMainView = (function (_super) {
         GameApp.guideView = ViewManager.inst().getView(GuideView);
         if (GameApp.guideView) {
             if (this.guideCity) {
+                GuideCfg.guidecfg["1_1"].cnt = "\u4E3B\u516C\uFF0C\u60F3\u8981\u5DE9\u56FA\u6839\u57FA\uFF0C\u987B\u5148\u62FF\u4E0B" + NameList.inst().city_name[this.guideCity.cityId - 1] + "\uFF01";
                 GameApp.guideView.nextStep({ id: "1_1", comObj: this.guideCity, width: this.guideCity.width, height: this.guideCity.height, offsetX: -this.guideCity.width / 2, offsetY: -this.guideCity.height / 2 });
             }
         }
@@ -220,8 +284,8 @@ var GameMainView = (function (_super) {
         return city;
     };
     GameMainView.prototype.onSolderChange = function () {
-        var soldier_num = GameApp.soldier1Num + GameApp.soldier2Num + GameApp.soldier3Num;
-        this.soldier_label.text = "" + soldier_num;
+        // let soldier_num = GameApp.soldier1Num + GameApp.soldier2Num + GameApp.soldier3Num;
+        this.exp_label.text = "" + GameApp.exp;
     };
     /**全局的占领城池后的税收 */
     GameMainView.prototype.onGlobalTimer = function () {
@@ -231,9 +295,25 @@ var GameMainView = (function (_super) {
             if (itemCity.isMain && !itemCity.isOnly) {
                 //当前已经占领 并且不是主城;
                 var nowTime = new Date().getTime();
+                var city = this.map_group.getChildByName(itemCity.cityId.toString());
+                if (itemCity.isEnemy) {
+                    if (!city.ifHasEnemy) {
+                        GlobalFun.changeCityInfo(itemCity.cityId, { isEnemy: true });
+                        city.showEnemyGroup();
+                    }
+                }
+                else {
+                    city.hideEnemyGroup();
+                }
                 if (nowTime - itemCity.timespan >= 5 * 60 * 1000) {
                     //现在时间 - 当前城池记录的时间 大于5分钟 。可以显示征收了
                     this.showCityCollect(itemCity.cityId);
+                    if (city) {
+                        if (!city.ifHasEnemy) {
+                            GlobalFun.changeCityInfo(itemCity.cityId, { isEnemy: true });
+                            city.showEnemyGroup();
+                        }
+                    }
                 }
                 else {
                     this.hideCityCollect(itemCity.cityId);
@@ -260,13 +340,20 @@ var GameMainView = (function (_super) {
         var numTxt = new eui.Label();
         group.addChild(numTxt);
         numTxt.text = GlobalFun.getCityInfo(cityid).goodProduce.toString();
-        numTxt.x = iconImg.x + iconImg.width;
-        numTxt.y = iconImg.y;
+        numTxt.anchorOffsetX = numTxt.width >> 1;
+        numTxt.anchorOffsetY = numTxt.height;
+        numTxt.x = iconImg.x + (iconImg.width >> 1);
+        numTxt.y = 5;
         numTxt.size = 20;
         var city = this.map_group.getChildByName(cityid.toString());
         group.anchorOffsetX = group.width >> 1;
-        group.x = city.x;
-        group.y = city.y - 80;
+        if (city) {
+            group.x = city.x;
+            group.y = city.y - 80;
+        }
+        else {
+            console.log("当前城市不存在-----id:" + cityid);
+        }
         egret.Tween.get(group, { loop: true }).to({ rotation: group.rotation - 5 }, 50).to({ rotation: group.rotation + 5 }, 50).to({ rotation: group.rotation - 5 }, 50).to({ rotation: group.rotation + 5 }, 50).wait(1000);
     };
     /**隐藏城市可以征收状态 */
@@ -286,6 +373,7 @@ var GameMainView = (function (_super) {
         this.hideCityCollect(cityId);
     };
     GameMainView.prototype.close = function () {
+        this.removeEventListener(egret.Event.ADDED_TO_STAGE, this.onChildrenCreated, this);
         this.rechargeRect.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.recharge, this);
         MessageManager.inst().removeListener(CustomEvt.GUIDE_CLICK_CITY, this.onGuideClickCity, this);
         this.map_group.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onCityTouch, this);
@@ -330,9 +418,11 @@ var GameMainView = (function (_super) {
         if (this.watcher6) {
             this.watcher1.unwatch();
         }
+        if (this.watcher7) {
+            this.watcher1.unwatch();
+        }
     };
     GameMainView.prototype.init = function () {
-        this.adapter();
         this.btnInit();
         this.setInfoUI();
         this.cityItemInit();
@@ -347,7 +437,15 @@ var GameMainView = (function (_super) {
         }
         else {
             //点击了关卡城池
-            console.log(cityName);
+            var city = this.map_group.getChildByName(cityName);
+            if (city && city.ifHasEnemy) {
+                var levelIndex = (Math.random() * 4 + 1) >> 0;
+                GameCfg.chapter = 1;
+                GameCfg.level = levelIndex;
+                ViewManager.inst().close(GameMainView);
+                ViewManager.inst().open(DoubtfulView, [{ type: cityName }]);
+                return;
+            }
             if (!!cityName) {
                 var cityInfo = GlobalFun.getCityInfo(parseInt(cityName));
                 if (cityInfo.isMain) {
@@ -397,13 +495,25 @@ var GameMainView = (function (_super) {
                     .to({ y: btn_y }, 800, egret.Ease.backOut);
             }
         }, 300);
+        var scale = this.stage.stageWidth / 1334;
+        var timeout2 = setTimeout(function () {
+            clearTimeout(timeout2);
+            var cardBtnStagePos = self.btn_group.localToGlobal(self.kazu_btn.x, self.kazu_btn.y);
+            GameApp.cardStaticX = cardBtnStagePos.x;
+            GameApp.cardStaticY = cardBtnStagePos.y;
+            egret.Tween.get(self.role_img).to({ alpha: 1 }, 600).call(function () {
+                egret.Tween.removeTweens(self.role_img);
+                self.role_img2.alpha = 1;
+                egret.Tween.get(self.role_img2, { loop: true }).to({ scaleX: scale + 0.01, scaleY: scale + 0.01, alpha: 0.8 }, 500).to({ scaleX: scale, scaleY: scale, alpha: 0 }, 500).wait(1500);
+            }, self);
+        }, 600);
     };
     GameMainView.prototype.setInfoUI = function () {
         this.gold_label.text = "" + GameApp.gold;
         this.goods_label.text = "" + GameApp.goods;
         this.medal_label.text = "" + GameApp.medal;
-        var soldier_num = GameApp.soldier1Num + GameApp.soldier2Num + GameApp.soldier3Num;
-        this.soldier_label.text = "" + soldier_num;
+        // let soldier_num = GameApp.soldier1Num + GameApp.soldier2Num + GameApp.soldier3Num;
+        this.exp_label.text = "" + GameApp.exp;
         var main_id = 0;
         for (var i = 0; i < 9; i++) {
             var isMain = GlobalFun.getCityInfo(i + 1).isMain;
@@ -497,23 +607,38 @@ var GameMainView = (function (_super) {
         }, this);
     };
     GameMainView.prototype.adapter = function () {
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n ready adapter";
+        }
         var scale = this.stage.stageWidth / 1334;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n adapter scale " + scale;
+        }
         this.btn_group.scaleX = this.btn_group.scaleY = scale;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n " + this.btn_group ? "btngroup" : 0;
+        }
         this.info_group.scaleX = this.info_group.scaleY = scale;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n " + this.info_group ? "info_group" : 0;
+        }
         this.map_group.scaleX = this.map_group.scaleY = scale;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n " + this.map_group ? "map_group" : 0;
+        }
         this.role_img.scaleX = this.role_img.scaleY = scale;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n " + this.role_img ? "role_img" : 0;
+        }
         this.role_img2.scaleX = this.role_img2.scaleY = scale;
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n " + this.role_img2 ? "role_img2" : 0;
+        }
         this.role_img2.alpha = 0;
         this.role_img.alpha = 0;
-        var self = this;
-        var timeout = setTimeout(function () {
-            clearTimeout(timeout);
-            egret.Tween.get(self.role_img).to({ alpha: 1 }, 600).call(function () {
-                egret.Tween.removeTweens(self.role_img);
-                self.role_img2.alpha = 1;
-                egret.Tween.get(self.role_img2, { loop: true }).to({ scaleX: scale + 0.01, scaleY: scale + 0.01, alpha: 0.8 }, 500).to({ scaleX: scale, scaleY: scale, alpha: 0 }, 500).wait(1500);
-            }, self);
-        }, 600);
+        if (Main.DUBUGGER) {
+            Main.txt.text += "\n adapter finsish";
+        }
     };
     /**内务cd */
     GameMainView.prototype.onNeiwuCd = function () {

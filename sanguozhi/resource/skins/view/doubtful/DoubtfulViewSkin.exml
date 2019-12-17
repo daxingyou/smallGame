@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DoubtfulViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16edf10fc12"/>
+	<e:Image source="doubtful_png" left="0" top="0" bottom="0"/>
+	<e:Group left="235" verticalCenter="19.5" scaleX="0.5" scaleY="0.5" anchorOffsetY="0" height="630.3">
+		<e:Group id="flag_group0" width="0" height="0" x="124.36" y="0"/>
+		<e:Group width="0" height="0" x="54.14" y="150" id="flag_group1"/>
+		<e:Group width="0" height="0" x="-20.73" y="300" id="flag_group2"/>
+		<e:Group width="0" height="0" x="-98.29" y="450" id="flag_group3"/>
+		<e:Group width="0" height="0" x="-175.74" y="600" id="flag_group4"/>
+	</e:Group>
+	<e:Group id="role_group" verticalCenter="22.5" x="242" anchorOffsetX="0" width="698.06">
+		<e:Image id="bg2" x="0" y="36.32" source="fight_bg2_png" pixelHitTest="true" scaleX="1" scaleY="1"/>
+		<e:Rect id="bg_rect2" width="96.91" height="460.41" x="203.57" y="0.67" anchorOffsetX="0" anchorOffsetY="0" rotation="24.76" scaleX="1" scaleY="1" fillAlpha="0"/>
+		<e:Image id="bg1" x="205.52" y="35.79" source="fight_bg1_png" pixelHitTest="true" scaleX="1" scaleY="1"/>
+		<e:Rect id="bg_rect1" width="99.39" height="460.41" x="395.46" y="2.27" anchorOffsetX="0" anchorOffsetY="0" rotation="21.39" scaleX="1" scaleY="1" fillAlpha="0"/>
+		<e:Image id="bg0" x="406" y="37.32" source="fight_bg0_png" pixelHitTest="true" scaleX="1" scaleY="1"/>
+		<e:Rect id="bg_rect0" width="106.97" height="460.41" x="582.16" y="0" anchorOffsetX="0" anchorOffsetY="0" rotation="17.99" scaleX="1" scaleY="1" fillAlpha="0"/>
+		<e:Group id="role_group2" width="0" height="0" x="198.82" y="39.83" anchorOffsetX="0" anchorOffsetY="0">
+		</e:Group>
+		<e:Group id="role_group1" width="0" height="0" x="385" y="41.83" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="role_group0" width="0" height="0" x="570.21" y="41.83" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="wj_group2" width="0" height="0" x="151.41" y="240.13" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1"/>
+		<e:Group id="wj_group0" width="0" height="0" x="556.68" y="240.13" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="wj_group1" width="0" height="0" x="355.41" y="240.13" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Rect id="bg_rect22" width="96.91" height="460.41" x="202.91" y="1.35" anchorOffsetX="0" anchorOffsetY="0" rotation="24.76" scaleX="1" scaleY="1" fillAlpha="0"/>
+		<e:Rect id="bg_rect11" width="99.39" height="460.41" x="394.8" y="2.95" anchorOffsetX="0" anchorOffsetY="0" rotation="21.39" scaleX="1" scaleY="1" fillAlpha="0"/>
+		<e:Rect id="bg_rect00" width="106.97" height="460.41" x="581.5" y="0.68" anchorOffsetX="0" anchorOffsetY="0" rotation="17.99" scaleX="1" scaleY="1" fillAlpha="0"/>
+		<e:Rect id="touch_wj2" width="88.35" height="51.66" x="116.97" y="190.97" anchorOffsetX="0" anchorOffsetY="0" rotation="24.24" fillAlpha="0"/>
+		<e:Rect width="88.35" height="55.94" x="521.94" y="195.04" anchorOffsetX="0" anchorOffsetY="0" rotation="16.32" id="touch_wj0" fillAlpha="0"/>
+		<e:Rect width="88.35" height="56.62" x="320.79" y="192.83" anchorOffsetX="0" anchorOffsetY="0" rotation="19.04" id="touch_wj1" fillAlpha="0"/>
+		<e:BitmapLabel id="font_effect" width="118.43" height="20.79" x="488" y="15" text="2000" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" font="power_fnt" visible="false" alpha="2"/>
+	</e:Group>
+	<e:Group id="card_group" x="12" bottom="-3" anchorOffsetX="0" width="1307">
+		<e:Image source="doubtful_di_png" scale9Grid="904,73,264,21" anchorOffsetY="0" height="149.33" x="-14" y="0" scaleX="1" scaleY="1"/>
+		<e:Scroller id="scroller" height="100.01" anchorOffsetX="0" anchorOffsetY="0" x="8" y="41.99" width="1290">
+			<e:List id="list" anchorOffsetX="0" width="1316.42" anchorOffsetY="0" height="84.62" y="1.52">
+			<e:layout>
+				<e:TileLayout horizontalGap="10" requestedRowCount="1" paddingTop="0"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group x="-0.67" y="-1.68" scaleX="1.2" scaleY="1.2">
+			<e:Button id="wj_btn" label="武将" x="103.2" y="1.39">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="doubtful_btn0_png" source.disabled="recharge_btn_png" source.down="doubtful_btn1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image x="27.51" y="3.75" y.down="3.25" y.up="3.25" source.down="doubtful_text2_png" source="doubtful_text3_png"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="all_btn" label="武将" x="-1.11" y="1.57">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="doubtful_btn0_png" source.disabled="recharge_btn_png" source.down="doubtful_btn1_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+					<e:Image x="27.51" y="3.75" y.down="3.25" y.up="3.25" source="doubtful_text6_png" source.down="doubtful_text7_png"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="bt_btn" label="兵团" x="207.32" y="1.39">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source.disabled="recharge_btn_png" source="doubtful_btn0_png" source.down="doubtful_btn1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image source="doubtful_text4_png" x="28.67" y="3.1" source.down="doubtful_text0_png"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="mj_btn" label="妙计" x="311.32" y="1.28">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source.disabled="recharge_btn_png" source="doubtful_btn0_png" source.down="doubtful_btn1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				<e:Image source="doubtful_text5_png" x="32" y="2.7" source.down="doubtful_text1_png"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="bt_group" anchorOffsetY="0" height="100" x="8" y="43" visible="false">
+			<e:Image id="bb" x="0.56" y="0" scaleX="1" scaleY="1" source="doubtful_icon_bb_png"/>
+			<e:Image id="gb" x="107" y="0" scaleX="1" scaleY="1" source="doubtful_icon_gb_png"/>
+			<e:Image id="qb" x="214" y="0" scaleX="1" scaleY="1" source="doubtful_icon_qb_png"/>
+			<e:Label id="bb_num" text="100" touchEnabled="false" size="20" x="30.06" y="71"/>
+			<e:Label id="gb_num" text="100" touchEnabled="false" size="20" x="135" y="71"/>
+			<e:Label id="qb_num" text="100" touchEnabled="false" size="20" x="244.83" y="71"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="move_group" width="0" height="0" x="159" y="124"/>
+	<e:Group id="left_group" x="0" y="0">
+		<e:Image source="doubtful_img1_png" x="0" y="0"/>
+		<e:Image source="doubtful_img0_png" x="1" y="0"/>
+		<e:Image source="doubtful_img2_png" x="45.51" y="99.04"/>
+		<e:Label text="战力:" x="38.94" y="53.79" fontFamily="yt" size="20" anchorOffsetX="0" width="46.5" stroke="0" strokeColor="0xd85536" textColor="0xfcca71"/>
+		<e:BitmapLabel id="fighting_p" width="118.43" height="20.79" x="85.46" y="53" text="2000" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" font="doubtful_font_fnt"/>
+		<e:Label id="soldiers" text="已上阵：" y="84.5" size="16" horizontalCenter="-11.5" textColor="0xe0cf08"/>
+	</e:Group>
+	<e:Group id="right_group" x="1098" top="18" bottom="149">
+		<e:Group horizontalCenter="4" top="93">
+			<e:Image source="doubtful_img3_png" x="0" y="0"/>
+			<e:Group y="268.97" x="16.65" scaleX="0.8" scaleY="0.8">
+			<e:Label text="战力:" x="0" y="0" fontFamily="yt" size="26" anchorOffsetX="0" width="60.17" stroke="0.5" textColor="0xfcca71"/>
+			<e:BitmapLabel id="fighting_n" width="140.17" height="23.84" x="62.98" y="1.22" text="" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" font="doubtful_font_fnt"/>
+			</e:Group>
+			<e:Image id="check" source="doubtful_btn2_png" x="58.25" y="217.38"/>
+			<e:Image id="bing_0_0" source="icon_0_png" x="26.5" y="71.37"/>
+			<e:Image id="bing_0_1" source="icon_0_png" x="26.75" y="116.33"/>
+			<e:Image id="bing_0_2" source="icon_0_png" x="26.75" y="161"/>
+			<e:Image id="bing_1_0" source="icon_0_png" x="84.75" y="71.37"/>
+			<e:Image id="bing_1_1" source="icon_0_png" x="85" y="116.33"/>
+			<e:Image id="bing_1_2" source="icon_0_png" x="85" y="161"/>
+			<e:Image id="bing_2_0" source="icon_0_png" x="142.24" y="72.04"/>
+			<e:Image id="bing_2_1" source="icon_0_png" x="142.49" y="117"/>
+			<e:Image id="bing_2_2" source="icon_0_png" x="142.49" y="161.67"/>
+			<e:Label id="qingbao" text="情报:0" x="130.74" y="35.54" size="16" textColor="0x757575"/>
+			<e:Label id="qingbao0" text="(消耗1情报查看敌方阵容)" x="31.75" y="248" size="12" textColor="0xc6c2c2"/>
+		</e:Group>
+		<e:Image id="start_game" source="doubtful_btn_png" horizontalCenter="4" bottom="-2"/>
+		<e:Image id="back_btn" source="game_back_png" top="0" horizontalCenter="49"/>
+		<e:Image id="shop_img" source="game_shop_png" x="-38.25" bottom="-3"/>
+	</e:Group>
+</e:Skin>

@@ -47,7 +47,7 @@ var StartGameView = (function (_super) {
         this.addTouchEvent(this.start_btn, this.touchTapHandler, true);
         // this.addEventListener( egret.TouchEvent.TOUCH_TAP , this.touchTapHandler , this );
         MessageManager.inst().addListener(CustomEvt.SELECT_MAIN_CITY, this.selectCityHandler, this);
-        this.talk_group.addEventListener(egret.TouchEvent.TOUCH_TAP, this.talkTouchTap, this);
+        this.clickRect.addEventListener(egret.TouchEvent.TOUCH_TAP, this.talkTouchTap, this);
     };
     StartGameView.prototype.close = function () {
         this.removeTouchEvent(this.random_btn, this.touchTapHandler);
@@ -74,7 +74,7 @@ var StartGameView = (function (_super) {
         // this.soldier_label.text = `${soldier_num}`;
         this.name_input.text = NameList.inst().randomName();
         this.cityItemInit();
-        this.info_group.right = -320;
+        this.info_group.right = -400;
         var scale = this.stage.stageWidth / 1334;
         this.talk_group.scaleX = this.talk_group.scaleY = scale;
         egret.Tween.get(this.talk_group)
@@ -88,14 +88,17 @@ var StartGameView = (function (_super) {
         this.medal_label.text = "" + this.info_num[this.select_id].medal;
         var soldier_num = this.info_num[this.select_id].soldier_1 + this.info_num[this.select_id].soldier_2 + this.info_num[this.select_id].soldier_3;
         this.soldier_label.text = "" + soldier_num;
+        GameApp.exp = soldier_num;
     };
     StartGameView.prototype.touchTapHandler = function (e) {
         // console.log(e.stageX - this.map_group.x , e.stageY - this.map_group.y);
         switch (e.target) {
             case this.random_btn:
+                SoundManager.inst().playEffect(MUSIC + "collect.mp3");
                 this.name_input.text = NameList.inst().randomName();
                 break;
             case this.start_btn:
+                SoundManager.inst().playEffect(MUSIC + "collect.mp3");
                 if (this.select_id != -1) {
                     if (this.name_input.text.length < 2 || this.name_input.text.length > 6) {
                         UserTips.inst().showTips("名字长度不符！名称长度应为2-6个字符");
@@ -107,6 +110,9 @@ var StartGameView = (function (_super) {
                         GameApp.soldier2Num = this.info_num[this.select_id].soldier_2;
                         GameApp.soldier3Num = this.info_num[this.select_id].soldier_3;
                         GlobalFun.changeName(this.name_input.text);
+                        if (Main.DUBUGGER) {
+                            Main.txt.text += this.select_id.toString();
+                        }
                         GlobalFun.changeCityInfo(this.select_id + 1, { isMain: true, isOwn: true, isOnly: true });
                         ViewManager.inst().close(StartGameView);
                         ViewManager.inst().open(GameMainView);
@@ -126,8 +132,19 @@ var StartGameView = (function (_super) {
             egret.Tween.get(this.talk_group)
                 .to({ alpha: 0 }, 800)
                 .to({ visible: false });
-            egret.Tween.get(this.info_group).wait(850).to({ right: 30 }, 600, egret.Ease.backOut).call(function () {
+            egret.Tween.get(this.tip_group)
+                .wait(850)
+                .to({ alpha: 1 }, 1000)
+                .wait(1500)
+                .to({ alpha: 0 }, 500)
+                .to({ visible: false });
+            this.clickRect.visible = false;
+            this.clickRect.touchEnabled = false;
+            egret.Tween.get(this.info_group).wait(1850).to({ right: 30 }, 600, egret.Ease.backOut).call(function () {
                 egret.Tween.removeTweens(_this.info_group);
+            }, this);
+            egret.Tween.get(this.tipFont).wait(1850).to({ alpha: 1 }, 600).call(function () {
+                egret.Tween.removeTweens(_this.tipFont);
             }, this);
         }
         else {
@@ -165,7 +182,7 @@ var StartGameView = (function (_super) {
                 this.moushi_label.visible = true;
                 this.talk_state = 0;
                 this.talk_bg.x = this.talk_group.width - this.talk_bg.width;
-                this.talk_bg.texture = RES.getRes("start_talk_bg_0_png");
+                this.talk_bg.source = "start_talk_bg_0_png";
                 this.talk_label.x = 430;
                 break;
             case 0:
@@ -175,7 +192,7 @@ var StartGameView = (function (_super) {
                 this.moushi_label.visible = false;
                 this.talk_state = 1;
                 this.talk_bg.x = 0;
-                this.talk_bg.texture = RES.getRes("start_talk_bg_1_png");
+                this.talk_bg.source = "start_talk_bg_1_png";
                 this.talk_label.x = 231;
                 break;
         }
@@ -212,6 +229,7 @@ var StartGameView = (function (_super) {
         var scale = this.stage.stageWidth / 1334;
         this.info_group.scaleX = this.info_group.scaleY = scale;
         this.map_group.scaleX = this.map_group.scaleY = scale;
+        this.tipFont.scaleX = this.tipFont.scaleY = scale;
     };
     return StartGameView;
 }(BaseEuiView));

@@ -58,6 +58,7 @@ var LoadingUI = (function (_super) {
         }
     };
     LoadingUI.prototype.createView = function () {
+        ViewManager.inst().curView = "LoadingUI";
         // this.progressPanel = new eui.Group();
         // this.addChild(this.progressPanel);
         // this._w = (StageUtils.inst().getWidth());

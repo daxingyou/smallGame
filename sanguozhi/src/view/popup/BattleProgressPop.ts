@@ -14,6 +14,8 @@ class BattleProgressPop extends BaseEuiView{
 	private level_3:eui.Group;
 	private level_4:eui.Group;
 
+	private xuan_img:eui.Image;
+
 	private enterBtn:eui.Image;
 	public constructor() {
 		super();
@@ -27,9 +29,13 @@ class BattleProgressPop extends BaseEuiView{
 		let scaleX:number = this.levelGroup.scaleX;
 		let scaleY:number = this.levelGroup.scaleY;
 		this.levelGroup.scaleX = this.levelGroup.scaleY = 0;
+		this.touchEnabled = false;
+		this.touchChildren = false;
 		this.levelGroup.alpha = 0;
 		egret.Tween.get(this.levelGroup).to({scaleX:scaleX,scaleY:scaleY,alpha:1},600,egret.Ease.backOut).call(()=>{
 			egret.Tween.removeTweens(this.levelGroup);
+			this.touchEnabled = true;
+			this.touchChildren = true;
 			if(GameApp.guideView){
 				GameApp.guideView.nextStep({id:"1_2",comObj:this.enterBtn,width:this.enterBtn.width,height:this.enterBtn.height})
 			}
@@ -60,7 +66,12 @@ class BattleProgressPop extends BaseEuiView{
 		let passlevel:number = this.cityInfo.passLevel;
 		for(let i:number = 1;i<=4;i++){
 			let nextLevel = passlevel + 1;
-			if(i == nextLevel){continue}
+			if(i == nextLevel)
+			{
+				this.xuan_img.x = this["level_"+i].x - 5;
+				this.xuan_img.y = this["level_"+i].y - 4;
+				continue;
+			}
 			if(passlevel < i){
 				GlobalFun.filterToGrey(this["level_"+i]);
 			}else if(passlevel >= i){
@@ -76,19 +87,25 @@ class BattleProgressPop extends BaseEuiView{
 		let passlevel:number = this.cityInfo.passLevel;
 		let nextLevel:number = passlevel + 1;
 		let levelId:string = this.cityInfo.cityId +"_"+nextLevel;
+		let str:string = "";
+		let num:number = 0;
 		if(nextLevel < 4){
 			let costGoods:number = this.cost[nextLevel-1];
 			if(costGoods > GameApp.goods){
 				UserTips.inst().showTips("粮草不足");
 				return;
 			}
-			GameApp.goods -= costGoods;
+			str = "goods";
+			num = costGoods;
+			// GameApp.goods -= costGoods;
 		}else if(nextLevel == 4){
 			if(this.costMedal > GameApp.medal){
-				UserTips.inst().showTips("勋章不足")
+				UserTips.inst().showTips("功勋不足")
 				return;
 			}
-			GameApp.medal -= this.costMedal;
+			str = "medal";
+			num = this.costMedal;
+			// GameApp.medal -= this.costMedal;
 		}
 		GameApp.battleMark = levelId;
 		// GameApp.year += 1;
@@ -97,7 +114,7 @@ class BattleProgressPop extends BaseEuiView{
 		GameCfg.chapter = GameApp.chapterid;
 		GameCfg.level = GameApp.levelid;
 		ViewManager.inst().close(GameMainView);
-		ViewManager.inst().open(GameView);
+		ViewManager.inst().open(DoubtfulView,[{key:str,num:num}]);
 	}
 	public close():void{
 		this.removeTouchEvent(this.returnBtn,this.onReturn);

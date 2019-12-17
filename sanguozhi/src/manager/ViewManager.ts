@@ -4,9 +4,10 @@ class ViewManager extends BaseClass{
 	 * 已注册的UI信息
 	 */
 	private _regesterInfo: any;
-
+	public curscene:string;
 	/**显示的ui实体 */
 	private _views:BaseEuiView[];
+	public curView:string;
 	public constructor() {
 		super();
 		this._regesterInfo = {};
@@ -56,6 +57,7 @@ class ViewManager extends BaseClass{
 	public open(nameOrClass: any, param: any[] = null,startEffect:boolean = false):void{
 		let keys: string = this.getKey(nameOrClass);
 		if(keys){
+			
 			//当前界面已经注册
 			let info: any[] = this._regesterInfo[keys];
 			let layer:eui.UILayer = info[1];
@@ -75,7 +77,10 @@ class ViewManager extends BaseClass{
 					view.refreshPage.apply(view,param);
 				}
 			}
-			
+			let namestr = `${egret.getQualifiedClassName(nameOrClass)}`;
+			if(namestr != "TipsView"){
+				ViewManager.inst().curView = `${egret.getQualifiedClassName(nameOrClass)}`
+			}
 			if(startEffect){
 				let curView:BaseEuiView = this._views[index];
 				if(curView){

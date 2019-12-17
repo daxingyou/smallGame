@@ -92,18 +92,21 @@ var GuideView = (function (_super) {
         this._handMc.x = this.rect.x + (this.rect.width >> 1) + 20;
         this._handMc.y = this.rect.y + (this.rect.height >> 1) + 20;
         var itemCfg = GuideCfg.guidecfg[this.data.id];
-        this.tipLab.alpha = 0;
-        this.tipLab.visible = false;
-        egret.Tween.removeTweens(this.tipLab);
+        this.tipGroup.alpha = 0;
+        this.tipGroup.visible = false;
+        egret.Tween.removeTweens(this.tipGroup);
         if (itemCfg.cnt) {
-            this.tipLab.visible = true;
+            this.tipGroup.visible = true;
             this.tipLab.text = itemCfg.cnt;
-            this.tipLab.anchorOffsetX = this.tipLab.width >> 1;
-            this.tipLab.anchorOffsetY = this.tipLab.height;
-            this.tipLab.x = this.rect.x + (this.rect.width >> 1);
-            this.tipLab.y = this.rect.y - 10;
-            this.tipLab.alpha = 0;
-            egret.Tween.get(this.tipLab, { loop: true }).to({ alpha: 1 }, 1500).wait(300).to({ alpha: 0 }, 1500);
+            this.tipPic.width = this.tipLab.width + 20;
+            this.tipLab.x = 10;
+            this.tipGroup.width = this.tipPic.width;
+            this.tipGroup.anchorOffsetX = this.tipGroup.width >> 1;
+            this.tipGroup.anchorOffsetY = this.tipGroup.height;
+            this.tipGroup.x = this.rect.x + (this.rect.width >> 1);
+            this.tipGroup.y = this.rect.y - 10;
+            this.tipGroup.alpha = 0;
+            egret.Tween.get(this.tipGroup, { loop: true }).to({ alpha: 1 }, 1500).wait(300).to({ alpha: 0 }, 1500);
         }
     };
     GuideView.prototype.close = function () {

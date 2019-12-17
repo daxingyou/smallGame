@@ -12,7 +12,9 @@ class RechargeItem extends eui.ItemRenderer{
 		this.buyBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onTouchTap,this);
 	}
 	private onTouchTap():void{
-		GlobalFun.sendToNativePhurse({goodid:0,goodnum:this.data.goldNum,goodtype:0,price:this.data.costNum})
+		recharge.sendToNativePhurse({Key1:this.data.costNum},(goldNum)=>{
+			GameApp.gold += goldNum;
+		},this)
 	}
 	protected dataChanged():void{
 		this.icon.source = this.data.icon;

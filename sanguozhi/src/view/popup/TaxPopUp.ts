@@ -11,16 +11,18 @@ class TaxPopUp extends BaseEuiView{
 	//每秒产值
 	private singleCost:number = 5;
 	private count:number = 0;
+	private goodsNum:number = 0;
 	public constructor() {
 		super();
 	}
 	public open(...param):void{
 		this.taxGroup["autoSize"]();
-		this.taxGroup.verticalCenter = -600;
+		this.taxGroup.verticalCenter = -700;
 		egret.Tween.get(this.taxGroup).to({verticalCenter:0},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.taxGroup);
 		},this)
-		this.goodsLab.text = "0";
+		this.goodsNum = 0;
+		this.goodsLab.text = "x0";
 		this.addTouchEvent(this.collectBtn,this.onCollect,true);
 		this.addTouchEvent(this.getBtn,this.onGet,true);
 		this.addTouchEvent(this.returnBtn,this.onReturn,true);
@@ -35,12 +37,14 @@ class TaxPopUp extends BaseEuiView{
 			let timestr:string = DateUtils.getFormatBySecond(offValue/1000,DateUtils.TIME_FORMAT_3);
 			//显示到文本上
 			this.timeLab.text = timestr;
-			this.goodsLab.text = (600 - ((Math.ceil(offValue/60000))*20)).toString();
+			this.goodsNum = (600 - ((Math.ceil(offValue/60000))*20));
+			this.goodsLab.text = "x"+ this.goodsNum;
 			this.timer.start();
 			this.showTaxCd();
 		}else{
 			if(cdTime){
-				this.goodsLab.text = (600).toString();
+				this.goodsNum = 600;
+				this.goodsLab.text = "x"+(600).toString();
 				this.showGetPage();
 			}else{
 				this.showNormalPage();
@@ -55,17 +59,18 @@ class TaxPopUp extends BaseEuiView{
 		this.startTax();
 	}
 	private onGet():void{
-		let num:number = parseInt(this.goodsLab.text);
-		if(!num){
+		
+		if(!this.goodsNum){
 			UserTips.inst().showTips("当前未征收到粮草");
 			return;
 		}
-		this.goodsLab.text = "0";
 		// this.stopTax();
 		egret.localStorage.setItem(LocalStorageEnum.TAX_CD_TIME,"");
 		this.showNormalPage();
-		UserTips.inst().showTips("征收到粮草x"+num);
-		GameApp.goods += num;
+		UserTips.inst().showTips("征收到粮草x"+this.goodsNum);
+		GameApp.goods += this.goodsNum;
+		this.goodsNum = 0;
+		this.goodsLab.text = "x0";
 	}
 	/**显示收集 */
 	private showTaxCd():void{
@@ -109,15 +114,17 @@ class TaxPopUp extends BaseEuiView{
 			let timestr:string = DateUtils.getFormatBySecond(offValue/1000,DateUtils.TIME_FORMAT_3);
 			//显示到文本上
 			this.timeLab.text = timestr;
-			this.goodsLab.text = (600 - ((Math.ceil(offValue/60000))*20)).toString();
+			this.goodsNum = (600 - ((Math.ceil(offValue/60000))*20));
+			this.goodsLab.text = "x"+this.goodsNum;
 		}else{
-			this.goodsLab.text = (600).toString();
+			this.goodsNum = 600;
+			this.goodsLab.text = "x"+(600).toString();
 			this.stopTax();
 			this.showGetPage();
 		}
 	}
 	private onReturn():void{
-		egret.Tween.get(this.taxGroup).to({verticalCenter:-600},600,egret.Ease.circOut).call(()=>{
+		egret.Tween.get(this.taxGroup).to({verticalCenter:-700},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.taxGroup);
 			ViewManager.inst().close(TaxPopUp);
 		},this);

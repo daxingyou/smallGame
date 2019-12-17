@@ -54,7 +54,8 @@ class AdventureView extends BaseEuiView
 	}
 	private init()
 	{
-		this.world_group["autoSize"]();
+		this.world_group.width = StageUtils.inst().getWidth();
+		this.world_group.height = StageUtils.inst().getHeight();
 		this.bg_0.x = 0;
 		this.bg_1.x = this.bg_0.x + this.bg_1.width;
 		this.addChildAt(this.world_group, 999999);
@@ -293,11 +294,11 @@ class AdventureView extends BaseEuiView
             renderTexture.drawToTexture(container);
  
             this.bitmap = new egret.Bitmap(renderTexture);
+			this.bitmap.width = StageUtils.inst().getWidth();
 			this.bitmap.anchorOffsetX = this.bitmap.width / 2;
 			this.bitmap.anchorOffsetY = this.bitmap.height / 2;
 			this.bitmap.x = this.player.x;
 			this.bitmap.y = this.player.y;
-			this.bitmap.width = 1334;
             this.world_group.addChild(this.bitmap);
             this.bitmap.touchEnabled = false;  //允许点击
             this.bitmap.pixelHitTest = true;  //镂空区域不响应点击，这样可以穿透点击到下面的背景

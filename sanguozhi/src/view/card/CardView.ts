@@ -4,6 +4,12 @@ class CardView extends BaseEuiView {
 
     private back_btn: eui.Button;
 
+    private generalLab:eui.Label;
+
+    private soldierLab:eui.Label;
+
+    private skillLab:eui.Label;
+
     private list_name: string[]=[
         "wujiang" , "miaoji" , "qixie"
     ];
@@ -24,6 +30,19 @@ class CardView extends BaseEuiView {
         }
         this.addTouchEvent( this.back_btn , this.touchTapHandler , true );
         MessageManager.inst().addListener( CustomEvt.TOUCH_CARD , this.touchCardHandler , this );
+        MessageManager.inst().addListener("refreshItemCard",this.refreshCard,this);
+        let generalNum:number = GlobalFun.getCardsFromType(CardType.general,false).length;
+        this.generalLab.textFlow = new egret.HtmlTextParser().parse(`<font color=0xad984a>武将：</font><font color=0x45df34>${generalNum}</font>`)
+
+        let skillNum:number = GlobalFun.getCardsFromType(CardType.special_skill,false).length;
+        this.skillLab.textFlow = new egret.HtmlTextParser().parse(`<font color=0xad984a>妙计：</font><font color=0x45df34>${skillNum}</font>`)
+
+        let soldiercfgs:CardAttrVo[] = GlobalFun.getCardsFromType(CardType.soldier,false);
+        let soldierNum:number = 0;
+        soldiercfgs.forEach(cfg=>{
+            soldierNum += cfg.ownNum;
+        },this)
+        this.soldierLab.textFlow = new egret.HtmlTextParser().parse(`<font color=0xad984a>兵团：</font><font color=0x45df34>${soldierNum}</font>`)
     }
 
     close():void {
@@ -33,10 +52,11 @@ class CardView extends BaseEuiView {
         }
         this.removeTouchEvent( this.back_btn , this.touchTapHandler );
         MessageManager.inst().removeListener( CustomEvt.TOUCH_CARD , this.touchCardHandler , this );
+        MessageManager.inst().removeListener("refreshItemCard",this.refreshCard,this);
     }
 
     private init():void {
-        this.view_group.verticalCenter = -600;
+        this.view_group.verticalCenter = -700;
         egret.Tween.get( this.view_group )
         .to( {verticalCenter:0},600,egret.Ease.circOut );
         this.adapter();
@@ -60,7 +80,7 @@ class CardView extends BaseEuiView {
         }
         switch( e.target ){
             case this.back_btn:
-                egret.Tween.get(this.view_group).to({verticalCenter:-600},600,egret.Ease.circOut).call(()=>{
+                egret.Tween.get(this.view_group).to({verticalCenter:-700},600,egret.Ease.circOut).call(()=>{
                     egret.Tween.removeTweens(this.view_group);
                     ViewManager.inst().close(CardView);
                 },this)
@@ -70,10 +90,13 @@ class CardView extends BaseEuiView {
 
     private listInit():void{
         let type = [
-            CardType.general , CardType.special_skill , CardType.build
+            CardType.general , CardType.special_skill , CardType.soldier
         ]
         for( let j = 0 ; j < 3 ; j ++ ) {
             let length = GlobalFun.getCardsFromType( type[j] , false ).length;
+            // if( j == 2 ) {
+            //     length = 3;
+            // }
             for( let i = 0 ; i < length ; i ++ ) {
                 let card = new CardItem( type[j] , i );
                 let interval_y = (this[ `${this.list_name[j]}_scroller` ].height - card.height * 2) / 3;
@@ -85,20 +108,28 @@ class CardView extends BaseEuiView {
         }
         
     }
-
+    private refreshCard(evt:CustomEvt):void{
+        for(let i:number = 0;i<this["wujiang_group"].numChildren;i++){
+            let cardItem:CardItem = this["wujiang_group"].getChildAt(i);
+            if(!!cardItem){
+                cardItem.refreshGeneralData(evt.data.id)
+            }
+        }
+    }
     private touchCardHandler( e:CustomEvt ):void {
-        let cardInfo = new CardInfo( e.data.type , e.data.id );
+        MessageManager.inst().dispatch(LocalStorageEnum.CLOSE_CARDINFO, this);
+        let cardInfo = new CardInfo( e.data.type , e.data.id , e.data.insid);
         this.addChild( cardInfo );
     }
 
     private select_list( id: number ):void {
         for( let i = 0 ; i < this.list_name.length ; i ++ ) {
-            this[`${this.list_name[i]}_bg`].texture = RES.getRes( `card_btn_off_png` );
-            this[`${this.list_name[i]}_txt`].texture = RES.getRes( `card_select_txt_${i}_1_png` );
+            this[`${this.list_name[i]}_bg`].source = `card_btn_off_png`;
+            this[`${this.list_name[i]}_txt`].source = `card_select_txt_${i}_1_png`;
             this[ `${this.list_name[i]}_scroller` ].visible = false;
         }
-        this[`${this.list_name[id]}_bg`].texture = RES.getRes( `card_btn_on_png` );
-        this[`${this.list_name[id]}_txt`].texture = RES.getRes( `card_select_txt_${id}_0_png` );
+        this[`${this.list_name[id]}_bg`].source = `card_btn_on_png`;
+        this[`${this.list_name[id]}_txt`].source = `card_select_txt_${id}_0_png`;
         this[`${this.list_name[id]}_scroller`].visible = true;
     }
 

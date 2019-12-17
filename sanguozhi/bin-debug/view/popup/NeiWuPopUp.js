@@ -27,7 +27,7 @@ var NeiWuPopUp = (function (_super) {
             param[_i] = arguments[_i];
         }
         this.neiwuGroup["autoSize"]();
-        this.neiwuGroup.verticalCenter = -600;
+        this.neiwuGroup.verticalCenter = -700;
         egret.Tween.get(this.neiwuGroup).to({ verticalCenter: 0 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.neiwuGroup);
         }, this);
@@ -57,7 +57,7 @@ var NeiWuPopUp = (function (_super) {
     };
     NeiWuPopUp.prototype.onReturn = function () {
         var _this = this;
-        egret.Tween.get(this.neiwuGroup).to({ verticalCenter: -600 }, 600, egret.Ease.circOut).call(function () {
+        egret.Tween.get(this.neiwuGroup).to({ verticalCenter: -700 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.neiwuGroup);
             ViewManager.inst().close(NeiWuPopUp);
         }, this);
@@ -109,7 +109,7 @@ var NeiWuPopUp = (function (_super) {
                 }
                 else if (key == "medal") {
                     GameApp.medal += option.medal;
-                    UserTips.inst().showTips("获得勋章x" + option.medal);
+                    UserTips.inst().showTips("获得功勋x" + option.medal);
                 }
                 else if (key == "general") {
                     var generalCards = GlobalFun.getCardsFromType(CardType.general, true);

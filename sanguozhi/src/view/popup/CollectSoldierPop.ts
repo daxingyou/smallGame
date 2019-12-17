@@ -9,7 +9,7 @@ class CollectSoldierPop extends BaseEuiView{
 	//100里征兵所用单位时间
 	private singleTime:number = 60;
 	//下次可以刷新的时间
-	private nextTime:number = 30*60*1000;
+	private nextTime:number = 5*60*1000;
 	private timer:egret.Timer;
 	private collectState:boolean = false;
 	private cdstate:boolean = false;
@@ -41,7 +41,7 @@ class CollectSoldierPop extends BaseEuiView{
 	}
 	public open(...param):void{
 		this.collectGroup["autoSize"]();
-		this.collectGroup.verticalCenter = -600;
+		this.collectGroup.verticalCenter = -700;
 		egret.Tween.get(this.collectGroup).to({verticalCenter:0},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.collectGroup);
 		},this)
@@ -127,7 +127,7 @@ class CollectSoldierPop extends BaseEuiView{
 		this.stopCollect();
 	}
 	private onReturn():void{
-		egret.Tween.get(this.collectGroup).to({verticalCenter:-600},600,egret.Ease.circOut).call(()=>{
+		egret.Tween.get(this.collectGroup).to({verticalCenter:-700},600,egret.Ease.circOut).call(()=>{
 			egret.Tween.removeTweens(this.collectGroup);
 			ViewManager.inst().close(CollectSoldierPop);
 		},this)
@@ -181,6 +181,9 @@ class CollectSoldierPop extends BaseEuiView{
 		this.dis_1.touchEnabled = false;
 		this.dis_3.touchEnabled = false;
 		this.dis_8.touchEnabled = false;
+		for(let i:number = 1;i<=6;i++){
+			this[`rect_${i}`].touchEnabled = false;
+		}
 		this.timeLab.visible = true;
 		this.collectBtn.visible = true;
 		this.getBtn.visible = false;
@@ -196,6 +199,9 @@ class CollectSoldierPop extends BaseEuiView{
 		this.dis_1.touchEnabled = false;
 		this.dis_3.touchEnabled = false;
 		this.dis_8.touchEnabled = false;
+		for(let i:number = 1;i<=6;i++){
+			this[`rect_${i}`].touchEnabled = false;
+		}
 		this.timeLab.visible = false;
 		this.collectBtn.visible = false;
 		this.getBtn.visible = true;
@@ -208,6 +214,9 @@ class CollectSoldierPop extends BaseEuiView{
 		this.dis_1.touchEnabled = true;
 		this.dis_3.touchEnabled = true;
 		this.dis_8.touchEnabled = true;
+		for(let i:number = 1;i<=6;i++){
+			this[`rect_${i}`].touchEnabled = true;
+		}
 		this.timeLab.visible = false;
 		this.collectBtn.visible = true;
 		this.getBtn.visible = false;
@@ -223,6 +232,9 @@ class CollectSoldierPop extends BaseEuiView{
 		this.dis_1.touchEnabled = false;
 		this.dis_3.touchEnabled = false;
 		this.dis_8.touchEnabled = false;
+		for(let i:number = 1;i<=6;i++){
+			this[`rect_${i}`].touchEnabled = false;
+		}
 		this.timeLab.visible = true;
 		this.collectBtn.visible = true;
 		this.getBtn.visible = false;

@@ -1,0 +1,22 @@
+{"mc":{
+	"role_100112_dead":{
+		"frameRate":12,
+		"labels":[
+			{"name":"","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"dead01.png",
+			"x":-4,
+			"y":-21
+			}
+			]
+}},
+	"res":{
+		"dead01.png":{"x":0,"y":0,"w":60,"h":36}
+	}}

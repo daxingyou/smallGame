@@ -27,7 +27,7 @@ class MovieClip extends egret.MovieClip {
 	public rate: number = 1;
 
 	public pixelHitTest: boolean = false;
-
+	public wj:boolean = false;
 	public constructor() {
 		super();
 		this._mcFactory = new egret.MovieClipDataFactory();
@@ -60,12 +60,12 @@ class MovieClip extends egret.MovieClip {
 
 		TimerManager.inst().remove(this.playComp, this);
 
-		if (this.texture && this.texture.bitmapData == null) {
-			//资源已经被释放掉
-		} else if (this.name == name) {
-			this.createBody(framesLabel,frameRate);
-			return;
-		}
+		// if (this.texture && this.texture.bitmapData == null) {
+		// 	//资源已经被释放掉
+		// } else if (this.name == name) {
+		// 	this.createBody(framesLabel,frameRate);
+		// 	return;
+		// }
 
 		this.name = name;
 
@@ -95,7 +95,6 @@ class MovieClip extends egret.MovieClip {
 			this.createBody(framesLabel,frameRate);
 		}, this, RES.ResourceItem.TYPE_IMAGE);
 	}
-
 	/**
 	 * @private
 	 * 显示对象添加到舞台

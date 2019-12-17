@@ -18,6 +18,9 @@ var PauseView = (function (_super) {
         for (var _i = 0; _i < arguments.length; _i++) {
             param[_i] = arguments[_i];
         }
+        if (param[0] && param[0].type) {
+            this._type = param[0].type;
+        }
         this.addTouchEvent(this, this.touchTap);
         this.init();
     };
@@ -36,9 +39,9 @@ var PauseView = (function (_super) {
                 ViewManager.inst().close(PauseView);
                 break;
             case this.confirm:
-                ViewManager.inst().close(GameView);
+                ViewManager.inst().close(BattleView);
                 ViewManager.inst().close(PauseView);
-                ViewManager.inst().open(GameMainView);
+                ViewManager.inst().open(GameMainView, [{ type: this._type }]);
                 break;
         }
     };

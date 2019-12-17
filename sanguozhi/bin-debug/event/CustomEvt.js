@@ -49,6 +49,8 @@ var CustomEvt = (function (_super) {
     CustomEvt.TOUCH_CARD = "touch_card";
     /**卡牌购买通知 */
     CustomEvt.CARD_REFRESH = "card_refresh";
+    /** 刷新商城 */
+    CustomEvt.UPDATE_SHOP = "update_shop";
     return CustomEvt;
 }(egret.Event));
 __reflect(CustomEvt.prototype, "CustomEvt");

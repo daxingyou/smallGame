@@ -20,7 +20,7 @@ var RechargePopUp = (function (_super) {
             param[_i] = arguments[_i];
         }
         this.shopGroup["autoSize"]();
-        this.shopGroup.verticalCenter = -600;
+        this.shopGroup.verticalCenter = -700;
         this.arrayCollect = new eui.ArrayCollection();
         this.list.itemRenderer = RechargeItem;
         this.list.dataProvider = this.arrayCollect;
@@ -35,7 +35,7 @@ var RechargePopUp = (function (_super) {
     };
     RechargePopUp.prototype.onReturn = function () {
         var _this = this;
-        egret.Tween.get(this.shopGroup).to({ verticalCenter: -600 }, 600, egret.Ease.circOut).call(function () {
+        egret.Tween.get(this.shopGroup).to({ verticalCenter: -700 }, 600, egret.Ease.circOut).call(function () {
             egret.Tween.removeTweens(_this.shopGroup);
             ViewManager.inst().close(RechargePopUp);
         }, this);

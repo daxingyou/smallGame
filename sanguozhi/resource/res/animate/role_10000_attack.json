@@ -1,0 +1,40 @@
+{"mc":{
+	"role_10000_attack":{
+		"frameRate":10,
+		"labels":[
+			{"name":"","frame":1,"end":4}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"attack03.png",
+			"x":-52,
+			"y":-66
+			},
+			{
+			"res":"attack04.png",
+			"x":-42,
+			"y":-65
+			},
+			{
+			"res":"attack05.png",
+			"x":-38,
+			"y":-61
+			},
+			{
+			"res":"attack07.png",
+			"x":-36,
+			"y":-60
+			}
+			]
+}},
+	"res":{
+		"attack05.png":{"x":0,"y":0,"w":116,"h":68},
+		"attack04.png":{"x":0,"y":135,"w":85,"h":72},
+		"attack03.png":{"x":110,"y":68,"w":87,"h":73},
+		"attack07.png":{"x":0,"y":68,"w":110,"h":67}
+	}}

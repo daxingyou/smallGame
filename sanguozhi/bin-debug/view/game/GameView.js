@@ -24,6 +24,9 @@ var GameView = (function (_super) {
             param[_i] = arguments[_i];
         }
         this.init();
+        if (param[0] && param[0].type) {
+            this._type = param[0].type;
+        }
         this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.touchBegin, this);
         this.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.touchMove, this);
         this.addEventListener(egret.TouchEvent.TOUCH_END, this.touchEnd, this);
@@ -114,11 +117,16 @@ var GameView = (function (_super) {
     };
     GameView.prototype.touchBack = function () {
         MessageManager.inst().dispatch(LocalStorageEnum.GAME_PAUSE, this);
-        ViewManager.inst().open(PauseView);
+        ViewManager.inst().open(PauseView, [{ type: this._type }]);
     };
     GameView.prototype.init = function () {
+        this.card_group["autoSize"]();
+        this.up_group["autoSize"]();
+        this.tip_group["autoSize"]();
         this.game_icon.source = "game_icon" + Math.floor(Math.random() * 3) + "_png";
         this.player_lc.text = "粮草：" + GameApp.goods;
+        this.fighting_p.text = "战斗力：" + GameCfg.playerAttack;
+        this.fighting_n.text = "战斗力：" + GameCfg.npcAttack;
         var num = 0;
         for (var i = 0; i < GameApp.roleInfo.citys.length; i++) {
             if (GameApp.roleInfo.citys[i].isOwn) {
@@ -129,25 +137,37 @@ var GameView = (function (_super) {
         this.npc_bl.text = "兵员：" + Math.floor(Math.random() * 5000 + 5000);
         this.npc_cc.text = "城池：" + Math.floor(Math.random() * 1 + 4);
         this.npc_lc.text = "粮草：" + Math.floor(Math.random() * 20000 + 30000);
-        this.posrect["autoSize"]();
+        // this.posrect["autoSize"]();
         /**创建玩家场地 */
         for (var i = 0; i < 3; i++) {
             this.pp[i] = new PlayerPhalanx(i);
             this.pp[i].x = 367 - i * 183;
-            this.pp[i].y = this.posrect.y;
-            // this.pp[i]["phalanxSize"]();
+            this.pp[i].y = this.posrect.top - 20;
+            this.pp[i]["phalanxSize"]();
             this.addChild(this.pp[i]);
         }
         /**创建敌军场地 */
         for (var i = 0; i < 3; i++) {
             this.np[i] = new NpcPhalanx(i);
             this.np[i].x = 967 - (150 - i * 183);
-            this.np[i].y = this.posrect.y;
-            // this.np[i]["phalanxSize"]();
+            this.np[i].y = this.posrect.top - 20;
+            this.np[i]["phalanxSize"]();
             this.addChild(this.np[i]);
         }
         var self = this;
         window.onorientationchange = function () {
+            self.card_group["autoSize"]();
+            self.up_group["autoSize"]();
+            // self.tip_group["autoSize"]();
+            // self.posrect["autoSize"]();
+            for (var i = 0; i < 3; i++) {
+                self.pp[i].x = 367 - i * 183;
+                self.pp[i].y = self.posrect.top - 20;
+                self.pp[i]["phalanxSize"]();
+                self.np[i].x = 967 - (150 - i * 183);
+                self.np[i].y = self.posrect.top - 20;
+                self.np[i]["phalanxSize"]();
+            }
             // self.posrect["autoSize"]();
             // for(let i = 0; i < 3; i++)
             // {
@@ -230,6 +250,8 @@ var GameView = (function (_super) {
         this.bb_num.text = GameApp.soldier3Num + "";
         this.qb_num.text = GameApp.soldier1Num + "";
         this.gb_num.text = GameApp.soldier2Num + "";
+        this.fighting_p.text = "战斗力：" + GameCfg.playerAttack;
+        this.fighting_n.text = "战斗力：" + GameCfg.npcAttack;
         if (GameCfg.gameStart) {
             this.player_mask.width = GameCfg.playerPH * (this.player_tiao.width / GameCfg.playerPH_max);
             this.npc_mask.width = GameCfg.npcPH * (this.npc_tiao.width / GameCfg.npcPH_max);
@@ -253,9 +275,12 @@ var GameView = (function (_super) {
         if (this.np.length <= 0) {
             /**胜利 */
             setTimeout(function () {
-                ViewManager.inst().open(ResultView, [{ state: "win", cb: function () {
+                ViewManager.inst().open(ResultView, [{ state: "win", type: _this._type, cb: function (type) {
                             ViewManager.inst().close(GameView);
-                            ViewManager.inst().open(GameMainView);
+                            if (type) {
+                                GlobalFun.changeCityInfo(type, { isEnemy: false });
+                            }
+                            ViewManager.inst().open(GameMainView, [{ type: _this._type }]);
                         }, arg: _this }]);
             }, 1000);
         }
@@ -279,9 +304,12 @@ var GameView = (function (_super) {
         if (this.pp.length <= 0) {
             /**失败 */
             setTimeout(function () {
-                ViewManager.inst().open(ResultView, [{ state: "fail", cb: function () {
+                ViewManager.inst().open(ResultView, [{ state: "fail", type: _this._type, cb: function (type) {
                             ViewManager.inst().close(GameView);
-                            ViewManager.inst().open(GameMainView);
+                            if (type) {
+                                GlobalFun.changeCityInfo(type, { isEnemy: false });
+                            }
+                            ViewManager.inst().open(GameMainView, [{ type: _this._type }]);
                         }, arg: _this }]);
             }, 1000);
         }

@@ -10,7 +10,7 @@ r.prototype = e.prototype, t.prototype = new r();
 };
 var Bullet = (function (_super) {
     __extends(Bullet, _super);
-    function Bullet(my_x, my_y, x, y, id, _img) {
+    function Bullet(my_x, my_y, x, y, id, _img, cb, arg) {
         var _this = _super.call(this) || this;
         _this._id = 0;
         _this.pos = {
@@ -29,6 +29,8 @@ var Bullet = (function (_super) {
         _this.lastPos.y = my_y;
         _this._id = id;
         _this._img = _img;
+        _this.cb = cb;
+        _this.arg = arg;
         _this.init();
         _this.addEventListener(egret.Event.ENTER_FRAME, _this.update, _this);
         MessageManager.inst().addListener(LocalStorageEnum.GAME_START, _this.gameStart, _this);
@@ -77,6 +79,9 @@ var Bullet = (function (_super) {
     Bullet.prototype.removeMyself = function () {
         // Message.instance.send( MsgCMD.EXPLODE , this );
         if (this.parent && this.parent.contains(this)) {
+            if (this.cb && this.arg) {
+                this.cb.call(this.arg);
+            }
             this.parent.removeChild(this);
         }
     };

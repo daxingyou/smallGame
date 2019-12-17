@@ -3,29 +3,50 @@ class IntroduceView extends BaseEuiView{
     public jieshao_label:eui.Label;
     public hp_label:eui.Label;
     public atk_label:eui.Label;
+    public buffDesc_label:eui.Label; 
     public data:any;
     public card_group:eui.Group;
+    private jieshao_group:eui.Group;
+    public buffDesc_group:eui.Group;
     public person_img:eui.Image;
     private quality:eui.Image;
+    private infoGroup:eui.Group;
 	public constructor() {
 		super();
 	}
     public initData(data,isshow:boolean = true):void{
-            if(data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.prop){
-                this.quality.visible = true;
-                this.quality.source = `quality_${data.quality}_png`;
-            }else{
-                this.quality.visible = false;
-            }
-            
+            // if(data.type == CardType.skill || data.type == CardType.special_skill || data.type == CardType.prop){
+                
+            // }else{
+            //     this.quality.visible = false;
+            // }
+            this.quality.visible = true;
+            this.quality.source = `quality_${data.quality}_png`;
         }
     public setData()
     {   
-        if(this.data["hp"]==0||this.data["atk"]==0)
+        if(this.data["type"] == CardType.general)
+        {
+            this.jieshao_group.y = 144.5
+            this.buffDesc_label.text = this.data["buffDesc"];
+            this.buffDesc_group.visible = true;
+        }else
+        {
+            this.jieshao_group.y = 110.5;
+            this.buffDesc_group.visible = false;
+        }
+        if(this.data["hp"]==0||this.data["atk"]==0 || this.data["type"] == CardType.skill || this.data["type"] == CardType.special_skill || this.data["type"] == CardType.prop ||
+           this.data["type"] == CardType.build)
         {
             this.hp_label.text="无";
             this.atk_label.text="无";
         }else
+        {
+            this.hp_label.text=this.data["hp"];
+            this.atk_label.text=this.data["atk"];
+        }
+
+        if(this.data["insId"] == 100105 || this.data["insId"] == 100106 || this.data["insId"] == 100107)
         {
             this.hp_label.text=this.data["hp"];
             this.atk_label.text=this.data["atk"];
@@ -39,6 +60,7 @@ class IntroduceView extends BaseEuiView{
         //this.card_group.addChild( card );
     }
 	public open(...param):void{
+        this.infoGroup["autoSize"]();
         this.data=param[0];
         this.setData();
         this.addEventListener(egret.TouchEvent.TOUCH_TAP,this.touchTapHandler,this);

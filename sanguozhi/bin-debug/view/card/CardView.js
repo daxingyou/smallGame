@@ -32,6 +32,17 @@ var CardView = (function (_super) {
         }
         this.addTouchEvent(this.back_btn, this.touchTapHandler, true);
         MessageManager.inst().addListener(CustomEvt.TOUCH_CARD, this.touchCardHandler, this);
+        MessageManager.inst().addListener("refreshItemCard", this.refreshCard, this);
+        var generalNum = GlobalFun.getCardsFromType(CardType.general, false).length;
+        this.generalLab.textFlow = new egret.HtmlTextParser().parse("<font color=0xad984a>\u6B66\u5C06\uFF1A</font><font color=0x45df34>" + generalNum + "</font>");
+        var skillNum = GlobalFun.getCardsFromType(CardType.special_skill, false).length;
+        this.skillLab.textFlow = new egret.HtmlTextParser().parse("<font color=0xad984a>\u5999\u8BA1\uFF1A</font><font color=0x45df34>" + skillNum + "</font>");
+        var soldiercfgs = GlobalFun.getCardsFromType(CardType.soldier, false);
+        var soldierNum = 0;
+        soldiercfgs.forEach(function (cfg) {
+            soldierNum += cfg.ownNum;
+        }, this);
+        this.soldierLab.textFlow = new egret.HtmlTextParser().parse("<font color=0xad984a>\u5175\u56E2\uFF1A</font><font color=0x45df34>" + soldierNum + "</font>");
     };
     CardView.prototype.close = function () {
         for (var i = 0; i < this.list_name.length; i++) {
@@ -40,9 +51,10 @@ var CardView = (function (_super) {
         }
         this.removeTouchEvent(this.back_btn, this.touchTapHandler);
         MessageManager.inst().removeListener(CustomEvt.TOUCH_CARD, this.touchCardHandler, this);
+        MessageManager.inst().removeListener("refreshItemCard", this.refreshCard, this);
     };
     CardView.prototype.init = function () {
-        this.view_group.verticalCenter = -600;
+        this.view_group.verticalCenter = -700;
         egret.Tween.get(this.view_group)
             .to({ verticalCenter: 0 }, 600, egret.Ease.circOut);
         this.adapter();
@@ -65,7 +77,7 @@ var CardView = (function (_super) {
         }
         switch (e.target) {
             case this.back_btn:
-                egret.Tween.get(this.view_group).to({ verticalCenter: -600 }, 600, egret.Ease.circOut).call(function () {
+                egret.Tween.get(this.view_group).to({ verticalCenter: -700 }, 600, egret.Ease.circOut).call(function () {
                     egret.Tween.removeTweens(_this.view_group);
                     ViewManager.inst().close(CardView);
                 }, this);
@@ -74,10 +86,13 @@ var CardView = (function (_super) {
     };
     CardView.prototype.listInit = function () {
         var type = [
-            CardType.general, CardType.special_skill, CardType.build
+            CardType.general, CardType.special_skill, CardType.soldier
         ];
         for (var j = 0; j < 3; j++) {
             var length_1 = GlobalFun.getCardsFromType(type[j], false).length;
+            // if( j == 2 ) {
+            //     length = 3;
+            // }
             for (var i = 0; i < length_1; i++) {
                 var card = new CardItem(type[j], i);
                 var interval_y = (this[this.list_name[j] + "_scroller"].height - card.height * 2) / 3;
@@ -88,18 +103,27 @@ var CardView = (function (_super) {
             }
         }
     };
+    CardView.prototype.refreshCard = function (evt) {
+        for (var i = 0; i < this["wujiang_group"].numChildren; i++) {
+            var cardItem = this["wujiang_group"].getChildAt(i);
+            if (!!cardItem) {
+                cardItem.refreshGeneralData(evt.data.id);
+            }
+        }
+    };
     CardView.prototype.touchCardHandler = function (e) {
-        var cardInfo = new CardInfo(e.data.type, e.data.id);
+        MessageManager.inst().dispatch(LocalStorageEnum.CLOSE_CARDINFO, this);
+        var cardInfo = new CardInfo(e.data.type, e.data.id, e.data.insid);
         this.addChild(cardInfo);
     };
     CardView.prototype.select_list = function (id) {
         for (var i = 0; i < this.list_name.length; i++) {
-            this[this.list_name[i] + "_bg"].texture = RES.getRes("card_btn_off_png");
-            this[this.list_name[i] + "_txt"].texture = RES.getRes("card_select_txt_" + i + "_1_png");
+            this[this.list_name[i] + "_bg"].source = "card_btn_off_png";
+            this[this.list_name[i] + "_txt"].source = "card_select_txt_" + i + "_1_png";
             this[this.list_name[i] + "_scroller"].visible = false;
         }
-        this[this.list_name[id] + "_bg"].texture = RES.getRes("card_btn_on_png");
-        this[this.list_name[id] + "_txt"].texture = RES.getRes("card_select_txt_" + id + "_0_png");
+        this[this.list_name[id] + "_bg"].source = "card_btn_on_png";
+        this[this.list_name[id] + "_txt"].source = "card_select_txt_" + id + "_0_png";
         this[this.list_name[id] + "_scroller"].visible = true;
     };
     CardView.prototype.adapter = function () {
