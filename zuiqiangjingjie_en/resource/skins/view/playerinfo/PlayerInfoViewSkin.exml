@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayerInfoViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.5" left="0" top="0" bottom="0" right="0"/>
+	<e:Group horizontalCenter="10" top="-7">
+		<e:Image source="info_bg_png" x="0" y="0"/>
+		<e:Image id="icon_img" x="49.49" y="79.68" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" source="info_icon_png"/>
+		<e:Label id="name_label" text="Alashan" x="250.16" y="148.75" size="20" anchorOffsetX="0" width="197" anchorOffsetY="0" height="37" textAlign="left" fontFamily="yt" verticalAlign="middle"/>
+		<e:Image source="info_kuang_png" x="123.49" y="281.84"/>
+		<e:Image source="info_kuang_png" x="123.49" y="321.67"/>
+		<e:Image source="info_kuang_png" x="336.49" y="281.84"/>
+		<e:Image source="info_kuang_png" x="336.49" y="321.67"/>
+		<e:Image source="main_medal_png" x="105.83" y="277.51"/>
+		<e:Image source="main_gold_png" x="313.99" y="280.34"/>
+		<e:Image source="tax_goods_png" x="104.83" y="316.67"/>
+		<e:Image source="exp_bg_png" x="312.82" y="319.17"/>
+		<e:BitmapLabel id="fighting_p" width="118.43" height="20.79" x="345.49" y="211.82" text="2000" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.5" scaleY="1.5" font="doubtful_font_fnt"/>
+		<e:Label id="gold_label" text="" y="285.68" anchorOffsetX="0" width="109" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="361.83" textAlign="left" textColor="0xefedea"/>
+		<e:Label id="medal_label" text="" y="286.01" anchorOffsetX="0" width="113.67" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="144.16" textAlign="left" textColor="0xefedea"/>
+		<e:Label id="goods_label" text="" y="326" anchorOffsetX="0" width="111.67" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="145.17" textAlign="left" textColor="0xefedea"/>
+		<e:Label id="soldier_label" text="" y="326.67" anchorOffsetX="0" width="112.33" anchorOffsetY="0" height="17" size="20" verticalAlign="middle" x="358.99" textAlign="left" textColor="0xefedea"/>
+		<e:Image id="close_btn" source="common_close_png" x="510" y="80.68"/>
+		<e:Label id="city_name" text="" x="68.34" y="401.67" anchorOffsetX="0" width="423.33" anchorOffsetY="0" height="72.34" size="20" textAlign="center" verticalAlign="middle" textColor="0xf7f6f4"/>
+		<e:Scroller width="129" height="92" x="56.33" y="554" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="role_list" x="-46" y="-35" anchorOffsetX="0" width="116" anchorOffsetY="0" height="123">
+				<e:layout>
+					<e:TileLayout paddingLeft="20"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Scroller width="316" height="95" x="197.99" y="554" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="legion_list" anchorOffsetX="0" width="393" anchorOffsetY="0" height="123" x="-5.5" y="111">
+				<e:layout>
+					<e:TileLayout paddingLeft="20"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image source="info_fc_png" x="230.49" y="206"/>
+		<e:Label text="Sphere of influence" x="158.66" y="365.67" anchorOffsetX="0" width="249.67" anchorOffsetY="0" height="26" verticalAlign="middle" textAlign="center" size="20"/>
+		<e:Label text="military force" x="145.34" y="496.33" anchorOffsetX="0" width="288.33" anchorOffsetY="0" height="26" verticalAlign="middle" textAlign="center" size="20"/>
+		<e:Label text="General" x="57.49" y="526" anchorOffsetX="0" width="130" anchorOffsetY="0" height="25" verticalAlign="middle" textAlign="center" size="16"/>
+		<e:Label text="army" x="215" y="525" anchorOffsetX="0" width="130" anchorOffsetY="0" height="25" verticalAlign="middle" textAlign="center" size="16"/>
+		<e:Label text="Number of troops" x="378.31" y="525" anchorOffsetX="0" width="130" anchorOffsetY="0" height="25" verticalAlign="middle" textAlign="center" size="16"/>
+	</e:Group>
+</e:Skin>

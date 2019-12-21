@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideViewSkin" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bg_left" width="456" height="320" anchorOffsetX="0" anchorOffsetY="0" alpha="0" left="0" top="0"/>
+	<e:Rect id="bg_bottom" width="531" height="320" anchorOffsetX="0" anchorOffsetY="0" alpha="0" left="0" x="10" bottom="0"/>
+	<e:Rect id="bg_top" width="680" height="244" anchorOffsetX="0" anchorOffsetY="0" alpha="0" right="0" top="0"/>
+	<e:Rect id="bg_right" width="605" height="396" anchorOffsetX="0" anchorOffsetY="0" alpha="0" right="0" bottom="0"/>
+	<e:Image id="rect" source="common_xuanzhong_png" x="454.75" y="246" scale9Grid="9,9,57,56" touchEnabled="true" pixelHitTest="false" alpha="0"/>
+	<e:Group id="tipGroup" x="422" y="198">
+		<e:Image id="tipPic" source="tipsBg_png" anchorOffsetY="0" width="152.5" height="40" anchorOffsetX="0" x="0" y="0" scale9Grid="118,11,18,11"/>
+		<e:Label id="tipLab" text="这是一段提示" x="22.5" y="11" size="18" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>

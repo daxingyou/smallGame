@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItemSkin" width="119.67" height="207.17" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,reward"  width.reward="192" height.reward="265">
+	<e:Image id="rewardBg" includeIn="reward" height="265" y="0" width="192" x="0" source="bcard_100002_png"/>
+	<e:Image includeIn="reward" y="209.5" left="15" right="9" anchorOffsetY="0" source="card_mask2_png" anchorOffsetX="0" height="44"/>
+	<e:Label id="rewardLab" text="Label" includeIn="reward" anchorOffsetX="0" anchorOffsetY="0" height="43" textAlign="center" verticalAlign="middle" size="20" textColor="0xe0d5d5" width="169" x="15.7" y="210.5"/>
+	<e:Image source="card_mask_png" x="2.8" y="127.47" includeIn="normal"/>
+	<e:Image id="bg" source="card_10008_png" x="-0.5" y="-0.5" includeIn="normal"/>
+	<e:Image source="card_mask_png" x="2.8" y="127.47" includeIn="normal"/>
+	<e:Label id="money_label" text="200" x="55.5" y="140.97" verticalAlign="middle" textAlign="left" anchorOffsetX="0" width="65" touchEnabled="false" size="16" textColor="0x94e031" includeIn="normal"/>
+	<e:Image id="goldImg" source="shop_gold_png" x="34.5" y="142.47" touchEnabled="false" includeIn="normal"/>
+	<e:Image id="cityIcon" source="city_1_png" x="6.75" y="133.5" touchEnabled="false" visible="false" includeIn="normal"/>
+	<e:Button id="buy_btn" label="招募" x="21.25" y="179" anchorOffsetX="0" width="75.5" anchorOffsetY="0" height="28.67" includeIn="normal">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="common_buy_png" source.down="common_buy_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Image source="common_buy_text_png" x="22.1" y="6.5"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="quality" source="quality_1_png" x="1.33" y="1" touchEnabled="false" visible="false" includeIn="normal"/>
+	<e:Label id="attrLab" text="等级:1" size="13" horizontalCenter="-0.33500000000000085" verticalCenter="31.915000000000006" visible="false" includeIn="normal"/>
+	<e:Label id="hpLab" text="生命:100" x="5.4" y="142.47" size="13" textColor="0xe0d9d9" anchorOffsetX="0" width="107.2" textAlign="center" verticalAlign="middle" visible="false" includeIn="normal"/>
+	<e:Label id="atkLab" text="生命:100" x="13.2" y="155.47" size="13" anchorOffsetX="0" width="91.6" textAlign="center" verticalAlign="middle" textColor="0xe0d9d9" visible="false" includeIn="normal"/>
+	<e:Label id="descLab" text="Label" x="0" y="140.5" anchorOffsetX="0" width="118" size="13" anchorOffsetY="0" height="28" textAlign="center" verticalAlign="middle" textColor="0xe0d9d9" visible="false" includeIn="normal"/>
+</e:Skin>

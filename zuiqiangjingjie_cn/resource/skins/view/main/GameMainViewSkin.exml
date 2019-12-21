@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg_img" source="main_bg_png" left="0" right="0" top="0" bottom="0" locked="true"/>
+	<e:Group id="touch_map" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0">
+		<e:Group id="map_group" x="-152" y="-314" anchorOffsetX="0" width="1810" anchorOffsetY="0" height="1350">
+			<e:Image source="main_map_png" x="0" y="0" anchorOffsetX="0" width="1810" height="1350" anchorOffsetY="0"/>
+			<e:Label id="yearLab" text="Label" x="497" y="64.99" size="20" anchorOffsetX="0" width="247" textAlign="center" verticalAlign="middle" textColor="0xf9cb4d" visible="false"/>
+			<e:Rect id="yearMask" width="0" height="20" x="496" y="64" anchorOffsetX="0"/>
+			<e:Rect id="firepos" width="20" height="20" x="1158.67" y="529.33" anchorOffsetX="10" anchorOffsetY="10" visible="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="info_group" y="0" x="0" width="1334" height="80">
+		<e:Image source="main_top_bg_png" left="0" top="0" scale9Grid="166,0,1002,64"/>
+		<e:Image id="icon_img" x="9.5" y="8.51" anchorOffsetX="0" anchorOffsetY="0" source="main_icon_bg_png"/>
+		<e:Label id="name_label" text="" x="121.61" y="11.51" anchorOffsetX="0" width="121" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" size="22"/>
+		<e:Group id="gold_group" x="266.99" y="8">
+			<e:Image source="main_gold_bg_png" x="9.32" y="4.5"/>
+			<e:Image source="main_gold_png" x="0" y="1.51"/>
+			<e:Image id="recharge_img" source="main_recharge_png" x="120.59" y="-0.68" anchorOffsetX="0" width="36.33" anchorOffsetY="0" height="36.33"/>
+			<e:Label id="gold_label" text="1111" y="4.67" anchorOffsetX="0" width="80" anchorOffsetY="0" height="25.33" size="22" verticalAlign="middle" x="43" textColor="0xffffff" textAlign="center"/>
+			<e:Rect id="rechargeRect" width="77.99" height="25.33" x="45" y="5" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		</e:Group>
+		<e:Group id="medal_group" x="451" y="8">
+			<e:Image source="main_gold_bg_png" x="9.32" y="4.5"/>
+			<e:Image x="0" y="1.51" source="main_medal_png"/>
+			<e:Label id="medal_label" text="1111" y="6" anchorOffsetX="0" width="107.33" anchorOffsetY="0" height="22.66" textColor="0xFFFFFF" size="22" verticalAlign="middle" x="38" textAlign="left"/>
+		</e:Group>
+		<e:Group id="soldier_group" x="629" y="8">
+			<e:Image source="main_gold_bg_png" x="9.32" y="4.5"/>
+			<e:Image x="-2.68" y="5.5" source="soldier_font_bg_png" anchorOffsetX="0" width="43" anchorOffsetY="0" height="28"/>
+			<e:Label id="exp_label" text="1111" y="4.84" anchorOffsetX="0" width="106.67" anchorOffsetY="0" height="24.67" textColor="0xFFFFFF" size="22" verticalAlign="middle" x="40.32" textAlign="left"/>
+		</e:Group>
+		<e:Group id="goods_group" x="809.99" y="8">
+			<e:Image source="main_gold_bg_png" x="9.32" y="4.5"/>
+			<e:Image x="0" y="-4.17" source="main_goods_png"/>
+			<e:Label id="goods_label" text="1111" y="6" anchorOffsetX="0" width="85.34" anchorOffsetY="0" height="24" textColor="0xFFFFFF" size="22" verticalAlign="middle" x="60.33" textAlign="left"/>
+		</e:Group>
+		<e:Group x="987.5" y="3">
+			<e:Image source="main_gold_bg_png" x="25.5" y="11"/>
+			<e:Image source="city_bg_png" x="0" y="0"/>
+			<e:Label id="main_city_label" text="" y="11.67" anchorOffsetX="0" width="114.33" anchorOffsetY="0" height="23.34" size="22" verticalAlign="middle" x="47.99" textColor="0x53ff00" textAlign="left"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="btn_group" anchorOffsetX="0" width="792.67" anchorOffsetY="0" height="127.67" right="0" bottom="0" alpha="0">
+		<e:Image source="main_bottom_bg_png" right="-0.3300000000000409" bottom="0.6700000000000017" anchorOffsetX="0" width="596.88" scale9Grid="166,58,316,41"/>
+		<e:Button id="shuishou_btn" label="" x="293.14" y="29.32" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_shuishou_png" source.down="main_shuishou_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="zhengbing_btn" label="" x="391.66" y="29.32" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_zhengbing_png" source.down="main_zhengbing_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="neiwu_btn" label="" x="395.66" y="29.52" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_neiwu_png" source.down="main_neiwu_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="kazu_btn" label="" x="483.66" y="29.32" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_kazu_png" source.down="main_kazu_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="shangcheng_btn" label="" x="582.67" y="29.85" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_shangcheng_png" source.down="main_shangcheng_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="jiuguan_btn" label="" x="677.66" y="9.31" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="main_jiuguan_png" source.down="main_jiuguan_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Image id="role_img" source="main_role_bg_png" left="-136" bottom="-53" touchEnabled="false" alpha="0" visible="false"/>
+	<e:Image id="role_img2" source="main_role_bg_png" left="-136" bottom="-53" alpha="0" touchEnabled="false" visible="false"/>
+	<e:Rect id="firstRect" left="0" top="0" right="0" bottom="0" alpha="0.7" visible="false"/>
+	<e:Group id="rewardGroup" height="250" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0" visible="false"/>
+</e:Skin>

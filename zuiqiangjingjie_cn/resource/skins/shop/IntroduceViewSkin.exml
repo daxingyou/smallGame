@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="IntroduceViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect fillAlpha="0.7" left="0" right="0" top="0" bottom="0" touchEnabled="true" fillColor="0x000000"/>
+	<e:Group id="infoGroup" horizontalCenter="32" verticalCenter="-15" width="413.92" scaleX="1.3" scaleY="1.3" anchorOffsetX="0" anchorOffsetY="0" height="241.92">
+		<e:Image source="card_info_show_png" x="0" y="0" scale9Grid="51,36,311,216" width="426.23" height="254.11" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Image id="close_img" x="362.5" y="3.15" anchorOffsetX="0" anchorOffsetY="0" source="common_close_png"/>
+		<e:Image id="upgrade_img" x="228" y="242" anchorOffsetX="0" anchorOffsetY="0" source="card_upgrade_png" visible="false"/>
+		<e:Image source="card_info_kuang_png" x="177.32" y="46.02" anchorOffsetY="0" height="186.39" anchorOffsetX="0" width="212.01"/>
+		<e:Group id="card_group" width="127" height="178" x="36.09" y="51.47">
+			<e:Image id="person_img" left="0" right="0" top="0" bottom="0" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image id="quality" left="0" right="0" top="0" bottom="0" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		</e:Group>
+		<e:Group x="187.35" y="48.43" anchorOffsetX="0" width="225" anchorOffsetY="0" height="50">
+			<e:Label id="hp_label" text="1" x="35.46" y="-0.05" anchorOffsetX="0" width="162.62" anchorOffsetY="0" height="22" size="16" verticalAlign="middle" fontFamily="yt" textColor="0x62e228"/>
+			<e:Label id="atk_label" text="1" x="35.46" y="22.39" anchorOffsetX="0" width="163.38" anchorOffsetY="0" height="22" size="16" verticalAlign="middle" fontFamily="yt" textColor="0x62e228"/>
+			<e:Label text="生命:" x="-4.51" y="3.5" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" fontFamily="yt" textColor="0x62e228"/>
+			<e:Label text="攻击:" x="-4.51" y="23.93" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" fontFamily="yt" textColor="0x62e228"/>
+		</e:Group>
+		<e:Group id="buffDesc_group" x="180.43" y="91.74" anchorOffsetX="0" width="224.31" anchorOffsetY="0" height="29">
+			<e:Label text="天赋:" x="2.76" y="0.32" fontFamily="yt" size="16" textColor="0x62e228"/>
+			<e:Label id="buffDesc_label" text="sdfsdf" x="43.15" y="0.32" fontFamily="yt" size="16" anchorOffsetX="0" width="163.86" anchorOffsetY="0" height="32.6" textColor="0x62e228"/>
+		</e:Group>
+		<e:Group id="jieshao_group" x="180.43" y="128.39" anchorOffsetY="0" height="101">
+			<e:Label id="jieshao_label" text="asdfasdfasdfasfdasf" x="44.78" y="-1.81" anchorOffsetX="0" width="160.3" anchorOffsetY="0" height="98.82" size="16" fontFamily="yt" textColor="0x62e228"/>
+			<e:Label text="详情:" x="3.92" y="-2.58" anchorOffsetX="0" width="54.33" anchorOffsetY="0" height="18.34" size="16" fontFamily="yt" textColor="0x62e228"/>
+		</e:Group>
+		<e:Label text="卡牌详情" x="87.84" y="0" anchorOffsetX="0" width="244.33" anchorOffsetY="0" height="26.34" size="22" verticalAlign="middle" textAlign="center" fontFamily="yt" textColor="0xfcfbf9"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardItemSkin" width="118.5" height="170" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon_img" source="card_10000_png" x="-1.25" y="-3.5"/>
+	<e:Label id="name_label" text="Label" y="17" anchorOffsetX="0" width="169" anchorOffsetY="0" height="41" verticalAlign="middle" textAlign="center" size="20" horizontalCenter="0.5" visible="false"/>
+	<e:Label id="quality_label" text="Label" y="86" anchorOffsetX="0" width="169" anchorOffsetY="0" height="41" verticalAlign="middle" textAlign="center" size="20" horizontalCenter="0.5" visible="false"/>
+	<e:Image x="1.92" y="108.67" scaleX="1" scaleY="1" width="114.66" source="card_kuang_png" anchorOffsetY="0" height="58" anchorOffsetX="0"/>
+	<e:Group id="info_group" x="-6.55" y="101.7" anchorOffsetX="0" width="129.5">
+		<e:Group id="level_group" x="-1.3" y="5.5" anchorOffsetY="0" height="27" anchorOffsetX="0" width="129.5">
+			<e:Label id="level_label" text="Grade：13" anchorOffsetX="0" anchorOffsetY="0" height="16" verticalAlign="middle" textAlign="left" size="14" horizontalCenter="0" bottom="7"/>
+			<e:Label id="own_label" text="Fragment:1/400" x="54.17" y="3.48" size="14" anchorOffsetX="0" width="76" anchorOffsetY="0" height="14.83" verticalAlign="middle" textAlign="center" visible="false"/>
+		</e:Group>
+		<e:Image id="city_img" source="city_1_png" x="0" y="-1" visible="false"/>
+		<e:Label id="hp_label" text="life:10000" x="28.5" y="32.94" anchorOffsetX="0" width="81.7" anchorOffsetY="0" height="14.6" verticalAlign="middle" textAlign="left" size="14" textColor="0xffb116"/>
+		<e:Label id="atk_label" text="attack:10" x="28.3" y="47.06" anchorOffsetX="0" width="77.2" anchorOffsetY="0" height="16.1" verticalAlign="middle" textAlign="left" size="14" textColor="0xffb116"/>
+	</e:Group>
+	<e:Group id="skill_group" x="6.96" y="114.62" visible="false">
+		<e:Label id="num_label" text="Number：10" x="-18.17" y="8.27" anchorOffsetX="0" width="123.4" anchorOffsetY="0" height="15.9" size="14" textAlign="center" verticalAlign="middle"/>
+		<e:Label id="jieshao_label" text="Number：10" y="23" anchorOffsetX="0" width="118.4" anchorOffsetY="0" height="23.4" size="14" textAlign="center" verticalAlign="middle" x="-15"/>
+	</e:Group>
+	<e:Image id="quality_img" source="quality_4_png" y="0" visible="false"/>
+</e:Skin>

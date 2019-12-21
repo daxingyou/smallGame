@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BuildSkin" width="58.33" height="65" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="ta_img" source="ta_player_png" x="-0.6" y="-0.5" anchorOffsetX="30.4" anchorOffsetY="32" visible="false"/>
+</e:Skin>

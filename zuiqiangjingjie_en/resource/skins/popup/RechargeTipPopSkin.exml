@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargeTipPopSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.5"/>
+	<e:Group id="tipGroup" touchChildren="true" touchEnabled="false" touchThrough="true" anchorOffsetX="212" anchorOffsetY="126" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="card_info_show_png" x="0" y="0" anchorOffsetY="0" height="240.98" anchorOffsetX="0" width="419" scale9Grid="184,124,36,13"/>
+		<e:Image id="close_img" x="355" y="2.66" anchorOffsetX="0" anchorOffsetY="0" source="common_close_png"/>
+		<e:Label text="Tips" x="189.67" y="2.66" size="22" textColor="0xe8d5d5"/>
+		<e:Label text="Insufficient gold，Whether to recharge?" x="48.17" y="69.5" size="22" textColor="0xE8D5D5" anchorOffsetX="0" width="327" anchorOffsetY="0" height="85" textAlign="center" verticalAlign="middle"/>
+		<e:Image id="rechargeBtn" source="common_buy_png" x="52.5" y="167.5" anchorOffsetX="0" width="135" anchorOffsetY="0" height="43"/>
+		<e:Label text="Recharge" x="72" y="178" size="22" textColor="0xE8D5D5" stroke="0.5" touchEnabled="false"/>
+		<e:Image id="cancleBtn" source="common_buy_png" x="243" y="167.5" anchorOffsetX="0" width="135" anchorOffsetY="0" height="43"/>
+		<e:Label text="cancel" x="283" y="178" size="22" textColor="0xE8D5D5" stroke="0.5" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

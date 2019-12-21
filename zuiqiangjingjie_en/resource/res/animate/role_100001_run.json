@@ -1,0 +1,22 @@
+{"mc":{
+	"role_100001_run":{
+		"frameRate":12,
+		"labels":[
+			{"name":"action","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"4_png",
+			"x":-44,
+			"y":-51
+			}
+			]
+}},
+	"res":{
+		"4_png":{"x":1,"y":1,"w":81,"h":57}
+	}}

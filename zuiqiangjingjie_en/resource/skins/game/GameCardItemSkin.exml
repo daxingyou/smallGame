@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameCardItemSkin" width="106" height="107" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon_img" x="-1" y="-7" source="doubtful_10000_png"/>
+	<e:Label id="num_label" text="Label" y="74.67" size="18" horizontalCenter="0" locked="true" visible="false"/>
+	<e:Image id="shang" source="yishangzhen_png" x="5.67" y="4" anchorOffsetX="0" width="97.33" anchorOffsetY="0" height="99.67" visible="false"/>
+</e:Skin>

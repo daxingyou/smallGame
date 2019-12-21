@@ -1,0 +1,2023 @@
+{
+	"groups": [
+		{
+			"keys": "gold_128_png,gold_328_png,gold_6_png,gold_648_png,gold_68_png,recharge_btn_png,card_level_bg_png",
+			"name": "recharge"
+		},
+		{
+			"keys": "neiwu_bg_png,neiwu_cancle_png,neiwu_head_1_png,neiwu_head_2_png,neiwu_head_3_png,neiwu_head_4_png,neiwu_head_5_png,neiwu_head_6_png,neiwu_head_7_png,neiwu_sure_png,neiwu_talk_bg_png",
+			"name": "neiwu"
+		},
+		{
+			"keys": "tax_bg_png,tax_bottom_bg_png,tax_bottom_bg_2_png,tax_collect_png,tax_get_btn_png,tax_goods_png",
+			"name": "tax"
+		},
+		{
+			"keys": "collect_bg_png,collect_btn_png,collect_checkbox_select_png,collect_checkbox_unselect_png,collect_font_bg_png,collect_get_btn_png,collect_point_png,collecting_btn_png",
+			"name": "collect"
+		},
+		{
+			"keys": "description_json,tipsBg_png,main_medal_png,main_goods_png,main_gold_png,main_gold_bg_png,main_recharge_png,main_icon_bg_png,main_city_png,main_top_bg_png,main_luxian_png,main_city_0_png,main_city_1_png,main_city_2_png,main_city_3_png,main_city_4_png,main_city_5_png,main_city_6_png,main_city_7_png,main_city_8_png,main_city_name_bg_png,main_role_bg_png,main_bottom_bg_png,main_jiuguan_png,main_kazu_png,main_neiwu_png,main_zhengbing_png,main_shuishou_png,main_shangcheng_png,main_bg_png,main_item_qi_png,main_fight_png,card_10003_png,card_100041_png,card_100051_png,card_100061_png,card_100071_png,card_10009_png,start_title_png,start_btn_png,start_gold_png,start_goods_png,start_soldier_png,start_medal_png,start_city_png,start_input_bg_png,start_random_btn_png,start_icon_png,start_info_bg_png,card_select_txt_2_0_png,card_select_txt_1_0_png,card_select_txt_0_0_png,card_select_txt_2_1_png,card_select_txt_0_1_png,card_select_txt_1_1_png,card_btn_off_png,card_btn_on_png,card_show_bg_png,game_arrow0_png,game_bg_png,bb_png,qb_png,gb_png,game_card_kuang_png,game_shop_png,game_back_png,fight_bg2_png,fight_bg2_lv_png,fight_bg1_png,fight_bg1_lv_png,fight_bg0_png,fight_bg0_lv_png,ta_player_png,icon_kuang_png,player_tiao_png,icon_name_png,game_ding_png,game_arrow1_png,start_moushi_png,start_zhugong_png,start_talk_bg_0_png,start_talk_bg_1_png,card_info_icon_png,card_gold_png,card_upgrade_png,card_info_show_png,game_icon3_png,game_icon0_png,game_icon1_png,game_icon2_png,lc_png,bl_png,cc_png,battle_icon_png,wait_progress_png,wait_progress_bg_png,wait_progress_bian_png,card_level_bg_png,pause_bg_png,pause_btn0_png,pause_btn1_png,game_start_png,skill_eff_10003_png,skill_eff_10004_png,skill_eff_10005_png,skill_eff_10006_png,skill_eff_10007_png,skill_eff_bg_png,skill_role_png,common_xuanzhong_png,skill_eff_10010_png,common_buy_png,common_cancle_png,common_recharge_png,main_battle_icon_png,role_img_png,doubtful_png,doubtful_img2_png,doubtful_img0_png,doubtful_img1_png,doubtful_btn1_png,doubtful_btn0_png,doubtful_btn2_png,doubtful_font_fnt,doubtful_font_png,doubtful_icon_qb_png,doubtful_icon_gb_png,doubtful_icon_bb_png,doubtful_di_png,doubtful_text5_png,doubtful_text0_png,doubtful_text1_png,doubtful_text2_png,doubtful_text3_png,doubtful_text4_png,card_progress_bg_png,card_progress_png,card_exp_10_png,card_exp_50_png,card_exp_100_png,top_bg_png,hp_bg_png,city_bg_png,exp_bg_png,goods_bg_png,power_fnt_png,flag_1_png,flag_2_png,flag_3_png,power_fnt,power_png,doubtful_100074_png,doubtful_100044_png,doubtful_100054_png,doubtful_100064_png,doubtful_100022_png,doubtful_100104_png,doubtful_100021_png,doubtful_100011_png,doubtful_100012_png,doubtful_100002_png,doubtful_100001_png,doubtful_10009_png,doubtful_10008_png,doubtful_10002_png,doubtful_10001_png,doubtful_10000_png,doubtful_img3_png,icon_4_png,icon_3_png,icon_2_png,icon_1_png,icon_0_png,doubtful_btn_png,over_box_png,doubtful_text7_png,doubtful_text6_png,tax_fnt,info_bg_png,info_tiao4_png,info_tiao3_png,info_tiao2_png,info_tiao1_png,info_tiao0_png,info_jian_png,yishangzhen_png,doubtful_100113_png,doubtful_100109_png,doubtful_100110_png,doubtful_100111_png,doubtful_100112_png,doubtful_100105_png,doubtful_100106_png,doubtful_100107_png,card_100112_png,card_100113_png,card_100109_png,card_100110_png,card_100111_png,skill_100091_png,skill_eff_10009_png,flag_icon_png,power_bg_png,battle_font_bg_png,battle_icon2_png,dmg_fnt,dmg_png,recharge_mask_png,recharge_img_png,common_bg_png,recharge_text_png,level_p_text_png,level_p_kuang_png,common_buy_text_png,card_mask_png,card_text_png,card_kuang_png,card_info_kuang_png,neiwu_text_png,neiwu_talk_mask_png,shop_text_png,doubtful_npc_kuang_png,doubtful_fc_png,shop_img_png,tax_text_png,tax_kuang_png,tax_img_png,info_fc_png,info_icon_png,info_kuang_png,pub_text_png,pub_img_png,collect_text_png,collect_img_png,collect_text0_png,main_hong_png,main_huang_png,main_lv_png,main_name_png,main_lan_png,name_di_png,start_map_bg_png,main_map_png,stary_mask_png,pause_title_png,game_icon4_png,select_circle_png,select_mark_png,main_city_9_png,main_city_10_png,main_city_11_png,main_city_12_png,buff_def_png,bcard_100002_png,bcard_100041_png,bcard_100051_png,bcard_soldier_1_png,bcard_soldier_2_png,card_mask2_png,undefined,fingerClick_png,pub_10000_png,pub_10001_png,pub_10002_png",
+			"name": "preload"
+		},
+		{
+			"keys": "description_json",
+			"name": "loading"
+		},
+		{
+			"keys": "model_10000_png,model_10001_png,model_10002_png,pub_bg_png,pub_font_png,pub_get_png,pub_select_png,pub_sure_png,card_10000_png,card_10001_png,card_10002_png",
+			"name": "pub"
+		},
+		{
+			"keys": "level_p_bg_png,level_p_dialog_png,level_p_enter_png,level_p_goods_png,level_p_medal_png",
+			"name": "levelprogress"
+		},
+		{
+			"keys": "card_reward_bg_png,fail_font_png,goods_font_bg_png,medal_font_bg_png,result_bg_png,result_tip_png,soldier_font_bg_png,title_1_png,title_2_png,title_3_png,title_4_png",
+			"name": "result"
+		},
+		{
+			"keys": "skill_100051_png,skill_100061_png,skill_100071_png,skill_100101_png,skill_100102_png,skill_100103_png,skill_100104_png,skill_bottom_png,skill_100081_png",
+			"name": "skill"
+		},
+		{
+			"keys": "common_sure_png,leaf_png,main_battle_icon_png,main_bg_png,main_bottom_bg_png,main_city_png,main_city_0_png,main_city_1_png,main_city_2_png,main_city_3_png,main_city_4_png,main_city_5_png,main_city_6_png,main_city_7_png,main_city_8_png,main_city_name_bg_png,main_fight_png,main_gold_png,main_gold_bg_png,main_goods_png,main_icon_bg_png,main_item_qi_png,main_jiuguan_png,main_kazu_png,main_luxian_png,main_medal_png,main_neiwu_png,main_recharge_png,main_role_bg_png,main_shangcheng_png,main_shuishou_png,main_soldier_png,main_top_bg_png,main_zhengbing_png,role_img_png,battle_icon_png",
+			"name": "main"
+		},
+		{
+			"keys": "card_100001_png,card_100002_png,card_100011_png,card_100012_png,card_100021_png,card_100022_png,card_10003_png,card_100041_png,card_100051_png,card_100061_png,card_100071_png,card_10008_png,card_10009_png,card_exp_10_png,card_exp_100_png,card_exp_50_png,card_goods_png,card_hp_png,card_soldier_1_png,card_soldier_2_png,card_soldier_3_png,city_1_png,city_2_png,city_3_png,quality_1_png,quality_2_png,quality_3_png,quality_4_png,shop_bg_png,shop_bottom_png,shop_buy_png,shop_gold_png",
+			"name": "shop"
+		},
+		{
+			"keys": "start_btn_png,start_city_png,start_city_0_png,start_city_1_png,start_city_2_png,start_city_3_png,start_city_4_png,start_city_5_png,start_city_6_png,start_city_7_png,start_city_8_png,start_gold_png,start_goods_png,start_icon_png,start_info_bg_png,start_input_bg_png,start_medal_png,start_moushi_png,start_random_btn_png,start_soldier_png,start_talk_bg_0_png,start_talk_bg_1_png,start_title_png,start_zhugong_png",
+			"name": "start"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "res/common/tipsBg.png",
+			"type": "image",
+			"name": "tipsBg_png"
+		},
+		{
+			"url": "res/view/recharge/gold_128.png",
+			"type": "image",
+			"name": "gold_128_png"
+		},
+		{
+			"url": "res/view/recharge/gold_328.png",
+			"type": "image",
+			"name": "gold_328_png"
+		},
+		{
+			"url": "res/view/recharge/gold_6.png",
+			"type": "image",
+			"name": "gold_6_png"
+		},
+		{
+			"url": "res/view/recharge/gold_648.png",
+			"type": "image",
+			"name": "gold_648_png"
+		},
+		{
+			"url": "res/view/recharge/gold_68.png",
+			"type": "image",
+			"name": "gold_68_png"
+		},
+		{
+			"url": "res/view/recharge/recharge_btn.png",
+			"type": "image",
+			"name": "recharge_btn_png"
+		},
+		{
+			"url": "res/common/common_close.png",
+			"type": "image",
+			"name": "common_close_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_bg.png",
+			"type": "image",
+			"name": "neiwu_bg_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_cancle.png",
+			"type": "image",
+			"name": "neiwu_cancle_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_1.png",
+			"type": "image",
+			"name": "neiwu_head_1_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_2.png",
+			"type": "image",
+			"name": "neiwu_head_2_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_3.png",
+			"type": "image",
+			"name": "neiwu_head_3_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_4.png",
+			"type": "image",
+			"name": "neiwu_head_4_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_5.png",
+			"type": "image",
+			"name": "neiwu_head_5_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_6.png",
+			"type": "image",
+			"name": "neiwu_head_6_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_head_7.png",
+			"type": "image",
+			"name": "neiwu_head_7_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_sure.png",
+			"type": "image",
+			"name": "neiwu_sure_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_talk_bg.png",
+			"type": "image",
+			"name": "neiwu_talk_bg_png"
+		},
+		{
+			"url": "res/view/tax/tax_bg.png",
+			"type": "image",
+			"name": "tax_bg_png"
+		},
+		{
+			"url": "res/view/tax/tax_bottom_bg.png",
+			"type": "image",
+			"name": "tax_bottom_bg_png"
+		},
+		{
+			"url": "res/view/tax/tax_bottom_bg_2.png",
+			"type": "image",
+			"name": "tax_bottom_bg_2_png"
+		},
+		{
+			"url": "res/view/tax/tax_collect.png",
+			"type": "image",
+			"name": "tax_collect_png"
+		},
+		{
+			"url": "res/view/tax/tax_get_btn.png",
+			"type": "image",
+			"name": "tax_get_btn_png"
+		},
+		{
+			"url": "res/view/tax/tax_goods.png",
+			"type": "image",
+			"name": "tax_goods_png"
+		},
+		{
+			"url": "res/view/collect/collect_bg.png",
+			"type": "image",
+			"name": "collect_bg_png"
+		},
+		{
+			"url": "res/view/collect/collect_btn.png",
+			"type": "image",
+			"name": "collect_btn_png"
+		},
+		{
+			"url": "res/view/collect/collect_checkbox_select.png",
+			"type": "image",
+			"name": "collect_checkbox_select_png"
+		},
+		{
+			"url": "res/view/collect/collect_checkbox_unselect.png",
+			"type": "image",
+			"name": "collect_checkbox_unselect_png"
+		},
+		{
+			"url": "res/view/collect/collect_font_bg.png",
+			"type": "image",
+			"name": "collect_font_bg_png"
+		},
+		{
+			"url": "res/view/collect/collect_get_btn.png",
+			"type": "image",
+			"name": "collect_get_btn_png"
+		},
+		{
+			"url": "res/view/collect/collect_point.png",
+			"type": "image",
+			"name": "collect_point_png"
+		},
+		{
+			"url": "res/view/collect/collecting_btn.png",
+			"type": "image",
+			"name": "collecting_btn_png"
+		},
+		{
+			"url": "res/view/pub/model_10000.png",
+			"type": "image",
+			"name": "model_10000_png"
+		},
+		{
+			"url": "res/view/pub/model_10001.png",
+			"type": "image",
+			"name": "model_10001_png"
+		},
+		{
+			"url": "res/view/pub/model_10002.png",
+			"type": "image",
+			"name": "model_10002_png"
+		},
+		{
+			"url": "res/view/pub/pub_bg.png",
+			"type": "image",
+			"name": "pub_bg_png"
+		},
+		{
+			"url": "res/view/pub/pub_font.png",
+			"type": "image",
+			"name": "pub_font_png"
+		},
+		{
+			"url": "res/view/pub/pub_get.png",
+			"type": "image",
+			"name": "pub_get_png"
+		},
+		{
+			"url": "res/view/pub/pub_select.png",
+			"type": "image",
+			"name": "pub_select_png"
+		},
+		{
+			"url": "res/view/pub/pub_sure.png",
+			"type": "image",
+			"name": "pub_sure_png"
+		},
+		{
+			"url": "res/view/pub/card_10000.png",
+			"type": "image",
+			"name": "card_10000_png"
+		},
+		{
+			"url": "res/view/pub/card_10001.png",
+			"type": "image",
+			"name": "card_10001_png"
+		},
+		{
+			"url": "res/view/pub/card_10002.png",
+			"type": "image",
+			"name": "card_10002_png"
+		},
+		{
+			"url": "res/view/card/card_select_txt_1_0.png",
+			"type": "image",
+			"name": "card_select_txt_1_0_png"
+		},
+		{
+			"url": "res/view/card/card_select_txt_0_1.png",
+			"type": "image",
+			"name": "card_select_txt_0_1_png"
+		},
+		{
+			"url": "res/view/card/card_btn_off.png",
+			"type": "image",
+			"name": "card_btn_off_png"
+		},
+		{
+			"url": "res/view/card/card_show_bg.png",
+			"type": "image",
+			"name": "card_show_bg_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_bg.png",
+			"type": "image",
+			"name": "level_p_bg_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_dialog.png",
+			"type": "image",
+			"name": "level_p_dialog_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_enter.png",
+			"type": "image",
+			"name": "level_p_enter_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_goods.png",
+			"type": "image",
+			"name": "level_p_goods_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_medal.png",
+			"type": "image",
+			"name": "level_p_medal_png"
+		},
+		{
+			"url": "res/view/card/card_select_txt_2_0.png",
+			"type": "image",
+			"name": "card_select_txt_2_0_png"
+		},
+		{
+			"url": "res/view/card/card_select_txt_0_0.png",
+			"type": "image",
+			"name": "card_select_txt_0_0_png"
+		},
+		{
+			"url": "res/view/card/card_select_txt_2_1.png",
+			"type": "image",
+			"name": "card_select_txt_2_1_png"
+		},
+		{
+			"url": "res/view/card/card_select_txt_1_1.png",
+			"type": "image",
+			"name": "card_select_txt_1_1_png"
+		},
+		{
+			"url": "res/view/card/card_btn_on.png",
+			"type": "image",
+			"name": "card_btn_on_png"
+		},
+		{
+			"url": "res/view/card/card_info_icon.png",
+			"type": "image",
+			"name": "card_info_icon_png"
+		},
+		{
+			"url": "res/view/card/card_gold.png",
+			"type": "image",
+			"name": "card_gold_png"
+		},
+		{
+			"url": "res/view/card/card_upgrade.png",
+			"type": "image",
+			"name": "card_upgrade_png"
+		},
+		{
+			"url": "res/view/card/card_info_show.png",
+			"type": "image",
+			"name": "card_info_show_png"
+		},
+		{
+			"url": "res/view/game_arrow0.png",
+			"type": "image",
+			"name": "game_arrow0_png"
+		},
+		{
+			"url": "res/view/game/game_bg.png",
+			"type": "image",
+			"name": "game_bg_png"
+		},
+		{
+			"url": "res/view/game/card/bb.png",
+			"type": "image",
+			"name": "bb_png"
+		},
+		{
+			"url": "res/view/game/card/qb.png",
+			"type": "image",
+			"name": "qb_png"
+		},
+		{
+			"url": "res/view/game/card/gb.png",
+			"type": "image",
+			"name": "gb_png"
+		},
+		{
+			"url": "res/view/game/card/game_card_kuang.png",
+			"type": "image",
+			"name": "game_card_kuang_png"
+		},
+		{
+			"url": "res/view/game/ui/game_shop.png",
+			"type": "image",
+			"name": "game_shop_png"
+		},
+		{
+			"url": "res/view/game/ui/game_back.png",
+			"type": "image",
+			"name": "game_back_png"
+		},
+		{
+			"url": "res/view/game/ui/fight_bg2.png",
+			"type": "image",
+			"name": "fight_bg2_png"
+		},
+		{
+			"url": "res/view/game/ui/fight_bg2_lv.png",
+			"type": "image",
+			"name": "fight_bg2_lv_png"
+		},
+		{
+			"url": "res/view/game/ui/fight_bg1.png",
+			"type": "image",
+			"name": "fight_bg1_png"
+		},
+		{
+			"url": "res/view/game/ui/fight_bg1_lv.png",
+			"type": "image",
+			"name": "fight_bg1_lv_png"
+		},
+		{
+			"url": "res/view/game/ui/fight_bg0.png",
+			"type": "image",
+			"name": "fight_bg0_png"
+		},
+		{
+			"url": "res/view/game/ui/fight_bg0_lv.png",
+			"type": "image",
+			"name": "fight_bg0_lv_png"
+		},
+		{
+			"url": "res/view/game/ta_npc.png",
+			"type": "image",
+			"name": "ta_npc_png"
+		},
+		{
+			"url": "res/view/game/ta_player.png",
+			"type": "image",
+			"name": "ta_player_png"
+		},
+		{
+			"url": "res/view/game/cloud_0.png",
+			"type": "image",
+			"name": "cloud_0_png"
+		},
+		{
+			"url": "res/view/game/cloud_1.png",
+			"type": "image",
+			"name": "cloud_1_png"
+		},
+		{
+			"url": "res/view/game/cloud_2.png",
+			"type": "image",
+			"name": "cloud_2_png"
+		},
+		{
+			"url": "res/view/game/cloud_3.png",
+			"type": "image",
+			"name": "cloud_3_png"
+		},
+		{
+			"url": "res/view/game/cloud_4.png",
+			"type": "image",
+			"name": "cloud_4_png"
+		},
+		{
+			"url": "res/view/game/cloud_5.png",
+			"type": "image",
+			"name": "cloud_5_png"
+		},
+		{
+			"url": "res/view/game/ui/icon_kuang.png",
+			"type": "image",
+			"name": "icon_kuang_png"
+		},
+		{
+			"url": "res/view/game/ui/player_tiao.png",
+			"type": "image",
+			"name": "player_tiao_png"
+		},
+		{
+			"url": "res/view/game/ui/icon_name.png",
+			"type": "image",
+			"name": "icon_name_png"
+		},
+		{
+			"url": "res/view/game/ui/game_vs.png",
+			"type": "image",
+			"name": "game_vs_png"
+		},
+		{
+			"url": "res/view/game/ui/game_ding.png",
+			"type": "image",
+			"name": "game_ding_png"
+		},
+		{
+			"url": "res/view/game_arrow2.png",
+			"type": "image",
+			"name": "game_arrow2_png"
+		},
+		{
+			"url": "res/view/game_arrow1.png",
+			"type": "image",
+			"name": "game_arrow1_png"
+		},
+		{
+			"url": "res/view/over/card_reward_bg.png",
+			"type": "image",
+			"name": "card_reward_bg_png"
+		},
+		{
+			"url": "res/view/over/fail_font.png",
+			"type": "image",
+			"name": "fail_font_png"
+		},
+		{
+			"url": "res/view/over/goods_font_bg.png",
+			"type": "image",
+			"name": "goods_font_bg_png"
+		},
+		{
+			"url": "res/view/over/medal_font_bg.png",
+			"type": "image",
+			"name": "medal_font_bg_png"
+		},
+		{
+			"url": "res/view/over/result_bg.png",
+			"type": "image",
+			"name": "result_bg_png"
+		},
+		{
+			"url": "res/view/over/result_tip.png",
+			"type": "image",
+			"name": "result_tip_png"
+		},
+		{
+			"url": "res/view/over/soldier_font_bg.png",
+			"type": "image",
+			"name": "soldier_font_bg_png"
+		},
+		{
+			"url": "res/view/over/title_1.png",
+			"type": "image",
+			"name": "title_1_png"
+		},
+		{
+			"url": "res/view/over/title_2.png",
+			"type": "image",
+			"name": "title_2_png"
+		},
+		{
+			"url": "res/view/over/title_3.png",
+			"type": "image",
+			"name": "title_3_png"
+		},
+		{
+			"url": "res/view/over/title_4.png",
+			"type": "image",
+			"name": "title_4_png"
+		},
+		{
+			"url": "res/view/wait/wait_progress_bian.png",
+			"type": "image",
+			"name": "wait_progress_bian_png"
+		},
+		{
+			"url": "res/view/card/card_level_bg.png",
+			"type": "image",
+			"name": "card_level_bg_png"
+		},
+		{
+			"url": "res/view/game/game_icon3.png",
+			"type": "image",
+			"name": "game_icon3_png"
+		},
+		{
+			"url": "res/view/game/game_icon0.png",
+			"type": "image",
+			"name": "game_icon0_png"
+		},
+		{
+			"url": "res/view/game/game_icon1.png",
+			"type": "image",
+			"name": "game_icon1_png"
+		},
+		{
+			"url": "res/view/game/game_icon2.png",
+			"type": "image",
+			"name": "game_icon2_png"
+		},
+		{
+			"url": "res/view/game/lc.png",
+			"type": "image",
+			"name": "lc_png"
+		},
+		{
+			"url": "res/view/game/bl.png",
+			"type": "image",
+			"name": "bl_png"
+		},
+		{
+			"url": "res/view/game/cc.png",
+			"type": "image",
+			"name": "cc_png"
+		},
+		{
+			"url": "res/view/wait/wait_progress.png",
+			"type": "image",
+			"name": "wait_progress_png"
+		},
+		{
+			"url": "res/view/wait/wait_progress_bg.png",
+			"type": "image",
+			"name": "wait_progress_bg_png"
+		},
+		{
+			"url": "res/view/game/ui/pause_bg.png",
+			"type": "image",
+			"name": "pause_bg_png"
+		},
+		{
+			"url": "res/view/game/ui/pause_btn0.png",
+			"type": "image",
+			"name": "pause_btn0_png"
+		},
+		{
+			"url": "res/view/game/ui/pause_btn1.png",
+			"type": "image",
+			"name": "pause_btn1_png"
+		},
+		{
+			"url": "res/view/game/ui/game_start.png",
+			"type": "image",
+			"name": "game_start_png"
+		},
+		{
+			"url": "res/view/game/ui/game_jian.png",
+			"type": "image",
+			"name": "game_jian_png"
+		},
+		{
+			"url": "res/view/game/ui/game_tip.png",
+			"type": "image",
+			"name": "game_tip_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10003.png",
+			"type": "image",
+			"name": "skill_eff_10003_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10004.png",
+			"type": "image",
+			"name": "skill_eff_10004_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10005.png",
+			"type": "image",
+			"name": "skill_eff_10005_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10006.png",
+			"type": "image",
+			"name": "skill_eff_10006_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10007.png",
+			"type": "image",
+			"name": "skill_eff_10007_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_bg.png",
+			"type": "image",
+			"name": "skill_eff_bg_png"
+		},
+		{
+			"url": "res/view/game/skill_role.png",
+			"type": "image",
+			"name": "skill_role_png"
+		},
+		{
+			"url": "res/common/common_xuanzhong.png",
+			"type": "image",
+			"name": "common_xuanzhong_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10010.png",
+			"type": "image",
+			"name": "skill_eff_10010_png"
+		},
+		{
+			"url": "res/common/common_buy.png",
+			"type": "image",
+			"name": "common_buy_png"
+		},
+		{
+			"url": "res/common/common_cancle.png",
+			"type": "image",
+			"name": "common_cancle_png"
+		},
+		{
+			"url": "res/common/common_recharge.png",
+			"type": "image",
+			"name": "common_recharge_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful.png",
+			"type": "image",
+			"name": "doubtful_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_img2.png",
+			"type": "image",
+			"name": "doubtful_img2_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_img0.png",
+			"type": "image",
+			"name": "doubtful_img0_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_img1.png",
+			"type": "image",
+			"name": "doubtful_img1_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_btn1.png",
+			"type": "image",
+			"name": "doubtful_btn1_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_btn0.png",
+			"type": "image",
+			"name": "doubtful_btn0_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_btn2.png",
+			"type": "image",
+			"name": "doubtful_btn2_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_font.fnt",
+			"type": "font",
+			"name": "doubtful_font_fnt"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_font.png",
+			"type": "image",
+			"name": "doubtful_font_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_icon_qb.png",
+			"type": "image",
+			"name": "doubtful_icon_qb_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_icon_gb.png",
+			"type": "image",
+			"name": "doubtful_icon_gb_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_icon_bb.png",
+			"type": "image",
+			"name": "doubtful_icon_bb_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_di.png",
+			"type": "image",
+			"name": "doubtful_di_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text5.png",
+			"type": "image",
+			"name": "doubtful_text5_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text0.png",
+			"type": "image",
+			"name": "doubtful_text0_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text1.png",
+			"type": "image",
+			"name": "doubtful_text1_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text2.png",
+			"type": "image",
+			"name": "doubtful_text2_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text3.png",
+			"type": "image",
+			"name": "doubtful_text3_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text4.png",
+			"type": "image",
+			"name": "doubtful_text4_png"
+		},
+		{
+			"url": "res/view/skill/skill_100051.png",
+			"type": "image",
+			"name": "skill_100051_png"
+		},
+		{
+			"url": "res/view/skill/skill_100061.png",
+			"type": "image",
+			"name": "skill_100061_png"
+		},
+		{
+			"url": "res/view/skill/skill_100071.png",
+			"type": "image",
+			"name": "skill_100071_png"
+		},
+		{
+			"url": "res/view/skill/skill_100101.png",
+			"type": "image",
+			"name": "skill_100101_png"
+		},
+		{
+			"url": "res/view/skill/skill_100102.png",
+			"type": "image",
+			"name": "skill_100102_png"
+		},
+		{
+			"url": "res/view/skill/skill_100103.png",
+			"type": "image",
+			"name": "skill_100103_png"
+		},
+		{
+			"url": "res/view/skill/skill_100104.png",
+			"type": "image",
+			"name": "skill_100104_png"
+		},
+		{
+			"url": "res/view/skill/skill_bottom.png",
+			"type": "image",
+			"name": "skill_bottom_png"
+		},
+		{
+			"url": "res/view/card/card_progress_bg.png",
+			"type": "image",
+			"name": "card_progress_bg_png"
+		},
+		{
+			"url": "res/view/card/card_progress.png",
+			"type": "image",
+			"name": "card_progress_png"
+		},
+		{
+			"url": "res/view/skill/skill_100081.png",
+			"type": "image",
+			"name": "skill_100081_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10008.png",
+			"type": "image",
+			"name": "skill_eff_10008_png"
+		},
+		{
+			"url": "res/view/game/ui/top_bg.png",
+			"type": "image",
+			"name": "top_bg_png"
+		},
+		{
+			"url": "res/view/game/hp_bg.png",
+			"type": "image",
+			"name": "hp_bg_png"
+		},
+		{
+			"url": "res/view/game/city_bg.png",
+			"type": "image",
+			"name": "city_bg_png"
+		},
+		{
+			"url": "res/view/game/exp_bg.png",
+			"type": "image",
+			"name": "exp_bg_png"
+		},
+		{
+			"url": "res/view/game/goods_bg.png",
+			"type": "image",
+			"name": "goods_bg_png"
+		},
+		{
+			"url": "res/view/game/power_fnt.png",
+			"type": "image",
+			"name": "power_fnt_png"
+		},
+		{
+			"url": "res/view/game/ui/flag_1.png",
+			"type": "image",
+			"name": "flag_1_png"
+		},
+		{
+			"url": "res/view/game/ui/flag_2.png",
+			"type": "image",
+			"name": "flag_2_png"
+		},
+		{
+			"url": "res/view/game/ui/flag_3.png",
+			"type": "image",
+			"name": "flag_3_png"
+		},
+		{
+			"url": "res/font/power.fnt",
+			"type": "font",
+			"name": "power_fnt"
+		},
+		{
+			"url": "res/font/power.png",
+			"type": "image",
+			"name": "power_png"
+		},
+		{
+			"url": "res/view/game/battle_bg.png",
+			"type": "image",
+			"name": "battle_bg_png"
+		},
+		{
+			"url": "res/view/game/battle_font_kai.png",
+			"type": "image",
+			"name": "battle_font_kai_png"
+		},
+		{
+			"url": "res/view/game/battle_font_zhan.png",
+			"type": "image",
+			"name": "battle_font_zhan_png"
+		},
+		{
+			"url": "res/view/game/battle_left.png",
+			"type": "image",
+			"name": "battle_left_png"
+		},
+		{
+			"url": "res/view/game/battle_right.png",
+			"type": "image",
+			"name": "battle_right_png"
+		},
+		{
+			"url": "res/view/game/ui/flag_4.png",
+			"type": "image",
+			"name": "flag_4_png"
+		},
+		{
+			"url": "res/view/over/font_bg.png",
+			"type": "image",
+			"name": "font_bg_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100074.png",
+			"type": "image",
+			"name": "doubtful_100074_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100044.png",
+			"type": "image",
+			"name": "doubtful_100044_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100054.png",
+			"type": "image",
+			"name": "doubtful_100054_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100064.png",
+			"type": "image",
+			"name": "doubtful_100064_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100022.png",
+			"type": "image",
+			"name": "doubtful_100022_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100104.png",
+			"type": "image",
+			"name": "doubtful_100104_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100021.png",
+			"type": "image",
+			"name": "doubtful_100021_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100011.png",
+			"type": "image",
+			"name": "doubtful_100011_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100012.png",
+			"type": "image",
+			"name": "doubtful_100012_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100002.png",
+			"type": "image",
+			"name": "doubtful_100002_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_100001.png",
+			"type": "image",
+			"name": "doubtful_100001_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_10009.png",
+			"type": "image",
+			"name": "doubtful_10009_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_10008.png",
+			"type": "image",
+			"name": "doubtful_10008_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_10002.png",
+			"type": "image",
+			"name": "doubtful_10002_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_10001.png",
+			"type": "image",
+			"name": "doubtful_10001_png"
+		},
+		{
+			"url": "res/view/doubtful/icon/doubtful_10000.png",
+			"type": "image",
+			"name": "doubtful_10000_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_img3.png",
+			"type": "image",
+			"name": "doubtful_img3_png"
+		},
+		{
+			"url": "res/view/doubtful/icon_4.png",
+			"type": "image",
+			"name": "icon_4_png"
+		},
+		{
+			"url": "res/view/doubtful/icon_3.png",
+			"type": "image",
+			"name": "icon_3_png"
+		},
+		{
+			"url": "res/view/doubtful/icon_2.png",
+			"type": "image",
+			"name": "icon_2_png"
+		},
+		{
+			"url": "res/view/doubtful/icon_1.png",
+			"type": "image",
+			"name": "icon_1_png"
+		},
+		{
+			"url": "res/view/doubtful/icon_0.png",
+			"type": "image",
+			"name": "icon_0_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_btn.png",
+			"type": "image",
+			"name": "doubtful_btn_png"
+		},
+		{
+			"url": "res/view/over/over_box.png",
+			"type": "image",
+			"name": "over_box_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text7.png",
+			"type": "image",
+			"name": "doubtful_text7_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_text6.png",
+			"type": "image",
+			"name": "doubtful_text6_png"
+		},
+		{
+			"url": "res/font/tax.fnt",
+			"type": "font",
+			"name": "tax_fnt"
+		},
+		{
+			"url": "res/view/game/ui/flag_icon.png",
+			"type": "image",
+			"name": "flag_icon_png"
+		},
+		{
+			"url": "res/view/start/start_icon.png",
+			"type": "image",
+			"name": "start_icon_png"
+		},
+		{
+			"url": "res/view/game/power_bg.png",
+			"type": "image",
+			"name": "power_bg_png"
+		},
+		{
+			"url": "res/view/game/battle_font_bg.png",
+			"type": "image",
+			"name": "battle_font_bg_png"
+		},
+		{
+			"url": "res/view/main/common_sure.png",
+			"type": "image",
+			"name": "common_sure_png"
+		},
+		{
+			"url": "res/view/main/leaf.png",
+			"type": "image",
+			"name": "leaf_png"
+		},
+		{
+			"url": "res/view/main/main_battle_icon.png",
+			"type": "image",
+			"name": "main_battle_icon_png"
+		},
+		{
+			"url": "res/view/main/main_bg.png",
+			"type": "image",
+			"name": "main_bg_png"
+		},
+		{
+			"url": "res/view/main/main_bottom_bg.png",
+			"type": "image",
+			"name": "main_bottom_bg_png"
+		},
+		{
+			"url": "res/view/main/main_city.png",
+			"type": "image",
+			"name": "main_city_png"
+		},
+		{
+			"url": "res/view/main/main_city_0.png",
+			"type": "image",
+			"name": "main_city_0_png"
+		},
+		{
+			"url": "res/view/main/main_city_1.png",
+			"type": "image",
+			"name": "main_city_1_png"
+		},
+		{
+			"url": "res/view/main/main_city_2.png",
+			"type": "image",
+			"name": "main_city_2_png"
+		},
+		{
+			"url": "res/view/main/main_city_3.png",
+			"type": "image",
+			"name": "main_city_3_png"
+		},
+		{
+			"url": "res/view/main/main_city_4.png",
+			"type": "image",
+			"name": "main_city_4_png"
+		},
+		{
+			"url": "res/view/main/main_city_5.png",
+			"type": "image",
+			"name": "main_city_5_png"
+		},
+		{
+			"url": "res/view/main/main_city_6.png",
+			"type": "image",
+			"name": "main_city_6_png"
+		},
+		{
+			"url": "res/view/main/main_city_7.png",
+			"type": "image",
+			"name": "main_city_7_png"
+		},
+		{
+			"url": "res/view/main/main_city_8.png",
+			"type": "image",
+			"name": "main_city_8_png"
+		},
+		{
+			"url": "res/view/main/main_city_name_bg.png",
+			"type": "image",
+			"name": "main_city_name_bg_png"
+		},
+		{
+			"url": "res/view/main/main_fight.png",
+			"type": "image",
+			"name": "main_fight_png"
+		},
+		{
+			"url": "res/view/main/main_gold.png",
+			"type": "image",
+			"name": "main_gold_png"
+		},
+		{
+			"url": "res/view/main/main_gold_bg.png",
+			"type": "image",
+			"name": "main_gold_bg_png"
+		},
+		{
+			"url": "res/view/main/main_goods.png",
+			"type": "image",
+			"name": "main_goods_png"
+		},
+		{
+			"url": "res/view/main/main_icon_bg.png",
+			"type": "image",
+			"name": "main_icon_bg_png"
+		},
+		{
+			"url": "res/view/main/main_item_qi.png",
+			"type": "image",
+			"name": "main_item_qi_png"
+		},
+		{
+			"url": "res/view/main/main_jiuguan.png",
+			"type": "image",
+			"name": "main_jiuguan_png"
+		},
+		{
+			"url": "res/view/main/main_kazu.png",
+			"type": "image",
+			"name": "main_kazu_png"
+		},
+		{
+			"url": "res/view/main/main_luxian.png",
+			"type": "image",
+			"name": "main_luxian_png"
+		},
+		{
+			"url": "res/view/main/main_medal.png",
+			"type": "image",
+			"name": "main_medal_png"
+		},
+		{
+			"url": "res/view/main/main_neiwu.png",
+			"type": "image",
+			"name": "main_neiwu_png"
+		},
+		{
+			"url": "res/view/main/main_recharge.png",
+			"type": "image",
+			"name": "main_recharge_png"
+		},
+		{
+			"url": "res/view/main/main_role_bg.png",
+			"type": "image",
+			"name": "main_role_bg_png"
+		},
+		{
+			"url": "res/view/main/main_shangcheng.png",
+			"type": "image",
+			"name": "main_shangcheng_png"
+		},
+		{
+			"url": "res/view/main/main_shuishou.png",
+			"type": "image",
+			"name": "main_shuishou_png"
+		},
+		{
+			"url": "res/view/main/main_soldier.png",
+			"type": "image",
+			"name": "main_soldier_png"
+		},
+		{
+			"url": "res/view/main/main_top_bg.png",
+			"type": "image",
+			"name": "main_top_bg_png"
+		},
+		{
+			"url": "res/view/main/main_zhengbing.png",
+			"type": "image",
+			"name": "main_zhengbing_png"
+		},
+		{
+			"url": "res/view/main/role_img.png",
+			"type": "image",
+			"name": "role_img_png"
+		},
+		{
+			"url": "res/view/game/battle_icon2.png",
+			"type": "image",
+			"name": "battle_icon2_png"
+		},
+		{
+			"url": "res/view/main/battle_icon.png",
+			"type": "image",
+			"name": "battle_icon_png"
+		},
+		{
+			"url": "res/view/shop/card_100001.png",
+			"type": "image",
+			"name": "card_100001_png"
+		},
+		{
+			"url": "res/view/shop/card_100002.png",
+			"type": "image",
+			"name": "card_100002_png"
+		},
+		{
+			"url": "res/view/shop/card_100011.png",
+			"type": "image",
+			"name": "card_100011_png"
+		},
+		{
+			"url": "res/view/shop/card_100012.png",
+			"type": "image",
+			"name": "card_100012_png"
+		},
+		{
+			"url": "res/view/shop/card_100021.png",
+			"type": "image",
+			"name": "card_100021_png"
+		},
+		{
+			"url": "res/view/shop/card_100022.png",
+			"type": "image",
+			"name": "card_100022_png"
+		},
+		{
+			"url": "res/view/shop/card_10003.png",
+			"type": "image",
+			"name": "card_10003_png"
+		},
+		{
+			"url": "res/view/shop/card_100041.png",
+			"type": "image",
+			"name": "card_100041_png"
+		},
+		{
+			"url": "res/view/shop/card_100051.png",
+			"type": "image",
+			"name": "card_100051_png"
+		},
+		{
+			"url": "res/view/shop/card_100061.png",
+			"type": "image",
+			"name": "card_100061_png"
+		},
+		{
+			"url": "res/view/shop/card_100071.png",
+			"type": "image",
+			"name": "card_100071_png"
+		},
+		{
+			"url": "res/view/shop/card_10008.png",
+			"type": "image",
+			"name": "card_10008_png"
+		},
+		{
+			"url": "res/view/shop/card_10009.png",
+			"type": "image",
+			"name": "card_10009_png"
+		},
+		{
+			"url": "res/view/shop/card_exp_10.png",
+			"type": "image",
+			"name": "card_exp_10_png"
+		},
+		{
+			"url": "res/view/shop/card_exp_100.png",
+			"type": "image",
+			"name": "card_exp_100_png"
+		},
+		{
+			"url": "res/view/shop/card_exp_50.png",
+			"type": "image",
+			"name": "card_exp_50_png"
+		},
+		{
+			"url": "res/view/shop/card_goods.png",
+			"type": "image",
+			"name": "card_goods_png"
+		},
+		{
+			"url": "res/view/shop/card_hp.png",
+			"type": "image",
+			"name": "card_hp_png"
+		},
+		{
+			"url": "res/view/shop/card_soldier_1.png",
+			"type": "image",
+			"name": "card_soldier_1_png"
+		},
+		{
+			"url": "res/view/shop/card_soldier_2.png",
+			"type": "image",
+			"name": "card_soldier_2_png"
+		},
+		{
+			"url": "res/view/shop/card_soldier_3.png",
+			"type": "image",
+			"name": "card_soldier_3_png"
+		},
+		{
+			"url": "res/view/shop/city_1.png",
+			"type": "image",
+			"name": "city_1_png"
+		},
+		{
+			"url": "res/view/shop/city_2.png",
+			"type": "image",
+			"name": "city_2_png"
+		},
+		{
+			"url": "res/view/shop/city_3.png",
+			"type": "image",
+			"name": "city_3_png"
+		},
+		{
+			"url": "res/view/shop/quality_1.png",
+			"type": "image",
+			"name": "quality_1_png"
+		},
+		{
+			"url": "res/view/shop/quality_2.png",
+			"type": "image",
+			"name": "quality_2_png"
+		},
+		{
+			"url": "res/view/shop/quality_3.png",
+			"type": "image",
+			"name": "quality_3_png"
+		},
+		{
+			"url": "res/view/shop/quality_4.png",
+			"type": "image",
+			"name": "quality_4_png"
+		},
+		{
+			"url": "res/view/shop/shop_bg.png",
+			"type": "image",
+			"name": "shop_bg_png"
+		},
+		{
+			"url": "res/view/shop/shop_bottom.png",
+			"type": "image",
+			"name": "shop_bottom_png"
+		},
+		{
+			"url": "res/view/shop/shop_buy.png",
+			"type": "image",
+			"name": "shop_buy_png"
+		},
+		{
+			"url": "res/view/shop/shop_gold.png",
+			"type": "image",
+			"name": "shop_gold_png"
+		},
+		{
+			"url": "res/view/start/start_btn.png",
+			"type": "image",
+			"name": "start_btn_png"
+		},
+		{
+			"url": "res/view/start/start_city.png",
+			"type": "image",
+			"name": "start_city_png"
+		},
+		{
+			"url": "res/view/start/start_city_0.png",
+			"type": "image",
+			"name": "start_city_0_png"
+		},
+		{
+			"url": "res/view/start/start_city_1.png",
+			"type": "image",
+			"name": "start_city_1_png"
+		},
+		{
+			"url": "res/view/start/start_city_2.png",
+			"type": "image",
+			"name": "start_city_2_png"
+		},
+		{
+			"url": "res/view/start/start_city_3.png",
+			"type": "image",
+			"name": "start_city_3_png"
+		},
+		{
+			"url": "res/view/start/start_city_4.png",
+			"type": "image",
+			"name": "start_city_4_png"
+		},
+		{
+			"url": "res/view/start/start_city_5.png",
+			"type": "image",
+			"name": "start_city_5_png"
+		},
+		{
+			"url": "res/view/start/start_city_6.png",
+			"type": "image",
+			"name": "start_city_6_png"
+		},
+		{
+			"url": "res/view/start/start_city_7.png",
+			"type": "image",
+			"name": "start_city_7_png"
+		},
+		{
+			"url": "res/view/start/start_city_8.png",
+			"type": "image",
+			"name": "start_city_8_png"
+		},
+		{
+			"url": "res/view/start/start_gold.png",
+			"type": "image",
+			"name": "start_gold_png"
+		},
+		{
+			"url": "res/view/start/start_goods.png",
+			"type": "image",
+			"name": "start_goods_png"
+		},
+		{
+			"url": "res/view/start/start_info_bg.png",
+			"type": "image",
+			"name": "start_info_bg_png"
+		},
+		{
+			"url": "res/view/start/start_input_bg.png",
+			"type": "image",
+			"name": "start_input_bg_png"
+		},
+		{
+			"url": "res/view/start/start_medal.png",
+			"type": "image",
+			"name": "start_medal_png"
+		},
+		{
+			"url": "res/view/start/start_moushi.png",
+			"type": "image",
+			"name": "start_moushi_png"
+		},
+		{
+			"url": "res/view/start/start_random_btn.png",
+			"type": "image",
+			"name": "start_random_btn_png"
+		},
+		{
+			"url": "res/view/start/start_soldier.png",
+			"type": "image",
+			"name": "start_soldier_png"
+		},
+		{
+			"url": "res/view/start/start_talk_bg_0.png",
+			"type": "image",
+			"name": "start_talk_bg_0_png"
+		},
+		{
+			"url": "res/view/start/start_talk_bg_1.png",
+			"type": "image",
+			"name": "start_talk_bg_1_png"
+		},
+		{
+			"url": "res/view/start/start_title.png",
+			"type": "image",
+			"name": "start_title_png"
+		},
+		{
+			"url": "res/view/start/start_zhugong.png",
+			"type": "image",
+			"name": "start_zhugong_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_xuan.png",
+			"type": "image",
+			"name": "level_xuan_png"
+		},
+		{
+			"url": "res/view/recharge/recharge_kuang.png",
+			"type": "image",
+			"name": "recharge_kuang_png"
+		},
+		{
+			"url": "res/view/start/start_font.png",
+			"type": "image",
+			"name": "start_font_png"
+		},
+		{
+			"url": "res/view/start/start_tip.png",
+			"type": "image",
+			"name": "start_tip_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_bg.png",
+			"type": "image",
+			"name": "info_bg_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_tiao4.png",
+			"type": "image",
+			"name": "info_tiao4_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_tiao3.png",
+			"type": "image",
+			"name": "info_tiao3_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_tiao2.png",
+			"type": "image",
+			"name": "info_tiao2_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_tiao1.png",
+			"type": "image",
+			"name": "info_tiao1_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_tiao0.png",
+			"type": "image",
+			"name": "info_tiao0_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_jian.png",
+			"type": "image",
+			"name": "info_jian_png"
+		},
+		{
+			"url": "res/font/tax.png",
+			"type": "image",
+			"name": "tax_png"
+		},
+		{
+			"url": "res/view/doubtful/yishangzhen.png",
+			"type": "image",
+			"name": "yishangzhen_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100113.png",
+			"type": "image",
+			"name": "doubtful_100113_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100109.png",
+			"type": "image",
+			"name": "doubtful_100109_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100110.png",
+			"type": "image",
+			"name": "doubtful_100110_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100111.png",
+			"type": "image",
+			"name": "doubtful_100111_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100112.png",
+			"type": "image",
+			"name": "doubtful_100112_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100105.png",
+			"type": "image",
+			"name": "doubtful_100105_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100106.png",
+			"type": "image",
+			"name": "doubtful_100106_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_100107.png",
+			"type": "image",
+			"name": "doubtful_100107_png"
+		},
+		{
+			"url": "res/view/shop/card_100112.png",
+			"type": "image",
+			"name": "card_100112_png"
+		},
+		{
+			"url": "res/view/shop/card_100113.png",
+			"type": "image",
+			"name": "card_100113_png"
+		},
+		{
+			"url": "res/view/shop/card_100109.png",
+			"type": "image",
+			"name": "card_100109_png"
+		},
+		{
+			"url": "res/view/shop/card_100110.png",
+			"type": "image",
+			"name": "card_100110_png"
+		},
+		{
+			"url": "res/view/shop/card_100111.png",
+			"type": "image",
+			"name": "card_100111_png"
+		},
+		{
+			"url": "res/view/skill/skill_100091.png",
+			"type": "image",
+			"name": "skill_100091_png"
+		},
+		{
+			"url": "res/view/game/skill_eff_10009.png",
+			"type": "image",
+			"name": "skill_eff_10009_png"
+		},
+		{
+			"url": "res/font/dmg.fnt",
+			"type": "font",
+			"name": "dmg_fnt"
+		},
+		{
+			"url": "res/font/dmg.png",
+			"type": "image",
+			"name": "dmg_png"
+		},
+		{
+			"url": "res/animate/light.png",
+			"type": "image",
+			"name": "light_png"
+		},
+		{
+			"url": "res/view/skill/skill_100041.png",
+			"type": "image",
+			"name": "skill_100041_png"
+		},
+		{
+			"url": "res/view/recharge/recharge_mask.png",
+			"type": "image",
+			"name": "recharge_mask_png"
+		},
+		{
+			"url": "res/view/recharge/recharge_img.png",
+			"type": "image",
+			"name": "recharge_img_png"
+		},
+		{
+			"url": "res/common/common_bg.png",
+			"type": "image",
+			"name": "common_bg_png"
+		},
+		{
+			"url": "res/view/recharge/recharge_text.png",
+			"type": "image",
+			"name": "recharge_text_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_text.png",
+			"type": "image",
+			"name": "level_p_text_png"
+		},
+		{
+			"url": "res/view/levelprogress/level_p_kuang.png",
+			"type": "image",
+			"name": "level_p_kuang_png"
+		},
+		{
+			"url": "res/common/common_buy_text.png",
+			"type": "image",
+			"name": "common_buy_text_png"
+		},
+		{
+			"url": "res/view/shop/card_mask.png",
+			"type": "image",
+			"name": "card_mask_png"
+		},
+		{
+			"url": "res/view/card/card_text.png",
+			"type": "image",
+			"name": "card_text_png"
+		},
+		{
+			"url": "res/view/card/card_kuang.png",
+			"type": "image",
+			"name": "card_kuang_png"
+		},
+		{
+			"url": "res/view/card/card_info_kuang.png",
+			"type": "image",
+			"name": "card_info_kuang_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_text.png",
+			"type": "image",
+			"name": "neiwu_text_png"
+		},
+		{
+			"url": "res/view/neiwu/neiwu_talk_mask.png",
+			"type": "image",
+			"name": "neiwu_talk_mask_png"
+		},
+		{
+			"url": "res/view/shop/shop_text.png",
+			"type": "image",
+			"name": "shop_text_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_npc_kuang.png",
+			"type": "image",
+			"name": "doubtful_npc_kuang_png"
+		},
+		{
+			"url": "res/view/doubtful/doubtful_fc.png",
+			"type": "image",
+			"name": "doubtful_fc_png"
+		},
+		{
+			"url": "res/view/shop/shop_img.png",
+			"type": "image",
+			"name": "shop_img_png"
+		},
+		{
+			"url": "res/view/tax/tax_text.png",
+			"type": "image",
+			"name": "tax_text_png"
+		},
+		{
+			"url": "res/view/tax/tax_kuang.png",
+			"type": "image",
+			"name": "tax_kuang_png"
+		},
+		{
+			"url": "res/view/tax/tax_img.png",
+			"type": "image",
+			"name": "tax_img_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_fc.png",
+			"type": "image",
+			"name": "info_fc_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_icon.png",
+			"type": "image",
+			"name": "info_icon_png"
+		},
+		{
+			"url": "res/view/playerinfo/info_kuang.png",
+			"type": "image",
+			"name": "info_kuang_png"
+		},
+		{
+			"url": "res/view/pub/pub_text.png",
+			"type": "image",
+			"name": "pub_text_png"
+		},
+		{
+			"url": "res/view/pub/pub_img.png",
+			"type": "image",
+			"name": "pub_img_png"
+		},
+		{
+			"url": "res/view/collect/collect_text.png",
+			"type": "image",
+			"name": "collect_text_png"
+		},
+		{
+			"url": "res/view/collect/collect_img.png",
+			"type": "image",
+			"name": "collect_img_png"
+		},
+		{
+			"url": "res/view/collect/collect_text0.png",
+			"type": "image",
+			"name": "collect_text0_png"
+		},
+		{
+			"url": "res/view/main/main_hong.png",
+			"type": "image",
+			"name": "main_hong_png"
+		},
+		{
+			"url": "res/view/main/main_huang.png",
+			"type": "image",
+			"name": "main_huang_png"
+		},
+		{
+			"url": "res/view/main/main_lv.png",
+			"type": "image",
+			"name": "main_lv_png"
+		},
+		{
+			"url": "res/view/main/main_name.png",
+			"type": "image",
+			"name": "main_name_png"
+		},
+		{
+			"url": "res/view/main/main_lan.png",
+			"type": "image",
+			"name": "main_lan_png"
+		},
+		{
+			"url": "res/view/start/name_di.png",
+			"type": "image",
+			"name": "name_di_png"
+		},
+		{
+			"url": "res/view/start/start_map_bg.png",
+			"type": "image",
+			"name": "start_map_bg_png"
+		},
+		{
+			"url": "res/view/main/main_map.png",
+			"type": "image",
+			"name": "main_map_png"
+		},
+		{
+			"url": "res/view/main/stary_mask.png",
+			"type": "image",
+			"name": "stary_mask_png"
+		},
+		{
+			"url": "res/view/game/ui/pause_title.png",
+			"type": "image",
+			"name": "pause_title_png"
+		},
+		{
+			"url": "res/view/game/game_icon4.png",
+			"type": "image",
+			"name": "game_icon4_png"
+		},
+		{
+			"url": "res/view/start/select_circle.png",
+			"type": "image",
+			"name": "select_circle_png"
+		},
+		{
+			"url": "res/view/start/select_mark.png",
+			"type": "image",
+			"name": "select_mark_png"
+		},
+		{
+			"url": "res/view/main/main_city_9.png",
+			"type": "image",
+			"name": "main_city_9_png"
+		},
+		{
+			"url": "res/view/main/main_city_10.png",
+			"type": "image",
+			"name": "main_city_10_png"
+		},
+		{
+			"url": "res/view/main/main_city_11.png",
+			"type": "image",
+			"name": "main_city_11_png"
+		},
+		{
+			"url": "res/view/main/main_city_12.png",
+			"type": "image",
+			"name": "main_city_12_png"
+		},
+		{
+			"name": "maplight_png",
+			"url": "res/view/start/maplight.png",
+			"type": "image"
+		},
+		{
+			"url": "res/view/shop/bcard_100002.png",
+			"type": "image",
+			"name": "bcard_100002_png"
+		},
+		{
+			"url": "res/view/shop/bcard_100041.png",
+			"type": "image",
+			"name": "bcard_100041_png"
+		},
+		{
+			"url": "res/view/shop/bcard_100051.png",
+			"type": "image",
+			"name": "bcard_100051_png"
+		},
+		{
+			"url": "res/view/shop/bcard_soldier_1.png",
+			"type": "image",
+			"name": "bcard_soldier_1_png"
+		},
+		{
+			"url": "res/view/shop/bcard_soldier_2.png",
+			"type": "image",
+			"name": "bcard_soldier_2_png"
+		},
+		{
+			"url": "res/view/shop/card_mask2.png",
+			"type": "image",
+			"name": "card_mask2_png"
+		},
+		{
+			"url": "res/animate/buff_def.png",
+			"type": "image",
+			"name": "buff_def_png"
+		},
+		{
+			"name": "fingerClick_png",
+			"type": "image",
+			"url": "res/animate/fingerClick.png"
+		},
+		{
+			"name": "pub_10000_png",
+			"type": "image",
+			"url": "res/view/pub/pub_10000.png"
+		},
+		{
+			"name": "pub_10001_png",
+			"type": "image",
+			"url": "res/view/pub/pub_10001.png"
+		},
+		{
+			"name": "pub_10002_png",
+			"type": "image",
+			"url": "res/view/pub/pub_10002.png"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HpComSkin" width="174" height="61" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0">
+		<e:Image source="hp_bg_png" x="43" y="25"/>
+		<e:Image id="hpBar" source="player_tiao_png" x="44.98" y="27" anchorOffsetX="0" width="125.67"/>
+		<e:Label id="nameLab" text="Label" x="51.56" y="11" size="14" anchorOffsetX="0" width="249" textColor="0xEDE1E1"/>
+		<e:Rect id="proMask" width="127" height="9.66" x="44.65" y="25.67" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="0" y="0" source="flag_icon_png"/>
+		<e:Image id="flag" source="flag_1_png" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

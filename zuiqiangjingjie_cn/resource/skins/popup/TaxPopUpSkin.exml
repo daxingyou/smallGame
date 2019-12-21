@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TaxPopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.8"/>
+	<e:Group id="taxGroup" horizontalCenter="17" verticalCenter="-0.5" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image x="0" y="1" source="common_bg_png"/>
+		<e:Image source="tax_kuang_png" x="11.5" y="313.12"/>
+		<e:Image id="returnBtn" source="common_close_png" x="838.88" y="4" anchorOffsetX="0" width="53.12" anchorOffsetY="0" height="53.12"/>
+		<e:Image source="tax_bottom_bg_png" x="325" y="299.5" visible="false"/>
+		<e:Image source="tax_goods_png" x="470.49" y="408.28" anchorOffsetX="0" width="40" anchorOffsetY="0" height="37"/>
+		<e:Image source="tax_goods_png" x="382.83" y="316.12" anchorOffsetX="0" width="40" anchorOffsetY="0" height="37" scaleX="1.3" scaleY="1.3"/>
+		<e:Label text="满仓时间:" x="338.83" y="381.04" size="20" textColor="0xe2dede"/>
+		<e:Label text="产出速度:" x="338.83" y="414.78" size="20" textColor="0xE2DEDE"/>
+		<e:Label text="/每分钟" x="513.5" y="416.78" size="20" textColor="0xE2DEDE"/>
+		<e:Label id="timeLab" text="00:00:00" x="439.5" y="380.35" size="20" textColor="0x00ff00"/>
+		<e:Label text="20" x="443.49" y="414.78" size="20" textColor="0x00FF00"/>
+		<e:Image id="collectBtn" source="tax_collect_png" x="351.5" y="484.28"/>
+		<e:Image id="getBtn" source="tax_get_btn_png" x="350.5" y="484.28"/>
+		<e:BitmapLabel id="goodsLab" width="254.85" height="42.72" x="435.83" y="323.08" anchorOffsetX="0" anchorOffsetY="0" font="tax_fnt" text="x1" scaleX="0.8" scaleY="0.8"/>
+		<e:Image source="tax_text_png" x="405" y="1"/>
+		<e:Image source="tax_img_png" x="10" y="53.12"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,18 @@
+<e:Skin class="NeiWuStoryItemSkin" width="475.67" currentState="left" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="left,right,center"  height.left="101.33" height.right="101.33" height.center="100.67" height="102">
+	<e:Image source="neiwu_talk_bg_png" x="0" y="0" y.center="0" y.left="0" y.right="-1" x.right="-0.67" x.center="-1.33"/>
+	<e:Image id="head" x.left="0" source="neiwu_head_2_png" left.left="0" bottom.left="0.3299999999999841" right.right="-1.329999999999984" bottom.right="1.329999999999984" left.center="0" bottom.center="-0.3299999999999841"/>
+	<e:Image source="neiwu_talk_mask_png" includeIn="right" x="249.61" y="6.5"/>
+	<e:Image source="neiwu_talk_mask_png" includeIn="left" x="114.19" y="7.99"/>
+	<e:Label id="storyLab" text="Label" x="259.5" y="-1.67" anchorOffsetX="0" width="294" anchorOffsetY="0" height="125" size="20" textAlign="left" verticalAlign="middle" x.right="6.34" y.right="34.46" x.center="230.5" y.center="78.5" textAlign.center="center" height.center="70" width.center="342" text.center="Label" includeIn="left,right" x.left="142" width.left="329.94" height.left="61.06" y.left="36.66" verticalAlign.left="top" height.right="62.08" verticalAlign.right="top" lineSpacing.right="10" lineSpacing.left="10" size.left="20" size.right="20" textColor="0xf9f4f4" width.right="330" textColor.right="0xffffff"/>
+	<e:Label id="nameLab2" text="Label" includeIn="right" size="20" top="8" textColor="0xf9f4f4" horizontalCenter="58.66499999999999"/>
+	<e:Label id="nameLab" text="Label" includeIn="left" size="20" left="140" top="9" textColor="0xf9f4f4"/>
+	<e:Group id="sureBtn" x="163.46" y="70.33" visible.left="false" visible.right="false" y.center="67.65">
+		<e:Image source="common_buy_png" x="0" y="0"/>
+		<e:Image source="neiwu_sure_png" includeIn="center" x="30" y="6.5"/>
+	</e:Group>
+	<e:Group id="cancleBtn" x="346.96" y="70.33" visible.left="false" visible.right="false" y.center="67.65">
+		<e:Image source="common_buy_png" x="0" y="0"/>
+		<e:Image source="neiwu_cancle_png" includeIn="center" x="30" y="6.5"/>
+	</e:Group>
+	<e:Label id="label" text="Label" includeIn="center" x="144.01" y="5.65" anchorOffsetX="0" width="321" anchorOffsetY="0" height="62" size="22" textAlign="center" verticalAlign="middle" lineSpacing="10" textColor="0xf9f4f4"/>
+</e:Skin>

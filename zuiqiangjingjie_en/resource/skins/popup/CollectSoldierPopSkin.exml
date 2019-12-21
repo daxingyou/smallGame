@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CollectSoldierPopSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.8" locked="true"/>
+	<e:Group id="collectGroup" horizontalCenter="0" verticalCenter="0" touchChildren="true" touchEnabled="false" touchThrough="true">
+		<e:Image x="0" y="0" source="common_bg_png" locked="true"/>
+		<e:Image source="collect_point_png" x="768" y="195"/>
+		<e:Image source="collect_img_png" x="10" y="53.5"/>
+		<e:Image source="collect_text_png" x="272.41" y="4.28"/>
+		<e:Image source="tax_kuang_png" x="10.02" y="310.16" locked="true"/>
+		<e:Label text="Selection of arms" x="92.85" y="372.12" size="20" textColor="0xfcfaf7" visible="false"/>
+		<e:Label text="Scope selection:" x="68" y="395.52" size="20" textColor="0xffffff" anchorOffsetX="0" width="159" anchorOffsetY="0" height="23"/>
+		<e:CheckBox id="type_1" label="CheckBox" x="226.03" y="364.55" anchorOffsetX="0" width="30" selected="false" name="type_1" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="dis_1" label="CheckBox" x="229.17" y="389.23" anchorOffsetX="0" width="30" selected="false" name="dis_1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="Bowmen" x="257.03" y="371.05" size="20" textColor="0xf9f4f4" visible="false"/>
+		<e:Label text="100in/1Minute" x="260.67" y="396.73" size="20" textColor="0xf9f7f7"/>
+		<e:CheckBox id="dis_3" label="CheckBox" x="412.96" y="390.02" anchorOffsetX="0" width="30" selected="false" name="dis_3">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="300in/3Minute" x="444.46" y="397.52" size="20" textColor="0xf9f7f7"/>
+		<e:CheckBox id="dis_8" label="CheckBox" x="605.04" y="389.33" anchorOffsetX="0" width="30" selected="false" name="dis_8">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="800in/8Minute" x="636.54" y="396.83" size="20" textColor="0xf9f7f7"/>
+		<e:CheckBox id="type_2" label="CheckBox" x="408.58" y="363.89" anchorOffsetX="0" width="30" selected="false" name="type_2" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="Infantry" x="439.58" y="370.39" size="20" textColor="0xf9f4f4" visible="false"/>
+		<e:CheckBox id="type_3" label="CheckBox" x="599.62" y="360.33" anchorOffsetX="0" width="30" selected="false" name="type_3" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+				<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="cavalry" x="630.62" y="366.83" size="20" textColor="0xf9f4f4" visible="false"/>
+		<e:Image source="collect_font_bg_png" x="365.91" y="464.07"/>
+		<e:Image source="tax_goods_png" x="500.37" y="461.07" scaleX="1" scaleY="1"/>
+		<e:Label id="costLab" text="000" x="375.96" y="464.74" size="20" anchorOffsetY="0" height="27.33" anchorOffsetX="0" width="118.67" textAlign="center" verticalAlign="middle"/>
+		<e:Image id="collectBtn" x="340.46" y="519" source="common_buy_png" width="195" height="61" scale9Grid="9,8,59,10"/>
+		<e:Label id="collect_text" text="conscription" y="535.32" horizontalCenter="-11" stroke="1" touchEnabled="false"/>
+		<e:Image id="getBtn" x="345.1" y="519.82" source="tax_get_btn_png" visible="false"/>
+		<e:Image id="returnBtn" source="common_close_png" x="840.71" y="4.99" anchorOffsetX="0" width="51.61" anchorOffsetY="0" height="51.61"/>
+		<e:Label id="timeLab" text="00:00" size="20" textColor="0x00ff00" x="321.6" y="499" anchorOffsetX="0" width="228.5" textAlign="center"/>
+		<e:Rect id="rect_1" width="107.88" height="47.28" x="207.97" y="358.48" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="rect_1" visible="false"/>
+		<e:Rect id="rect_4" width="156.36" height="42.73" x="224.73" y="378.06" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="dis_1"/>
+		<e:Rect id="rect_5" width="156.36" height="42.73" x="409.4" y="385.47" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="dis_3"/>
+		<e:Rect id="rect_6" width="156.36" height="42.73" x="600.4" y="391.37" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="dis_8"/>
+		<e:Rect id="rect_2" width="107.88" height="47.28" x="392.98" y="356.81" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="rect_2" visible="false"/>
+		<e:Rect id="rect_3" width="107.88" height="47.28" x="586.04" y="353.75" anchorOffsetX="0" anchorOffsetY="0" alpha="0" name="rect_3" visible="false"/>
+		<e:Image source="collect_text0_png" x="381.19" y="319.5"/>
+	</e:Group>
+</e:Skin>

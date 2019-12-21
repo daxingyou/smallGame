@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PubViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect top="0" bottom="0" height="750" left="0" right="0" alpha="0.8"/>
+	<e:Label id="txt_top" text="Correct answer6Road problem，To win the favor of senior generals！" anchorOffsetX="0" width="627.03" anchorOffsetY="0" height="75.45" verticalAlign="middle" textAlign="left" left="185" top="25" visible="false"/>
+	<e:Group id="pubGroup" horizontalCenter="0" verticalCenter="-12" anchorOffsetY="0" height="600">
+		<e:Image x="0" y="0" source="common_bg_png"/>
+		<e:Image source="pub_text_png" x="350.52" y="2.84"/>
+		<e:Image source="pub_img_png" x="11" y="54"/>
+		<e:Image source="tax_kuang_png" x="11" y="317" scale9Grid="220,8,382,15" anchorOffsetY="0" height="268"/>
+		<e:Button id="return_btn" label="Button" anchorOffsetX="0" width="46.22" anchorOffsetY="0" height="43" x="843.78" y="6.99">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_close_png" source.down="common_close_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="image_person" x="47.89" y="76.27" anchorOffsetX="0" anchorOffsetY="0" source="model_10000_png" visible="false"/>
+		<e:Button id="person1" label="Button" x="174.76" y="315.33" anchorOffsetY="262.12" height="262" anchorOffsetX="157.58" scaleX="0.6" scaleY="0.6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pub_10000_png" source.down="pub_10000_g_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="person3" label="Button" x="729" y="316.21" anchorOffsetX="156" anchorOffsetY="242" scaleX="0.6" scaleY="0.6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pub_10002_png" source.down="pub_10002_g_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="person2" label="Button" x="468.19" y="316.54" anchorOffsetX="154" anchorOffsetY="245">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="pub_10001_png" source.down="pub_10001_g_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="group1" width="694.55" height="238" x="97.52" y="324.54" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Label id="title" text="How many did Sima Yi make in half a month“Wooden Ox and Gliding Horse—name for the fleet of wheelbarrows used by Zhuge Liang's army to transport material and food”？" x="-77.77" y="34.64" anchorOffsetX="0" width="860.55" anchorOffsetY="0" height="58.09" size="20" textColor="0xe5d7d7" textAlign="center"/>
+			<e:Label id="title0" text="Answer 6 The question can be favored by the general！" x="46.21" y="3.19" anchorOffsetX="0" width="499.55" anchorOffsetY="0" height="19.09" size="20" textColor="0xE5D7D7" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="select1" text="A.The outbreak of the Soviet German war" x="-14.36" y="101.11" anchorOffsetX="0" width="397.39" anchorOffsetY="0" height="20.92" size="20" name="select1" textColor="0xd6d1d1"/>
+			<e:Label id="select2" text="B.Victory of Stalingrad's defense war" x="-16.52" y="155.96" anchorOffsetX="0" width="403.24" anchorOffsetY="0" height="22.94" size="20" name="select2" textColor="0xd6d1d1"/>
+			<e:Label id="select3" text="C.German raids on Poland，Britain、France declares war on Germany" x="418.2" y="101.09" anchorOffsetX="0" width="365.76" anchorOffsetY="0" height="28.49" size="20" name="select3" textColor="0xd6d1d1"/>
+			<e:Label id="select4" text="D.Two thousand" x="421.75" y="155.92" anchorOffsetX="0" width="363.88" anchorOffsetY="0" height="26.97" size="20" name="select4" textColor="0xd6d1d1"/>
+			<e:Label id="answer_label" text="( 1 / 6 )" x="535.67" y="-1" height="28.48" size="20" width="100" verticalAlign="middle" textAlign="left" textColor="0x3cb371"/>
+			<e:Button id="ok_btn" label="Determine" x="268.42" y="194.27" anchorOffsetX="0" width="109.33" anchorOffsetY="0" height="34" scaleX="1.6" scaleY="1.6">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="pub_sure_png" source.down="pub_sure_png" source.disabled="pub_sure_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:CheckBox id="select_1" label="CheckBox" x="-48.36" y="93.11" anchorOffsetX="0" width="30" selected="false" name="type_1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+				</e:skinName>
+			</e:CheckBox>
+			<e:CheckBox id="select_2" label="CheckBox" x="-49.04" y="147.96" anchorOffsetX="0" width="30" selected="false" name="type_1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+				</e:skinName>
+			</e:CheckBox>
+			<e:CheckBox id="select_3" label="CheckBox" x="386.98" y="93.09" anchorOffsetX="0" width="30" selected="false" name="type_1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+				</e:skinName>
+			</e:CheckBox>
+			<e:CheckBox id="select_4" label="CheckBox" x="389.82" y="147.85" anchorOffsetX="0" width="30" selected="false" name="type_1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" includeIn="down" x="0" y="0"/>
+					<e:Image width="100%" height="100%" source="collect_checkbox_unselect_png" source.down="collect_checkbox_select_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+				</e:skinName>
+			</e:CheckBox>
+			<e:Rect id="rect1" width="369.09" height="26.97" x="-48.84" y="97.44" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<e:Rect id="rect2" width="336.09" height="27.97" x="-50.39" y="150.47" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<e:Rect id="rect3" width="320.33" height="26.97" x="386.98" y="96.42" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<e:Rect id="rect4" width="287.39" height="29.49" x="389.2" y="150.45" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<e:Label id="time_label" text="0000" x="528.27" y="1.52" verticalAlign="middle" anchorOffsetX="0" width="133.76" anchorOffsetY="0" height="28.48" textAlign="right" size="20" textColor="0xfc3434"/>
+		</e:Group>
+		<e:Image id="select" source="pub_select_png" x="183.13" y="74.09" touchEnabled="false" width="121" height="173" anchorOffsetY="0" visible="false"/>
+		<e:Group id="group2" width="703.04" height="212.13" x="91.21" y="354.43" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+			<e:Group id="zm_group" x="284.73" y="109.71">
+				<e:Label id="money_label" text="200" x="79.78" y="9.53" verticalAlign="middle" anchorOffsetX="0" width="69.21" anchorOffsetY="0" height="28.48" textAlign="left" size="20" textColor="0xb8db3d"/>
+				<e:Image x="31.49" y="8.01" source="main_gold_png"/>
+				<e:Button id="zhaomu_btn" label="recruit" x="4" y="47" anchorOffsetX="0" width="145" anchorOffsetY="0" height="40.67">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source.down="pub_get_png" source="common_buy_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="24"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Label text="Please take care of me at the first meeting！" x="31.04" y="18.07" anchorOffsetX="0" width="660.37" anchorOffsetY="0" height="63.33" verticalAlign="middle" textAlign="center" stroke="1"/>
+		</e:Group>
+		<e:Group id="pos1" width="0" height="0" x="174.76" y="92" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="pos2" width="0" height="0" x="468.19" y="92" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="pos3" width="0" height="0" x="729" y="92" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+</e:Skin>

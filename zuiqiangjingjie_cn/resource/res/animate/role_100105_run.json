@@ -1,0 +1,52 @@
+{"mc":{
+	"role_100105_run":{
+		"frameRate":12,
+		"labels":[
+			{"name":"action","frame":1,"end":6}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"run01.png_png",
+			"x":-25,
+			"y":-40
+			},
+			{
+			"res":"run02.png_png",
+			"x":-17,
+			"y":-37
+			},
+			{
+			"res":"run03.png_png",
+			"x":-17,
+			"y":-38
+			},
+			{
+			"res":"run04.png_png",
+			"x":-25,
+			"y":-41
+			},
+			{
+			"res":"run05.png_png",
+			"x":-17,
+			"y":-38
+			},
+			{
+			"res":"run06.png_png",
+			"x":-17,
+			"y":-38
+			}
+			]
+}},
+	"res":{
+		"run02.png_png":{"x":102,"y":1,"w":42,"h":41},
+		"run05.png_png":{"x":54,"y":50,"w":43,"h":42},
+		"run04.png_png":{"x":1,"y":1,"w":51,"h":45},
+		"run03.png_png":{"x":56,"y":1,"w":42,"h":42},
+		"run01.png_png":{"x":1,"y":50,"w":49,"h":44},
+		"run06.png_png":{"x":101,"y":47,"w":42,"h":42}
+	}}

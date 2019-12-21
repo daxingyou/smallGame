@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingWaitViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bg" top="0" left="0" right="0" bottom="0" fillColor="0x000000" fillAlpha="0.7"/>
+	<e:Group x="461" y="229.5">
+		<e:Image source="wait_progress_bg_png" x="0" y="0"/>
+		<e:Image id="eff_img" source="wait_progress_bian_png" x="0" y="0" alpha="0"/>
+		<e:Image id="progress_img" source="wait_progress_png" x="0" y="0"/>
+		<e:Rect id="progress_mask" height="291" width="412" x="0" scaleY="0" y="291" anchorOffsetY="291"/>
+	</e:Group>
+</e:Skin>

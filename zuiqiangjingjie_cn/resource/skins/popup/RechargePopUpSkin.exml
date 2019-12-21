@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RechargePopUpSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" top="0" right="0" bottom="0" alpha="0.8"/>
+	<e:Group id="shopGroup" touchChildren="true" touchEnabled="false" touchThrough="true" width="897" height="592" horizontalCenter="0.5" verticalCenter="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image width="898" height="598" x="0" y="0" source="common_bg_png"/>
+		<e:Image id="returnBtn" anchorOffsetX="0" width="46" anchorOffsetY="0" height="39" right="11" top="9" source="common_close_png"/>
+		<e:Scroller id="scroller" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="off" width="878.31" height="354.72" x="10.33" y="233.66">
+			<e:List id="list" useVirtualLayout="false" anchorOffsetX="0" width="979.64" anchorOffsetY="0" height="426.72" x="-2" y="0">
+			<e:layout>
+				<e:TileLayout requestedColumnCount="2" paddingLeft="30" paddingTop="10" horizontalGap="45"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image source="recharge_text_png" x="405" y="1.67"/>
+		<e:Image source="recharge_img_png" x="10.33" y="52.66"/>
+	</e:Group>
+</e:Skin>

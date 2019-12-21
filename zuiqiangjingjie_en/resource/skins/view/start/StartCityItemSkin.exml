@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartCityItemSkin" width="134" height="91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon_img" x="67.83" y="45.1" source="start_city_0_png" anchorOffsetX="90.2" anchorOffsetY="69.8" alpha="0" width="180.4" height="136.6" touchEnabled="true"/>
+	<e:Group x="19.79" y="41.8">
+		<e:Image source="main_name_png" x="4.1" y="8.22" scaleX="1" scaleY="1"/>
+		<e:Label id="name_label" text="" x="25.89" y="7.09" anchorOffsetX="0" width="164.8" anchorOffsetY="0" height="17.77" verticalAlign="middle" textAlign="left" size="16" fontFamily="yt" textColor="0xF9F9F9" scaleX="1" scaleY="1"/>
+		<e:Image source="main_hong_png" x="0.19" y="0.72" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="selectGroup" x="38" y="-30.3" touchChildren="false" touchEnabled="false" touchThrough="false">
+		<e:Image source="select_circle_png" x="0" y="29.3"/>
+		<e:Image id="arrow" source="select_mark_png" x="9" y="0"/>
+	</e:Group>
+</e:Skin>

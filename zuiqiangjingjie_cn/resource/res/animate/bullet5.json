@@ -1,0 +1,22 @@
+{"mc":{
+	"bullet5":{
+		"frameRate":12,
+		"labels":[
+			{"name":"action","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"dd10.png_png",
+			"x":-29,
+			"y":-20
+			}
+			]
+}},
+	"res":{
+		"dd10.png_png":{"x":1,"y":1,"w":72,"h":36}
+	}}

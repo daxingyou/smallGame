@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PauseViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0.5" left="0" top="0" bottom="0" right="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="-18">
+		<e:Image source="pause_bg_png" x="0" y="0" anchorOffsetX="0" width="606.21" anchorOffsetY="0" height="289.12" scale9Grid="146,95,413,68"/>
+		<e:Image id="cancel" source="pause_btn1_png" x="391.56" y="187.95"/>
+		<e:Image id="confirm" source="pause_btn0_png" x="79" y="187.95"/>
+		<e:Label id="tip0_label" text="是否退出？" y="52.7" fontFamily="yt" anchorOffsetX="0" width="492.39" anchorOffsetY="0" height="110.3" verticalAlign="middle" textAlign="center" size="36" textColor="0xdbc7b1" horizontalCenter="26"/>
+		<e:Label id="tip1_label" text="（退出战斗做战败处理）" x="203" y="139.56" size="20" textColor="0xdb6e15" visible="false"/>
+		<e:Image source="pause_title_png" horizontalCenter="0.5" top="-3"/>
+	</e:Group>
+</e:Skin>

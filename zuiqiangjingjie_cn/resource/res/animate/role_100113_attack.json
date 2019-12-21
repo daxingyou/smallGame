@@ -1,0 +1,22 @@
+{"mc":{
+	"role_100113_attack":{
+		"frameRate":6,
+		"labels":[
+			{"name":"action","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"03_png",
+			"x":-33,
+			"y":-48
+			}
+			]
+}},
+	"res":{
+		"03_png":{"x":1,"y":1,"w":66,"h":54}
+	}}

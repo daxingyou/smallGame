@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="game_bg_png" left="0" top="0" bottom="0" right="0"/>
+	<e:Group id="card_group" horizontalCenter="0.5" bottom="0">
+		<e:Image source="game_card_kuang_png" x="0" y="51.7"/>
+		<e:Image id="bb" source="bb_png" x="20" y="24.5" scaleX="0.7" scaleY="0.7"/>
+		<e:Image id="gb" source="gb_png" x="133" y="24.5" scaleX="0.7" scaleY="0.7"/>
+		<e:Image id="qb" source="qb_png" x="245" y="24.5" scaleX="0.7" scaleY="0.7"/>
+		<e:Label id="bb_num" text="100" touchEnabled="false" horizontalCenter="-409.5" bottom="15" size="20"/>
+		<e:Label id="gb_num" text="100" touchEnabled="false" horizontalCenter="-295.5" bottom="15" size="20"/>
+		<e:Label id="qb_num" text="100" touchEnabled="false" horizontalCenter="-184.5" bottom="15" size="20"/>
+		<e:Scroller id="scroller" width="596" height="180.01" x="367.68" y="0.69" anchorOffsetX="0" anchorOffsetY="0">
+			<e:List id="list" anchorOffsetX="0" width="594.67" anchorOffsetY="0" height="198.68">
+				<e:layout>
+					<e:TileLayout horizontalGap="10" requestedRowCount="1" paddingTop="24"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="up_group" right="18" left="26" y="0">
+		<e:Group horizontalCenter="0.5" top="2" anchorOffsetX="0" width="1036.67">
+			<e:Image source="game_ding_png" x="0" y="0"/>
+			<e:Image source="game_vs_png" x="446" y="5"/>
+			<e:Image source="icon_kuang_png" x="569.18" y="20"/>
+			<e:Image source="icon_kuang_png" x="440.5" y="20.17" scaleX="-1"/>
+			<e:Image id="icon_img" x="362.67" y="19.83" anchorOffsetX="0" anchorOffsetY="0" source="start_icon_png" scaleX="1" scaleY="1"/>
+			<e:Group x="647.98" y="26.6">
+			<e:Image id="npc_tiao" source="player_tiao_png" x="195" y="0" scaleX="-1"/>
+			<e:Rect id="npc_mask" width="195" height="13.67" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x050404" scaleX="1"/>
+			</e:Group>
+			<e:Group x="167" y="24.5">
+			<e:Image id="player_tiao" source="player_tiao_png" x="0" y="1.84"/>
+			<e:Rect id="player_mask" width="194.67" height="16" x="195" y="0" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x050404" scaleX="-1"/>
+			</e:Group>
+			<e:Image id="game_icon" x="573.74" y="25.6" source="game_icon0_png"/>
+			<e:Image source="lc_png" x="232.5" y="43"/>
+			<e:Image source="bl_png" x="232.5" y="62"/>
+			<e:Image source="cc_png" x="232.5" y="81"/>
+			<e:Image source="lc_png" x="648.31" y="43"/>
+			<e:Image source="bl_png" x="648.31" y="62"/>
+			<e:Image source="cc_png" x="648.31" y="81"/>
+			<e:Label id="player_lc" text="material：" x="261.5" y="43.9" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Label id="player_bl" text="Soldiers：" x="261" y="62.5" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Label id="player_cc" text="City：" x="261" y="81" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Label id="npc_lc" text="material：" x="677.31" y="42.77" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Label id="npc_bl" text="Troops：" x="677.31" y="62.6" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Label id="npc_cc" text="City：" x="677.31" y="81.6" size="18" fontFamily="yt" textColor="0xef952d"/>
+			<e:Group anchorOffsetX="0" width="184.5" x="255.5" y="102.67" scaleX="1" scaleY="1">
+				<e:Label text="combat effectiveness：" x="0" y="0" fontFamily="yt" size="26" anchorOffsetX="0" width="107.5" textColor="0xe80909" stroke="0.5"/>
+				<e:BitmapLabel id="fighting_p" width="127" height="36.5" x="63.05" y="1.55" font="number_fnt" text="" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.7" scaleY="0.7"/>
+			</e:Group>
+			<e:Group anchorOffsetX="0" width="184.5" left="585" top="102" x="927" y="23" scaleX="1" scaleY="1">
+				<e:Label text="combat effectiveness：" x="0" y="0" fontFamily="yt" size="26" anchorOffsetX="0" width="107.5" textColor="0xE80909" stroke="0.5"/>
+				<e:BitmapLabel id="fighting_n" width="127" height="36.5" x="62.98" y="1.89" font="number_fnt" text="" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.7" scaleY="0.7"/>
+			</e:Group>
+		</e:Group>
+		<e:Image id="shop_btn" source="game_shop_png" height="86" left="0" top="13"/>
+		<e:Image id="back_btn" source="game_back_png" height="56" right="0" top="33"/>
+	</e:Group>
+	<e:Image id="fight_btn" source="game_start_png" horizontalCenter="0.5" verticalCenter="0.5" anchorOffsetX="62.67" anchorOffsetY="61.34"/>
+	<e:Group id="tip_group" x="417.39" anchorOffsetY="154.42" height="153.52" anchorOffsetX="289.39" width="358.94" alpha="1" top="149" touchEnabled="false">
+		<e:Image source="game_tip_png" x="0" y="0"/>
+		<e:Label text="Drag the card to arrange the array" x="72.5" y="24" anchorOffsetX="0" width="230.33" anchorOffsetY="0" height="44" verticalAlign="middle" textAlign="center" size="22" textColor="0xffc23f" fontFamily="yt"/>
+		<e:Image id="jiantou" source="game_jian_png" x="289.5" y="153.52" anchorOffsetX="20" anchorOffsetY="67" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Label id="df_label" text="Enemy camp" anchorOffsetX="0" width="55.81" anchorOffsetY="0" height="293.64" size="45" verticalAlign="middle" textAlign="center" fontFamily="yt" right="232" verticalCenter="14" textColor="0xf41400"/>
+	<e:Rect id="posrect" width="20" height="20" alpha="0" horizontalCenter="-593" top="235"/>
+</e:Skin>

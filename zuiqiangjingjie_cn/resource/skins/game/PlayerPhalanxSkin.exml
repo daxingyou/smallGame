@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayerPhalanxSkin" width="150" height="390" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" x="-57" y="30.5" source="fight_bg2_png"/>
+	<e:Group id="qian_group" width="69" height="389" x="80" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group id="hou_group" width="69" height="389" x="0" y="1" anchorOffsetX="0" anchorOffsetY="0">
+	</e:Group>
+	<e:Rect id="hou_rect" width="80.21" height="374.88" x="75.63" y="-16.84" anchorOffsetX="0" anchorOffsetY="0" rotation="23.82" alpha="1" fillAlpha="0" visible="false"/>
+	<e:Rect id="qian_rect" width="152.76" height="374.88" x="85.15" y="-10.4" anchorOffsetX="0" anchorOffsetY="0" rotation="24.37" alpha="1" fillAlpha="0"/>
+	<e:Group id="role_group" width="148" height="102" x="1" y="101" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

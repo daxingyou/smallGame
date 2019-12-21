@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bg" top="0" left="0" right="0" bottom="0" fillColor="0xc9c9c9"/>
+	<e:Group id="country_group" width="1334" height="750" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" scaleX="1" scaleY="1">
+		<e:Rect id="country_0" width="860.91" height="200.3" x="663.81" y="206.51" anchorOffsetX="421.21" anchorOffsetY="92.42" fillColor="0x0070ff"/>
+		<e:Rect width="438.19" height="312.42" x="421.45" y="471.26" anchorOffsetX="219.76" anchorOffsetY="156.87" id="country_1" fillColor="0xff9a4f"/>
+		<e:Rect width="488.18" height="286.66" x="883.82" y="458.33" anchorOffsetX="243.94" anchorOffsetY="143.94" id="country_2" fillColor="0x30ff3c"/>
+	</e:Group>
+	<e:Group id="talk_group" anchorOffsetX="0" alpha="0" width="1334" x="0" scaleX="1" scaleY="1" bottom="-11">
+		<e:Rect id="zhugong_img" width="229.09" height="407.88" anchorOffsetX="0" anchorOffsetY="0" y="-31.82" fillColor="0x84ffef" left="0" visible="false"/>
+		<e:Rect id="moushi_img" width="229.09" height="412.42" anchorOffsetX="0" anchorOffsetY="0" y="-26.36" fillColor="0xfe8eff" right="0"/>
+		<e:Rect height="214" fillAlpha="0.5" y="162.06" left="0" right="0"/>
+		<e:Label id="talk_label" text="" y="196" anchorOffsetX="0" anchorOffsetY="0" height="148.18" textColor="0xffffff" left="58" right="61"/>
+	</e:Group>
+</e:Skin>

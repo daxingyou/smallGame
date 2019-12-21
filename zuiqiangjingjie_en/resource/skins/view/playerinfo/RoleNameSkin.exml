@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleNameSkin" width="90" height="26.67" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="name_label" text="" x="0" y="0" size="20" anchorOffsetX="0" width="89.4" anchorOffsetY="0" height="26.4" textAlign="center" verticalAlign="middle" textColor="0xefc78b" fontFamily="fzbwksjw"/>
+</e:Skin>

@@ -1,0 +1,22 @@
+{"mc":{
+	"role_100002_stand":{
+		"frameRate":12,
+		"labels":[
+			{"name":"action","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"5_png",
+			"x":-44,
+			"y":-64
+			}
+			]
+}},
+	"res":{
+		"5_png":{"x":1,"y":1,"w":88,"h":68}
+	}}

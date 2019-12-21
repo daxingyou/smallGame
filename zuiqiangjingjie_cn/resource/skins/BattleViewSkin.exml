@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleViewSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="game_bg_png" left="0" top="0" bottom="0" right="0"/>
+	<e:Group width="356" height="460" anchorOffsetX="0" anchorOffsetY="0" left="-370" top="238"/>
+	<e:Group width="356" height="460" anchorOffsetX="0" anchorOffsetY="0" top="238" right="-370" visible="false"/>
+	<e:Group id="skillGroup" width="1328" height="126" anchorOffsetX="0" anchorOffsetY="0" bottom="-140" horizontalCenter="-1">
+		<e:Image source="skill_bottom_png" scaleX="1" scaleY="1" horizontalCenter="0" bottom="0"/>
+		<e:Scroller id="scroller" height="110" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyV="off" width="604.1" y="10" x="342.48" scaleX="1" scaleY="1">
+			<e:List id="list" anchorOffsetY="0" height="110.17">
+			<e:layout>
+				<e:HorizontalLayout paddingTop="5" paddingLeft="5" horizontalAlign="center" verticalAlign="top" gap="12"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+
+	<e:Group id="topGroup" x="1" y="-130" anchorOffsetX="0">
+		<e:Image source="top_bg_png" scale9Grid="152,7,916,46" x="0" y="0"/>
+		<e:Image id="game_icon" x="1330.99" y="4.17" source="game_icon0_png" anchorOffsetY="0" height="58" anchorOffsetX="0" width="54.33" scaleX="-1"/>
+		<e:Image id="icon_img" x="0" y="3" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" width="57" source="game_icon4_png"/>
+		<e:Group x="1204" y="0">
+			<e:Image x="0" y="0" scaleX="1" source="power_bg_png"/>
+			<e:Image source="power_fnt_png" x="7" y="7.15" scaleX="1"/>
+			<e:BitmapLabel id="fighting_n" width="72" height="20" x="-0.26" y="35.65" anchorOffsetX="0" text="1000" font="doubtful_font_fnt"/>
+		</e:Group>
+		<e:Group x="61" y="0">
+			<e:Image x="0" y="0" source="power_bg_png"/>
+			<e:Image source="power_fnt_png" x="7" y="7.71"/>
+			<e:BitmapLabel id="fighting_p" width="76.23" height="20" x="-3.26" y="40.01" anchorOffsetX="0" text="1000" font="doubtful_font_fnt"/>
+		</e:Group>
+		<e:Group x="123" y="3">
+			<e:Image x="26.37" y="9.5" source="battle_font_bg_png"/>
+			<e:Image source="goods_bg_png" x="0" y="0"/>
+			<e:Label id="player_lc" text="军需：" x="46.5" y="16.09" size="15" fontFamily="yt" anchorOffsetX="0" width="77.83" anchorOffsetY="0" height="19.33" textAlign="left" verticalAlign="middle" textColor="0xede3d7"/>
+		</e:Group>
+		<e:Group x="251" y="7">
+			<e:Image source="battle_font_bg_png" x="25.5" y="5.83"/>
+			<e:Image source="city_bg_png" x="0" y="0"/>
+			<e:Label id="player_cc" text="城池：" x="46.17" y="12.84" size="15" fontFamily="yt" anchorOffsetY="0" height="17.33" anchorOffsetX="0" width="81.33" textAlign="left" verticalAlign="middle" textColor="0xede3d7"/>
+		</e:Group>
+		<e:Group x="381" y="13">
+			<e:Image source="battle_font_bg_png" x="23.5" y="0"/>
+			<e:Image source="exp_bg_png" x="0" y="0.82"/>
+			<e:Label id="player_exp" text="经验：" x="47" y="6.83" size="15" fontFamily="yt" anchorOffsetY="0" height="17.33" anchorOffsetX="0" width="78" textAlign="left" verticalAlign="middle" textColor="0xede3d7"/>
+		</e:Group>
+		<e:Group x="821" y="3">
+			<e:Image x="24.78" y="9.94" source="battle_font_bg_png"/>
+			<e:Image source="goods_bg_png" x="0" y="0"/>
+			<e:Label id="npc_lc" text="军需：" x="46.79" y="17.52" size="15" fontFamily="yt" anchorOffsetY="0" height="16.5" anchorOffsetX="0" width="78" textAlign="left" verticalAlign="middle" textColor="0xede3d7"/>
+		</e:Group>
+		<e:Group x="949" y="7">
+			<e:Image x="24.82" y="4.95" source="battle_font_bg_png"/>
+			<e:Image source="city_bg_png" x="0" y="0"/>
+			<e:Label id="npc_cc" text="城池：" x="48.82" y="12.57" size="15" fontFamily="yt" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18.5" textAlign="left" verticalAlign="middle" textColor="0xede3d7"/>
+		</e:Group>
+		<e:Group x="1075" y="13">
+			<e:Image x="23.5" y="0" source="battle_font_bg_png"/>
+			<e:Image source="exp_bg_png" x="0" y="0.07"/>
+			<e:Label id="npc_exp" text="经验：" x="47" y="6.16" size="15" fontFamily="yt" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18.5" textAlign="left" verticalAlign="middle" textColor="0xede3d7"/>
+		</e:Group>
+		<e:Image x="628.5" y="-81.85" source="battle_icon2_png"/>
+
+	</e:Group>
+	<e:Image id="back_btn" source="game_back_png" left="44" bottom="-118"/>
+	<e:Image id="shop_btn" source="game_shop_png" right="-120" bottom="0"/>
+	<ns1:HpCom id="ownHpCom" skinName="HpComSkin" left="-171" top="127"/>
+	<ns1:HpCom id="enemyHpCom" skinName="HpComSkin" right="-165" top="127"/>
+</e:Skin>
